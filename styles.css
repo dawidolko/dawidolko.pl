@@ -1,12 +1,32 @@
 body {
-    font-family: Arial, sans-serif;
-  }
-  
-  h1 {
-    color: #333;
-  }
-  
-  p {
-    color: #666;
-  }
-  
+  font-family: Arial, sans-serif;
+  background-image: url('background.jpg'); /* Upewnij się, że masz plik background.jpg w katalogu głównym */
+  background-size: cover;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* białe tło z lekką przezroczystością */
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* to stworzy efekt okrągłego zdjęcia */
+}
+
+h1, h2 {
+  color: #333;
+}
+
+a {
+  color: #333;
+}
