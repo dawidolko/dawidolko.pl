@@ -1,7 +1,5 @@
 # Witaj, jestem Dawid!
 
-![Dawid's Banner](banner.png)
-
 Cześć, jestem studentem informatyki interesującym się w sztucznej inteligencji. Pasjonuje mnie uczenie maszynowe, analiza danych i tworzenie innowacyjnych rozwiązań, które mogą pomóc ludziom i firmom na całym świecie.
 
 ## 🛠 Moje umiejętności
