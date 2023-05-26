@@ -15,10 +15,13 @@
         padding: 20px;
     }
     .profile img {
-        width: 200px;
-        height: 200px;
+        width: 250px; /* Increase the size of the image */
+        height: 250px; /* Increase the size of the image */
         border-radius: 50%;
         transition: transform .2s;
+    }
+    .profile img:hover {
+        transform: scale(1.2);
     }
     .profile h1 {
         margin: 20px 0 10px 0;
@@ -30,8 +33,10 @@
     .profile p {
         color: #666;
         line-height: 1.6;
-        max-width: 500px; /* Here is the max-width for the description */
+        max-width: 500px; 
         margin: auto;
+        border: 2px solid #333; /* Add border to the description */
+        padding: 10px;
     }
     .skills {
         display: flex;
@@ -72,15 +77,8 @@
     <div class="profile">
         <img src="Portret.jpg" alt="Dawid Olko">
         <h1>Dawid Olko</h1>
-        <p>Jestem studentem informatyki z zamiłowaniem do technologii, programowania i sztucznej inteligencji. 🧠💻 Jestem zawsze głodny nowej wiedzy i staram się poznać najnowsze trendy i narzędzia, które pomagają mi tworzyć innowacyjne rozwiązania.
-
-Moja pasja do sztucznej inteligencji nie kończy się na studiach - dążę do zrozumienia jej różnych aspektów i jak można je wykorzystać do rozwiązywania realnych problemów. Wierzę, że przyszłość technologii leży w rękach AI, i jestem podekscytowany, że mogę być częścią tej przyszłości.
-
-Na moim GitHubie znajdziesz różne projekty związane z programowaniem i sztuczną inteligencją, które pokazują mój rozwój i naukę w tych obszarach. Przy każdym projekcie staram się uczyć czegoś nowego i rozwijać swoje umiejętności.
-
-Zapraszam do zapoznania się z moimi projektami i do skontaktowania się ze mną, jeśli masz pytania lub chciałbyś omówić możliwości współpracy.
-
-Dzięki za odwiedzenie mojego profilu. Cieszę się, że jesteś tutaj! 🎉</p>
+        <p>Jestem studentem informatyki z zamiłowaniem do technologii, programowania i sztucznej inteligencji... 
+            🧠💻 Jestem zawsze głodny nowej wiedzy i staram się poznać najnowsze trendy i narzędzia, które pomagają mi tworzyć innowacyjne rozwiązania.</p>
     </div>
     <div class="skills">
         <img src="C.png" alt="C">
@@ -88,6 +86,9 @@ Dzięki za odwiedzenie mojego profilu. Cieszę się, że jesteś tutaj! 🎉</p>
         <img src="Cshap.png" alt="C#">
         <img src="java.png" alt="Java">
         <img src="python.png" alt="Python">
+        <img src="css.png" alt="CSS">
+        <img src="html.png" alt="HTML">
+        <img src="js.png" alt="JavaScript">
     </div>
     <div id='tooltip'>
         <a class='icon' href='https://www.linkedin.com/in/dawidolko' title='LinkedIn'><i class="fab fa-linkedin fa-2x"></i></a>
