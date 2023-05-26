@@ -14,276 +14,279 @@
             margin: 0;
             padding: 0;
         }
+            .profile {
+        text-align: center;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
 
-        .profile {
-            text-align: center;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.2);
-        }
+    .profile img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        transition: transform .2s;
+    }
 
-        .profile img {
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            transition: transform .2s;
-        }
+    .profile img:hover {
+        transform: scale(1.2);
+    }
 
-        .profile img:hover {
-            transform: scale(1.2);
-        }
+    .profile h1 {
+        margin: 20px 0 10px 0;
+        transition: transform .2s;
+        color: #f5f5f5;
+    }
 
-        .profile h1 {
-            margin: 20px 0 10px 0;
-            transition: transform .2s;
-            color: #f5f5f5;
-        }
+    .profile h1:hover {
+        transform: scale(1.2);
+    }
 
-        .profile h1:hover {
-            transform: scale(1.2);
-        }
+    .profile p {
+        color: #666;
+        line-height: 1.6;
+        max-width: 500px;
+        margin: auto;
+        border: 2px solid #333;
+        padding: 10px;
+        transition: transform .2s;
+        color: #f5f5f5;
+    }
 
-        .profile p {
-            color: #666;
-            line-height: 1.6;
-            max-width: 500px;
-            margin: auto;
-            border: 2px solid #333;
-            padding: 10px;
-            transition: transform .2s;
-            color: #f5f5f5;
-        }
+    .profile p:hover {
+        transform: scale(1.1);
+    }
 
-        .profile p:hover {
-            transform: scale(1.1);
-        }
+    .skills {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        background-color: #333;
+    }
 
+    .skills img {
+        width: 80px;
+        height: 80px;
+        transition: transform .2s;
+    }
+
+    .skills img:hover {
+        transform: scale(1.2);
+    }
+
+    #tooltip {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        background-color: #f1f1f1;
+    }
+
+    #tooltip .icon {
+        margin: 0 10px;
+        color: #334;
+        background-color: #ddd;
+        border-radius: 50%;
+        padding: 10px;
+    }
+
+    .icon {
+        transition: transform .2s;
+    }
+
+    .icon:hover {
+        transform: scale(1.2);
+    }
+
+    .footer {
+        background-color: #222;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        margin-top: auto;
+        color: #fff;
+    }
+
+    nav {
+        background-color: #222;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #ccc;
+        transition: color 0.3s, border-bottom-color 0.3s;
+        border-bottom: 2px solid transparent;
+    }
+
+    nav ul li a:hover {
+        color: #fff;
+        border-bottom-color: #fff;
+    }
+
+    nav ul li a.active {
+        color: #ccc;
+        border-bottom-color: transparent;
+    }
+
+    .footer {
+        background-color: #222;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        margin-top: auto;
+    }
+
+    .greeting {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #f5f5f5;
+        cursor: pointer;
+        transition: transform .2s;
+    }
+
+    .greeting:hover {
+        transform: scale(1.1);
+    }
+
+    .description {
+        text-align: center;
+        color: #666;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .rectangle {
+        width: 60px;
+        height: 20px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        line-height: 20px;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: transform .2s;
+    }
+
+    .rectangle:hover {
+        transform: scale(1.1);
+    }
+
+    .university {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        text-align: right;
+    }
+
+    .university img {
+        width: 150px;
+        height: auto;
+        margin-bottom: 10px;
+        transition: transform .2s;
+    }
+
+    .university img:hover {
+        transform: scale(1.1);
+    }
+
+    .website {
+        margin-top: 10px;
+    }
+
+    .university .website {
+        text-align: right;
+    }
+
+    .drive {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        text-align: left;
+    }
+
+    .drive img {
+        width: 150px;
+        height: auto;
+        margin-bottom: 10px;
+        transition: transform .2s;
+    }
+
+    .drive img:hover {
+        transform: scale(1.1);
+    }
+
+    /* Dodajemy tło */
+    .social-media-background {
+        background-image: url('code.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    /* Media queries dla wersji telefonowej */
+    @media (max-width: 768px) {
         .skills {
-            display: flex;
-            justify-content: space-around;
-            padding: 20px;
-            background-color: #333;
+            padding: 20px 0;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
         }
 
         .skills img {
-            width: 80px;
-            height: 80px;
-            transition: transform .2s;
-        }
-
-        .skills img:hover {
-            transform: scale(1.2);
+            width: 60px;
+            height: 60px;
         }
 
         #tooltip {
-            display: flex;
-            justify-content: center;
-            padding: 20px;
-            background-color: #f1f1f1;
-        }
-
-        #tooltip .icon {
-            margin: 0 10px;
-            color: #334;
-            background-color: #ddd;
-            border-radius: 50%;
-            padding: 10px;
+            padding: 20px 0;
+            flex-wrap: wrap;
+            gap: 20px;
         }
 
         .icon {
-            transition: transform .2s;
+            margin: 10px;
         }
-
-        .icon:hover {
-            transform: scale(1.2);
-        }
-
-        .footer {
-            background-color: #222;
-            text-align: center;
-            padding: 10px;
-            position: relative;
-            margin-top: auto;
-            color: #fff;
-        }
-
-        nav {
-            background-color: #222;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            font-size: 18px;
-            font-weight: bold;
-            text-decoration: none;
-            color: #ccc;
-            transition: color 0.3s, border-bottom-color 0.3s;
-            border-bottom: 2px solid transparent;
-        }
-
-        nav ul li a:hover {
-            color: #fff;
-            border-bottom-color: #fff;
-        }
-
-        nav ul li a.active {
-            color: #ccc;
-            border-bottom-color: transparent;
-        }
-
-        .footer {
-            background-color: #222;
-            text-align: center;
-            padding: 10px;
-            position: relative;
-            margin-top: auto;
-        }
-
-        .greeting {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 20px;
-            font-weight: bold;
-            color: #f5f5f5;
-            cursor: pointer;
-            transition: transform .2s;
-        }
-
-        .greeting:hover {
-            transform: scale(1.1);
-        }
-
-        .description {
-            text-align: center;
-            color: #666;
-            font-size: 14px;
-            margin-top: 10px;
-        }
-
-        .rectangle {
-            width: 60px;
-            height: 20px;
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            line-height: 20px;
-            margin-top: 10px;
-            cursor: pointer;
-            transition: transform .2s;
-        }
-
-        .rectangle:hover {
-            transform: scale(1.1);
-        }
-
-        .university {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            text-align: right;
-        }
-
-        .university img {
-            width: 150px;
-            height: auto;
-            margin-bottom: 10px;
-            transition: transform .2s;
-        }
-
-        .university img:hover {
-            transform: scale(1.1);
-        }
-
-        .website {
-            margin-top: 10px;
-        }
-
-        .university .website {
-            text-align: right;
-        }
-
-        .drive {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            text-align: left;
-        }
-
-        .drive img {
-            width: 150px;
-            height: auto;
-            margin-bottom: 10px;
-            transition: transform .2s;
-        }
-
-        .drive img:hover {
-            transform: scale(1.1);
-        }
-
-        /* Dodajemy tło */
-        .social-media-background {
-            background-image: url('code.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-
-        /* Media queries dla wersji telefonowej */
-        @media (max-width: 768px) {
-            .skills {
-                padding: 20px 0;
-                flex-wrap: wrap;
-                gap: 20px;
-                justify-content: center;
-            }
-
-            .skills img {
-                width: 60px;
-                height: 60px;
-            }
-
-            #tooltip {
-                padding: 20px 0;
-                flex-wrap: wrap;
-                gap: 20px;
-            }
-
-            .icon {
-                margin: 10px;
-            }
-        }
-        
-        /* Dodatkowe style dla repository */
-        .skills h1 {
-            color: #fff;
-        }
-        
-        .skills h1:first-of-type {
-            margin-right: 20px;
-        }
-        
-        .skills h1:last-of-type {
-            margin-left: 20px;
-        }
-    </style>
-
+    }
+    
+    /* Dodatkowe style dla repository */
+    .skills h1 {
+        color: #fff;
+    }
+    
+    .skills h1:first-of-type {
+        margin-right: 20px;
+    }
+    
+    .skills h1:last-of-type {
+        margin-left: 20px;
+    }
+    
+    /* Style dla footer */
+    .footer p {
+        color: #fff;
+    }
+</style>
 </head>
 <body>
 <nav>
     <ul>
-       <li><a href="/">HOME</a></li>
+        <li><a href="/">HOME</a></li>
         <li><a href="/cv.html">CV</a></li>
         <li><a href="/contact.html">Contact</a></li>
         <li><a href="/about.html">About Me</a></li>
