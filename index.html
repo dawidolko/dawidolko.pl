@@ -22,7 +22,6 @@
         height: 250px; /* Increase the size of the image */
         border-radius: 50%;
         transition: transform .2s;
-        cursor: pointer;
     }
     .profile img:hover {
         transform: scale(1.2);
@@ -123,8 +122,8 @@
         margin-top: auto;
     }
     .greeting {
-        text-align: right;
-        margin-right: 20px;
+        text-align: center;
+        margin-top: 20px;
         font-size: 20px;
         font-weight: bold;
         color: #333;
@@ -135,8 +134,7 @@
         transform: scale(1.1);
     }
     .description {
-        text-align: left;
-        margin-left: 20px;
+        text-align: center;
         color: #666;
         font-size: 14px;
         margin-top: 10px;
@@ -155,6 +153,22 @@
     .rectangle:hover {
         transform: scale(1.1);
     }
+    .university {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .university img {
+        width: 150px;
+        height: auto;
+        margin-bottom: 10px;
+        transition: transform .2s;
+    }
+    .university img:hover {
+        transform: scale(1.1);
+    }
+    .website {
+        margin-top: 10px;
+    }
     </style>
 </head>
 <body>
@@ -170,17 +184,13 @@
     
     <div class="profile">
         <div class="greeting">Hi, I'm Dawid</div>
-        <a href="LINK_TO_GOOGLE_DRIVE"><img src="Portret.jpg" alt="Dawid Olko"></a>
+        <img src="Portret.jpg" onclick="window.location.href = 'https://drive.google.com/drive/folders/1ffNL3GDgBIFrtqdDT_t9hO1H2jF1vcnJ?usp=share_link';" alt="Dawid Olko">
         <h1>Opis:</h1>
         <p>Jestem studentem informatyki z zamiłowaniem do technologii, programowania i sztucznej inteligencji... 
             🧠💻 Jestem zawsze głodny nowej wiedzy i staram się poznać najnowsze trendy i narzędzia, które pomagają mi tworzyć innowacyjne rozwiązania.</p>
     </div>
-    <div class="profile1">
-        <div class="rectangle" onclick="window.location.href = 'LINK_TO_UNIVERSITY_WEBSITE';">Uniwersytet Rzeszowski</div>
-        <div class="description">Nauka, sukcesu klucz...</div>
-        <div class="website">
-            <a href="YOUR_WEBSITE_URL"><div class="rectangle">Strona</div></a>
-        </div>
+    <div class="university">
+        <img src="LogoUR1.png" onclick="window.location.href = 'https://www.ur.edu.pl/pl/';" alt="Uniwersytet Rzeszowski">
     </div>
     <div class="skills">
         <img src="C.png" alt="C">
