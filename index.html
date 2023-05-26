@@ -216,6 +216,23 @@
         .university .website {
             text-align: right;
         }
+                .drive {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            text-align: left;
+        }
+        
+        .drive img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+            transition: transform .2s;
+        }
+        
+        .drive img:hover {
+            transform: scale(1.1);
+        }
     </style>
 </head>
 
@@ -235,16 +252,19 @@
         <img src="Portret.jpg"
             onclick="window.location.href = 'https://drive.google.com/drive/folders/1ffNL3GDgBIFrtqdDT_t9hO1H2jF1vcnJ?usp=share_link';"
             alt="Dawid Olko">
-        <h1>Opis:</h1>
-        <p>Jestem studentem informatyki z zamiłowaniem do technologii, programowania i sztucznej inteligencji... 🧠💻</p>
-        
-        <p> 
+        <h1>⮦ OPIS ⮧</h1>
+        <p>Jestem studentem informatyki z zamiłowaniem do technologii, programowania i sztucznej inteligencji... 🧠💻
              Jestem zawsze głodny nowej wiedzy i staram się poznać najnowsze trendy i narzędzia, które pomagają mi
             tworzyć innowacyjne rozwiązania.</p>
     </div>
     <div class="university">
         <img src="LogoUR1.png" onclick="window.location.href = 'https://www.ur.edu.pl/pl/';"
             alt="Uniwersytet Rzeszowski">
+    </div>
+    
+    <div class="drive">
+        <img src="drive.png" onclick="window.location.href = 'https://drive.google.com/drive/folders/1ffNL3GDgBIFrtqdDT_t9hO1H2jF1vcnJ?usp=share_link';"
+            alt="Google Drive">
     </div>
     <div class="skills">
         <img src="C.png" alt="C">
