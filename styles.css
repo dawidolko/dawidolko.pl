@@ -1,9 +1,52 @@
 body
 {
-    background-image: url(background.jpg);
+    background-image: url(images/background.jpg);
     font-family: sans-serif;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#header{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 70px;
+    cursor: default;
+    transition: all 1s;
+    text-shadow: 3px 3px 2px #585858;
+}
+
+.interactive-header {
+    font-size: 300%;
+    transition: transform .2s;
+    margin-right: 20px;
+    align-self: flex-end;
+}
+
+.interactive-header:hover {
+    transform: scale(1.2);
+    text-shadow: 4px 3px 2px #585858;
+}
+
+#content{
+    margin: 20px;
+    font-size: 120%;
+    color: black;
+    text-shadow: 1px 1px 1px #585858;
+    max-width: 200px; /* limit the width of the content to match the avatar's width */
+    text-align: center; /* center the text */
+}
+
+.interactive-image {
+  max-width: 200px;
+  border-radius: 50%; /* make the avatar circular */
+  transition: transform .2s;
+}
+
+.interactive-image:hover {
+  transform: scale(1.2);
 }
 
 #tooltip
@@ -18,57 +61,20 @@ body
 }
 
 .icon{
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
     display: inline;
     justify-content: center;
     cursor: pointer;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
-    color: gray;
+    color: black;
     position: relative;
 }
 
 .icon:hover{
     transform: scale(1.35);
     text-shadow: 2px 2px #585858;
-}
-
-#header{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    height: auto;
-    margin: 70px;
-    cursor: default;
-    transition: all 1s;
-    text-shadow: 3px 3px 2px #585858;
-}
-
-.interactive-header {
-    font-size: 600%;
-    transition: transform .2s;
-}
-
-.interactive-header:hover {
-    transform: scale(1.2);
-    text-shadow: 4px 3px 2px #585858;
-}
-
-#content{
-    margin: 20px;
-    font-size: 120%;
-    color: black;
-    text-shadow: 1px 1px 1px #585858;
-}
-
-.interactive-image {
-  max-width: 200px;
-  transition: transform .2s;
-}
-
-.interactive-image:hover {
-  transform: scale(1.2);
 }
 
 footer{
