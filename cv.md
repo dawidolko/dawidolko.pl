@@ -1,60 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>CV Dawida Olko</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f3f3f3;
-        }
-        .header {
-            text-align: center;
-            padding: 20px;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .container {
-            display: flex;
-            justify-content: center;
-            padding: 20px;
-        }
-        .image-container {
-            margin-right: 20px;
-        }
-        .image-container img {
-            width: 250px;
-        }
-        .info-container p {
-            margin: 0 0 10px 0;
-        }
-        .section {
-            padding: 20px;
-            font-size: 18px;
-        }
-        .section h2 {
-            font-size: 22px;
-            font-weight: bold;
-        }
-    </style>
-</head>
-<body>
-    <div class="header">
-        CURRICULUM VITAE
-    </div>
-    <div class="container">
-        <div class="image-container">
-            <img src="Portret.jpg" alt="Dawid Olko">
-        </div>
-        <div class="info-container">
-            <p>Numer telefonu: <strong>+48 660 537 403</strong></p>
-            <p>E-mail: <strong>dawid_olko@outlook.com</strong></p>
-            <p><strong>Data urodzenia:</strong> 20.04.2002</p>
-            <p><strong>Adres:</strong> Obojna 206</p>
-            <p><strong>Kod pocztowy:</strong> Zaleszany 37-415</p>
-        </div>
-    </div>
+# <p align="center">CURRICULUM VITAE</p>
+
+<div style="display: flex; align-items: flex-start;">
+  <img src="Portret.jpg" alt="Dawid Olko" width="250" style="margin-right: 20px;"> 
+  <div>
+    <p>Numer telefonu: <strong>+48 660 537 403</strong></p>
+    <p>E-mail: <strong>dawid_olko@outlook.com</strong></p>
+    <p><strong>Data urodzenia:</strong> 20.04.2002</p>
+    <p><strong>Adres:</strong> Obojna 206</p>
+    <p><strong>Kod pocztowy:</strong> Zaleszany 37-415</p>
+  </div>
+</div>
 
 ## **Wykształcenie:**
 ⦁ 2022 – obecnie – Uniwersytet Rzeszowski (UR) kierunek: Informatyka I stopnia\
@@ -92,5 +47,3 @@
 
 ##  
 Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO).
-  </body>
-</html>
