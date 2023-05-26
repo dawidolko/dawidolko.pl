@@ -60,25 +60,25 @@
         .skills {
             display: flex;
             justify-content: space-around;
-            padding: 40px;
+            padding: 20px;
             background-color: #333;
         }
 
         .skills img {
-            width: 100px;
-            height: 100px;
+            width: 80px;
+            height: 80px;
             transition: transform .2s;
         }
 
         .skills img:hover {
-            transform: scale(2.4); /* Zwiększamy wartość transformacji skali */
+            transform: scale(1.2);
         }
 
         #tooltip {
             display: flex;
             justify-content: center;
-            padding: 40px;
-            background-color: #333;
+            padding: 20px;
+            background-color: #f1f1f1;
         }
 
         #tooltip .icon {
@@ -94,7 +94,7 @@
         }
 
         .icon:hover {
-            transform: scale(2.4); /* Zwiększamy wartość transformacji skali */
+            transform: scale(1.2);
         }
 
         .footer {
@@ -160,7 +160,7 @@
         }
 
         .greeting:hover {
-            transform: scale(3.1);
+            transform: scale(1.1);
         }
 
         .description {
@@ -183,7 +183,7 @@
         }
 
         .rectangle:hover {
-            transform: scale(3.1);
+            transform: scale(1.1);
         }
 
         .university {
@@ -238,6 +238,31 @@
             background-position: center;
             padding-top: 20px;
             padding-bottom: 20px;
+        }
+
+        /* Media queries dla wersji telefonowej */
+        @media (max-width: 768px) {
+            .skills {
+                padding: 20px 0;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+            }
+
+            .skills img {
+                width: 60px;
+                height: 60px;
+            }
+
+            #tooltip {
+                padding: 20px 0;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .icon {
+                margin: 10px;
+            }
         }
     </style>
 
