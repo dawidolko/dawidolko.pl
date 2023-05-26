@@ -283,11 +283,14 @@
 
         .clock-container {
             text-align: center;
-            margin-top: 20px;
             font-size: 24px;
             font-weight: bold;
             color: #f5f5f5;
             transition: transform .2s;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 999;
         }
 
         .clock-container:hover {
@@ -387,9 +390,9 @@
 <!-- Zegar -->
 <div class="animation-container">
     <h2 class="animation-text">ZEGAR</h2>
-    <div class="clock-container">
-        <span id="clock"></span>
-    </div>
+</div>
+<div class="clock-container">
+    <span id="clock"></span>
 </div>
 
 <script>
