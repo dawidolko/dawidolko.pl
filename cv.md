@@ -3,11 +3,11 @@
 <div style="display: flex; align-items: center;">
   <img src="Portret.jpg" alt="Dawid Olko" width="250" style="margin-right: 20px;">
   <div>
-    Numer telefonu: +48 660 537 403<br>
-    E-mail: dawid_olko@outlook.com<br>
-    Data urodzenia: 20.04.2002<br>
-    Adres: Obojna 206<br>
-    Kod pocztowy: Zaleszany 37-415
+    Numer telefonu: *+48 660 537 403*<br>
+    E-mail: *dawid_olko@outlook.com*<br>
+    **Data urodzenia:** 20.04.2002<br>
+    **Adres:** Obojna 206<br>
+    **Kod pocztowy:** Zaleszany 37-415
   </div>
 </div>
 
