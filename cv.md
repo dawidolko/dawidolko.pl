@@ -1,7 +1,5 @@
 # <p align="center">**CURRICULUM VITAE**</p>
 
-# <p align="center">CURRICULUM VITAE</p>
-
 <div style="display: flex; align-items: center;">
   <img src="Portret.jpg" alt="Dawid Olko" width="250">
   <div style="margin-left: 20px;">
