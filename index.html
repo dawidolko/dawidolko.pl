@@ -264,6 +264,35 @@
                 margin: 10px;
             }
         }
+        
+        /* Nowe style dla filmu i zegara */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* Proporcje 16:9 */
+            margin-top: 20px;
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .clock-container {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #f5f5f5;
+            transition: transform .2s;
+        }
+        
+        .clock-container:hover {
+            transform: scale(1.1);
+        }
     </style>
 
 </head>
@@ -293,7 +322,7 @@
 <div class="drive">
     <img src="drive.png" onclick="window.location.href = 'https://drive.google.com/drive/folders/1ffNL3GDgBIFrtqdDT_t9hO1H2jF1vcnJ?usp=share_link';"
         alt="Google Drive">
-</div
+</div>
 
 <div class="skills">
     <h1>repository ⯈</h1>
@@ -319,6 +348,30 @@
     <a class='icon' href='https://www.twitter.com/dawidolko' title='Twitter'><i
             class="fab fa-twitter fa-2x"></i></a>
 </div>
+
+<!-- Film -->
+<div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Eh2WicTO1yw" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<!-- Zegar -->
+<div class="clock-container">
+    <span id="clock"></span>
+</div>
+
+<script>
+    function updateTime() {
+        var now = new Date();
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+        var seconds = now.getSeconds();
+        var timeString = hours.toString().padStart(2, '0') + ':' + minutes.toString().padStart(2, '0') + ':' + seconds.toString().padStart(2, '0');
+        document.getElementById('clock').textContent = timeString;
+    }
+
+    setInterval(updateTime, 1000);
+</script>
+
 <div class="footer">
     <p>© 2023 Dawid Olko - Wszystkie prawa zastrzeżone | email: dawid_olko@outlook.com</p>
 </div>
