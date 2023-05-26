@@ -122,8 +122,8 @@
         margin-top: auto;
     }
     .greeting {
-        text-align: right;
-        margin-right: 20px;
+        text-align: center;
+        margin-top: 20px;
         font-size: 20px;
         font-weight: bold;
         color: #333;
@@ -134,19 +134,18 @@
         transform: scale(1.1);
     }
     .description {
-        text-align: left;
-        margin-left: 20px;
+        text-align: center;
         color: #666;
         font-size: 14px;
         margin-top: 10px;
     }
     .rectangle {
-        width: 100px;
-        height: 40px;
+        width: 60px;
+        height: 20px;
         background-color: #333;
         color: #fff;
         text-align: center;
-        line-height: 40px;
+        line-height: 20px;
         margin-top: 10px;
         cursor: pointer;
         transition: transform .2s;
@@ -159,7 +158,7 @@
 <body>
     <nav>
         <ul>
-            <li><a href="#cv">CV</a></li>
+            <li><a href="#cv" class="active">CV</a></li>
             <li><a href="#contact">Kontakt</a></li>
             <li><a href="#about">O mnie</a></li>
             <li><a href="#blog">Blog</a></li>
@@ -168,14 +167,13 @@
     </nav>
     
     <div class="profile">
-        
+        <div class="greeting">Hi, I'm Dawid</div>
         <img src="Portret.jpg" alt="Dawid Olko">
         <h1>Opis:</h1>
         <p>Jestem studentem informatyki z zamiłowaniem do technologii, programowania i sztucznej inteligencji... 
             🧠💻 Jestem zawsze głodny nowej wiedzy i staram się poznać najnowsze trendy i narzędzia, które pomagają mi tworzyć innowacyjne rozwiązania.</p>
-        <div class="greeting">Hi, I'm Dawid</div>
+        <div class="rectangle" onclick="window.location.href = 'https://dysk.pl';">DYSK</div>
         <div class="description">Nauka, sukcesu klucz...</div>
-        <div class="rectangle" onclick="window.location.href = 'https://drive.google.com/drive/folders/1ffNL3GDgBIFrtqdDT_t9hO1H2jF1vcnJ?usp=share_link';">DYSK</div>
     </div>
     <div class="skills">
         <img src="C.png" alt="C">
