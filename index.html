@@ -1,176 +1,223 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Dawid Olko - Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <style>
-    body {
-        background-color: #f5f5f5;
-        font-family: Arial, sans-serif;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        margin: 0;
-        padding: 0;
-    }
-    .profile {
-        text-align: center;
-        padding: 20px;
-    }
-    .profile img {
-        width: 250px; /* Increase the size of the image */
-        height: 250px; /* Increase the size of the image */
-        border-radius: 50%;
-        transition: transform .2s;
-    }
-    .profile img:hover {
-        transform: scale(1.2);
-    }
-    .profile h1 {
-        margin: 20px 0 10px 0;
-        transition: transform .2s;
-    }
-    .profile h1:hover {
-        transform: scale(1.2);
-    }
-    .profile p {
-        color: #666;
-        line-height: 1.6;
-        max-width: 500px; 
-        margin: auto;
-        border: 2px solid #333; /* Add border to the description */
-        padding: 10px;
-        transition: transform .2s;
-    }
-    .profile p:hover {
-        transform: scale(1.1);
-    }
-    .skills {
-        display: flex;
-        justify-content: space-around;
-        padding: 20px;
-        background-color: #eee; /* Add a light gray background */
-    }
-    .skills img {
-        width: 80px;
-        height: 80px;
-        transition: transform .2s;
-    }
-    .skills img:hover {
-        transform: scale(1.2);
-    }
-    #tooltip {
-        display: flex;
-        justify-content: center;
-        padding: 20px;
-        background-color: #f1f1f1; /* Add a light gray background */
-    }
-    #tooltip .icon {
-        margin: 0 10px;
-        color: #333;
-        background-color: #ddd; /* Add a light gray background to icons */
-        border-radius: 50%; /* Add border-radius for a circular shape */
-        padding: 10px; /* Add some padding around icons */
-    }
-    .icon {
-        transition: transform .2s;
-    }
-    .icon:hover {
-        transform: scale(1.2);
-    }
-    .footer {
-        background-color: #f1f1f1;
-        text-align: center;
-        padding: 10px;
-        position: relative;
-        margin-top: auto;
-    }
-    nav {
-        background-color: #222;
-        padding: 10px 0;
-        text-align: center;
-    }
-    nav ul {
-        list-style-type: none;
-        padding: 0;
-    }
-    nav ul li {
-        display: inline;
-        margin: 0 15px;
-    }
-    nav ul li a {
-        font-size: 18px;
-        font-weight: bold;
-        text-decoration: none;
-        color: #ccc;
-        transition: color 0.3s, border-bottom-color 0.3s;
-        border-bottom: 2px solid transparent;
-    }
-    nav ul li a:hover {
-        color: #fff;
-        border-bottom-color: #fff;
-    }
-    nav ul li a.active {
-        color: #fff;
-        border-bottom-color: #fff;
-    }
-    .footer {
-        background-color: #f1f1f1;
-        text-align: center;
-        padding: 10px;
-        position: relative;
-        margin-top: auto;
-    }
-    .greeting {
-        text-align: center;
-        margin-top: 20px;
-        font-size: 20px;
-        font-weight: bold;
-        color: #333;
-        cursor: pointer;
-        transition: transform .2s;
-    }
-    .greeting:hover {
-        transform: scale(1.1);
-    }
-    .description {
-        text-align: center;
-        color: #666;
-        font-size: 14px;
-        margin-top: 10px;
-    }
-    .rectangle {
-        width: 60px;
-        height: 20px;
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        line-height: 20px;
-        margin-top: 10px;
-        cursor: pointer;
-        transition: transform .2s;
-    }
-    .rectangle:hover {
-        transform: scale(1.1);
-    }
-    .university {
-        text-align: center;
-        margin-top: 20px;
-    }
-    .university img {
-        width: 150px;
-        height: auto;
-        margin-bottom: 10px;
-        transition: transform .2s;
-    }
-    .university img:hover {
-        transform: scale(1.1);
-    }
-    .website {
-        margin-top: 10px;
-    }
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .profile {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .profile img {
+            width: 250px;
+            /* Increase the size of the image */
+            height: 250px;
+            /* Increase the size of the image */
+            border-radius: 50%;
+            transition: transform .2s;
+        }
+
+        .profile img:hover {
+            transform: scale(1.2);
+        }
+
+        .profile h1 {
+            margin: 20px 0 10px 0;
+            transition: transform .2s;
+        }
+
+        .profile h1:hover {
+            transform: scale(1.2);
+        }
+
+        .profile p {
+            color: #666;
+            line-height: 1.6;
+            max-width: 500px;
+            margin: auto;
+            border: 2px solid #333;
+            /* Add border to the description */
+            padding: 10px;
+            transition: transform .2s;
+        }
+
+        .profile p:hover {
+            transform: scale(1.1);
+        }
+
+        .skills {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: #eee;
+            /* Add a light gray background */
+        }
+
+        .skills img {
+            width: 80px;
+            height: 80px;
+            transition: transform .2s;
+        }
+
+        .skills img:hover {
+            transform: scale(1.2);
+        }
+
+        #tooltip {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color: #f1f1f1;
+            /* Add a light gray background */
+        }
+
+        #tooltip .icon {
+            margin: 0 10px;
+            color: #333;
+            background-color: #ddd;
+            /* Add a light gray background to icons */
+            border-radius: 50%;
+            /* Add border-radius for a circular shape */
+            padding: 10px;
+            /* Add some padding around icons */
+        }
+
+        .icon {
+            transition: transform .2s;
+        }
+
+        .icon:hover {
+            transform: scale(1.2);
+        }
+
+        .footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            margin-top: auto;
+        }
+
+        nav {
+            background-color: #222;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #ccc;
+            transition: color 0.3s, border-bottom-color 0.3s;
+            border-bottom: 2px solid transparent;
+        }
+
+        nav ul li a:hover {
+            color: #fff;
+            border-bottom-color: #fff;
+        }
+
+        nav ul li a.active {
+            color: #fff;
+            border-bottom-color: #fff;
+        }
+
+        .footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            margin-top: auto;
+        }
+
+        .greeting {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            cursor: pointer;
+            transition: transform .2s;
+        }
+
+        .greeting:hover {
+            transform: scale(1.1);
+        }
+
+        .description {
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .rectangle {
+            width: 60px;
+            height: 20px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            line-height: 20px;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: transform .2s;
+        }
+
+        .rectangle:hover {
+            transform: scale(1.1);
+        }
+
+        .university {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            text-align: right;
+        }
+
+        .university img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+            transition: transform .2s;
+        }
+
+        .university img:hover {
+            transform: scale(1.1);
+        }
+
+        .website {
+            margin-top: 10px;
+        }
+
+        .university .website {
+            text-align: right;
+        }
     </style>
 </head>
+
 <body>
     <nav>
         <ul>
@@ -181,16 +228,23 @@
             <li><a href="#projects">Projekty</a></li>
         </ul>
     </nav>
-    
+
     <div class="profile">
         <div class="greeting">Hi, I'm Dawid</div>
-        <img src="Portret.jpg" onclick="window.location.href = 'https://drive.google.com/drive/folders/1ffNL3GDgBIFrtqdDT_t9hO1H2jF1vcnJ?usp=share_link';" alt="Dawid Olko">
+        <img src="Portret.jpg"
+            onclick="window.location.href = 'https://drive.google.com/drive/folders/1ffNL3GDgBIFrtqdDT_t9hO1H2jF1vcnJ?usp=share_link';"
+            alt="Dawid Olko">
         <h1>Opis:</h1>
-        <p>Jestem studentem informatyki z zamiłowaniem do technologii, programowania i sztucznej inteligencji... 
-            🧠💻 Jestem zawsze głodny nowej wiedzy i staram się poznać najnowsze trendy i narzędzia, które pomagają mi tworzyć innowacyjne rozwiązania.</p>
+        <p>Jestem studentem informatyki z zamiłowaniem do technologii, programowania i sztucznej inteligencji...
+            🧠💻 Jestem zawsze głodny nowej wiedzy i staram się poznać najnowsze trendy i narzędzia, które pomagają mi
+            tworzyć innowacyjne rozwiązania.</p>
     </div>
     <div class="university">
-        <img src="LogoUR1.png" onclick="window.location.href = 'https://www.ur.edu.pl/pl/';" alt="Uniwersytet Rzeszowski">
+        <img src="LogoUR.png" onclick="window.location.href = 'https://www.ur.edu.pl/pl/';"
+            alt="Uniwersytet Rzeszowski">
+        <div class="website">
+            <div class="rectangle" onclick="window.location.href = 'https://www.ur.edu.pl/pl/';">Strona</div>
+        </div>
     </div>
     <div class="skills">
         <img src="C.png" alt="C">
@@ -203,15 +257,20 @@
         <img src="js.png" alt="JavaScript">
     </div>
     <div id='tooltip'>
-        <a class='icon' href='https://www.linkedin.com/in/dawidolko' title='LinkedIn'><i class="fab fa-linkedin fa-2x"></i></a>
-        <a class='icon' href='https://www.instagram.com/dawid_olko' title='Instagram'><i class="fab fa-instagram fa-2x"></i></a>
-        <a class='icon' href='https://www.facebook.com/dawid.0lko' title='Facebook'><i class="fab fa-facebook fa-2x"></i></a>
+        <a class='icon' href='https://www.linkedin.com/in/dawidolko' title='LinkedIn'><i
+                class="fab fa-linkedin fa-2x"></i></a>
+        <a class='icon' href='https://www.instagram.com/dawid_olko' title='Instagram'><i
+                class="fab fa-instagram fa-2x"></i></a>
+        <a class='icon' href='https://www.facebook.com/dawid.0lko' title='Facebook'><i
+                class="fab fa-facebook fa-2x"></i></a>
         <a class='icon' href='https://www.youtube.com/c/dawio' title='YouTube'><i class="fab fa-youtube fa-2x"></i></a>
         <a class='icon' href='https://www.github.com/dawidolko' title='Github'><i class="fab fa-github fa-2x"></i></a>
-        <a class='icon' href='https://www.twitter.com/dawidolko' title='Twitter'><i class="fab fa-twitter fa-2x"></i></a>
+        <a class='icon' href='https://www.twitter.com/dawidolko' title='Twitter'><i
+                class="fab fa-twitter fa-2x"></i></a>
     </div>
     <div class="footer">
         <p>© 2023 Dawid Olko - Wszystkie prawa zastrzeżone | email: dawid_olko@outlook.com</p>
     </div>
 </body>
+
 </html>
