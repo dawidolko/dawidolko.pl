@@ -4,7 +4,7 @@
 <head>
     <title>Dawid Olko - CV</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="icon" type="image/jpg" href="Portret.jpg">
+    <link rel="icon" type="image/jpg" href="portret.jpg">
     <style>
         body {
             background-color: #f5f5f5;
@@ -16,24 +16,24 @@
             padding: 0;
         }
 
-        .cv-header {
+        .cv-container {
             text-align: center;
             padding: 20px;
+            margin: auto;
+        }
+
+        .cv-header {
+            margin-bottom: 20px;
         }
 
         .cv-header h1 {
             margin: 20px 0;
         }
 
-        .cv-contact {
-            margin-bottom: 20px;
-        }
-
         .cv-contact ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
-            text-align: center;
         }
 
         .cv-contact ul li {
@@ -52,54 +52,17 @@
             list-style-type: none;
             padding: 0;
             margin: 0;
+            text-align: left;
         }
 
         .cv-section ul li {
             margin-bottom: 5px;
         }
 
-        .cv-section ul li:before {
-            content: "⦁";
-            margin-right: 5px;
-        }
-
-        .cv-additional-info {
-            margin-bottom: 20px;
-        }
-
-        .cv-additional-info ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .cv-additional-info ul li {
-            margin-bottom: 5px;
-        }
-
-        .cv-skills {
-            display: flex;
-            justify-content: space-around;
-            padding: 20px;
-            background-color: #eee;
-        }
-
-        .cv-skills img {
-            width: 80px;
-            height: 80px;
-            transition: transform .2s;
-        }
-
-        .cv-skills img:hover {
-            transform: scale(1.2);
-        }
-
         .cv-footer {
             background-color: #f1f1f1;
             text-align: center;
             padding: 10px;
-            position: relative;
-            margin-top: auto;
         }
 
         .cv-social-icons {
@@ -120,82 +83,87 @@
 </head>
 
 <body>
-    <div class="cv-header">
-        <h1>Curriculum Vitae</h1>
-        <h2>Dawid Olko</h2>
-        <ul class="cv-contact">
-            <li>Numer telefonu: +48 660 537 403</li>
-            <li>E-mail: dawid_olko@outlook.com</li>
-        </ul>
-    </div>
+    <div class="cv-container">
+        <div class="cv-header">
+            <h1>Curriculum Vitae</h1>
+            <h2>Dawid Olko</h2>
+        </div>
 
-    <div class="cv-section">
-        <h2>Informacje personalne</h2>
-        <ul>
-            <li>Data urodzenia: 20.04.2002</li>
-            <li>Adres: Obojna 206, Kod pocztowy: Zaleszany 37-415</li>
-        </ul>
-    </div>
+        <div class="cv-contact">
+            <ul>
+                <li>Numer telefonu: +48 660 537 403</li>
+                <li>E-mail: dawid_olko@outlook.com</li>
+            </ul>
+        </div>
 
-    <div class="cv-section">
-        <h2>Wykształcenie</h2>
-        <ul>
-            <li>2022 - obecnie - Uniwersytet Rzeszowski (UR) kierunek: Informatyka I stopnia</li>
-            <li>2018 - 2022 - Regionalne Centrum Edukacji Zawodowej w Nisku profil: Technik Elektryk</li>
-            <li>2015 - 2018 - Katolickie Gimnazjum im. Bł. ks. J. Popiełuszki w Stalowej Woli</li>
-            <li>2009 - 2015 - Publiczna Szkoła Podstawowa nr. 11 im. Szarych Szeregów</li>
-        </ul>
-    </div>
+        <div class="cv-section">
+            <h2>Informacje personalne</h2>
+            <ul>
+                <li>Data urodzenia: 20.04.2002</li>
+                <li>Adres: Obojna 206, Kod pocztowy: Zaleszany 37-415</li>
+            </ul>
+        </div>
 
-    <div class="cv-section">
-        <h2>Doświadczenie zawodowe</h2>
-        <ul>
-            <li>01.07.2019 - 01.08.2019 - Praktyki w PGE (Polska Grupa Energetyczna)</li>
-            <li>01.03.2021 - 01.04.2021 - Praktyki zawodowe w HSW (Huta Stalowa Wola)</li>
-            <li>20.04.2019 - 31.05.2021 - Praca w Piekarni na zmianach nocnych (Stalowa Wola)</li>
-            <li>01.07.2021 - 31.08.2021 - Praca w Inpost magazyn paczek (Tarnobrzeg)</li>
-            <li>26.08.2022 - 26.09.2022 - Praca przy zbiorach jabłek i gruszek (Belgia)</li>
-        </ul>
-    </div>
+        <div class="cv-section">
+            <h2>Wykształcenie</h2>
+            <ul>
+                <li>2022 - obecnie - Uniwersytet Rzeszowski (UR) kierunek: Informatyka I stopnia</li>
+                <li>2018 - 2022 - Regionalne Centrum Edukacji Zawodowej w Nisku profil: Technik Elektryk</li>
+                <li>2015 - 2018 - Katolickie Gimnazjum im. Bł. ks. J. Popiełuszki w Stalowej Woli</li>
+                <li>2009 - 2015 - Publiczna Szkoła Podstawowa nr. 11 im. Szarych Szeregów</li>
+            </ul>
+        </div>
 
-    <div class="cv-section">
-        <h2>Informacje dodatkowe</h2>
-        <ul>
-            <li>Prawo jazdy kat. B</li>
-            <li>Kurs Auto detailing</li>
-            <li>Uprawnienia Stowarzyszenia Elektryków Polskich "SEP" kat. E do 1 kV</li>
-            <li>Znajomość obsługi komputera na poziomie wysokim</li>
-            <li>Książeczka sanepidowska</li>
-        </ul>
-    </div>
+        <div class="cv-section">
+            <h2>Doświadczenie zawodowe</h2>
+            <ul>
+                <li>01.07.2019 - 01.08.2019 - Praktyki w PGE (Polska Grupa Energetyczna)</li>
+                <li>01.03.2021 - 01.04.2021 - Praktyki zawodowe w HSW (Huta Stalowa Wola)</li>
+                <li>20.04.2019 - 31.05.2021 - Praca w Piekarni na zmianach nocnych (Stalowa Wola)</li>
+                <li>01.07.2021 - 31.08.2021 - Praca w Inpost magazyn paczek (Tarnobrzeg)</li>
+                <li>26.08.2022 - 26.09.2022 - Praca przy zbiorach jabłek i gruszek (Belgia)</li>
+            </ul>
+        </div>
 
-    <div class="cv-section">
-        <h2>Zalety osobiste</h2>
-        <ul>
-            <li>Sumienność</li>
-            <li>Dokładność</li>
-            <li>Uczciwość</li>
-            <li>Pracowitość</li>
-            <li>Szybkość działania</li>
-        </ul>
-    </div>
+        <div class="cv-section">
+            <h2>Informacje dodatkowe</h2>
+            <ul>
+                <li>Prawo jazdy kat. B</li>
+                <li>Kurs Auto detailing</li>
+                <li>Uprawnienia Stowarzyszenia Elektryków Polskich "SEP" kat. E do 1 kV</li>
+                <li>Znajomość obsługi komputera na poziomie wysokim</li>
+                <li>Książeczka sanepidowska</li>
+            </ul>
+        </div>
 
-    <div class="cv-section">
-        <h2>Zainteresowania</h2>
-        <ul>
-            <li>Sport</li>
-            <li>Motoryzacja</li>
-            <li>Elektronika</li>
-            <li>Informatyka</li>
-            <li>Montaż wideo</li>
-        </ul>
-    </div>
+        <div class="cv-section">
+            <h2>Zalety osobiste</h2>
+            <ul>
+                <li>Sumienność</li>
+                <li>Dokładność</li>
+                <li>Uczciwość</li>
+                <li>Pracowitość</li>
+                <li>Szybkość działania</li>
+            </ul>
+        </div>
 
-    <div class="cv-additional-info">
-        <p>Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu
-            rekrutacji zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016
-            r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego
-            przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO).</p>
+        <div class="cv-section">
+            <h2>Zainteresowania</h2>
+            <ul>
+                <li>Sport</li>
+                <li>Motoryzacja</li>
+                <li>Elektronika</li>
+                <li>Informatyka</li>
+                <li>Montaż wideo</li>
+            </ul>
+        </div>
+
+        <div class="cv-additional-info">
+            <p>Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu
+                rekrutacji zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia
+                2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie
+                swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO).</p>
+        </div>
     </div>
 
     <div class="cv-footer">
