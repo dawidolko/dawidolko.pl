@@ -142,11 +142,40 @@
         .cv-social-icons a:hover {
             color: #666;
         }
+
+        /* Dodane style dla cv-download */
+        .cv-download {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            color: #333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .cv-download:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .cv-download i {
+            margin-right: 5px;
+        }
     </style>
 </head>
 
 <body>
     <div class="cv-container">
+        <!-- Dodany kod dla cv-download -->
+        <a class="cv-download" href="CVV Dawid Olko.pdf" title="CV Download">
+            <i class="fas fa-arrow-circle-down"></i> CV DOWNLOAD
+        </a>
+        <!-- Koniec dodanego kodu -->
         <div class="cv-header">
             <h1>Curriculum Vitae</h1>
             <img src="https://raw.githubusercontent.com/dawidolko/dawidolko.github.io/983f7dc51164ee187a773379fc372a1c4a5893cf/Portret.jpg" alt="Moje zdjęcie" width="200" height="200">
@@ -160,6 +189,7 @@
             </ul>
         </div>
 
+       
         <div class="cv-section">
             <h2>Informacje personalne</h2>
             <ul>
@@ -229,6 +259,7 @@
                 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego
                 przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO).</p>
         </div>
+
 
         <div class="cv-footer">
             <p>© 2023 Dawid Olko - Wszystkie prawa zastrzeżone | email: dawid_olko@outlook.com</p>
