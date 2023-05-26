@@ -14,7 +14,7 @@ body
     justify-content: center;
     align-items: 100vh;
     font-family: sans-serif;
-    font-size: 100%;
+    font-size: 200%;
 }
 
 .icon{
@@ -25,7 +25,7 @@ body
     cursor: pointer;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
-    color: black;
+    color: gray;
     position: relative;
 }
 
@@ -35,7 +35,6 @@ body
 }
 
 #header{
-    font-size: 300%;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -44,6 +43,16 @@ body
     cursor: default;
     transition: all 1s;
     text-shadow: 3px 3px 2px #585858;
+}
+
+.interactive-header {
+    font-size: 600%;
+    transition: transform .2s;
+}
+
+.interactive-header:hover {
+    transform: scale(1.2);
+    text-shadow: 4px 3px 2px #585858;
 }
 
 #content{
