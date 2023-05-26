@@ -1,6 +1,6 @@
 # <p align="center">**CURRICULUM VITAE**</p>
 
-![Dawid Olko](Portret.jpg)
+<img src"" alt="![Dawid Olko](Portret.jpg)" width="250">
 
 Numer telefonu: **+48 660 537 403**  
 E-mail: **dawid_olko@outlook.com**
