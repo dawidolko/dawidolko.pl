@@ -1,74 +1,85 @@
 <!DOCTYPE html>
-<html lang="pl">
-
+<html>
 <head>
-    <meta charset='utf-8' />
-    <meta name='description' content='Dawid Portfolio' />
-    <meta name='keywords' content='Dawid, Portfolio, HTML' />
-    <meta name='author' content='Dawid' />
-    <title>Dawid Olko - PORTFFOLIO</title>
-    <link rel='stylesheet' type='text/css' href='styles.css' />
-    <link rel='icon' href='#' />
-    <script src="https://kit.fontawesome.com/5babc094a0.js" crossorigin="anonymous"></script>
+    <title>Dawid Olko - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <style>
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .profile {
+            text-align: center;
+            padding: 20px;
+        }
+        .profile img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        .profile h1 {
+            margin: 20px 0 10px 0;
+        }
+        .profile p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .skills {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .skills img {
+            width: 80px;
+            height: 80px;
+        }
+        #tooltip {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        #tooltip .icon {
+            margin: 0 10px;
+            color: #333;
+        }
+        .icon {
+            transition: transform .2s;
+        }
+        .icon:hover {
+            transform: scale(1.2);
+        }
+        .footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
 </head>
-
 <body>
-    <div id='container'>
-        <div id='header'>
-            <img src="Portret.jpg" class="interactive-image" alt="Zdjęcie Dawida">
-            <h2 class='interactive-header'>Dawid Olko</h2>
-        </div>
-        <div id='content'>
-            <h2>O mnie:</h2>
-            <p>Jestem studentem informatyki z zamiłowaniem do technologii, programowania i sztucznej inteligencji. 🧠💻 Jestem zawsze głodny nowej wiedzy i staram się poznać najnowsze trendy i narzędzia, które pomagają mi tworzyć innowacyjne rozwiązania.
-
-Moja pasja do sztucznej inteligencji nie kończy się na studiach - dążę do zrozumienia jej różnych aspektów i jak można je wykorzystać do rozwiązywania realnych problemów. Wierzę, że przyszłość technologii leży w rękach AI, i jestem podekscytowany, że mogę być częścią tej przyszłości.
-
-Na moim GitHubie znajdziesz różne projekty związane z programowaniem i sztuczną inteligencją, które pokazują mój rozwój i naukę w tych obszarach. Przy każdym projekcie staram się uczyć czegoś nowego i rozwijać swoje umiejętności.
-
-Zapraszam do zapoznania się z moimi projektami i do skontaktowania się ze mną, jeśli masz pytania lub chciałbyś omówić możliwości współpracy.
-
-Dzięki za odwiedzenie mojego profilu. Cieszę się, że jesteś tutaj! 🎉</p>
-        </div>
-        <div id='tooltip'>
-            <a class='icon' href='https://www.linkedin.com/in/dawidolko' title='LinkedIn'><i class="fab fa-linkedin fa-2x"></i>
-            </a>
-            <a class='icon' href='https://www.instagram.com/dawid_olko' title='Instagram'><i class="fab fa-instagram fa-2x"></i>
-            </a>
-            <a class='icon' href='https://www.facebook.com/dawid.0lko' title='Facebook'><i class="fab fa-facebook fa-2x"></i>
-            </a>
-            <a class='icon' href='https://www.youtube.com/c/dawio' title='YouTube'><i class="fab fa-youtube fa-2x"></i>
-            </a>
-        </div>
+    <div class="profile">
+        <img src="Portret.jpg" alt="Dawid Olko">
+        <h1>Dawid Olko</h1>
+        <p>Tutaj umieść swój opis. Możesz opisać swoje doświadczenie, umiejętności i cele zawodowe.</p>
     </div>
-    <footer>
-        Wszelkie prawa zastrzeżone.
-    </footer>
-    <script>
-    document.querySelector('.interactive-header').addEventListener('mouseover', function () {
-        this.style.transform = 'scale(1.1)';
-    });
-    document.querySelector('.interactive-header').addEventListener('mouseout', function () {
-        this.style.transform = 'scale(1)';
-    });
-
-    document.querySelector('.interactive-image').addEventListener('mouseover', function () {
-        this.style.transform = 'scale(1.1)';
-    });
-    document.querySelector('.interactive-image').addEventListener('mouseout', function () {
-        this.style.transform = 'scale(1)';
-    });
-
-    var icons = document.querySelectorAll('.icon');
-    icons.forEach(icon => {
-        icon.addEventListener('mouseover', function () {
-            this.style.transform = 'scale(1.1)';
-        });
-        icon.addEventListener('mouseout', function () {
-            this.style.transform = 'scale(1)';
-        });
-    });
-</script>
-
+    <div class="skills">
+        <img src="c.jpg" alt="C">
+        <img src="cpp.jpg" alt="C++">
+        <img src="csharp.jpg" alt="C#">
+        <img src="java.jpg" alt="Java">
+        <img src="python.jpg" alt="Python">
+    </div>
+    <div id='tooltip'>
+        <a class='icon' href='https://www.linkedin.com/in/dawidolko' title='LinkedIn'><i class="fab fa-linkedin fa-2x"></i></a>
+        <a class='icon' href='https://www.instagram.com/dawid_olko' title='Instagram'><i class="fab fa-instagram fa-2x"></i></a>
+        <a class='icon' href='https://www.facebook.com/dawid.0lko' title='Facebook'><i class="fab fa-facebook fa-2x"></i></a>
+        <a class='icon' href='https://www.youtube.com/c/dawio' title='YouTube'><i class="fab fa-youtube fa-2x"></i></a>
+        <a class='icon' href='https://www.github.com/dawidolko' title='Github'><i class="fab fa-github fa-2x"></i></a>
+        <a class='icon' href='https://www.twitter.com/dawidolko' title='Twitter'><i class="fab fa-twitter fa-2x"></i></a>
+    </div>
+    <div class="footer">
+        <p>© 2023 Dawid Olko - Wszystkie prawa zastrzeżone | email: example@example.com</p>
+    </div>
 </body>
 </html>
