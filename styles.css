@@ -20,67 +20,44 @@ body
 
 .interactive-header {
     font-size: 300%;
-    transition: transform .2s;
-    margin-right: 20px;
-    align-self: flex-end;
-}
-
-.interactive-header:hover {
-    transform: scale(1.2);
-    text-shadow: 4px 3px 2px #585858;
-}
-
-#content{
-    margin: 20px;
-    font-size: 120%;
-    color: black;
-    text-shadow: 1px 1px 1px #585858;
-    max-width: 200px; /* limit the width of the content to match the avatar's width */
-    text-align: center; /* center the text */
-}
+    transition: transform .2s;}
 
 .interactive-image {
-  max-width: 200px;
-  border-radius: 50%; /* make the avatar circular */
-  transition: transform .2s;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    transition: transform .2s;
 }
 
-.interactive-image:hover {
-  transform: scale(1.2);
-}
-
-#tooltip
-{
-    margin-top: 50px;
-    padding: 0;
+#content {
+    justify-content: center;
+    align-items: center;
     display: flex;
+    flex-direction: column;
+    margin: 70px;
+    transition: all 1s;
+    text-shadow: 3px 3px 2px #585858;
+}
+
+#tooltip {
     justify-content: center;
-    align-items: 100vh;
-    font-family: sans-serif;
-    font-size: 200%;
-}
-
-.icon{
-    margin-left: 50px;
-    margin-right: 50px;
-    display: inline;
-    justify-content: center;
-    cursor: pointer;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-    color: black;
-    position: relative;
-}
-
-.icon:hover{
-    transform: scale(1.35);
-    text-shadow: 2px 2px #585858;
-}
-
-footer{
+    align-items: center;
     display: flex;
-    justify-content: center;
-    position: relative;
-    margin-top: 375px;
-    bottom: 0px;
+    gap: 20px;
+}
+
+.icon {
+    transition: transform .2s;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
 }
