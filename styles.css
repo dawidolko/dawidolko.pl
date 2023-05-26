@@ -61,3 +61,65 @@ footer {
     color: white;
     text-shadow: 2px 2px 4px #000000;
 }
+<style>
+    body {
+        background-color: white;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .profile {
+        text-align: center;
+        padding: 20px;
+    }
+    .profile img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    .profile h1 {
+        margin: 20px 0 10px 0;
+        transition: transform .2s;
+    }
+    .profile h1:hover {
+        transform: scale(1.2);
+    }
+    .profile p {
+        color: #666;
+        line-height: 1.6;
+    }
+    .skills {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    .skills img {
+        width: 80px;
+        height: 80px;
+        transition: transform .2s;
+    }
+    .skills img:hover {
+        transform: scale(1.2);
+    }
+    #tooltip {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    #tooltip .icon {
+        margin: 0 10px;
+        color: #333;
+    }
+    .icon {
+        transition: transform .2s;
+    }
+    .icon:hover {
+        transform: scale(1.2);
+    }
+    .footer {
+        background-color: #f1f1f1;
+        text-align: center;
+        padding: 10px;
+    }
+</style>
+
