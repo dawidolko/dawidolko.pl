@@ -14,229 +14,222 @@
             margin: 0;
             padding: 0;
         }
-.profile {
-    text-align: center;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.2);
-    /* Add a slightly transparent gray background */
-}
-.profile img {
-width: 300px;
-/* Increase the size of the image */
-height: 300px;
-/* Increase the size of the image */
-border-radius: 50%;
-transition: transform .2s;
-}
 
-.profile img:hover {
-transform: scale(1.2);
-}
+        .profile {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
 
-.profile h1 {
-margin: 20px 0 10px 0;
-transition: transform .2s;
-color: #f5f5f5; /* Change the color to a shade of white */
-}
+        .profile img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            transition: transform .2s;
+        }
 
-.profile h1:hover {
-transform: scale(1.2);
-}
+        .profile img:hover {
+            transform: scale(1.2);
+        }
 
-.profile p {
-color: #666;
-line-height: 1.6;
-max-width: 500px;
-margin: auto;
-border: 2px solid #333;
-/* Add border to the description */
-padding: 10px;
-transition: transform .2s;
-color: #f5f5f5; /* Change the color to a shade of white */
-}
+        .profile h1 {
+            margin: 20px 0 10px 0;
+            transition: transform .2s;
+            color: #f5f5f5;
+        }
 
-.profile p:hover {
-transform: scale(1.1);
-}
+        .profile h1:hover {
+            transform: scale(1.2);
+        }
 
-.skills {
-display: flex;
-justify-content: space-around;
-padding: 20px;
-background-color: #333;
-/* Add a light gray background */
-}
+        .profile p {
+            color: #666;
+            line-height: 1.6;
+            max-width: 500px;
+            margin: auto;
+            border: 2px solid #333;
+            padding: 10px;
+            transition: transform .2s;
+            color: #f5f5f5;
+        }
 
-.skills img {
-width: 80px;
-height: 80px;
-transition: transform .2s;
-}
+        .profile p:hover {
+            transform: scale(1.1);
+        }
 
-.skills img:hover {
-transform: scale(1.2);
-}
+        .skills {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: #333;
+        }
 
-#tooltip {
-display: flex;
-justify-content: center;
-padding: 20px;
-background-color: #f1f1f1;
-/* Add a light gray background */
-}
+        .skills img {
+            width: 80px;
+            height: 80px;
+            transition: transform .2s;
+        }
 
-#tooltip .icon {
-margin: 0 10px;
-color: #334;
-background-color: #ddd;
-/* Add a light gray background to icons */
-border-radius: 50%;
-/* Add border-radius for a circular shape */
-padding: 10px;
-/* Add some padding around icons */
-}
+        .skills img:hover {
+            transform: scale(1.4); /* Zwiększamy wartość transformacji skali */
+        }
 
-.icon {
-transition: transform .2s;
-}
+        #tooltip {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
 
-.icon:hover {
-transform: scale(1.2);
-}
+        #tooltip .icon {
+            margin: 0 10px;
+            color: #334;
+            background-color: #ddd;
+            border-radius: 50%;
+            padding: 10px;
+        }
 
-.footer {
-background-color: #222;
-text-align: center;
-padding: 10px;
-position: relative;
-margin-top: auto;
-color: #fff; /* Change the color to white */
-}
+        .icon {
+            transition: transform .2s;
+        }
 
-nav {
-background-color: #222;
-padding: 10px 0;
-text-align: center;
-}
+        .icon:hover {
+            transform: scale(1.4); /* Zwiększamy wartość transformacji skali */
+        }
 
-nav ul {
-list-style-type: none;
-padding: 0;
-}
+        .footer {
+            background-color: #222;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            margin-top: auto;
+            color: #fff;
+        }
 
-nav ul li {
-display: inline;
-margin: 0 15px;
-}
+        nav {
+            background-color: #222;
+            padding: 10px 0;
+            text-align: center;
+        }
 
-nav ul li a {
-font-size: 18px;
-font-weight: bold;
-text-decoration: none;
-color: #ccc;
-transition: color 0.3s, border-bottom-color 0.3s;
-border-bottom: 2px solid transparent;
-}
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
 
-nav ul li a:hover {
-color: #fff;
-border-bottom-color: #fff;
-}
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
 
-nav ul li a.active {
-color: #ccc; /* Zmień kolor podkreślenia na inny niż biały */
-border-bottom-color: transparent; /* Usuń podkreślenie */
-}
+        nav ul li a {
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #ccc;
+            transition: color 0.3s, border-bottom-color 0.3s;
+            border-bottom: 2px solid transparent;
+        }
 
-.footer {
-background-color: #222;
-text-align: center;
-padding: 10px;
-position: relative;
-margin-top: auto;
-}
+        nav ul li a:hover {
+            color: #fff;
+            border-bottom-color: #fff;
+        }
 
-.greeting {
-text-align: center;
-margin-top: 20px;
-font-size: 20px;
-font-weight: bold;
-color: #f5f5f5; /* Change the color to a shade of white */
-cursor: pointer;
-transition: transform .2s;
-}
+        nav ul li a.active {
+            color: #ccc;
+            border-bottom-color: transparent;
+        }
 
-.greeting:hover {
-transform: scale(1.1);
-}
+        .footer {
+            background-color: #222;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            margin-top: auto;
+        }
 
-.description {
-text-align: center;
-color: #666;
-font-size: 14px;
-margin-top: 10px;
-}
+        .greeting {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #f5f5f5;
+            cursor: pointer;
+            transition: transform .2s;
+        }
 
-.rectangle {
-width: 60px;
-height: 20px;
-background-color: #333;
-color: #fff;
-text-align: center;
-line-height: 20px;
-margin-top: 10px;
-cursor: pointer;
-transition: transform .2s;
-}
+        .greeting:hover {
+            transform: scale(1.1);
+        }
 
-.rectangle:hover {
-transform: scale(1.1);
-}
+        .description {
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            margin-top: 10px;
+        }
 
-.university {
-position: fixed;
-top: 20px;
-right: 20px;
-text-align: right;
-}
+        .rectangle {
+            width: 60px;
+            height: 20px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            line-height: 20px;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: transform .2s;
+        }
 
-.university img {
-width: 150px;
-height: auto;
-margin-bottom: 10px;
-transition: transform .2s;
-}
+        .rectangle:hover {
+            transform: scale(1.1);
+        }
 
-.university img:hover {
-transform: scale(1.1);
-}
+        .university {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            text-align: right;
+        }
 
-.website {
-margin-top: 10px;
-}
+        .university img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+            transition: transform .2s;
+        }
 
-.university .website {
-text-align: right;
-}
+        .university img:hover {
+            transform: scale(1.1);
+        }
 
-.drive {
-position: fixed;
-top: 20px;
-left: 20px;
-text-align: left;
-}
+        .website {
+            margin-top: 10px;
+        }
 
-.drive img {
-width: 150px;
-height: auto;
-margin-bottom: 10px;
-transition: transform .2s;
-}
+        .university .website {
+            text-align: right;
+        }
 
-.drive img:hover {
-transform: scale(1.1);
-}
-</style>
+        .drive {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            text-align: left;
+        }
+
+        .drive img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+            transition: transform .2s;
+        }
+
+        .drive img:hover {
+            transform: scale(1.1);
+        }
+    </style>
 
 </head>
 <body>
