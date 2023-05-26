@@ -2,125 +2,214 @@
 <html>
 
 <head>
-    <title>Curriculum Vitae - Dawid Olko</title>
+    <title>Dawid Olko - CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="icon" type="image/png" href="Portret.png">
     <style>
         body {
-            text-align: center;
+            background-color: #f5f5f5;
             font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
         }
 
-        .section {
-            margin: 20px auto;
-            max-width: 600px;
+        .cv-header {
+            text-align: center;
+            padding: 20px;
         }
 
-        h2 {
+        .cv-header h1 {
+            margin: 20px 0;
+        }
+
+        .cv-contact {
+            margin-bottom: 20px;
+        }
+
+        .cv-contact ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        .cv-contact ul li {
             margin-bottom: 10px;
         }
 
-        hr {
-            border: none;
-            border-top: 1px solid #ccc;
-            margin: 20px auto;
-            width: 80%;
+        .cv-section {
+            margin-bottom: 20px;
         }
 
-        ul {
-            text-align: left;
-            margin-left: 40px;
-            padding-left: 0;
-        }
-
-        li {
+        .cv-section h2 {
             margin-bottom: 10px;
+        }
+
+        .cv-section ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .cv-section ul li {
+            margin-bottom: 5px;
+        }
+
+        .cv-section ul li:before {
+            content: "⦁";
+            margin-right: 5px;
+        }
+
+        .cv-additional-info {
+            margin-bottom: 20px;
+        }
+
+        .cv-additional-info ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .cv-additional-info ul li {
+            margin-bottom: 5px;
+        }
+
+        .cv-skills {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: #eee;
+        }
+
+        .cv-skills img {
+            width: 80px;
+            height: 80px;
+            transition: transform .2s;
+        }
+
+        .cv-skills img:hover {
+            transform: scale(1.2);
+        }
+
+        .cv-footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            margin-top: auto;
+        }
+
+        .cv-social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .cv-social-icons a {
+            margin: 0 10px;
+            color: #333;
+        }
+
+        .cv-social-icons a:hover {
+            color: #666;
         }
     </style>
 </head>
 
 <body>
-    <h1>–– CURRICULUM VITAE ––</h1>
-    <div class="section">
+    <div class="cv-header">
+        <h1>Curriculum Vitae</h1>
         <h2>Dawid Olko</h2>
-        <p>Numer telefonu: +48 660 537 403</p>
-        <p>E-mail: dawid_olko@outlook.com</p>
-        <p>Data urodzenia: 20.04.2002</p>
-        <p>Adres: Obojna 206</p>
-        <p>Kod pocztowy: Zaleszany 37-415</p>
-    </div>
-
-    <hr>
-
-    <div class="section">
-        <h2>Wykształcenie:</h2>
-        <ul>
-            <li>2022 – obecnie – Uniwersytet Rzeszowski (UR) kierunek: Informatyka I stopnia</li>
-            <li>2018 – 2022 – Regionalne Centrum Edukacji Zawodowej w Nisku profil: Technik Elektryk</li>
-            <li>2015 – 2018 – Katolickie Gimnazjum im. Bł. ks. J. Popiełuszki w Stalowej Woli</li>
-            <li>2009 – 2015 – Publiczna Szkoła Podstawowa nr. 11 im. Szarych Szeregów</li>
+        <ul class="cv-contact">
+            <li>Numer telefonu: +48 660 537 403</li>
+            <li>E-mail: dawid_olko@outlook.com</li>
         </ul>
     </div>
 
-    <hr>
+    <div class="cv-section">
+        <h2>Informacje personalne</h2>
+        <ul>
+            <li>Data urodzenia: 20.04.2002</li>
+            <li>Adres: Obojna 206, Kod pocztowy: Zaleszany 37-415</li>
+        </ul>
+    </div>
 
-    <div class="section">
-        <h2>Doświadczenie zawodowe:</h2>
+    <div class="cv-section">
+        <h2>Wykształcenie</h2>
+        <ul>
+            <li>2022 - obecnie - Uniwersytet Rzeszowski (UR) kierunek: Informatyka I stopnia</li>
+            <li>2018 - 2022 - Regionalne Centrum Edukacji Zawodowej w Nisku profil: Technik Elektryk</li>
+            <li>2015 - 2018 - Katolickie Gimnazjum im. Bł. ks. J. Popiełuszki w Stalowej Woli</li>
+            <li>2009 - 2015 - Publiczna Szkoła Podstawowa nr. 11 im. Szarych Szeregów</li>
+        </ul>
+    </div>
+
+    <div class="cv-section">
+        <h2>Doświadczenie zawodowe</h2>
         <ul>
             <li>01.07.2019 - 01.08.2019 - Praktyki w PGE (Polska Grupa Energetyczna)</li>
             <li>01.03.2021 - 01.04.2021 - Praktyki zawodowe w HSW (Huta Stalowa Wola)</li>
             <li>20.04.2019 - 31.05.2021 - Praca w Piekarni na zmianach nocnych (Stalowa Wola)</li>
-            <li>01.07.2021 - 31.08.2021 - Praca Inpost magazyn paczek (Tarnobrzeg)</li>
-            <li>26.08.2022 – 26.09.2022 – Praca zbiory jabłek i gruszek (Belgia)</li>
+            <li>01.07.2021 - 31.08.2021 - Praca w Inpost magazyn paczek (Tarnobrzeg)</li>
+            <li>26.08.2022 - 26.09.2022 - Praca przy zbiorach jabłek i gruszek (Belgia)</li>
         </ul>
     </div>
 
-    <hr>
-
-    <div class="section">
-        <h2>Informacje dodatkowe:</h2>
+    <div class="cv-section">
+        <h2>Informacje dodatkowe</h2>
         <ul>
-            <li>prawo jazdy kat. B</li>
-            <li>kurs Auto detailing</li>
-            <li>uprawnienia Stowarzyszenia Elektryków Polskich “SEP” kat. E do 1 kV</li>
-            <li>znajomość obsługi komputera na poziomie wysokim</li>
-            <li>książeczka sanepidowska</li>
+            <li>Prawo jazdy kat. B</li>
+            <li>Kurs Auto detailing</li>
+            <li>Uprawnienia Stowarzyszenia Elektryków Polskich "SEP" kat. E do 1 kV</li>
+            <li>Znajomość obsługi komputera na poziomie wysokim</li>
+            <li>Książeczka sanepidowska</li>
         </ul>
     </div>
 
-    <hr>
-
-    <div class="section">
-        <h2>Zalety osobiste:</h2>
+    <div class="cv-section">
+        <h2>Zalety osobiste</h2>
         <ul>
-            <li>sumienność</li>
-            <li>dokładność</li>
-            <li>uczciwość</li>
-            <li>pracowitość</li>
-            <li>szybkość działania</li>
+            <li>Sumienność</li>
+            <li>Dokładność</li>
+            <li>Uczciwość</li>
+            <li>Pracowitość</li>
+            <li>Szybkość działania</li>
         </ul>
     </div>
 
-    <hr>
-
-    <div class="section">
-        <h2>Zainteresowania:</h2>
+    <div class="cv-section">
+        <h2>Zainteresowania</h2>
         <ul>
-            <li>sport</li>
-            <li>motoryzacja</li>
-            <li>elektronika</li>
-            <li>informatyka</li>
-            <li>montaż wideo</li>
+            <li>Sport</li>
+            <li>Motoryzacja</li>
+            <li>Elektronika</li>
+            <li>Informatyka</li>
+            <li>Montaż wideo</li>
         </ul>
     </div>
 
-    <hr>
-
-    <div class="section">
+    <div class="cv-additional-info">
         <p>Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu
             rekrutacji zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016
             r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego
             przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO).</p>
     </div>
 
+    <div class="cv-footer">
+        <p>© 2023 Dawid Olko - Wszystkie prawa zastrzeżone | email: dawid_olko@outlook.com</p>
+    </div>
+
+    <div class="cv-social-icons">
+        <a href="https://www.linkedin.com/in/dawidolko" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="https://www.instagram.com/dawid_olko" title="Instagram"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://www.facebook.com/dawid.0lko" title="Facebook"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://www.youtube.com/c/dawio" title="YouTube"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="https://www.github.com/dawidolko" title="Github"><i class="fab fa-github fa-2x"></i></a>
+        <a href="https://www.twitter.com/dawidolko" title="Twitter"><i class="fab fa-twitter fa-2x"></i></a>
+    </div>
 </body>
 
 </html>
