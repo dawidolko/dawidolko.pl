@@ -18,8 +18,8 @@ body
 }
 
 .icon{
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
     display: inline;
     justify-content: center;
     cursor: pointer;
@@ -53,9 +53,13 @@ body
     text-shadow: 1px 1px 1px #585858;
 }
 
-#header:hover{
-    letter-spacing: 5px;  
-    text-shadow: 4px 3px 2px #585858;
+.interactive-image {
+  max-width: 200px;
+  transition: transform .2s;
+}
+
+.interactive-image:hover {
+  transform: scale(1.2);
 }
 
 footer{
