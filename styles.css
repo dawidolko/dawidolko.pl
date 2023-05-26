@@ -17,6 +17,16 @@ body
     font-size: 200%;
 }
 
+.interactive-image {
+  max-width: 200px;
+  transition: transform .2s;
+}
+
+.interactive-image:hover {
+  transform: scale(1.2);
+}
+
+
 .icon{
     margin-left: 150px;
     margin-right: 150px;
