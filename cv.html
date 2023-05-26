@@ -1,279 +1,338 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Dawid Olko - CV</title>
+    <title>Dawid Olko - Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="icon" type="image/jpg" href="portret.jpg">
+    <link rel="icon" type="image/png" href="logo.png">
     <style>
         body {
-            background-color: #222;
+            background-color: #f5f5f5;
             font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
-            align-items: center;
             min-height: 100vh;
             margin: 0;
             padding: 0;
         }
 
-        .cv-container {
-            width: 80%;
-            max-width: 800px;
-            margin-top: 20px;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .cv-header {
+        .profile {
             text-align: center;
-            margin-bottom: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.2);
         }
 
-        .cv-header h1,
-        .cv-header h2 {
-            margin: 0;
+        .profile img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            transition: transform .2s;
         }
 
-        .cv-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
+        .profile img:hover {
+            transform: scale(1.2);
         }
 
-        .cv-header-info {
-            text-align: left;
+        .profile h1 {
+            margin: 20px 0 10px 0;
+            transition: transform .2s;
+            color: #f5f5f5;
         }
 
-        /* Dodane style dla cv-contact */
-        .cv-contact {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
+        .profile h1:hover {
+            transform: scale(1.2);
         }
 
-        .cv-contact ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
+        .profile p {
+            color: #666;
+            line-height: 1.6;
+            max-width: 500px;
+            margin: auto;
+            border: 2px solid #333;
+            padding: 10px;
+            transition: transform .2s;
+            color: #f5f5f5;
         }
 
-        .cv-contact ul li {
-            margin-bottom: 10px;
+        .profile p:hover {
+            transform: scale(1.1);
         }
 
-        .cv-section {
-            margin-bottom: 20px;
-        }
-
-        .cv-section h2 {
-            margin-bottom: 10px;
-        }
-
-        .cv-section ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .cv-section ul li {
-            margin-bottom: 5px;
-        }
-
-        .cv-section ul li:before {
-            content: "⦁";
-            margin-right: 5px;
-        }
-
-        .cv-additional-info {
-            margin-bottom: 20px;
-        }
-
-        .cv-additional-info ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .cv-additional-info ul li {
-            margin-bottom: 5px;
-        }
-
-        .cv-skills {
+        .skills {
             display: flex;
             justify-content: space-around;
             padding: 20px;
-            background-color: #eee;
+            background-color: #333;
         }
 
-        .cv-skills img {
+        .skills img {
             width: 80px;
             height: 80px;
             transition: transform .2s;
         }
 
-        .cv-skills img:hover {
+        .skills img:hover {
             transform: scale(1.2);
         }
 
-        .cv-footer {
+        #tooltip {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+
+        #tooltip .icon {
+            margin: 0 10px;
+            color: #334;
+            background-color: #ddd;
+            border-radius: 50%;
+            padding: 10px;
+        }
+
+        .icon {
+            transition: transform .2s;
+        }
+
+        .icon:hover {
+            transform: scale(1.2);
+        }
+
+        .footer {
             background-color: #222;
             text-align: center;
             padding: 10px;
             position: relative;
-            width: 100%;
-            margin-top: 20px;
-        }
-
-        .cv-social-icons {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .cv-social-icons a {
-            margin: 0 10px;
-            color: #333;
-        }
-
-        .cv-social-icons a:hover {
-            color: #666;
-        }
-
-        /* Dodane style dla cv-download */
-        .cv-download {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            display: flex;
-            align-items: center;
-            background-color: #fff;
-            color: #333;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        .cv-download:hover {
-            background-color: #333;
+            margin-top: auto;
             color: #fff;
         }
 
-        .cv-download i {
-            margin-right: 5px;
+        nav {
+            background-color: #222;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #ccc;
+            transition: color 0.3s, border-bottom-color 0.3s;
+            border-bottom: 2px solid transparent;
+        }
+
+        nav ul li a:hover {
+            color: #fff;
+            border-bottom-color: #fff;
+        }
+
+        nav ul li a.active {
+            color: #ccc;
+            border-bottom-color: transparent;
+        }
+
+        .footer {
+            background-color: #222;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            margin-top: auto;
+        }
+
+        .greeting {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #f5f5f5;
+            cursor: pointer;
+            transition: transform .2s;
+        }
+
+        .greeting:hover {
+            transform: scale(1.1);
+        }
+
+        .description {
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .rectangle {
+            width: 60px;
+            height: 20px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            line-height: 20px;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: transform .2s;
+        }
+
+        .rectangle:hover {
+            transform: scale(1.1);
+        }
+
+        .university {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            text-align: right;
+        }
+
+        .university img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+            transition: transform .2s;
+        }
+
+        .university img:hover {
+            transform: scale(1.1);
+        }
+
+        .website {
+            margin-top: 10px;
+        }
+
+        .university .website {
+            text-align: right;
+        }
+
+        .drive {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            text-align: left;
+        }
+
+        .drive img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+            transition: transform .2s;
+        }
+
+        .drive img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Dodajemy tło */
+        .social-media-background {
+            background-image: url('code.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        /* Media queries dla wersji telefonowej */
+        @media (max-width: 768px) {
+            .skills {
+                padding: 20px 0;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+            }
+
+            .skills img {
+                width: 60px;
+                height: 60px;
+            }
+
+            #tooltip {
+                padding: 20px 0;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .icon {
+                margin: 10px;
+            }
+        }
+        
+        /* Dodatkowe style dla repository */
+        .skills h1 {
+            color: #fff;
+        }
+        
+        .skills h1:first-of-type {
+            margin-right: 20px;
+        }
+        
+        .skills h1:last-of-type {
+            margin-left: 20px;
         }
     </style>
+
 </head>
-
 <body>
-    <div class="cv-container">
-        <!-- Dodany kod dla cv-download -->
-        <a class="cv-download" href="CVV Dawid Olko.pdf" title="CV Download">
-            <i class="fas fa-arrow-circle-down"></i> CV DOWNLOAD
-        </a>
-        <!-- Koniec dodanego kodu -->
-        <div class="cv-header">
-            <h1>Curriculum Vitae</h1>
-            <img src="https://raw.githubusercontent.com/dawidolko/dawidolko.github.io/983f7dc51164ee187a773379fc372a1c4a5893cf/Portret.jpg" alt="Moje zdjęcie" width="200" height="200">
-        </div>
-
-        <div class="cv-contact">
-            <ul>
-                <h2>Dawid Olko</h2>
-                <li>Numer telefonu: +48 660 537 403</li>
-                <li>E-mail: dawid_olko@outlook.com</li>
-            </ul>
-        </div>
-
-       
-        <div class="cv-section">
-            <h2>Informacje personalne</h2>
-            <ul>
-                <li>Data urodzenia: 20.04.2002</li>
-                <li>Adres: Obojna 206, Kod pocztowy: Zaleszany 37-415</li>
-            </ul>
-        </div>
-
-        <div class="cv-section">
-            <h2>Wykształcenie</h2>
-            <ul>
-                <li>2022 - obecnie - Uniwersytet Rzeszowski (UR) kierunek: Informatyka I stopnia</li>
-                <li>2018 - 2022 - Regionalne Centrum Edukacji Zawodowej w Nisku profil: Technik Elektryk</li>
-                <li>2015 - 2018 - Katolickie Gimnazjum im. Bł. ks. J. Popiełuszki w Stalowej Woli</li>
-                <li>2009 - 2015 - Publiczna Szkoła Podstawowa nr. 11 im. Szarych Szeregów</li>
-            </ul>
-        </div>
-
-        <div class="cv-section">
-            <h2>Doświadczenie zawodowe</h2>
-            <ul>
-                <li>01.07.2019 - 01.08.2019 - Praktyki w PGE (Polska Grupa Energetyczna)</li>
-                <li>01.03.2021 - 01.04.2021 - Praktyki zawodowe w HSW (Huta Stalowa Wola)</li>
-                <li>20.04.2019 - 31.05.2021 - Praca w Piekarni na zmianach nocnych (Stalowa Wola)</li>
-                <li>01.07.2021 - 31.08.2021 - Praca w Inpost magazyn paczek (Tarnobrzeg)</li>
-                <li>26.08.2022 - 26.09.2022 - Praca przy zbiorach jabłek i gruszek (Belgia)</li>
-            </ul>
-        </div>
-
-        <div class="cv-section">
-            <h2>Informacje dodatkowe</h2>
-            <ul>
-                <li>Prawo jazdy kat. B</li>
-                <li>Kurs Auto detailing</li>
-                <li>Uprawnienia Stowarzyszenia Elektryków Polskich "SEP" kat. E do 1 kV</li>
-                <li>Znajomość obsługi komputera na poziomie wysokim</li>
-                <li>Książeczka sanepidowska</li>
-            </ul>
-        </div>
-
-        <div class="cv-section">
-            <h2>Zalety osobiste</h2>
-            <ul>
-                <li>Sumienność</li>
-                <li>Dokładność</li>
-                <li>Uczciwość</li>
-                <li>Pracowitość</li>
-                <li>Szybkość działania</li>
-            </ul>
-        </div>
-
-        <div class="cv-section">
-            <h2>Zainteresowania</h2>
-            <ul>
-                <li>Sport</li>
-                <li>Motoryzacja</li>
-                <li>Elektronika</li>
-                <li>Informatyka</li>
-                <li>Montaż wideo</li>
-            </ul>
-        </div>
-
-        <div class="cv-additional-info">
-            <p>Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu
-                rekrutacji zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia
-                2016
-                r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego
-                przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO).</p>
-        </div>
-
-
-        <div class="cv-footer">
-            <p>© 2023 Dawid Olko - Wszystkie prawa zastrzeżone | email: dawid_olko@outlook.com</p>
-        </div>
-
-        <div class="cv-social-icons">
-            <a href="https://www.linkedin.com/in/dawidolko" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
-            <a href="https://www.instagram.com/dawid_olko" title="Instagram"><i class="fab fa-instagram fa-2x"></i></a>
-            <a href="https://www.facebook.com/dawid.0lko" title="Facebook"><i class="fab fa-facebook fa-2x"></i></a>
-            <a href="https://www.youtube.com/c/dawio" title="YouTube"><i class="fab fa-youtube fa-2x"></i></a>
-            <a href="https://www.github.com/dawidolko" title="Github"><i class="fab fa-github fa-2x"></i></a>
-            <a href="https://www.twitter.com/dawidolko" title="Twitter"><i class="fab fa-twitter fa-2x"></i></a>
-        </div>
-    </div>
+<nav>
+    <ul>
+       <li><a href="/">HOME</a></li>
+        <li><a href="/cv.html">CV</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/about.html">About Me</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/projects.html">Projects</a></li>
+    </ul>
+</nav>
+<div class="profile social-media-background">
+    <div class="greeting">Hi, I'm Dawid</div>
+    <img src="Portret.jpg"
+        onclick="window.location.href = 'https://www.google.com/search?client=opera-gx&q=Dawid+Olko&sourceid=opera&ie=UTF-8&oe=UTF-8';"
+        alt="Dawid Olko">
+    <h1 style="background-color: rgba(0, 0, 0, 0.2); color: #f5f5f5;">This is my 1st page</h1>
+    <p style="background-color: rgba(0, 0, 0, 0.2); color: #f5f5f5;">Student of Computer Science at the University of Rzeszów.</p>
+</div>
+<div class="university">
+    <img src="LogoUR1.png" onclick="window.location.href = 'https://www.ur.edu.pl/pl/';"
+        alt="Uniwersytet Rzeszowski">
+</div>
+<div class="drive">
+    <img src="drive.png" onclick="window.location.href = 'https://drive.google.com/drive/folders/1ffNL3GDgBIFrtqdDT_t9hO1H2jF1vcnJ?usp=share_link';"
+        alt="Google Drive">
+</div>
+<div class="skills">
+    <h1 style="color: #fff;">repository ⯈</h1>
+    <a href="https://dawidolko.github.io/Programming-C/" title="C"><img src="C.png"></a>
+    <a href="https://github.com/dawidolko/Programming-Cpp" title="C++"><img src="C++.png"></a>
+    <a href="https://github.com/dawidolko/Programming-Cs" title="C#"><img src="csharp.png"></a>
+    <a href="https://dawidolko.github.io/Programming-Java" title="Java"><img src="java.png"></a>
+    <a href="https://github.com/dawidolko/Programming-Python" title="Python"><img src="python.png"></a>
+    <a href="https://github.com/dawidolko/dawidolko.github.io" title="CSS"><img src="css.png"></a>
+    <a href="https://github.com/dawidolko/dawidolko.github.io" title="HTML"><img src="html.png"></a>
+    <a href="https://github.com/dawidolko/dawidolko.github.io" title="JavaScript"><img src="js.png"></a>
+    <h1 style="color: #fff;">⯇ repository</h1>	
+</div>
+<div id='tooltip'>
+    <a class='icon' href='https://www.linkedin.com/in/dawidolko' title='LinkedIn'><i
+            class="fab fa-linkedin fa-2x"></i></a>
+    <a class='icon' href='https://www.instagram.com/dawid_olko' title='Instagram'><i
+            class="fab fa-instagram fa-2x"></i></a>
+    <a class='icon' href='https://www.facebook.com/dawid.0lko' title='Facebook'><i
+            class="fab fa-facebook fa-2x"></i></a>
+    <a class='icon' href='https://www.youtube.com/c/dawio' title='YouTube'><i class="fab fa-youtube fa-2x"></i></a>
+    <a class='icon' href='https://www.github.com/dawidolko' title='Github'><i class="fab fa-github fa-2x"></i></a>
+    <a class='icon' href='https://www.twitter.com/dawidolko' title='Twitter'><i
+            class="fab fa-twitter fa-2x"></i></a>
+</div>
+<div class="footer">
+    <p>© 2023 Dawid Olko - Wszystkie prawa zastrzeżone | email: dawid_olko@outlook.com</p>
+</div>
 </body>
-
 </html>
