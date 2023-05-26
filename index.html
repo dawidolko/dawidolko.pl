@@ -40,6 +40,10 @@
         margin: auto;
         border: 2px solid #333; /* Add border to the description */
         padding: 10px;
+        transition: transform .2s;
+    }
+    .profile p:hover {
+        transform: scale(1.1);
     }
     .skills {
         display: flex;
@@ -117,6 +121,39 @@
         position: relative;
         margin-top: auto;
     }
+    .greeting {
+        text-align: right;
+        margin-right: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+        cursor: pointer;
+        transition: transform .2s;
+    }
+    .greeting:hover {
+        transform: scale(1.1);
+    }
+    .description {
+        text-align: left;
+        margin-left: 20px;
+        color: #666;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .rectangle {
+        width: 60px;
+        height: 20px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        line-height: 20px;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: transform .2s;
+    }
+    .rectangle:hover {
+        transform: scale(1.1);
+    }
     </style>
 </head>
 <body>
@@ -131,10 +168,13 @@
     </nav>
     
     <div class="profile">
+        <div class="greeting">Hi, I'm Dawid</div>
         <img src="Portret.jpg" alt="Dawid Olko">
-        <h1>Dawid Olko</h1>
+        <h1>Opis:</h1>
         <p>Jestem studentem informatyki z zamiłowaniem do technologii, programowania i sztucznej inteligencji... 
             🧠💻 Jestem zawsze głodny nowej wiedzy i staram się poznać najnowsze trendy i narzędzia, które pomagają mi tworzyć innowacyjne rozwiązania.</p>
+        <div class="rectangle" onclick="window.location.href = 'https://dysk.pl';">DYSK</div>
+        <div class="description">Nauka, sukcesu klucz...</div>
     </div>
     <div class="skills">
         <img src="C.png" alt="C">
