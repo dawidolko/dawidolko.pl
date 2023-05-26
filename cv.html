@@ -4,30 +4,41 @@
 <head>
     <title>Dawid Olko - CV</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="icon" type="image/jpg" href="Portret.jpg">
+    <link rel="icon" type="image/jpg" href="portret.jpg">
     <style>
         body {
             background-color: #f5f5f5;
             font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
+            align-items: center;
             min-height: 100vh;
             margin: 0;
             padding: 0;
         }
 
         .cv-container {
-            text-align: center;
+            width: 80%;
+            max-width: 800px;
+            margin-top: 20px;
+            background-color: #fff;
             padding: 20px;
-            margin: auto;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         .cv-header {
+            text-align: center;
             margin-bottom: 20px;
         }
 
-        .cv-header h1 {
-            margin: 20px 0;
+        .cv-header h1,
+        .cv-header h2 {
+            margin: 0;
+        }
+
+        .cv-contact {
+            margin-bottom: 20px;
+            text-align: center;
         }
 
         .cv-contact ul {
@@ -52,17 +63,55 @@
             list-style-type: none;
             padding: 0;
             margin: 0;
-            text-align: left;
         }
 
         .cv-section ul li {
             margin-bottom: 5px;
         }
 
+        .cv-section ul li:before {
+            content: "⦁";
+            margin-right: 5px;
+        }
+
+        .cv-additional-info {
+            margin-bottom: 20px;
+        }
+
+        .cv-additional-info ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .cv-additional-info ul li {
+            margin-bottom: 5px;
+        }
+
+        .cv-skills {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: #eee;
+        }
+
+        .cv-skills img {
+            width: 80px;
+            height: 80px;
+            transition: transform .2s;
+        }
+
+        .cv-skills img:hover {
+            transform: scale(1.2);
+        }
+
         .cv-footer {
             background-color: #f1f1f1;
             text-align: center;
             padding: 10px;
+            position: relative;
+            width: 100%;
+            margin-top: 20px;
         }
 
         .cv-social-icons {
@@ -87,6 +136,11 @@
         <div class="cv-header">
             <h1>Curriculum Vitae</h1>
             <h2>Dawid Olko</h2>
+            <img src="portret.jpg" alt="Moje zdjęcie">
+            <ul class="cv-contact">
+                <li>Numer telefonu: +48 660 537 403</li>
+                <li>E-mail: dawid_olko@outlook.com</li>
+            </ul>
         </div>
 
         <div class="cv-contact">
@@ -161,22 +215,23 @@
         <div class="cv-additional-info">
             <p>Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu
                 rekrutacji zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia
-                2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie
-                swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO).</p>
+                2016
+                r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego
+                przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO).</p>
         </div>
-    </div>
 
-    <div class="cv-footer">
-        <p>© 2023 Dawid Olko - Wszystkie prawa zastrzeżone | email: dawid_olko@outlook.com</p>
-    </div>
+        <div class="cv-footer">
+            <p>© 2023 Dawid Olko - Wszystkie prawa zastrzeżone | email: dawid_olko@outlook.com</p>
+        </div>
 
-    <div class="cv-social-icons">
-        <a href="https://www.linkedin.com/in/dawidolko" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
-        <a href="https://www.instagram.com/dawid_olko" title="Instagram"><i class="fab fa-instagram fa-2x"></i></a>
-        <a href="https://www.facebook.com/dawid.0lko" title="Facebook"><i class="fab fa-facebook fa-2x"></i></a>
-        <a href="https://www.youtube.com/c/dawio" title="YouTube"><i class="fab fa-youtube fa-2x"></i></a>
-        <a href="https://www.github.com/dawidolko" title="Github"><i class="fab fa-github fa-2x"></i></a>
-        <a href="https://www.twitter.com/dawidolko" title="Twitter"><i class="fab fa-twitter fa-2x"></i></a>
+        <div class="cv-social-icons">
+            <a href="https://www.linkedin.com/in/dawidolko" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="https://www.instagram.com/dawid_olko" title="Instagram"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://www.facebook.com/dawid.0lko" title="Facebook"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="https://www.youtube.com/c/dawio" title="YouTube"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="https://www.github.com/dawidolko" title="Github"><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://www.twitter.com/dawidolko" title="Twitter"><i class="fab fa-twitter fa-2x"></i></a>
+        </div>
     </div>
 </body>
 
