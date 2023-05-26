@@ -27,19 +27,16 @@
     .profile h1:hover {
         transform: scale(1.2);
     }
-    .description {
-        width: 50%;
-        padding-right: 20px;
-    }
-    .description p {
+    .profile p {
         color: #666;
         line-height: 1.6;
+        max-width: 500px; /* Here is the max-width for the description */
+        margin: auto;
     }
     .skills {
         display: flex;
         justify-content: space-around;
         padding: 20px;
-        width: 40%;
     }
     .skills img {
         width: 80px;
@@ -48,12 +45,6 @@
     }
     .skills img:hover {
         transform: scale(1.2);
-    }
-    .content {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding: 20px;
     }
     #tooltip {
         display: flex;
@@ -75,25 +66,20 @@
         text-align: center;
         padding: 10px;
     }
-    </style>
+</style>
 </head>
 <body>
     <div class="profile">
         <img src="Portret.jpg" alt="Dawid Olko">
         <h1>Dawid Olko</h1>
+        <p>Jestem studentem informatyki z zamiłowaniem do technologii, programowania i sztucznej inteligencji...</p>
     </div>
-    <div class="content">
-        <div class="description">
-            <p>Jestem studentem informatyki z zamiłowaniem do technologii, programowania i sztucznej inteligencji. 
-            🧠💻 Jestem zawsze głodny nowej wiedzy i staram się poznać najnowsze trendy i narzędzia, które pomagają mi tworzyć innowacyjne rozwiązania...</p>
-        </div>
-        <div class="skills">
-            <img src="C.png" alt="C">
-            <img src="C++.png" alt="C++">
-            <img src="Cshap.png" alt="C#">
-            <img src="java.png" alt="Java">
-            <img src="python.png" alt="Python">
-        </div>
+    <div class="skills">
+        <img src="C.png" alt="C">
+        <img src="C++.png" alt="C++">
+        <img src="Cshap.png" alt="C#">
+        <img src="java.png" alt="Java">
+        <img src="python.png" alt="Python">
     </div>
     <div id='tooltip'>
         <a class='icon' href='https://www.linkedin.com/in/dawidolko' title='LinkedIn'><i class="fab fa-linkedin fa-2x"></i></a>
