@@ -1,65 +1,71 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f7f7f7;
-  color: #333;
+body
+{
+    background-image: url(images/background.jpg);
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-header {
-  background-color: #222;
-  padding: 20px;
-  text-align: center;
-  color: #fff;
+#tooltip
+{
+    margin-top: 50px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: 100vh;
+    font-family: sans-serif;
+    font-size: 200%;
 }
 
-h1 {
-  margin: 0;
-  font-size: 24px;
+.icon{
+    margin-left: 150px;
+    margin-right: 150px;
+    display: inline;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    color: black;
+    position: relative;
 }
 
-main {
-  padding: 20px;
+.icon:hover{
+    transform: scale(1.35);
+    text-shadow: 2px 2px #585858;
 }
 
-.social-media {
-  text-align: center;
-  margin-bottom: 30px;
+#header{
+    font-size: 600%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: auto;
+    margin: 70px;
+    cursor: default;
+    transition: all 1s;
+    text-shadow: 3px 3px 2px #585858;
 }
 
-.social-media a {
-  display: inline-block;
-  margin: 0 10px;
-  color: #333;
-  font-size: 20px;
+#content{
+    margin: 20px;
+    font-size: 120%;
+    color: black;
+    text-shadow: 1px 1px 1px #585858;
 }
 
-.contact {
-  text-align: center;
+.interactive-image {
+  max-width: 200px;
+  transition: transform .2s;
 }
 
-.contact h2 {
-  font-size: 18px;
-  margin-bottom: 10px;
+.interactive-image:hover {
+  transform: scale(1.2);
 }
 
-footer {
-  background-color: #222;
-  padding: 10px;
-  text-align: center;
-  color: #fff;
-  font-size: 12px;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-a:hover {
-  color: #555;
-}
-
-.fa-icon {
-  color: #333;
+footer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 375px;
+    bottom: 0px;
 }
