@@ -1,12 +1,11 @@
 # <p align="center">CURRICULUM VITAE</p>
 
 <div style="display: flex; align-items: center;">
-  <img src="Portret.jpg" alt="Dawid Olko" width="250" style="margin-right: 20px;">
-    Numer telefonu: *+48 660 537 403*<br>
-    E-mail: *dawid_olko@outlook.com*<br>
-    **Data urodzenia:** 20.04.2002<br>
-    **Adres:** Obojna 206<br>
-    **Kod pocztowy:** Zaleszany 37-415
+  <img src="Portret.jpg" alt="Dawid Olko" width="250" style="margin-right: 20px;"> Numer telefonu: *+48 660 537 403*\
+    E-mail: *dawid_olko@outlook.com*\
+    **Data urodzenia:** 20.04.2002\
+    **Adres:** Obojna 206\
+    **Kod pocztowy:** Zaleszany 37-415\
 
 ## **Wykształcenie:**
 ⦁ 2022 – obecnie – Uniwersytet Rzeszowski (UR) kierunek: Informatyka I stopnia\
