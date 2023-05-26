@@ -1,66 +1,3 @@
-body
-{
-    background-image: url(images/background.jpg);
-    font-family: sans-serif;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#header{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    margin: 70px;
-    cursor: default;
-    transition: all 1s;
-    text-shadow: 3px 3px 2px #585858;
-}
-
-.interactive-header {
-    font-size: 300%;
-    transition: transform .2s;}
-
-.interactive-image {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    transition: transform .2s;
-}
-
-#content {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin: 70px;
-    transition: all 1s;
-    text-shadow: 3px 3px 2px #585858;
-}
-
-#tooltip {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    gap: 20px;
-}
-
-.icon {
-    transition: transform .2s;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(0,0,0,0.6);
-    color: white;
-    text-shadow: 2px 2px 4px #000000;
-}
 <style>
     body {
         background-color: white;
@@ -122,4 +59,3 @@ footer {
         padding: 10px;
     }
 </style>
-
