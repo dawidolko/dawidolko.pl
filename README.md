@@ -8,15 +8,15 @@ Nasza strona jest miejscem, w którym możesz znaleźć inspirację, zdobyć now
 
 ## Co możesz znaleźć na Dawidolko.pl:
 
-Blog: Regularnie publikujemy wpisy na blogu, które poruszają różnorodne tematy związane z technologią, programowaniem, nauką i wieloma innymi dziedzinami. Czytając nasze wpisy, dowiesz się ciekawych informacji, przeczytasz opinie i porady, a także zainspirujesz się do dalszego rozwoju.
+- Blog: Regularnie publikujemy wpisy na blogu, które poruszają różnorodne tematy związane z technologią, programowaniem, nauką i wieloma innymi dziedzinami. Czytając nasze wpisy, dowiesz się ciekawych informacji, przeczytasz opinie i porady, a także zainspirujesz się do dalszego rozwoju.
 
-Poradniki i tutoriale: Oferujemy również praktyczne poradniki i tutoriale, które krok po kroku wprowadzą Cię w różne tematy. Dowiesz się, jak programować w różnych językach, jak korzystać z różnych narzędzi, jak rozwiązywać problemy i wiele więcej. Nasze poradniki są napisane w sposób zrozumiały i przejrzysty, abyś mógł łatwo przyswoić nowe umiejętności.
+- Poradniki i tutoriale: Oferujemy również praktyczne poradniki i tutoriale, które krok po kroku wprowadzą Cię w różne tematy. Dowiesz się, jak programować w różnych językach, jak korzystać z różnych narzędzi, jak rozwiązywać problemy i wiele więcej. Nasze poradniki są napisane w sposób zrozumiały i przejrzysty, abyś mógł łatwo przyswoić nowe umiejętności.
 
-Materiały multimedialne: Oprócz tekstowych treści, na Dawidolko.pl znajdziesz również materiały multimedialne, takie jak zdjęcia i filmy. Przeglądając te materiały, możesz odkrywać piękno sztuki, zapoznać się z inspirującymi projektami i rozwijać swoją kreatywność.
+- Materiały multimedialne: Oprócz tekstowych treści, na Dawidolko.pl znajdziesz również materiały multimedialne, takie jak zdjęcia i filmy. Przeglądając te materiały, możesz odkrywać piękno sztuki, zapoznać się z inspirującymi projektami i rozwijać swoją kreatywność.
 
-Społeczność: Dawidolko.pl to również społeczność entuzjastów, którzy dzielą się swoimi osiągnięciami, inspiracjami i pomysłami. Możesz dołączyć do naszej społeczności, komentować wpisy, dzielić się swoimi pomysłami i nawiązywać nowe kontakty z osobami o podobnych zainteresowaniach.
+- Społeczność: Dawidolko.pl to również społeczność entuzjastów, którzy dzielą się swoimi osiągnięciami, inspiracjami i pomysłami. Możesz dołączyć do naszej społeczności, komentować wpisy, dzielić się swoimi pomysłami i nawiązywać nowe kontakty z osobami o podobnych zainteresowaniach.
 
-Zapraszamy Cię do odwiedzenia strony Dawidolko.pl i odkrycia wszystkich fascynujących treści, które przygotowaliśmy dla Ciebie. Baw się dobrze, zdobywaj nową wiedzę i inspiruj się na naszej stronie!
+Zapraszamy Cię do odwiedzenia strony `Dawidolko.pl` i odkrycia wszystkich fascynujących treści, które przygotowaliśmy dla Ciebie. Baw się dobrze, zdobywaj nową wiedzę i inspiruj się na naszej stronie!
 
 "Odkrywaj, ucz się, inspiruj!" - Dawidolko.pl
 ## 📫 Jak się ze mną skontaktować
