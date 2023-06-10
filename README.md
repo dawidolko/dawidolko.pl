@@ -16,9 +16,10 @@ Nasza strona jest miejscem, w którym możesz znaleźć inspirację, zdobyć now
 
 - Społeczność: Dawidolko.pl to również społeczność entuzjastów, którzy dzielą się swoimi osiągnięciami, inspiracjami i pomysłami. Możesz dołączyć do naszej społeczności, komentować wpisy, dzielić się swoimi pomysłami i nawiązywać nowe kontakty z osobami o podobnych zainteresowaniach.
 
-Zapraszamy Cię do odwiedzenia strony `Dawidolko.pl` i odkrycia wszystkich fascynujących treści, które przygotowaliśmy dla Ciebie. Baw się dobrze, zdobywaj nową wiedzę i inspiruj się na naszej stronie!
+Zapraszam Cię do odwiedzenia strony `Dawidolko.pl` i odkrycia wszystkich fascynujących treści, które przygotowałem dla Ciebie. Baw się dobrze, zdobywaj nową wiedzę i inspiruj się na mojej stronie!
 
 "Odkrywaj, ucz się, inspiruj!" - Dawidolko.pl
+
 ## 📫 Jak się ze mną skontaktować
 
 Możesz się ze mną skontaktować poprzez [LinkedIn](https://www.linkedin.com/in/dawidolko) lub [Twitter](https://twitter.com/dawidolko).
