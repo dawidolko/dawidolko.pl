@@ -1,4 +1,4 @@
-# Witaj na stronie Dawidolko.pl!
+# Witaj w moim repozytorium strony!
 
 Dawidolko.pl to dynamiczna i interaktywna strona internetowa, która oferuje różnorodne treści i zasoby dla wszystkich, którzy chcą zgłębić wiedzę i zainteresować się szerokim spektrum tematów.
 
