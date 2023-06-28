@@ -1,27 +1,27 @@
-# Witaj w moim repozytorium strony!
+# Welcome to my site repository!
 
-Dawidolko.pl to dynamiczna i interaktywna strona internetowa, która oferuje różnorodne treści i zasoby dla wszystkich, którzy chcą zgłębić wiedzę i zainteresować się szerokim spektrum tematów.
+Dawidolko.pl is a dynamic and interactive website that offers a variety of content and resources for everyone who wants to explore and become interested in a wide range of topics.
 
-Na stronie Dawidolko.pl znajdziesz wiele interesujących treści, które obejmują takie dziedziny jak technologia, programowanie, nauka, sztuka i wiele więcej. Znajdziesz tu zarówno wpisy na blogu, artykuły, poradniki, jak i materiały multimedialne, takie jak zdjęcia i filmy, które wzbogacą Twoje doświadczenie na stronie.
+At Dawidolko.pl you will find a lot of interesting content that covers areas such as technology, programming, science, art and much more. You will find blog entries, articles, guides and multimedia materials such as photos and videos that will enrich your experience on the site.
 
-Nasza strona jest miejscem, w którym możesz znaleźć inspirację, zdobyć nowe umiejętności i poszerzyć swoją wiedzę w różnych dziedzinach. Niezależnie od tego, czy jesteś początkującym w danej dziedzinie, czy doświadczonym entuzjastą, na Dawidolko.pl znajdziesz coś dla siebie.
+Our website is a place where you can find inspiration, gain new skills and expand your knowledge in various fields. Regardless of whether you are a beginner in a given field or an experienced enthusiast, you will find something for yourself at Dawidolko.pl.
 
-## Co możesz znaleźć na Dawidolko.pl:
+## What you can find on Dawidolko.pl:
 
-- Blog: Regularnie publikujemy wpisy na blogu, które poruszają różnorodne tematy związane z technologią, programowaniem, nauką i wieloma innymi dziedzinami. Czytając nasze wpisy, dowiesz się ciekawych informacji, przeczytasz opinie i porady, a także zainspirujesz się do dalszego rozwoju.
+- Blog: We regularly publish blog posts that cover a wide variety of topics related to technology, programming, science and many other fields. By reading our entries, you will learn interesting information, read opinions and tips, and also be inspired to develop further.
 
-- Poradniki i tutoriale: Oferujemy również praktyczne poradniki i tutoriale, które krok po kroku wprowadzą Cię w różne tematy. Dowiesz się, jak programować w różnych językach, jak korzystać z różnych narzędzi, jak rozwiązywać problemy i wiele więcej. Nasze poradniki są napisane w sposób zrozumiały i przejrzysty, abyś mógł łatwo przyswoić nowe umiejętności.
+- Guides and tutorials: We also offer practical guides and tutorials that will introduce you step by step to various topics. You will learn how to program in different languages, how to use different tools, how to solve problems and much more. Our guides are written in an understandable and transparent way so that you can easily acquire new skills.
 
-- Materiały multimedialne: Oprócz tekstowych treści, na Dawidolko.pl znajdziesz również materiały multimedialne, takie jak zdjęcia i filmy. Przeglądając te materiały, możesz odkrywać piękno sztuki, zapoznać się z inspirującymi projektami i rozwijać swoją kreatywność.
+- Multimedia materials: In addition to text content, you will also find multimedia materials such as photos and videos on Dawidolko.pl. By browsing these materials, you can discover the beauty of art, see inspiring projects and develop your creativity.
 
-- Społeczność: Dawidolko.pl to również społeczność entuzjastów, którzy dzielą się swoimi osiągnięciami, inspiracjami i pomysłami. Możesz dołączyć do naszej społeczności, komentować wpisy, dzielić się swoimi pomysłami i nawiązywać nowe kontakty z osobami o podobnych zainteresowaniach.
+- Community: Dawidolko.pl is also a community of enthusiasts who share their achievements, inspirations and ideas. You can join our community, comment on posts, share your ideas and make new contacts with people with similar interests.
 
-Zapraszam Cię do odwiedzenia strony `Dawidolko.pl` i odkrycia wszystkich fascynujących treści, które przygotowałem dla Ciebie. Baw się dobrze, zdobywaj nową wiedzę i inspiruj się na mojej stronie!
+I invite you to visit the website `Dawidolko.pl` and discover all the fascinating content that I have prepared for you. Have fun, gain new knowledge and get inspired on my website!
 
-"Odkrywaj, ucz się, inspiruj!" - Dawidolko.pl
+"Discover, learn, inspire!" - Dawidolko.pl
 
-## 📫 Jak się ze mną skontaktować
+## 📫 How to contact me
 
-Możesz się ze mną skontaktować poprzez [LinkedIn](https://www.linkedin.com/in/dawidolko) lub [Twitter](https://twitter.com/dawidolko).
+You can contact me via [LinkedIn](https://www.linkedin.com/in/dawidolko) or [Twitter](https://twitter.com/dawidolko).
 
-Dziękuję za odwiedzenie mojego portfolio. Cieszę się, że jesteś tutaj!
+Thank you for visiting my portfolio. I'm glad you're here!
