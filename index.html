@@ -313,6 +313,32 @@
             color: #f5f5f5;
             margin-bottom: 10px;
         }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50%;
+            margin-top: 50px;
+        }
+
+        .drive,
+        .university {
+            position: fixed;
+            text-align: center;
+        }
+
+        .drive img,
+        .university img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+            transition: transform .2s;
+        }
+
+        .drive img:hover,
+        .university img:hover {
+            transform: scale(0.8);
+        }
     </style>
 
 </head>
