@@ -270,6 +270,10 @@
             background-position: center;
             padding-top: 10px;
             padding-bottom: 10px;
+            position: relative;
+            transform-style: preserve-3d;
+            perspective: 100px;
+            z-index: 1;
         }
 
         /* Media queries dla wersji telefonowej */
@@ -396,6 +400,17 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
+            // Function to handle parallax effect
+        function parallaxEffect(element, distance, speed) {
+            const item = document.querySelector(element);
+            item.style.transform = `translateY(${distance * speed}px)`;
+        }
+
+    // Listen for scroll events and call the parallax function
+        window.addEventListener("scroll", function () {
+            // Adjust the 'speed' value to control the intensity of the parallax effect
+            parallaxEffect(".social-media-background", window.scrollY, -0.2);
+        });
         AOS.init();
     </script>
 </body>
