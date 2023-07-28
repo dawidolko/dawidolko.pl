@@ -69,6 +69,20 @@
         .project:hover {
             transform: scale(1.05);
         }
+        .project-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo {
+            width: 100px; /* Set the width and height according to your logo size */
+            height: 100px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-bottom: 10px;
+        }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
@@ -85,18 +99,24 @@
         <a class='icon' href='https://www.twitter.com/dawidolko' title='Twitter'><i
                 class="fab fa-twitter"></i></a>
     </div>
-    <div class="projects">
-        <!-- Project boxes can be added here. They might look something like this: -->
+      <div class="projects">
         <a class="project" href="https://fitnessgym.dawidolko.pl" target="FitnessGym">
-            <h3>Project Website FittnesGym</h3>
-        <p>Language: HTML</p>
+            <div class="project-content">
+                <div class="logo" style="background-image: url('m_logo.png');"></div>
+                <h3>Project Website FittnesGym</h3>
+                <p>Language: HTML</p>
+            </div>
         </a>
 
-        <!-- Update the second project box -->
         <a class="project" href="https://f1.dawidolko.pl" target="F1">
-            <h3>Project Website F1</h3>
-            <p>Language: HTML</p>
+            <div class="project-content">
+                <div class="logo" style="background-image: url('f1logo.png');"></div>
+                <h3>Project Website F1</h3>
+                <p>Language: HTML</p>
+            </div>
         </a>
+    </div>
+
     <div class="footer">
         <p>© 2023 Dawid Olko - All rights reserved | email: poczta@dawidolko.pl</p>
     </div>
