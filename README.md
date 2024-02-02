@@ -1,36 +1,69 @@
-# Welcome to Dawidolko.pl!
+# Welcome to My Portfolio Website!
 
-Welcome to [dawidolko.pl](http://dawidolko.pl), my personal portfolio where I showcase my journey through the world of technology, programming, and design. This website is a reflection of my passion for creating innovative solutions and engaging experiences across various domains.
+Welcome to my personal portfolio at [dawidolko.pl](http://dawidolko.pl)! This website is a comprehensive showcase of my professional journey, featuring my projects, works, and the diverse skills I've honed over the years. It's designed to be a dynamic platform where visitors can explore the breadth of my expertise and creativity across various domains.
 
-## About Dawidolko.pl
+## About the Website
 
-Dawidolko.pl is not just a showcase of my projects; it's a window into my professional and personal interests. It represents my continuous pursuit of knowledge and my commitment to contributing to the tech and design communities. Here, you'll find a collection of my work that highlights my skills, creativity, and the diverse challenges I've tackled.
+dawidolko.pl serves as a digital representation of my career and personal interests. It's not just a collection of my work; it's a reflection of my passion for technology, design, and innovation. Here, you'll find detailed presentations of my projects, including the challenges I faced, the solutions I devised, and the outcomes achieved. The site is a testament to my dedication to continuous learning and professional growth.
 
-## What You'll Find on Dawidolko.pl
+## Featured Sections
 
-- **Projects**: A curated selection of my best work, providing insights into my approach to solving problems, embracing new technologies, and delivering impactful results. Each project is documented in detail, showcasing the process from conception to completion.
+- **Projects**: Dive into a curated selection of my best work, ranging from software development to digital design. Each project is accompanied by thorough documentation, including concept overviews, development processes, and reflections on lessons learned.
 
-- **Blog**: My thoughts and analyses on the latest trends in technology and design. The blog is where I share knowledge, offer tutorials, and express my views on the ever-evolving digital landscape.
+- **Works**: Explore a gallery of my professional endeavors and personal projects. This section showcases a variety of mediums and techniques, illustrating my versatility and creative approach.
 
-- **About Me**: A closer look at my journey, experiences, and the motivations behind my work. This section offers a personal perspective on my growth as a professional and my aspirations for the future.
+- **Blog**: Gain insights into my thoughts on the latest trends in technology, design, and beyond. The blog is a space where I share articles, tutorials, and opinion pieces that reflect my interests and expertise.
 
-## Explore, Learn, and Connect
+- **About Me**: Learn more about my background, experiences, and the journey that has shaped my career. This section provides a glimpse into my motivations, aspirations, and the values that guide my work.
 
-Dawidolko.pl is designed for everyone—from potential collaborators and employers to fellow tech enthusiasts and curious minds. My goal is to:
+## Project Structure
 
-- **Inspire** creativity and innovation through my projects and writings.
-- **Share** knowledge and insights that can benefit others.
-- **Connect** with like-minded individuals and explore potential collaborations.
+This repository is organized into several key directories:
 
-## Join the Conversation
+- `/docs`: Contains the built website files accessible via GitHub Pages.
+- `/src`: Source files for the project, including components, pages, and assets.
+- `/data`: Data files for storing static data used across the site.
+- `README.md`: Documentation for the repository, including project overview and setup instructions.
 
-I believe in the power of communication and collaboration. If you're interested in discussing a project, sharing ideas, or just want to say hello, don't hesitate to get in touch.
+```
+/dawidolko.pl
+  /docs                  # Folder dla GitHub Pages, zawiera gotowe do publikacji pliki strony
+    index.html           # Główna strona startowa
+    /assets              # Zasoby takie jak obrazy, skrypty JS i style CSS używane przez stronę
+      /css               # Katalog dla arkuszy stylów CSS
+      /js                # Katalog dla skryptów JavaScript
+      /images            # Katalog dla obrazów
+
+  /src                   # Źródłowe pliki projektu
+    /components          # Reużywalne komponenty UI
+    /pages               # Pliki dla poszczególnych stron
+
+  /data                  # Dane, mogą być używane do przechowywania stałych, konfiguracji itp.
+
+  .gitignore             # Określa, które pliki i foldery Git powinien ignorować
+
+  README.md              # Dokumentacja projektu dla GitHub
+
+  package.json           # Metadane Node.js, w tym skrypty budowania i zależności
+```
+
+For more details on the project structure, please refer to the repository's content.
+
+## Why Visit dawidolko.pl?
+
+Whether you're a potential employer, a fellow professional, or simply someone with a keen interest in technology and design, dawidolko.pl has something for you. It's an opportunity to:
+
+- **Discover** innovative projects and creative works that push boundaries.
+- **Learn** through detailed case studies and insightful blog posts.
+- **Inspire** and be inspired by a shared passion for making and creating.
 
 ## 📫 How to Contact Me
 
-- LinkedIn: [Connect with me on LinkedIn](https://www.linkedin.com/in/dawidolko)
-- Twitter: [Follow me on Twitter](https://twitter.com/dawidolko)
+Interested in discussing a project, idea, or just want to say hi? You can contact me through the following channels:
 
-Thank you for visiting dawidolko.pl. Your interest and support are what motivate me to keep creating and sharing. Let's dive into the world of technology and design together!
+- LinkedIn: [My LinkedIn Profile](https://www.linkedin.com/in/dawidolko)
+- Twitter: [@dawidolko](https://twitter.com/dawidolko)
 
-"Discover, learn, inspire!" - Dawidolko.pl
+Thank you for visiting my portfolio. I'm excited to share my journey and creations with you. Explore, enjoy, and let's connect!
+
+"Create, innovate, inspire!" - dawidolko.pl

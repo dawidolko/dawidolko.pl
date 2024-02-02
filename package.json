@@ -1,0 +1,26 @@
+{
+    "name": "dawidolko",
+    "version": "1.0.0",
+    "description": "Personal portfolio website showcasing my projects and skills.",
+    "main": "index.js",
+    "scripts": {
+      "build:css": "sass src/styles/main.scss:docs/assets/css/main.css --style compressed",
+      "watch:css": "sass --watch src/styles/main.scss:docs/assets/css/main.css",
+      "start": "echo 'This is a static site. Serve it with a static server.'",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/dawidolko/dawidolko.pl.git"
+    },
+    "author": "Dawio",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/dawidolko/dawidolko.pl/issues"
+    },
+    "homepage": "https://github.com/dawidolko/dawidolko.pl#readme",
+    "devDependencies": {
+      "sass": "^1.32.0"
+    }
+  }
+  
