@@ -18,34 +18,34 @@ dawidolko.pl serves as a digital representation of my career and personal intere
 
 ## Project Structure
 
+```
+/dawidolko.pl
+   /docs # Folder for GitHub Pages, contains page files ready to be published
+     index.html # Main home page
+     /assets # Assets such as images, JS scripts and CSS styles used by the page
+       /css # Directory for CSS stylesheets
+       /js # Directory for JavaScript scripts
+       /images # Directory for images
+
+   /src # Source project files
+     /components # Reusable UI components
+     /pages # Files for individual pages
+
+   /data # Data, can be used to store constants, configuration, etc.
+
+   .gitignore # Specifies which files and folders Git should ignore
+
+   README.md # Project documentation for GitHub
+
+   package.json # Node.js metadata, including build scripts and dependencies
+```
+
 This repository is organized into several key directories:
 
 - `/docs`: Contains the built website files accessible via GitHub Pages.
 - `/src`: Source files for the project, including components, pages, and assets.
 - `/data`: Data files for storing static data used across the site.
 - `README.md`: Documentation for the repository, including project overview and setup instructions.
-
-```
-/dawidolko.pl
-  /docs                  # Folder dla GitHub Pages, zawiera gotowe do publikacji pliki strony
-    index.html           # Główna strona startowa
-    /assets              # Zasoby takie jak obrazy, skrypty JS i style CSS używane przez stronę
-      /css               # Katalog dla arkuszy stylów CSS
-      /js                # Katalog dla skryptów JavaScript
-      /images            # Katalog dla obrazów
-
-  /src                   # Źródłowe pliki projektu
-    /components          # Reużywalne komponenty UI
-    /pages               # Pliki dla poszczególnych stron
-
-  /data                  # Dane, mogą być używane do przechowywania stałych, konfiguracji itp.
-
-  .gitignore             # Określa, które pliki i foldery Git powinien ignorować
-
-  README.md              # Dokumentacja projektu dla GitHub
-
-  package.json           # Metadane Node.js, w tym skrypty budowania i zależności
-```
 
 For more details on the project structure, please refer to the repository's content.
 
