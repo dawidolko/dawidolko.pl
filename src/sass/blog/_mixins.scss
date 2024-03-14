@@ -1,0 +1,14 @@
+@use "colors" as *;
+
+@mixin flexCenter($direction) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin fromdown($translate) {
+	transform: translateY($translate);
+	opacity: 0;
+	transition: opacity 2s, transform 1.5s;
+}

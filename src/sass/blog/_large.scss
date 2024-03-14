@@ -1,0 +1,59 @@
+@use "colors" as *;
+@use "mixins" as *;
+@use "reset" as *;
+@use "sizes" as *;
+
+@media (min-width: 930px) {
+	.portfolio {
+		&__body {
+			flex-direction: row;
+			gap: 2.5em;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	html {
+		scroll-padding-top: unset;
+	}
+
+	.about {
+		height: 100vh;
+	}
+
+	.portfolio {
+		padding: 6em 0 10em;
+
+		&__body {
+			gap: 3em;
+		}
+		&__body {
+			flex-direction: row;
+		}
+		&__box {
+			width: 350px;
+			height: 400px;
+		}
+	}
+
+	.contact {
+		height: 90vh;
+	}
+}
+
+@media (min-width: 1200px) {
+	.header {
+		&__text,
+		&__content {
+			font-size: 4rem;
+		}
+
+		&__heading {
+			font-size: 6rem;
+		}
+
+		&__write {
+			font-size: 4rem;
+		}
+	}
+}

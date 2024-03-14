@@ -1,26 +1,39 @@
 {
-    "name": "dawidolko",
-    "version": "1.0.0",
-    "description": "Personal portfolio website showcasing my projects and skills.",
-    "main": "index.js",
-    "scripts": {
-      "build:css": "sass src/styles/main.scss:docs/assets/css/main.css --style compressed",
-      "watch:css": "sass --watch src/styles/main.scss:docs/assets/css/main.css",
-      "start": "echo 'This is a static site. Serve it with a static server.'",
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/dawidolko/dawidolko.pl.git"
-    },
-    "author": "Dawio",
-    "license": "MIT",
-    "bugs": {
-      "url": "https://github.com/dawidolko/dawidolko.pl/issues"
-    },
-    "homepage": "https://github.com/dawidolko/dawidolko.pl#readme",
-    "devDependencies": {
-      "sass": "^1.32.0"
-    }
-  }
-  
+  "name": "dawidolko",
+  "version": "1.0.0",
+  "description": "Personal portfolio website showcasing my projects and skills.",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "sass src/styles/main.scss:docs/assets/css/main.css --style compressed",
+    "watch:css": "sass --watch src/styles/main.scss:docs/assets/css/main.css",
+    "build:js": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "start": "webpack serve --open --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dawidolko/dawidolko.pl.git"
+  },
+  "author": "Dawio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dawidolko/dawidolko.pl/issues"
+  },
+  "homepage": "https://github.com/dawidolko/dawidolko.pl#readme",
+  "devDependencies": {
+    "css-loader": "^6.10.0",
+    "jsdoc": "^4.0.2",
+    "kss": "^3.1.0",
+    "sass": "^1.70.0",
+    "sass-loader": "^14.1.0",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.90.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.1"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "keywords": []
+}
