@@ -149,6 +149,21 @@ body {
   font-size: 2.2rem;
 }
 
+.about__icons {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  background-color: #161616;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 3em 0;
+}
+.about__icon {
+  font-size: 5.1rem;
+  color: #ba00e9;
+}
+
 .contact {
   padding: 3em 0;
   background-color: #111;
@@ -370,6 +385,31 @@ li {
     height: 60vh;
   }
 }
+@media (max-width: 810px) {
+  .about__icons {
+    display: flex;
+    gap: 0.7em;
+    background-color: #161616;
+    justify-content: center;
+    gap: 30px;
+    padding: 2em 0;
+  }
+}
+@media (max-width: 550px) {
+  .about__icons {
+    display: flex;
+    gap: 0.7em;
+    background-color: #161616;
+    justify-content: center;
+    gap: 20px;
+    padding: 1em 0;
+  }
+  .fa-x,
+  .fa-tiktok,
+  .fa-youtube {
+    display: none;
+  }
+}
 @media (min-width: 810px) {
   .container {
     max-width: 1200px;
@@ -460,6 +500,12 @@ li {
     color: #ba00e9;
     font-weight: 600;
     font-size: 3rem;
+  }
+  .about__icon {
+    transition: transform 0.3s ease;
+  }
+  .about__icon:hover {
+    transform: scale(0.9);
   }
   .contact {
     display: flex;

@@ -324,7 +324,28 @@ details[open] > summary {
     opacity: 1;
   }
 }
+.faq__heading {
+  margin-bottom: 0.3em;
+  font-size: 3.8rem;
+  text-align: center;
+  color: #ba00e9;
+}
 
+.photo-gallery h2 {
+  font-weight: bold;
+  padding-top: 40px;
+  color: inherit;
+  color: #ba00e9;
+}
+@media (min-width: 810px) {
+  .faq__heading,
+  .line {
+    transform: translateY(150px);
+    opacity: 0;
+    transition: opacity 2s, transform 1.5s;
+    color: #ba00e9;
+  }
+}
 .footer {
   background-color: #101311;
   padding: 1.5em 0.5em;

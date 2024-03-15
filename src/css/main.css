@@ -342,6 +342,10 @@ body {
   margin-top: 130px;
 }
 
+.portfolio__btn:hover {
+  background-color: #5e0183;
+}
+
 .portfolio__btn a {
   color: #f0f0f0;
 }
@@ -712,7 +716,7 @@ li {
     transition: background-color 0.3s ease;
   }
   .about__btn:hover {
-    background-color: #018355;
+    background-color: #5e0183;
   }
   .about__icon {
     transition: transform 0.3s ease;
@@ -790,7 +794,7 @@ li {
     transition: background-color 0.3s ease;
   }
   .contact__form-btn:hover {
-    background-color: #018355;
+    background-color: #5e0183;
   }
   .info {
     width: 30%;
