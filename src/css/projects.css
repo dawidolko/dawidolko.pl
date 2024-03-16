@@ -121,7 +121,8 @@ body {
 .header {
   height: 100vh;
   width: 100%;
-  background: url("../assets/img/backgroundProject.webp") rgba(16, 16, 16, 0.3);
+  background: url("../assets/img/Backgrounds/backgroundProject.webp")
+    rgba(16, 16, 16, 0.3);
   background-blend-mode: darken;
   background-size: cover;
   background-position: top;
@@ -511,6 +512,14 @@ li {
   }
 }
 @media (min-width: 810px) {
+  .card {
+    transform: translateY(150px);
+    opacity: 1;
+    transition: opacity 2s, transform 1.5s;
+  }
+  .card:hover {
+    height: 100%;
+  }
   .container {
     max-width: 1200px;
     padding: 0 1em;
@@ -574,7 +583,7 @@ li {
     height: 25px;
   }
   .header {
-    background: url("../assets/img/backgroundProject.webp")
+    background: url("../assets/img/Backgrounds/backgroundProject.webp")
       rgba(16, 16, 16, 0.3);
     background-blend-mode: darken;
     background-size: cover;

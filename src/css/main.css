@@ -120,7 +120,8 @@ body {
 .header {
   height: 100vh;
   width: 100%;
-  background: url("../assets/img/backgroundHome.webp") rgba(16, 16, 16, 0.3);
+  background: url("../assets/img/Backgrounds/backgroundHome.webp")
+    rgba(16, 16, 16, 0.3);
   background-blend-mode: darken;
   background-size: cover;
   background-position: top;
@@ -207,6 +208,8 @@ body {
 .about__text {
   color: #9f9f9f;
   line-height: 1.7;
+  text-indent: 1.5em;
+  text-align: justify;
 }
 .about__more {
   color: #ba00e9;
@@ -643,7 +646,8 @@ li {
     height: 25px;
   }
   .header {
-    background: url("../assets/img/backgroundHome.webp") rgba(16, 16, 16, 0.3);
+    background: url("../assets/img/Backgrounds/backgroundHome.webp")
+      rgba(16, 16, 16, 0.3);
     background-blend-mode: darken;
     background-size: cover;
     background-position: top;

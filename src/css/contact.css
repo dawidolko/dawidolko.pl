@@ -120,7 +120,8 @@ body {
 .header {
   height: 100vh;
   width: 100%;
-  background: url("../assets/img/backgroundContact.webp") rgba(16, 16, 16, 0.3);
+  background: url("../assets/img/Backgrounds/backgroundContact.webp")
+    rgba(16, 16, 16, 0.3);
   background-blend-mode: darken;
   background-size: cover;
   background-position: top;
@@ -149,7 +150,8 @@ body {
   font-size: 2.2rem;
 }
 
-.about__icons {
+.about__icons .cols1,
+.about__icons .cols2 {
   display: flex;
   align-items: center;
   gap: 0.7em;
@@ -157,8 +159,9 @@ body {
   display: flex;
   justify-content: center;
   gap: 50px;
-  padding: 3em 0;
+  padding: 1em 0;
 }
+
 .about__icon {
   font-size: 5.1rem;
   color: #ba00e9;
@@ -404,11 +407,6 @@ li {
     gap: 20px;
     padding: 1em 0;
   }
-  .fa-x,
-  .fa-tiktok,
-  .fa-youtube {
-    display: none;
-  }
 }
 @media (min-width: 810px) {
   .container {
@@ -474,7 +472,7 @@ li {
     height: 25px;
   }
   .header {
-    background: url("../assets/img/backgroundContact.webp")
+    background: url("../assets/img/Backgrounds/backgroundContact.webp")
       rgba(16, 16, 16, 0.3);
     background-blend-mode: darken;
     background-size: cover;

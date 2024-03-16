@@ -4,194 +4,186 @@
 @use "../sizes" as *;
 
 html {
-	scroll-padding-top: 20px;
+  scroll-padding-top: 20px;
 }
 
 body {
-	font-family: "Open Sans", sans-serif;
-	font-size: 1.6rem;
-	background-color: rgb(226, 226, 226);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  background-color: rgb(226, 226, 226);
 }
 
 .container {
-	max-width: 95%;
-	width: 100%;
-	margin: 0 auto;
-	padding: 0 0.5em;
+  max-width: 95%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0.5em;
 }
 
 .nav {
-	position: fixed;
-	width: 100%;
-	z-index: 999;
-	transition: background-color 0.4s ease;
-	background-color: #111;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  transition: background-color 0.4s ease;
+  background-color: #111;
 
-	&__bgc {
-		background-color: #111;
-	}
+  &__bgc {
+    background-color: #111;
+  }
 
-	&__body {
-		display: flex;
-	}
+  &__body {
+    display: flex;
+  }
 
-	&__logo {
-		display: none;
-	}
+  &__logo {
+    display: none;
+  }
 
-	&__button {
-		padding: 0.5em;
-		color: grey;
-		font-size: 2.4rem;
-		cursor: pointer;
-		z-index: 999;
-	}
+  &__button {
+    padding: 0.5em;
+    color: grey;
+    font-size: 2.4rem;
+    cursor: pointer;
+    z-index: 999;
+  }
 
-	&__hide {
-		display: none;
-	}
+  &__hide {
+    display: none;
+  }
 
-	&__links {
-		@include flexCenter(column);
-		gap: 3em;
-		position: fixed;
-		left: 0;
-		width: 100%;
-		height: 100vh;
-		top: 0;
-		text-transform: uppercase;
-		letter-spacing: 0.7px;
-		background-color: $darker;
-		transform: translateY(-105%);
-		transition: all 0.3s ease;
+  &__links {
+    @include flexCenter(column);
+    gap: 3em;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    background-color: $darker;
+    transform: translateY(-105%);
+    transition: all 0.3s ease;
 
-		&--active {
-			transform: translateY(0);
-		}
-	}
+    &--active {
+      transform: translateY(0);
+    }
+  }
 
-	&__link {
-		padding: 0.5em;
-		color: $white;
-	}
-}
-
-.header {
-	height: 60vh;
-	background: url("/img/bg-small.jpg") rgba(0, 0, 0, 0.1);
-	background-blend-mode: darken;
-	background-position: center;
-	background-size: cover;
+  &__link {
+    padding: 0.5em;
+    color: $white;
+  }
 }
 
 .about {
-	width: 100%;
+  width: 100%;
 
-	&__wrapper2 {
-		padding: 2em 0 3em;
+  &__wrapper2 {
+    padding: 2em 0 3em;
 
-		&:nth-child(even) {
-			padding: 2em 0 3em;
-			background-color: rgb(230, 233, 233);
-		}
-	}
+    &:nth-child(even) {
+      padding: 2em 0 3em;
+      background-color: rgb(230, 233, 233);
+    }
+  }
 
-	&__body {
-		@include flexCenter(column);
-		gap: 0.3em;
-	}
+  &__body {
+    @include flexCenter(column);
+    gap: 0.3em;
+  }
 
-	&__main-img {
-		height: 400px;
-		max-width: 370px;
-		width: 100%;
-		object-fit: cover;
-	}
+  &__main-img {
+    height: 400px;
+    max-width: 370px;
+    width: 100%;
+    object-fit: cover;
+  }
 
-	&__main-img img {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	}
+  &__main-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
-	&__images {
-		display: flex;
-		justify-content: space-between;
-		gap: 0.2em;
-	}
+  &__images {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.2em;
+  }
 
-	&__img {
-		display: block;
-		width: 90px;
-		height: 90px;
-		object-fit: cover;
-		overflow: hidden;
-	}
+  &__img {
+    display: block;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    overflow: hidden;
+  }
 
-	&__content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 1em;
-	}
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
 
-	&__text {
-		display: flex;
-		flex-direction: column;
-		max-width: 600px;
-		gap: 1em;
-		margin-bottom: 1em;
-		line-height: 1.5;
-		letter-spacing: 1px;
-	}
+  &__text {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    gap: 1em;
+    margin-bottom: 1em;
+    line-height: 1.5;
+    letter-spacing: 1px;
+  }
 
-	&__title {
-		max-width: 400px;
-		margin-bottom: 0.5em;
-		text-align: center;
-		font-size: 2.7rem;
-	}
+  &__title {
+    max-width: 400px;
+    margin-bottom: 0.5em;
+    text-align: center;
+    font-size: 2.7rem;
+  }
 
-	&__images {
-		max-width: 500px;
-		width: 100%;
-	}
+  &__images {
+    max-width: 500px;
+    width: 100%;
+  }
 
-	&__main-img {
-		max-height: 500px;
-		max-width: 500px;
-	}
+  &__main-img {
+    max-height: 500px;
+    max-width: 500px;
+  }
 
-	&__main-img img {
-		width: 100%;
-		height: 100%;
-	}
+  &__main-img img {
+    width: 100%;
+    height: 100%;
+  }
 
-	&__img {
-		width: 120px;
-	}
+  &__img {
+    width: 120px;
+  }
 }
 
 .footer {
-	background-color: $darker;
-	padding: 1.5em 0.5em;
+  background-color: $darker;
+  padding: 1.5em 0.5em;
 
-	&__content {
-		@include flexCenter(column);
-		gap: 1em;
-		color: $grey;
-		text-align: center;
-	}
+  &__content {
+    @include flexCenter(column);
+    gap: 1em;
+    color: $grey;
+    text-align: center;
+  }
 
-	&__icons {
-		display: flex;
-		gap: 0.5em;
-		font-size: 1.8rem;
-	}
+  &__icons {
+    display: flex;
+    gap: 0.5em;
+    font-size: 1.8rem;
+  }
 
-	&__icon {
-		color: $grey;
-	}
+  &__icon {
+    color: $grey;
+  }
 }
 
 @import "medium";

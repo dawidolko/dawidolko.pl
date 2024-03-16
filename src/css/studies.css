@@ -120,7 +120,8 @@ body {
 .header {
   height: 100vh;
   width: 100%;
-  background: url("../assets/img/backgroundStudies.webp") rgba(16, 16, 16, 0.3);
+  background: url("../assets/img/Backgrounds/backgroundStudies.webp")
+    rgba(16, 16, 16, 0.3);
   background-blend-mode: darken;
   background-size: cover;
   background-position: top;
@@ -219,7 +220,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(../assets/img/university1.png);
+  background-image: url(../assets/img/Studies/university1.png);
   background-size: cover;
   background-position: center;
 
@@ -257,6 +258,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 1.5em;
+  align-items: center;
 }
 
 .blank .card a {
@@ -275,7 +277,7 @@ body {
   box-shadow: 0px 29px 38px -15px rgba(0, 0, 0, 0.43);
 }
 .second {
-  background-image: url(../assets/img/university2.png);
+  background-image: url(../assets/img/Studies/university2.png);
   background-attachment: fixed;
 }
 
@@ -324,39 +326,39 @@ h3 {
 }
 
 .img-first {
-  background-image: url(../assets/img/C.png);
+  background-image: url(../assets/img/Studies/C.png);
 }
 
 .img-second {
-  background-image: url(../assets/img/C++.png);
+  background-image: url(../assets/img/Studies/C++.png);
 }
 
 .img-third {
-  background-image: url(../assets/img/csharp.png);
+  background-image: url(../assets/img/Studies/csharp.png);
 }
 
 .img-fourth {
-  background-image: url(../assets/img/html.png);
+  background-image: url(../assets/img/Studies/html.png);
 }
 
 .img-fifth {
-  background-image: url(../assets/img/css.png);
+  background-image: url(../assets/img/Studies/css.png);
 }
 
 .img-sixth {
-  background-image: url(../assets/img/javascript.png);
+  background-image: url(../assets/img/Studies/javascript.png);
 }
 
 .img-seventh {
-  background-image: url(../assets/img/python.png);
+  background-image: url(../assets/img/Studies/python.png);
 }
 
 .img-eighth {
-  background-image: url(../assets/img/java.png);
+  background-image: url(../assets/img/Studies/java.png);
 }
 
 .img-ninth {
-  background-image: url(../assets/img/php.png);
+  background-image: url(../assets/img/Studies/php.png);
 }
 
 .second {
@@ -510,6 +512,23 @@ li {
   }
 }
 @media (min-width: 810px) {
+  .blank {
+    align-items: center;
+  }
+  .item {
+    transform: translateY(150px);
+    opacity: 1;
+    transition: opacity 2s, transform 1.5s;
+  }
+  .contact-map {
+    transform: translateY(50px);
+    opacity: 1;
+    transition: opacity 2s, transform 1.5s;
+  }
+
+  .item {
+    height: 100%;
+  }
   .container {
     max-width: 1200px;
     padding: 0 1em;
@@ -573,7 +592,7 @@ li {
     height: 25px;
   }
   .header {
-    background: url("../assets/img/backgroundStudies.webp")
+    background: url("../assets/img/Backgrounds/backgroundStudies.webp")
       rgba(16, 16, 16, 0.3);
     background-blend-mode: darken;
     background-size: cover;

@@ -52,6 +52,7 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
+  background-color: #080808;
 }
 
 .container {
@@ -120,7 +121,8 @@ body {
 .header {
   height: 100vh;
   width: 100%;
-  background: url("../assets/img/backgroundHobbies.webp") rgba(16, 16, 16, 0.3);
+  background: url("../assets/img/Backgrounds/backgroundHobbies.webp")
+    rgba(16, 16, 16, 0.3);
   background-blend-mode: darken;
   background-size: cover;
   background-position: top;
@@ -147,6 +149,114 @@ body {
   color: #ba00e9;
   font-weight: 600;
   font-size: 2.2rem;
+}
+
+.hobbies-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.video-container,
+.photo-container {
+  background: #161616;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.video-container .text-content,
+.photo-container .instagram-media {
+  flex: 1;
+}
+
+.photo-container .text-content,
+.video-container iframe {
+  flex: 1;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.text-content h2 {
+  font-size: 1.5em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  text-indent: 1.5em;
+  text-align: justify;
+}
+
+.description {
+  font-size: 1em;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+iframe,
+.instagram-media {
+  width: 100%;
+  max-width: 400px; /* Adjust this value as needed */
+  border: none;
+  border-radius: 8px;
+}
+
+iframe {
+  height: 250px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1em;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-content {
+    align-items: center;
+  }
+  .instagram-media {
+    width: 300px;
+  }
+}
+
+.hobbies__heading {
+  margin-bottom: 0.3em;
+  margin-top: 100px;
+  font-size: 3.8rem;
+  text-align: center;
+  color: #ba00e9;
+}
+@media (min-width: 810px) {
+  .hobbies__heading {
+    margin-top: 100px;
+  }
+  .hobbies__heading,
+  .line {
+    transform: translateY(150px);
+    opacity: 0;
+    transition: opacity 2s, transform 1.5s;
+    color: #ba00e9;
+  }
 }
 .info__heading {
   margin-bottom: 0.5em;
@@ -311,6 +421,16 @@ li {
   }
 }
 @media (min-width: 810px) {
+  .video-container,
+  .photo-container {
+    transform: translateY(150px);
+    opacity: 0;
+    transition: opacity 2s, transform 1.5s;
+  }
+  .video-container:hover,
+  .photo-container:hover .portfolio__shadow {
+    height: 100%;
+  }
   .container {
     max-width: 1200px;
     padding: 0 1em;
@@ -374,7 +494,7 @@ li {
     height: 25px;
   }
   .header {
-    background: url("../assets/img/backgroundHobbies.webp")
+    background: url("../assets/img/Backgrounds/backgroundHobbies.webp")
       rgba(16, 16, 16, 0.3);
     background-blend-mode: darken;
     background-size: cover;
