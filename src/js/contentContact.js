@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     event.preventDefault();
     const formData = new FormData(this);
 
-    fetch("http://form.dawidolko.pl/mail.php", {
+    fetch("https://form.dawidolko.pl/mail.php", {
       method: "POST",
       body: formData,
       // mode: 'cors' // Jeśli serwer jest odpowiednio skonfigurowany
