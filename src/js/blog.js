@@ -42,20 +42,20 @@ const blogContent = [
     alt3: "Winter photos section",
     alt4: "Summer photos section",
   },
-  {
-    title: "Sport: A healthy mind in a healthy body...",
-    description:
-      "<p>The adage <q>A healthy mind in a healthy body</q> perfectly encapsulates my relationship with sport. To me, sport is not just a physical activity; it's a sanctuary where the mind and body harmonize, a realm where every drop of sweat and every beat of the heart narrates a story of determination, resilience, and self-discovery. Engaging in sports has always been a cornerstone of my life, providing not only a physical outlet but also a means to cultivate discipline, focus, and a sense of achievement.</p> <p>Whether it's the solo pursuit of beating my own running record in the early morning mist or the collaborative spirit of a football match under the floodlights, each form of sport offers a unique blend of challenges and rewards. These experiences are not just about winning or losing; they're about setting goals, pushing boundaries, and overcoming limits. They teach invaluable life lessons about teamwork, perseverance, and the importance of maintaining a healthy lifestyle.</p> <p>The mental benefits of sports are just as significant as the physical ones. In the midst of competition and physical exertion, the mind finds clarity and the spirit, resilience. It's in these moments of complete immersion that worries fade, replaced by a profound sense of presence and vitality. This mental resilience cultivated on the field often translates into other areas of life, providing the strength to tackle challenges with a calm and focused mind.</p> <p>In embracing sports, I've learned that a healthy body is indeed the vessel for a healthy mind. It's a lifestyle choice that has shaped me into who I am today, teaching me the importance of balance, dedication, and the joy of pursuing a passion. As I continue on this journey, the lessons learned through sports remain a guiding light, illuminating the path to personal growth and well-being.</p>",
-    imgSrc: "src/assets/img/Blog/Blog16_11zon.webp",
-    imgSrc1: "src/assets/img/Blog/Blog17_11zon.webp",
-    imgSrc2: "src/assets/img/Blog/Blog18_11zon.webp",
-    imgSrc3: "src/assets/img/Blog/Blog19_11zon.webp",
-    imgSrc4: "src/assets/img/Blog/Blog20_11zon.webp",
-    alt1: "Me sitting on a bridge looking at mountains",
-    alt2: "Me hiking, and admiring the view",
-    alt3: "Me standing on snow in mountains",
-    alt4: "Me looking at the mountains",
-  },
+  // {
+  //   title: "Sport: A healthy mind in a healthy body...",
+  //   description:
+  //     "<p>The adage <q>A healthy mind in a healthy body</q> perfectly encapsulates my relationship with sport. To me, sport is not just a physical activity; it's a sanctuary where the mind and body harmonize, a realm where every drop of sweat and every beat of the heart narrates a story of determination, resilience, and self-discovery. Engaging in sports has always been a cornerstone of my life, providing not only a physical outlet but also a means to cultivate discipline, focus, and a sense of achievement.</p> <p>Whether it's the solo pursuit of beating my own running record in the early morning mist or the collaborative spirit of a football match under the floodlights, each form of sport offers a unique blend of challenges and rewards. These experiences are not just about winning or losing; they're about setting goals, pushing boundaries, and overcoming limits. They teach invaluable life lessons about teamwork, perseverance, and the importance of maintaining a healthy lifestyle.</p> <p>The mental benefits of sports are just as significant as the physical ones. In the midst of competition and physical exertion, the mind finds clarity and the spirit, resilience. It's in these moments of complete immersion that worries fade, replaced by a profound sense of presence and vitality. This mental resilience cultivated on the field often translates into other areas of life, providing the strength to tackle challenges with a calm and focused mind.</p> <p>In embracing sports, I've learned that a healthy body is indeed the vessel for a healthy mind. It's a lifestyle choice that has shaped me into who I am today, teaching me the importance of balance, dedication, and the joy of pursuing a passion. As I continue on this journey, the lessons learned through sports remain a guiding light, illuminating the path to personal growth and well-being.</p>",
+  //   imgSrc: "src/assets/img/Blog/Blog16_11zon.webp",
+  //   imgSrc1: "src/assets/img/Blog/Blog17_11zon.webp",
+  //   imgSrc2: "src/assets/img/Blog/Blog18_11zon.webp",
+  //   imgSrc3: "src/assets/img/Blog/Blog19_11zon.webp",
+  //   imgSrc4: "src/assets/img/Blog/Blog20_11zon.webp",
+  //   alt1: "Me sitting on a bridge looking at mountains",
+  //   alt2: "Me hiking, and admiring the view",
+  //   alt3: "Me standing on snow in mountains",
+  //   alt4: "Me looking at the mountains",
+  // },
   {
     title: "Computer Science: Never-ending learning...",
     description:
