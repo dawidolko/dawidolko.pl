@@ -32,9 +32,9 @@ const blogContent = [
     title: "Love: Someone I care about...",
     description:
       "<p>When it comes to love, my feelings for her are as deep and vast as the ocean, yet as intricate and delicate as the patterns on a snowflake. She is not just someone I love; she embodies the essence of what it means to genuinely care for another person. My affection for her goes beyond the surface-level attractions; it's rooted in the profound appreciation of who she is, her dreams, her fears, and her infinite kindness.</p> <p>Our connection is built on a foundation of mutual respect and understanding, where every moment shared is treasured, whether it's filled with laughter, deep conversations, or comfortable silence. She inspires me to be a better person, not through grand gestures, but through her everyday actions and the love she radiates. It's in the way she listens, her compassionate heart, and her unwavering support that I find myself falling deeper in love with her every day.</p> <p>Love, in its essence, is about giving without the expectation of receiving. It's in the small acts of kindness, the gentle words of encouragement, and the shared dreams for the future. My love for her is a journey, one that I embark on with the joy of knowing she walks beside me. It's a journey of growth, learning, and shared experiences, where every challenge faced together strengthens our bond.</p> <p>She is my confidant, my source of joy, and my guiding light. In her, I've found not just a partner, but a soulmate. Someone who understands the unspoken words, shares in my joys, and stands by me during life's trials. Loving her has taught me the true meaning of partnership, compassion, and unconditional love. It's a profound and beautiful journey that I cherish deeply, for in loving her, I've discovered the depths of my own heart.</p>",
-    imgSrc: "src/assets/img/Blog/Blog11_11zon.webp",
+    imgSrc: "src/assets/img/Blog/newPhoto1.webp",
     imgSrc1: "src/assets/img/Blog/Blog12_11zon.webp",
-    imgSrc2: "src/assets/img/Blog/Blog13_11zon.webp",
+    imgSrc2: "src/assets/img/Blog/newPhoto2.webp",
     imgSrc3: "src/assets/img/Blog/Blog14_11zon.webp",
     imgSrc4: "src/assets/img/Blog/Blog15_11zon.webp",
     alt1: "Me and she",
