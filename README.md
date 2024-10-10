@@ -74,7 +74,6 @@ Interested in discussing a project, idea, or just want to say hi? You can contac
 
 - LinkedIn: [My LinkedIn Profile](https://www.linkedin.com/in/dawidolko)
 - Facebook: [My Facebook Account](https://www.facebook.com/olkodawid/)
-- Twitter: [@dawidolko](https://twitter.com/dawidolko)
 - Instagram: [@dawid_olko](https://www.instagram.com/dawid_olko)
 - YouTube: [@dawidolko](https://www.youtube.com/@dawid_olko)
 
