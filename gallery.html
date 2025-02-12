@@ -36,11 +36,58 @@
       crossorigin="anonymous"></script>
 
     <title>GALLERY - Dawid Olko</title>
+    <style>
+      .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 10000;
+      }
+      .modal-overlay.active {
+        display: flex;
+      }
+      .modal-content {
+        position: relative;
+        max-width: 90%;
+        max-height: 90%;
+      }
+      .modal-content img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .modal-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: red;
+        border: none;
+        color: #fff;
+        font-size: 2rem;
+        padding: 0 10px;
+        cursor: pointer;
+        z-index: 101;
+      }
+      .nav__logo:hover {
+        color: #fff;
+        text-decoration: none;
+      }
+      .header__heading {
+        font-style: bold;
+        font-size: 4.4rem;
+      }
+    </style>
   </head>
   <body>
     <nav class="nav">
       <div class="nav__body container">
-        <a href="#" class="nav__logo"
+        <a href="./index.html" class="nav__logo"
           ><img
             class="nav__img"
             src="src/assets/img/Home/Logotype.webp"
@@ -86,186 +133,132 @@
         <div class="container photki move">
           <div class="row photos">
             <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <a
-                href="src/assets/img/Gallery/Gallery1.webp"
-                data-lightbox="photos"
-                ><img
-                  class="img-fluid"
-                  src="src/assets/img/Gallery/Gallery1.webp"
-              /></a>
-            </div>
-            <!-- <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <a
-                href="src/assets/img/Gallery/Gallery2.webp"
-                data-lightbox="photos"
-                ><img
-                  class="img-fluid"
-                  src="src/assets/img/Gallery/gallery2.webp"
-              /></a>
+              <img
+                class="img-fluid"
+                src="src/assets/img/Gallery/Gallery1.webp"
+                alt="Gallery 1" />
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <a
-                href="src/assets/img/Gallery/Gallery3.webp"
-                data-lightbox="photos"
-                ><img
-                  class="img-fluid"
-                  src="src/assets/img/Gallery/Gallery3.webp"
-              /></a>
+              <img
+                class="img-fluid"
+                src="src/assets/img/Gallery/gallery2.webp"
+                alt="Gallery 2" />
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <a
-                href="src/assets/img/Gallery/Gallery4.webp"
-                data-lightbox="photos"
-                ><img
-                  class="img-fluid"
-                  src="src/assets/img/Gallery/Gallery4.webp"
-              /></a>
+              <img
+                class="img-fluid"
+                src="src/assets/img/Gallery/Gallery3.webp"
+                alt="Gallery 3" />
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <a
-                href="src/assets/img/Gallery/Gallery5.webp"
-                data-lightbox="photos"
-                ><img
-                  class="img-fluid"
-                  src="src/assets/img/Gallery/Gallery5.webp"
-              /></a>
+              <img
+                class="img-fluid"
+                src="src/assets/img/Gallery/Gallery4.webp"
+                alt="Gallery 4" />
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <a
-                href="src/assets/img/Gallery/Gallery6.webp"
-                data-lightbox="photos"
-                ><img
-                  class="img-fluid"
-                  src="src/assets/img/Gallery/Gallery6.webp"
-              /></a>
+              <img
+                class="img-fluid"
+                src="src/assets/img/Gallery/Gallery5.webp"
+                alt="Gallery 5" />
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <a
-                href="src/assets/img/Gallery/Gallery7.webp"
-                data-lightbox="photos"
-                ><img
-                  class="img-fluid"
-                  src="src/assets/img/Gallery/Gallery7.webp"
-              /></a>
+              <img
+                class="img-fluid"
+                src="src/assets/img/Gallery/Gallery6.webp"
+                alt="Gallery 6" />
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <a
-                href="src/assets/img/Gallery/Gallery8.webp"
-                data-lightbox="photos"
-                ><img
-                  class="img-fluid"
-                  src="src/assets/img/Gallery/Gallery8.webp"
-              /></a>
+              <img
+                class="img-fluid"
+                src="src/assets/img/Gallery/Gallery7.webp"
+                alt="Gallery 7" />
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <a
-                href="src/assets/img/Gallery/Gallery9.webp"
-                data-lightbox="photos"
-                ><img
-                  class="img-fluid"
-                  src="src/assets/img/Gallery/Gallery9.webp"
-              /></a>
+              <img
+                class="img-fluid"
+                src="src/assets/img/Gallery/Gallery8.webp"
+                alt="Gallery 8" />
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <a
-                href="src/assets/img/Gallery/Gallery11.webp"
-                data-lightbox="photos"
-                ><img
-                  class="img-fluid"
-                  src="src/assets/img/Gallery/Gallery10.webp"
-              /></a>
+              <img
+                class="img-fluid"
+                src="src/assets/img/Gallery/Gallery9.webp"
+                alt="Gallery 9" />
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <a
-                href="src/assets/img/Gallery/Gallery11.webp"
-                data-lightbox="photos"
-                ><img
-                  class="img-fluid"
-                  src="src/assets/img/Gallery/Gallery11.webp"
-              /></a>
+              <img
+                class="img-fluid"
+                src="src/assets/img/Gallery/Gallery10.webp"
+                alt="Gallery 10" />
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <a
-                href="src/assets/img/Gallery/Gallery12.webp"
-                data-lightbox="photos"
-                ><img
-                  class="img-fluid"
-                  src="src/assets/img/Gallery/Gallery12.webp"
-              /></a>
+              <img
+                class="img-fluid"
+                src="src/assets/img/Gallery/Gallery11.webp"
+                alt="Gallery 11" />
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <a
-                href="src/assets/img/Gallery/Gallery13.webp"
-                data-lightbox="photos"
-                ><img
-                  class="img-fluid"
-                  src="src/assets/img/Gallery/Gallery13.webp"
-              /></a>
-            </div> -->
-            <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <a
-                href="src/assets/img/Gallery/Gallery14.webp"
-                data-lightbox="photos"
-                ><img
-                  class="img-fluid"
-                  src="src/assets/img/Gallery/Gallery14.webp"
-              /></a>
+              <img
+                class="img-fluid"
+                src="src/assets/img/Gallery/Gallery12.webp"
+                alt="Gallery 12" />
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <a
-                href="src/assets/img/Gallery/Gallery15.webp"
-                data-lightbox="photos"
-                ><img
-                  class="img-fluid"
-                  src="src/assets/img/Gallery/Gallery15.webp"
-              /></a>
+              <img
+                class="img-fluid"
+                src="src/assets/img/Gallery/Gallery13.webp"
+                alt="Gallery 13" />
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <a
-                href="src/assets/img/Gallery/Gallery16.webp"
-                data-lightbox="photos"
-                ><img
-                  class="img-fluid"
-                  src="src/assets/img/Gallery/Gallery16.webp"
-              /></a>
+              <img
+                class="img-fluid"
+                src="src/assets/img/Gallery/Gallery14.webp"
+                alt="Gallery 14" />
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <a
-                href="src/assets/img/Gallery/Gallery17.webp"
-                data-lightbox="photos"
-                ><img
-                  class="img-fluid"
-                  src="src/assets/img/Gallery/Gallery17.webp"
-              /></a>
+              <img
+                class="img-fluid"
+                src="src/assets/img/Gallery/Gallery15.webp"
+                alt="Gallery 15" />
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <a
-                href="src/assets/img/Gallery/Gallery18.webp"
-                data-lightbox="photos"
-                ><img
-                  class="img-fluid"
-                  src="src/assets/img/Gallery/Gallery18.webp"
-              /></a>
+              <img
+                class="img-fluid"
+                src="src/assets/img/Gallery/Gallery16.webp"
+                alt="Gallery 16" />
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <a
-                href="src/assets/img/Gallery/Gallery19.webp"
-                data-lightbox="photos"
-                ><img
-                  class="img-fluid"
-                  src="src/assets/img/Gallery/Gallery19.webp"
-              /></a>
+              <img
+                class="img-fluid"
+                src="src/assets/img/Gallery/Gallery17.webp"
+                alt="Gallery 17" />
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <a
-                href="src/assets/img/Gallery/Gallery20.webp"
-                data-lightbox="photos"
-                ><img
-                  class="img-fluid"
-                  src="src/assets/img/Gallery/Gallery20.webp"
-              /></a>
+              <img
+                class="img-fluid"
+                src="src/assets/img/Gallery/Gallery18.webp"
+                alt="Gallery 18" />
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
+              <img
+                class="img-fluid"
+                src="src/assets/img/Gallery/Gallery19.webp"
+                alt="Gallery 19" />
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
+              <img
+                class="img-fluid"
+                src="src/assets/img/Gallery/Gallery20.webp"
+                alt="Gallery 20" />
             </div>
           </div>
+        </div>
+      </div>
+      <div class="modal-overlay" id="modal">
+        <div class="modal-content">
+          <button class="modal-close" id="modalClose">&times;</button>
+          <img src="" alt="Powiększone zdjęcie" id="modalImage" />
         </div>
       </div>
     </main>
@@ -292,7 +285,7 @@
           <a href="https://www.youtube.com/@dawid_olko" target="_blank"
             ><i class="footer__icon fa-brands fa-youtube"></i
           ></a>
-          <a href="https://www.tiktok.com/@dawid_olko" target="_blank"
+          <a href="https://www.tiktok.com/@dawidolko" target="_blank"
             ><i class="footer__icon fa-brands fa-tiktok"></i
           ></a>
         </div>
@@ -304,6 +297,32 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+
+    <script>
+      document.querySelector(".footer__date").textContent =
+        new Date().getFullYear();
+      document.addEventListener("DOMContentLoaded", function () {
+        const modal = document.getElementById("modal");
+        const modalImage = document.getElementById("modalImage");
+        const modalClose = document.getElementById("modalClose");
+
+        document.querySelectorAll(".photo-gallery .item img").forEach((img) => {
+          img.addEventListener("click", function () {
+            modal.classList.add("active");
+            modalImage.src = this.src;
+          });
+        });
+
+        modalClose.addEventListener("click", function () {
+          modal.classList.remove("active");
+        });
+
+        modal.addEventListener("click", function (e) {
+          if (e.target === modal) {
+            modal.classList.remove("active");
+          }
+        });
+      });
+    </script>
   </body>
 </html>

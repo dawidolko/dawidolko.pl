@@ -32,7 +32,7 @@
   <body>
     <nav class="nav">
       <div class="nav__body container">
-        <a href="#" class="nav__logo"
+        <a href="./index.html" class="nav__logo"
           ><img
             class="nav__img"
             src="src/assets/img/Home/Logotype.webp"
@@ -105,8 +105,7 @@
         <div class="contact__wrapper container">
           <form
             id="contact-form"
-            action="https://form.dawidolko.pl/mail.php"
-            method="POST"
+            onsubmit="sendMail(); return false;"
             class="contact__form move">
             <h4 class="contact__form-title">Message Me</h4>
             <div class="contact__form-top">
@@ -142,6 +141,29 @@
             <p class="contact__msg-status"></p>
           </form>
 
+          <script>
+            function sendMail() {
+              var form = document.getElementById("contact-form");
+              var name = form.name.value;
+              var email = form.email.value;
+              var subject = form.subject.value;
+              var message = form.message.value;
+              var body =
+                "Name: " +
+                name +
+                "%0D%0A" +
+                "Email: " +
+                email +
+                "%0D%0A%0D%0A" +
+                message;
+              window.location.href =
+                "mailto:dawid_olko@outlook.com?subject=" +
+                encodeURIComponent(subject) +
+                "&body=" +
+                body;
+            }
+          </script>
+
           <div class="info move">
             <h3 class="info__heading">Conatact Info</h3>
             <p class="info__text">
@@ -150,9 +172,9 @@
             <div class="info__content">
               <div class="info__icons">
                 <p><i class="info__icon fa-solid fa-user"></i></p>
-                <!-- <p>
-									<i class="info__icon fa-solid fa-location-crosshairs"></i>
-								</p> -->
+                <p>
+                  <i class="info__icon fa-solid fa-location-crosshairs"></i>
+                </p>
                 <p><i class="info__icon fa-regular fa-paper-plane"></i></p>
               </div>
               <ul class="info__items">
@@ -160,14 +182,14 @@
                   Name
                   <p class="info__item-name">Dawid</p>
                 </li>
-                <!-- <li class="info__item">
-									Location
-									<p class="info__item-name">Rzeszow</p>
-								</li> -->
+                <li class="info__item">
+                  Location
+                  <p class="info__item-name">Rzeszow</p>
+                </li>
                 <li class="info__item">
                   Email Me
-                  <a href="mailto:poczta@dawidolko.pl">
-                    <p class="info__item-name">poczta@dawidolko.pl</p>
+                  <a href="mailto:dawid_olko@outlook.com">
+                    <p class="info__item-name">dawid_olko@outlook.com</p>
                   </a>
                 </li>
               </ul>

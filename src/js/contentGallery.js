@@ -1,15 +1,12 @@
-let typed = new Typed(".header__write", {
-  strings: ["Life", "Perspective"],
-  typeSpeed: 150,
-  backSpeed: 100,
-  loop: true,
-});
-
-const msgStatus = document.querySelector(".contact__msg-status");
-const nameInput = document.querySelectorAll(".contact__form-input");
-const textArea = document.querySelector(".contact__textarea");
-
 document.addEventListener("DOMContentLoaded", function () {
+  if (typeof Typed !== "undefined") {
+    new Typed(".header__write", {
+      strings: ["Life", "Perspective"],
+      typeSpeed: 150,
+      backSpeed: 100,
+      loop: true,
+    });
+  }
   const form = document.getElementById("contact-form");
   const msgStatus = document.querySelector(".contact__msg-status");
 
@@ -20,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch("http://form.dawidolko.pl/mail.php", {
       method: "POST",
       body: formData,
-      // mode: 'cors' // Jeśli serwer jest odpowiednio skonfigurowany
+      // mode: 'cors' // Odkomentuj, jeśli serwer obsługuje CORS
     })
       .then((response) => {
         if (response.ok) {
@@ -33,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
         msgStatus.textContent = "Message sent!";
         msgStatus.classList.add("success");
         setTimeout(() => msgStatus.classList.remove("success"), 5000);
-        form.reset(); // Reset form fields after successful submission
+        form.reset();
       })
       .catch((error) => {
         console.error("Error:", error);
