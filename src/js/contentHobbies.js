@@ -1,26 +1,35 @@
-let typed = new Typed(".header__write", {
-  strings: ["Youtube", "Instagram"],
-  typeSpeed: 150,
-  backSpeed: 100,
-  loop: true,
-});
-
-const msgStatus = document.querySelector(".contact__msg-status");
-const nameInput = document.querySelectorAll(".contact__form-input");
-const textArea = document.querySelector(".contact__textarea");
+(function () {
+  const originalWarn = console.warn;
+  console.warn = function (...args) {
+    if (
+      args[0] &&
+      typeof args[0] === "string" &&
+      args[0].includes("Chrome is moving towards a new experience")
+    ) {
+      return;
+    }
+    originalWarn.apply(console, args);
+  };
+})();
 
 document.addEventListener("DOMContentLoaded", function () {
+  if (document.querySelector(".header__write")) {
+    let typed = new Typed(".header__write", {
+      strings: ["Youtube", "Instagram"],
+      typeSpeed: 150,
+      backSpeed: 100,
+      loop: true,
+    });
+  }
   const form = document.getElementById("contact-form");
+  if (!form) return;
   const msgStatus = document.querySelector(".contact__msg-status");
-
   form.addEventListener("submit", function (event) {
     event.preventDefault();
     const formData = new FormData(this);
-
     fetch("http://form.dawidolko.pl/mail.php", {
       method: "POST",
       body: formData,
-      // mode: 'cors' // Jeśli serwer jest odpowiednio skonfigurowany
     })
       .then((response) => {
         if (response.ok) {
@@ -33,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
         msgStatus.textContent = "Message sent!";
         msgStatus.classList.add("success");
         setTimeout(() => msgStatus.classList.remove("success"), 5000);
-        form.reset(); // Reset form fields after successful submission
+        form.reset();
       })
       .catch((error) => {
         console.error("Error:", error);

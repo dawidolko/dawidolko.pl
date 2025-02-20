@@ -7,36 +7,58 @@ document.addEventListener("DOMContentLoaded", function () {
       loop: true,
     });
   }
-  const form = document.getElementById("contact-form");
-  const msgStatus = document.querySelector(".contact__msg-status");
-
-  form.addEventListener("submit", function (event) {
-    event.preventDefault();
-    const formData = new FormData(this);
-
-    fetch("http://form.dawidolko.pl/mail.php", {
-      method: "POST",
-      body: formData,
-      // mode: 'cors' // Odkomentuj, jeśli serwer obsługuje CORS
-    })
-      .then((response) => {
-        if (response.ok) {
-          return response.text();
-        } else {
-          throw new Error("Server responded with " + response.status);
-        }
+  var form = document.getElementById("contact-form");
+  var msgStatus = document.querySelector(".contact__msg-status");
+  if (form) {
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      var formData = new FormData(this);
+      fetch("http://form.dawidolko.pl/mail.php", {
+        method: "POST",
+        body: formData,
       })
-      .then((text) => {
-        msgStatus.textContent = "Message sent!";
-        msgStatus.classList.add("success");
-        setTimeout(() => msgStatus.classList.remove("success"), 5000);
-        form.reset();
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-        msgStatus.textContent = "Error sending message!";
-        msgStatus.classList.add("error");
-        setTimeout(() => msgStatus.classList.remove("error"), 5000);
-      });
+        .then(function (response) {
+          if (response.ok) {
+            return response.text();
+          } else {
+            throw new Error("Server responded with " + response.status);
+          }
+        })
+        .then(function (text) {
+          msgStatus.textContent = "Message sent!";
+          msgStatus.classList.add("success");
+          setTimeout(function () {
+            msgStatus.classList.remove("success");
+          }, 5000);
+          form.reset();
+        })
+        .catch(function (error) {
+          msgStatus.textContent = "Error sending message!";
+          msgStatus.classList.add("error");
+          setTimeout(function () {
+            msgStatus.classList.remove("error");
+          }, 5000);
+        });
+    });
+  }
+  document.querySelector(".footer__date").textContent =
+    new Date().getFullYear();
+  var modal = document.getElementById("modal");
+  var modalImage = document.getElementById("modalImage");
+  var modalClose = document.getElementById("modalClose");
+  document.querySelectorAll(".img-link").forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      modal.classList.add("active");
+      modalImage.src = this.getAttribute("data-src");
+    });
+  });
+  modalClose.addEventListener("click", function () {
+    modal.classList.remove("active");
+  });
+  modal.addEventListener("click", function (e) {
+    if (e.target === modal) {
+      modal.classList.remove("active");
+    }
   });
 });

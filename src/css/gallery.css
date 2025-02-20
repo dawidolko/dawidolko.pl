@@ -1,3 +1,4 @@
+/* RESET & GLOBALNE USTAWIENIA */
 *,
 *::after,
 *::before {
@@ -9,6 +10,13 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  scroll-padding-top: 20px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  background-color: #161616;
 }
 
 a {
@@ -45,16 +53,7 @@ li {
   list-style: none;
 }
 
-html {
-  scroll-padding-top: 20px;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.6rem;
-  background-color: #161616;
-}
-
+/* KONTAINER */
 .container {
   max-width: 95%;
   width: 100%;
@@ -62,6 +61,7 @@ body {
   padding: 0 0.5em;
 }
 
+/* NAWIGACJA */
 .nav {
   position: fixed;
   width: 100%;
@@ -116,15 +116,42 @@ body {
 .nav__link {
   padding: 0.5em;
   color: #f0f0f0;
+  transition: color 0.3s ease;
 }
 .nav__link:hover {
   color: #f0f0f0;
   text-decoration: none;
 }
+.nav__link:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  background-color: #ba00e9;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.nav__link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.nav__link-blog:before {
+  content: "";
+  width: 2px;
+  left: 0;
+  background-color: #ba00e9;
+  position: absolute;
+  height: 25px;
+}
+
+/* HEADER */
 .header {
   height: 100vh;
   width: 100%;
-  background: url("../assets/img/Backgrounds/backgroundGallery.webp")
+  background: url("../assets/img/Backgrounds/backgroundGallery2-photoaidcom-greyscale.png")
     rgba(16, 16, 16, 0.3);
   background-blend-mode: darken;
   background-size: cover;
@@ -143,7 +170,6 @@ body {
   font-size: 2.4rem;
   text-align: center;
 }
-
 .header__heading {
   font-size: 4.4rem;
   text-align: center;
@@ -153,43 +179,42 @@ body {
   font-weight: 600;
   font-size: 2.2rem;
 }
+
+/* GALERIA */
 .gallery-container {
   margin-top: 50px;
 }
-
 .gallery-container .image-box {
   height: 300px;
   overflow: hidden;
+  position: relative;
 }
-
 .gallery-container .image-box img {
   filter: grayscale(1);
-  transition: all 0.2s linear;
-  height: 100%;
+  transition: transform 0.2s linear, filter 0.2s linear;
+  will-change: transform, filter;
+  height: 200px;
   width: 100%;
   object-fit: cover;
 }
-
 .gallery-container .image-box:hover img {
   transform: scale(1.025);
   filter: grayscale(0);
 }
-/* tu */
+
+/* PHOTO GALLERY */
 .photo-gallery {
   color: #313437;
   background-color: #161616;
 }
-
 .photo-gallery p {
   color: #7d8285;
 }
-
 .photo-gallery h2 {
   font-weight: bold;
   padding-top: 40px;
-  color: inherit;
+  color: #ba00e9;
 }
-
 @media (max-width: 767px) {
   .photo-gallery h2 {
     margin-bottom: 25px;
@@ -197,25 +222,20 @@ body {
     font-size: 24px;
   }
 }
-
 .photo-gallery .intro {
   font-size: 16px;
   max-width: 500px;
   margin: 0 auto 40px;
 }
-
 .photo-gallery .intro p {
   margin-bottom: 0;
 }
-
 .photo-gallery .photos {
   padding-bottom: 20px;
 }
-
 .photo-gallery .item {
   padding-bottom: 30px;
 }
-
 .galleries__heading {
   margin-bottom: 0.3em;
   font-size: 3.8rem;
@@ -223,12 +243,7 @@ body {
   color: #ba00e9;
 }
 
-.photo-gallery h2 {
-  font-weight: bold;
-  padding-top: 40px;
-  color: inherit;
-  color: #ba00e9;
-}
+/* Animacje przy przewijaniu galerii */
 @media (min-width: 810px) {
   .galleries__heading,
   .line {
@@ -238,6 +253,29 @@ body {
     color: #ba00e9;
   }
 }
+
+/* FIGURE I DATA NA ZDJĘCIU */
+figure {
+  margin: 0;
+  position: relative;
+}
+figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5em;
+  font-size: 1.4rem;
+  color: #fff;
+  text-align: center;
+  background: transparent;
+  transition: background-color 0.2s;
+}
+figure:hover figcaption {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* INFO */
 .info__heading {
   margin-bottom: 0.5em;
   font-size: 2.4rem;
@@ -283,6 +321,7 @@ body {
   background-color: #9f9f9f;
 }
 
+/* ABOUT & INFO MESSAGE */
 .about__message,
 .info__message {
   display: none;
@@ -290,12 +329,12 @@ body {
   font-size: 1.2rem;
   color: #ba00e9;
 }
-
 .about__message {
   margin-bottom: 1em;
   margin-top: -1em;
 }
 
+/* FOOTER */
 .footer {
   background-color: #101311;
   padding: 1.5em 0.5em;
@@ -316,8 +355,13 @@ body {
 }
 .footer__icon {
   color: #9f9f9f;
+  transition: 0.3s ease;
+}
+.footer__icon:hover {
+  color: #f0eded;
 }
 
+/* LINIA ANIMACJI */
 .line {
   display: flex;
   justify-content: center;
@@ -348,53 +392,7 @@ body {
   }
 }
 
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  height: auto;
-  max-width: 100%;
-  display: block;
-}
-
-input,
-button,
-textarea,
-select {
-  font-family: inherit;
-}
-
-button {
-  border: none;
-  cursor: pointer;
-}
-
-textarea {
-  resize: vertical;
-}
-
-ul {
-  list-style-type: none;
-}
-
-li {
-  list-style: none;
-}
-
+/* MEDIA QUERIES */
 @media (min-width: 500px) {
   .nav__links {
     height: 60vh;
@@ -474,7 +472,7 @@ li {
     height: 25px;
   }
   .header {
-    background: url("../assets/img/Backgrounds/backgroundGallery.webp")
+    background: url("../assets/img/Backgrounds/backgroundGallery2-photoaidcom-greyscale.png")
       rgba(16, 16, 16, 0.3);
     background-blend-mode: darken;
     background-size: cover;
@@ -515,53 +513,6 @@ li {
     color: #f0eded;
   }
 }
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  height: auto;
-  max-width: 100%;
-  display: block;
-}
-
-input,
-button,
-textarea,
-select {
-  font-family: inherit;
-}
-
-button {
-  border: none;
-  cursor: pointer;
-}
-
-textarea {
-  resize: vertical;
-}
-
-ul {
-  list-style-type: none;
-}
-
-li {
-  list-style: none;
-}
-
 @media (min-width: 1024px) {
   html {
     scroll-padding-top: unset;
@@ -580,4 +531,6 @@ li {
   .header__write {
     font-size: 4rem;
   }
-} /*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -121,7 +121,7 @@ body {
 .header {
   height: 100vh;
   width: 100%;
-  background: url("../assets/img/Backgrounds/backgroundHobbies.webp")
+  background: url("../assets/img/Backgrounds/backgroundHobbies2-photoaidcom-greyscale.png")
     rgba(16, 16, 16, 0.3);
   background-blend-mode: darken;
   background-size: cover;
@@ -210,7 +210,6 @@ body {
 iframe,
 .instagram-media {
   width: 100%;
-  max-width: 400px; /* Adjust this value as needed */
   border: none;
   border-radius: 8px;
 }
@@ -414,6 +413,65 @@ ul {
 li {
   list-style: none;
 }
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: 2fr;
+  gap: 20px;
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.hobby-box {
+  position: relative;
+  margin: auto;
+  width: 80%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #161616;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hobby-box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hobby-box .media {
+  width: 100%;
+  height: 100%;
+}
+
+.hobby-box iframe,
+.hobby-box .instagram-media {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hobby-box .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 60px;
+  height: 95%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 10px;
+  text-align: center;
+}
+
+.hobby-box:hover .overlay {
+  opacity: 1;
+}
 
 @media (min-width: 500px) {
   .nav__links {
@@ -494,7 +552,7 @@ li {
     height: 25px;
   }
   .header {
-    background: url("../assets/img/Backgrounds/backgroundHobbies.webp")
+    background: url("../assets/img/Backgrounds/backgroundHobbies2-photoaidcom-greyscale.png")
       rgba(16, 16, 16, 0.3);
     background-blend-mode: darken;
     background-size: cover;

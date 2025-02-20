@@ -121,7 +121,7 @@ body {
 .header {
   height: 100vh;
   width: 100%;
-  background: url("../assets/img/Backgrounds/backgroundProject.webp")
+  background: url("../assets/img/Backgrounds/backgroundProject2-photoaidcom-greyscale.png")
     rgba(16, 16, 16, 0.3);
   background-blend-mode: darken;
   background-size: cover;
@@ -583,7 +583,7 @@ li {
     height: 25px;
   }
   .header {
-    background: url("../assets/img/Backgrounds/backgroundProject.webp")
+    background: url("../assets/img/Backgrounds/backgroundProject2-photoaidcom-greyscale.png")
       rgba(16, 16, 16, 0.3);
     background-blend-mode: darken;
     background-size: cover;

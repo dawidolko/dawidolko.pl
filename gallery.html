@@ -26,17 +26,66 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css" />
     <link rel="stylesheet" href="src/css/gallery.css" />
-    <script
-      src="https://kit.fontawesome.com/fdc09ecfc9.js"
-      crossorigin="anonymous"></script>
-
-    <title>GALLERY - Dawid Olko</title>
     <style>
+      .photos {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 1fr;
+      }
+      @media (min-width: 800px) {
+        .photos {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (min-width: 1200px) {
+        .photos {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      @media (min-width: 1600px) {
+        .photos {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+      .image-box {
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+      }
+      .image-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.2s, filter 0.2s;
+        filter: grayscale(1);
+      }
+      .image-box:hover img {
+        transform: scale(1.025);
+        filter: grayscale(0);
+      }
+      figure {
+        margin: 0;
+        position: relative;
+      }
+      figcaption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0.5em;
+        font-size: 1.4rem;
+        color: #fff;
+        text-align: center;
+        background: transparent;
+        transition: background-color 0.2s;
+      }
+      figure:hover figcaption {
+        background-color: rgba(0, 0, 0, 0.7);
+      }
       .modal-overlay {
         position: fixed;
         top: 0;
@@ -53,47 +102,60 @@
         display: flex;
       }
       .modal-content {
-        position: relative;
+        background: transparent !important;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         max-width: 90%;
         max-height: 90%;
       }
-      .modal-content img {
-        width: 100%;
-        height: auto;
+      .modal-img-wrapper {
+        position: relative;
+        display: inline-block;
+      }
+      .modal-img-wrapper img {
+        margin: auto;
+        max-width: 60%;
+        max-height: 60%;
+        object-fit: contain;
         display: block;
       }
       .modal-close {
         position: absolute;
-        top: 10px;
-        right: 10px;
+        top: 0;
+        right: 300px;
         background: red;
         border: none;
         color: #fff;
         font-size: 2rem;
-        padding: 0 10px;
+        padding: 0.5em 1em;
         cursor: pointer;
-        z-index: 101;
       }
-      .nav__logo:hover {
-        color: #fff;
-        text-decoration: none;
+      @media (max-width: 1800px) {
+        .modal-close {
+          right: 200px;
+        }
       }
-      .header__heading {
-        font-style: bold;
-        font-size: 4.4rem;
+      @media (max-width: 1100px) {
+        .modal-close {
+          right: 0;
+        }
       }
     </style>
+    <title>GALLERY - Dawid Olko</title>
   </head>
   <body>
     <nav class="nav">
       <div class="nav__body container">
-        <a href="./index.html" class="nav__logo"
-          ><img
+        <a href="./index.html" class="nav__logo">
+          <img
             class="nav__img"
             src="src/assets/img/Home/Logotype.webp"
             alt="Logotype Website" />
-          dawidolko.pl</a
-        >
+          dawidolko.pl
+        </a>
         <div class="nav__button">
           <img src="src/assets/img/icon_hamburger.png" alt="hamburger" />
         </div>
@@ -105,13 +167,10 @@
           <li><a class="nav__link" href="contact.html">contact</a></li>
           <li><a class="nav__link" href="gallery.html">gallery</a></li>
           <li><a class="nav__link" href="faq.html">faq</a></li>
-          <li>
-            <a class="nav__link nav__link-blog" href="blog.html">blog</a>
-          </li>
+          <li><a class="nav__link" href="blog.html">blog</a></li>
         </ul>
       </div>
     </nav>
-
     <header class="header">
       <div class="header__body container">
         <p class="header__text">Welcome!</p>
@@ -123,146 +182,156 @@
         </div>
       </div>
     </header>
-
     <main>
       <div class="photo-gallery gallery-container">
         <h2 class="galleries__heading moves">Gallery</h2>
         <div class="line moves">
-          <div class="line__green"><span class="line__black"></span></div>
+          <div class="line__green">
+            <span class="line__black"></span>
+          </div>
         </div>
         <div class="container photki move">
-          <div class="row photos">
-            <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <img
-                class="img-fluid"
-                src="src/assets/img/Gallery/Gallery1.webp"
-                alt="Gallery 1" />
+          <div class="photos">
+            <div class="item image-box">
+              <figure>
+                <a
+                  href="#"
+                  class="img-link"
+                  data-src="src/assets/img/Gallery/Gallery1.webp">
+                  <img
+                    class="img-fluid"
+                    loading="lazy"
+                    decoding="async"
+                    src="src/assets/img/Gallery/Gallery1.webp"
+                    alt="Gallery 1" />
+                </a>
+                <figcaption>19.04.2023</figcaption>
+              </figure>
             </div>
-            <!-- <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <img
-                class="img-fluid"
-                src="src/assets/img/Gallery/gallery2.webp"
-                alt="Gallery 2" />
+            <div class="item image-box">
+              <figure>
+                <a
+                  href="#"
+                  class="img-link"
+                  data-src="src/assets/img/Gallery/Gallery14.webp">
+                  <img
+                    class="img-fluid"
+                    loading="lazy"
+                    decoding="async"
+                    src="src/assets/img/Gallery/Gallery14.webp"
+                    alt="Gallery 14" />
+                </a>
+                <figcaption>07.10.2020</figcaption>
+              </figure>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <img
-                class="img-fluid"
-                src="src/assets/img/Gallery/Gallery3.webp"
-                alt="Gallery 3" />
+            <div class="item image-box">
+              <figure>
+                <a
+                  href="#"
+                  class="img-link"
+                  data-src="src/assets/img/Gallery/Gallery15.webp">
+                  <img
+                    class="img-fluid"
+                    loading="lazy"
+                    decoding="async"
+                    src="src/assets/img/Gallery/Gallery15.webp"
+                    alt="Gallery 15" />
+                </a>
+                <figcaption>27.07.2021</figcaption>
+              </figure>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <img
-                class="img-fluid"
-                src="src/assets/img/Gallery/Gallery4.webp"
-                alt="Gallery 4" />
+            <div class="item image-box">
+              <figure>
+                <a
+                  href="#"
+                  class="img-link"
+                  data-src="src/assets/img/Gallery/Gallery16.webp">
+                  <img
+                    class="img-fluid"
+                    loading="lazy"
+                    decoding="async"
+                    src="src/assets/img/Gallery/Gallery16.webp"
+                    alt="Gallery 16" />
+                </a>
+                <figcaption>23.07.2020</figcaption>
+              </figure>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <img
-                class="img-fluid"
-                src="src/assets/img/Gallery/Gallery5.webp"
-                alt="Gallery 5" />
+            <div class="item image-box">
+              <figure>
+                <a
+                  href="#"
+                  class="img-link"
+                  data-src="src/assets/img/Gallery/Gallery17.webp">
+                  <img
+                    class="img-fluid"
+                    loading="lazy"
+                    decoding="async"
+                    src="src/assets/img/Gallery/Gallery17.webp"
+                    alt="Gallery 17" />
+                </a>
+                <figcaption>22.07.2020</figcaption>
+              </figure>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <img
-                class="img-fluid"
-                src="src/assets/img/Gallery/Gallery6.webp"
-                alt="Gallery 6" />
+            <div class="item image-box">
+              <figure>
+                <a
+                  href="#"
+                  class="img-link"
+                  data-src="src/assets/img/Gallery/Gallery18.webp">
+                  <img
+                    class="img-fluid"
+                    loading="lazy"
+                    decoding="async"
+                    src="src/assets/img/Gallery/Gallery18.webp"
+                    alt="Gallery 18" />
+                </a>
+                <figcaption>23.04.2020</figcaption>
+              </figure>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <img
-                class="img-fluid"
-                src="src/assets/img/Gallery/Gallery7.webp"
-                alt="Gallery 7" />
+            <div class="item image-box">
+              <figure>
+                <a
+                  href="#"
+                  class="img-link"
+                  data-src="src/assets/img/Gallery/Gallery19.webp">
+                  <img
+                    class="img-fluid"
+                    loading="lazy"
+                    decoding="async"
+                    src="src/assets/img/Gallery/Gallery19.webp"
+                    alt="Gallery 19" />
+                </a>
+                <figcaption>22.03.2020</figcaption>
+              </figure>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <img
-                class="img-fluid"
-                src="src/assets/img/Gallery/Gallery8.webp"
-                alt="Gallery 8" />
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <img
-                class="img-fluid"
-                src="src/assets/img/Gallery/Gallery9.webp"
-                alt="Gallery 9" />
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <img
-                class="img-fluid"
-                src="src/assets/img/Gallery/Gallery10.webp"
-                alt="Gallery 10" />
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <img
-                class="img-fluid"
-                src="src/assets/img/Gallery/Gallery11.webp"
-                alt="Gallery 11" />
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <img
-                class="img-fluid"
-                src="src/assets/img/Gallery/Gallery12.webp"
-                alt="Gallery 12" />
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <img
-                class="img-fluid"
-                src="src/assets/img/Gallery/Gallery13.webp"
-                alt="Gallery 13" />
-            </div> -->
-            <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <img
-                class="img-fluid"
-                src="src/assets/img/Gallery/Gallery14.webp"
-                alt="Gallery 14" />
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <img
-                class="img-fluid"
-                src="src/assets/img/Gallery/Gallery15.webp"
-                alt="Gallery 15" />
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <img
-                class="img-fluid"
-                src="src/assets/img/Gallery/Gallery16.webp"
-                alt="Gallery 16" />
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <img
-                class="img-fluid"
-                src="src/assets/img/Gallery/Gallery17.webp"
-                alt="Gallery 17" />
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <img
-                class="img-fluid"
-                src="src/assets/img/Gallery/Gallery18.webp"
-                alt="Gallery 18" />
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <img
-                class="img-fluid"
-                src="src/assets/img/Gallery/Gallery19.webp"
-                alt="Gallery 19" />
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item image-box">
-              <img
-                class="img-fluid"
-                src="src/assets/img/Gallery/Gallery20.webp"
-                alt="Gallery 20" />
+            <div class="item image-box">
+              <figure>
+                <a
+                  href="#"
+                  class="img-link"
+                  data-src="src/assets/img/Gallery/Gallery20.webp">
+                  <img
+                    class="img-fluid"
+                    loading="lazy"
+                    decoding="async"
+                    src="src/assets/img/Gallery/Gallery20.webp"
+                    alt="Gallery 20" />
+                </a>
+                <figcaption>01.07.2021</figcaption>
+              </figure>
             </div>
           </div>
         </div>
       </div>
       <div class="modal-overlay" id="modal">
         <div class="modal-content">
-          <button class="modal-close" id="modalClose">&times;</button>
-          <img src="" alt="Powiększone zdjęcie" id="modalImage" />
+          <div class="modal-img-wrapper">
+            <img src="" alt="Powiększone zdjęcie" id="modalImage" />
+            <button class="modal-close" id="modalClose">&times;</button>
+          </div>
         </div>
       </div>
     </main>
-
     <footer class="footer">
       <div class="footer__content container">
         <p class="footer__text">
@@ -270,34 +339,32 @@
           Rights Reserved
         </p>
         <div class="footer__icons">
-          <a href="https://www.instagram.com/dawid_olko/" target="_blank"
-            ><i class="footer__icon fa-brands fa-instagram"></i
-          ></a>
-          <a href="https://github.com/dawidolko" target="_blank"
-            ><i class="footer__icon fa-brands fa-github"></i
-          ></a>
-          <a href="https://www.facebook.com/olkodawid/" target="_blank"
-            ><i class="footer__icon fa-brands fa-square-facebook"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/dawidolko/" target="_blank"
-            ><i class="footer__icon fa-brands fa-linkedin"></i
-          ></a>
-          <a href="https://www.youtube.com/@dawid_olko" target="_blank"
-            ><i class="footer__icon fa-brands fa-youtube"></i
-          ></a>
-          <a href="https://www.tiktok.com/@dawidolko" target="_blank"
-            ><i class="footer__icon fa-brands fa-tiktok"></i
-          ></a>
+          <a href="https://www.instagram.com/dawid_olko/" target="_blank">
+            <i class="footer__icon fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://github.com/dawidolko" target="_blank">
+            <i class="footer__icon fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.facebook.com/olkodawid/" target="_blank">
+            <i class="footer__icon fa-brands fa-square-facebook"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/dawidolko/" target="_blank">
+            <i class="footer__icon fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://www.youtube.com/@dawid_olko" target="_blank">
+            <i class="footer__icon fa-brands fa-youtube"></i>
+          </a>
+          <a href="https://www.tiktok.com/@dawid_olko" target="_blank">
+            <i class="footer__icon fa-brands fa-tiktok"></i>
+          </a>
         </div>
       </div>
     </footer>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="src/js/contentGallery.js"></script>
     <script src="src/js/index.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-
     <script>
       document.querySelector(".footer__date").textContent =
         new Date().getFullYear();
@@ -305,18 +372,16 @@
         const modal = document.getElementById("modal");
         const modalImage = document.getElementById("modalImage");
         const modalClose = document.getElementById("modalClose");
-
-        document.querySelectorAll(".photo-gallery .item img").forEach((img) => {
-          img.addEventListener("click", function () {
+        document.querySelectorAll(".img-link").forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
             modal.classList.add("active");
-            modalImage.src = this.src;
+            modalImage.src = this.getAttribute("data-src");
           });
         });
-
         modalClose.addEventListener("click", function () {
           modal.classList.remove("active");
         });
-
         modal.addEventListener("click", function (e) {
           if (e.target === modal) {
             modal.classList.remove("active");

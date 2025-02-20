@@ -5,22 +5,16 @@ let typed = new Typed(".header__write", {
   loop: true,
 });
 
-const msgStatus = document.querySelector(".contact__msg-status");
-const nameInput = document.querySelectorAll(".contact__form-input");
-const textArea = document.querySelector(".contact__textarea");
-
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("contact-form");
+  if (!form) return;
   const msgStatus = document.querySelector(".contact__msg-status");
-
   form.addEventListener("submit", function (event) {
     event.preventDefault();
     const formData = new FormData(this);
-
     fetch("http://form.dawidolko.pl/mail.php", {
       method: "POST",
       body: formData,
-      // mode: 'cors' // Jeśli serwer jest odpowiednio skonfigurowany
     })
       .then((response) => {
         if (response.ok) {
@@ -33,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
         msgStatus.textContent = "Message sent!";
         msgStatus.classList.add("success");
         setTimeout(() => msgStatus.classList.remove("success"), 5000);
-        form.reset(); // Reset form fields after successful submission
+        form.reset();
       })
       .catch((error) => {
         console.error("Error:", error);
