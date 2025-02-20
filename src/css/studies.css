@@ -250,7 +250,6 @@ body {
 .blank,
 .other {
   width: 100%;
-  min-height: 0vh;
   background-color: var(--color);
 }
 .blank {
@@ -267,7 +266,6 @@ body {
 
 .blank .item {
   display: flex;
-  max-width: 320px;
   background-color: white;
   flex-direction: column;
   align-items: center;
@@ -394,6 +392,7 @@ iframe {
   border: 1px solid black;
 }
 .footer {
+  margin-top: 50px;
   background-color: #101311;
   padding: 1.5em 0.5em;
 }
