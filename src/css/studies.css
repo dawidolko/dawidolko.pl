@@ -250,7 +250,7 @@ body {
 .blank,
 .other {
   width: 100%;
-  min-height: 60vh;
+  min-height: 0vh;
   background-color: var(--color);
 }
 .blank {

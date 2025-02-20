@@ -417,7 +417,7 @@ li {
   display: grid;
   grid-template-columns: 2fr;
   gap: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   max-width: 800px;
   margin: auto;
 }
