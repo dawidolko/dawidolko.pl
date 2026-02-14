@@ -16,7 +16,7 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
-  background-color: #161616;
+  background-color: #0d0d0d;
 }
 
 a {
@@ -76,6 +76,14 @@ li {
 }
 .nav__logo {
   display: none;
+  color: #f0f0f0 !important;
+  text-decoration: none !important;
+}
+.nav__logo:hover,
+.nav__logo:visited,
+.nav__logo:active {
+  color: #f0f0f0 !important;
+  text-decoration: none !important;
 }
 .nav__img {
   margin-top: 10px;
@@ -151,7 +159,7 @@ li {
 .header {
   height: 100vh;
   width: 100%;
-  background: url("../assets/img/Backgrounds/backgroundGallery2-photoaidcom-greyscale.png")
+  background: url("../assets/img/Backgrounds/backgroundGallery2-photoaidcom-greyscale.webp")
     rgba(16, 16, 16, 0.3);
   background-blend-mode: darken;
   background-size: cover;
@@ -185,27 +193,54 @@ li {
   margin-top: 50px;
 }
 .gallery-container .image-box {
-  height: 300px;
+  height: 300px !important;
   overflow: hidden;
   position: relative;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: stretch;
+}
+.gallery-container .image-box figure {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: relative;
+  display: flex;
+}
+.gallery-container .image-box figure a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.gallery-container .image-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(186, 0, 233, 0.4);
 }
 .gallery-container .image-box img {
-  filter: grayscale(1);
-  transition: transform 0.2s linear, filter 0.2s linear;
+  filter: grayscale(0.8) brightness(0.9);
+  transition:
+    transform 0.4s ease,
+    filter 0.4s ease;
   will-change: transform, filter;
-  height: 200px;
-  width: 100%;
-  object-fit: cover;
+  height: 100% !important;
+  width: 100% !important;
+  min-height: 300px !important;
+  max-height: 300px !important;
+  object-fit: cover !important;
+  display: block;
 }
 .gallery-container .image-box:hover img {
-  transform: scale(1.025);
-  filter: grayscale(0);
+  transform: scale(1.1);
+  filter: grayscale(0) brightness(1);
 }
 
 /* PHOTO GALLERY */
 .photo-gallery {
-  color: #313437;
-  background-color: #161616;
+  color: #f0f0f0;
+  background-color: #0d0d0d;
+  padding: 2em 0;
 }
 .photo-gallery p {
   color: #7d8285;
@@ -241,6 +276,8 @@ li {
   font-size: 3.8rem;
   text-align: center;
   color: #ba00e9;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 /* Animacje przy przewijaniu galerii */
@@ -249,7 +286,9 @@ li {
   .line {
     transform: translateY(150px);
     opacity: 0;
-    transition: opacity 2s, transform 1.5s;
+    transition:
+      opacity 2s,
+      transform 1.5s;
     color: #ba00e9;
   }
 }
@@ -264,15 +303,21 @@ figcaption {
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 0.5em;
+  padding: 0.8em;
   font-size: 1.4rem;
   color: #fff;
   text-align: center;
-  background: transparent;
-  transition: background-color 0.2s;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  transition: all 0.3s ease;
+  font-weight: 500;
 }
 figure:hover figcaption {
-  background-color: rgba(0, 0, 0, 0.7);
+  background: linear-gradient(
+    to top,
+    rgba(186, 0, 233, 0.9),
+    rgba(0, 0, 0, 0.7)
+  );
+  padding: 1em;
 }
 
 /* INFO */
@@ -349,7 +394,7 @@ figure:hover figcaption {
   text-align: center;
 }
 .footer__icons {
-  display: flex;
+  display: flex !important;
   gap: 0.5em;
   font-size: 1.8rem;
 }
@@ -365,14 +410,16 @@ figure:hover figcaption {
 .line {
   display: flex;
   justify-content: center;
-  margin-bottom: 2em;
+  margin-bottom: 2.5em;
 }
 .line__green {
   position: relative;
-  width: 100px;
-  height: 3px;
-  background-color: #ba00e9;
+  width: 120px;
+  height: 4px;
+  background: linear-gradient(90deg, #ba00e9, #d400ff, #ba00e9);
   overflow: hidden;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(186, 0, 233, 0.5);
 }
 .line__black {
   position: absolute;
@@ -402,7 +449,9 @@ figure:hover figcaption {
   .photki {
     transform: translateY(150px);
     opacity: 1;
-    transition: opacity 2s, transform 1.5s;
+    transition:
+      opacity 2s,
+      transform 1.5s;
   }
   .photki:hover {
     height: 100%;
@@ -419,11 +468,24 @@ figure:hover figcaption {
   }
   .nav__logo {
     font-size: 2rem;
-    color: #f0f0f0;
+    color: #f0f0f0 !important;
     font-family: "Arizonia", cursive;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    text-decoration: none !important;
+  }
+  .nav__logo:hover,
+  .nav__logo:visited,
+  .nav__logo:active {
+    color: #f0f0f0 !important;
+    text-decoration: none !important;
+  }
+  .nav__logo:after,
+  .nav__logo:hover:after {
+    display: none !important;
+    content: none !important;
   }
   .nav__button {
     display: none;
@@ -472,7 +534,7 @@ figure:hover figcaption {
     height: 25px;
   }
   .header {
-    background: url("../assets/img/Backgrounds/backgroundGallery2-photoaidcom-greyscale.png")
+    background: url("../assets/img/Backgrounds/backgroundGallery2-photoaidcom-greyscale.webp")
       rgba(16, 16, 16, 0.3);
     background-blend-mode: darken;
     background-size: cover;

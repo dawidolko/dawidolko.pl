@@ -120,7 +120,7 @@ body {
 .header {
   height: 100vh;
   width: 100%;
-  background: url("../assets/img/Backgrounds/backgroundContact2-photoaidcom-greyscale.png")
+  background: url("../assets/img/Backgrounds/backgroundContact2-photoaidcom-greyscale.webp")
     rgba(16, 16, 16, 0.3);
   background-blend-mode: darken;
   background-size: cover;
@@ -472,7 +472,7 @@ li {
     height: 25px;
   }
   .header {
-    background: url("../assets/img/Backgrounds/backgroundContact2-photoaidcom-greyscale.png")
+    background: url("../assets/img/Backgrounds/backgroundContact2-photoaidcom-greyscale.webp")
       rgba(16, 16, 16, 0.3);
     background-blend-mode: darken;
     background-size: cover;
@@ -516,7 +516,9 @@ li {
   .contact .info {
     transform: translateY(150px);
     opacity: 0;
-    transition: opacity 2s, transform 1.5s;
+    transition:
+      opacity 2s,
+      transform 1.5s;
   }
   .contact__wrapper {
     display: flex;
@@ -528,7 +530,9 @@ li {
   .contact__form {
     transform: translateY(150px);
     opacity: 0;
-    transition: opacity 2s, transform 1.5s;
+    transition:
+      opacity 2s,
+      transform 1.5s;
     width: 70%;
   }
   .contact__form-top {

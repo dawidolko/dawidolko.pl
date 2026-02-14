@@ -52,7 +52,7 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
-  background-color: #0a0a0a;
+  background-color: #0d0d0d;
 }
 
 .container {
@@ -121,7 +121,7 @@ body {
 .header {
   height: 100vh;
   width: 100%;
-  background: url("../assets/img/Backgrounds/backgroundProject2-photoaidcom-greyscale.png")
+  background: url("../assets/img/Backgrounds/backgroundProject2-photoaidcom-greyscale.webp")
     rgba(16, 16, 16, 0.3);
   background-blend-mode: darken;
   background-size: cover;
@@ -158,13 +158,15 @@ body {
   align-items: center;
   padding: 8em 0;
   color: #ba00e9;
-  background-color: #0a0a0a;
+  background-color: #0d0d0d;
   margin-bottom: 50px;
 }
 .portfolio__heading {
   margin-bottom: 0.3em;
   font-size: 3.8rem;
   text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 .portfolio__body {
   display: flex;
@@ -178,6 +180,14 @@ body {
   width: 300px;
   height: 350px;
   position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(186, 0, 233, 0.1);
+  transition: all 0.3s ease;
+}
+.portfolio__box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(186, 0, 233, 0.3);
 }
 .portfolio__shadow {
   display: flex;
@@ -190,23 +200,51 @@ body {
   left: 0;
   width: 100%;
   height: 35%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.7));
   z-index: 9;
+  transition: all 0.3s ease;
+}
+.portfolio__box:hover .portfolio__shadow {
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(186, 0, 233, 0.8),
+    rgba(0, 0, 0, 0.9)
+  );
 }
 .portfolio__shadow-title {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+.portfolio__box:hover .portfolio__shadow-title {
+  transform: scale(1.05);
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 .portfolio__title-icon {
   font-size: 2.8rem;
-  color: #3a3a3a;
+  color: #6a6a6a;
+  transition: all 0.3s ease;
+}
+.portfolio__box:hover .portfolio__title-icon {
+  color: #f0f0f0;
+  transform: scale(1.15) rotate(5deg);
+  filter: drop-shadow(0 0 8px rgba(186, 0, 233, 0.8));
 }
 .portfolio__icons {
   display: flex;
-  gap: 1em;
+  gap: 1.5em;
 }
 .portfolio__link {
   font-size: 2.2rem;
   color: #f0f0f0;
+  transition: all 0.3s ease;
+}
+.portfolio__link:hover {
+  color: #ba00e9;
+  transform: scale(1.2);
 }
 .portfolio__img {
   width: 100%;
@@ -214,26 +252,44 @@ body {
   -o-object-fit: cover;
   object-fit: cover;
   filter: grayscale(0.6);
+  transition: all 0.4s ease;
+}
+.portfolio__box:hover .portfolio__img {
+  filter: grayscale(0);
+  transform: scale(1.05);
 }
 .portfolio__stock {
-  background-color: #080808;
+  background-color: #1a1a1a;
   display: flex;
-  gap: 3em;
+  gap: 3.5em;
   justify-content: center;
-  padding: 1em 0;
+  padding: 1.2em 0;
+  transition: all 0.3s ease;
+}
+.portfolio__box:hover .portfolio__stock {
+  background: linear-gradient(to right, #1a1a1a, #ba00e9, #1a1a1a);
 }
 
 .portfolio__btn {
-  padding: 0.8em 1.6em;
+  padding: 1em 2.5em;
   color: #f0f0f0;
-  font-size: 1.4rem;
-  background-color: #ba00e9;
+  font-size: 1.6rem;
+  background: linear-gradient(135deg, #ba00e9, #8b00b3);
   border: none;
-  border-radius: 5px;
+  border-radius: 50px;
   width: -moz-fit-content;
   width: fit-content;
   margin-bottom: 3em;
   margin-top: 130px;
+  box-shadow: 0 4px 15px rgba(186, 0, 233, 0.3);
+  transition: all 0.3s ease;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.portfolio__btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 25px rgba(186, 0, 233, 0.5);
+  background: linear-gradient(135deg, #d400ff, #ba00e9);
 }
 
 .portfolio__btn a {
@@ -257,23 +313,28 @@ body {
 .container1 .card .face {
   width: 350px;
   height: 200px;
-  transition: 0.4s;
+  transition: all 0.4s ease;
+  border-radius: 12px;
 }
 .container1 .card .face.face1 {
   position: relative;
-  background: #131212;
+  background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
   z-index: 1;
   transform: translateY(100px);
+  border-radius: 12px;
+  border: 1px solid rgba(186, 0, 233, 0.2);
 }
 .container1 .card:hover .face.face1 {
   transform: translateY(0);
-  box-shadow: inset 0 0 60px whitesmoke, inset 20px 0 80px #f0f,
-    inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff,
-    0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
+  box-shadow:
+    0 0 30px rgba(186, 0, 233, 0.4),
+    inset 0 0 40px rgba(186, 0, 233, 0.1),
+    0 8px 25px rgba(0, 0, 0, 0.5);
+  border-color: rgba(186, 0, 233, 0.6);
 }
 .container1 .card .face.face1 .content {
   opacity: 0.2;
@@ -415,14 +476,16 @@ body {
 .line {
   display: flex;
   justify-content: center;
-  margin-bottom: 2em;
+  margin-bottom: 2.5em;
 }
 .line__green {
   position: relative;
-  width: 100px;
-  height: 3px;
-  background-color: #ba00e9;
+  width: 120px;
+  height: 4px;
+  background: linear-gradient(90deg, #ba00e9, #d400ff, #ba00e9);
   overflow: hidden;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(186, 0, 233, 0.5);
 }
 .line__black {
   position: absolute;
@@ -514,7 +577,9 @@ li {
   .card {
     transform: translateY(150px);
     opacity: 1;
-    transition: opacity 2s, transform 1.5s;
+    transition:
+      opacity 2s,
+      transform 1.5s;
   }
   .card:hover {
     height: 100%;
@@ -582,7 +647,7 @@ li {
     height: 25px;
   }
   .header {
-    background: url("../assets/img/Backgrounds/backgroundProject2-photoaidcom-greyscale.png")
+    background: url("../assets/img/Backgrounds/backgroundProject2-photoaidcom-greyscale.webp")
       rgba(16, 16, 16, 0.3);
     background-blend-mode: darken;
     background-size: cover;
@@ -616,7 +681,9 @@ li {
   .portfolio .line {
     transform: translateY(150px);
     opacity: 0;
-    transition: opacity 2s, transform 1.5s;
+    transition:
+      opacity 2s,
+      transform 1.5s;
   }
   .portfolio__title-icon {
     transition: color 0.3s ease;
@@ -624,7 +691,9 @@ li {
   .portfolio__box {
     transform: translateY(150px);
     opacity: 0;
-    transition: opacity 2s, transform 1.5s;
+    transition:
+      opacity 2s,
+      transform 1.5s;
   }
   .portfolio__box:hover .portfolio__shadow {
     height: 100%;

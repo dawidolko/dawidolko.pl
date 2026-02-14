@@ -120,7 +120,7 @@ body {
 .header {
   height: 100vh;
   width: 100%;
-  background: url("../assets/img/Backgrounds/backgroundFaq2-photoaidcom-greyscale.png")
+  background: url("../assets/img/Backgrounds/backgroundFaq2-photoaidcom-greyscale.webp")
     rgba(16, 16, 16, 0.3);
   background-blend-mode: darken;
   background-size: cover;
@@ -343,7 +343,9 @@ details[open] > summary {
   .line {
     transform: translateY(150px);
     opacity: 0;
-    transition: opacity 2s, transform 1.5s;
+    transition:
+      opacity 2s,
+      transform 1.5s;
     color: #ba00e9;
   }
 }
@@ -455,7 +457,9 @@ li {
   .container1 {
     transform: translateY(150px);
     opacity: 1;
-    transition: opacity 2s, transform 1.5s;
+    transition:
+      opacity 2s,
+      transform 1.5s;
   }
   .container1:hover {
     height: 100%;
@@ -523,7 +527,7 @@ li {
     height: 25px;
   }
   .header {
-    background: url("../assets/img/Backgrounds/backgroundFaq2-photoaidcom-greyscale.png")
+    background: url("../assets/img/Backgrounds/backgroundFaq2-photoaidcom-greyscale.webp")
       rgba(16, 16, 16, 0.3);
     background-blend-mode: darken;
     background-size: cover;

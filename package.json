@@ -27,6 +27,7 @@
     "kss": "^3.1.0",
     "sass": "^1.70.0",
     "sass-loader": "^14.1.0",
+    "sharp": "^0.34.5",
     "style-loader": "^3.3.4",
     "webpack": "^5.90.1",
     "webpack-cli": "^5.1.4",
@@ -35,5 +36,8 @@
   "directories": {
     "doc": "docs"
   },
-  "keywords": []
+  "keywords": [],
+  "dependencies": {
+    "heic-convert": "^2.1.0"
+  }
 }

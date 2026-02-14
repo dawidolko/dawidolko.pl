@@ -42,20 +42,20 @@ const blogContent = [
     alt3: "Winter photos section",
     alt4: "Summer photos section",
   },
-  // {
-  //   title: "Sport: A healthy mind in a healthy body...",
-  //   description:
-  //     "<p>The adage <q>A healthy mind in a healthy body</q> perfectly encapsulates my relationship with sport. To me, sport is not just a physical activity; it's a sanctuary where the mind and body harmonize, a realm where every drop of sweat and every beat of the heart narrates a story of determination, resilience, and self-discovery. Engaging in sports has always been a cornerstone of my life, providing not only a physical outlet but also a means to cultivate discipline, focus, and a sense of achievement.</p> <p>Whether it's the solo pursuit of beating my own running record in the early morning mist or the collaborative spirit of a football match under the floodlights, each form of sport offers a unique blend of challenges and rewards. These experiences are not just about winning or losing; they're about setting goals, pushing boundaries, and overcoming limits. They teach invaluable life lessons about teamwork, perseverance, and the importance of maintaining a healthy lifestyle.</p> <p>The mental benefits of sports are just as significant as the physical ones. In the midst of competition and physical exertion, the mind finds clarity and the spirit, resilience. It's in these moments of complete immersion that worries fade, replaced by a profound sense of presence and vitality. This mental resilience cultivated on the field often translates into other areas of life, providing the strength to tackle challenges with a calm and focused mind.</p> <p>In embracing sports, I've learned that a healthy body is indeed the vessel for a healthy mind. It's a lifestyle choice that has shaped me into who I am today, teaching me the importance of balance, dedication, and the joy of pursuing a passion. As I continue on this journey, the lessons learned through sports remain a guiding light, illuminating the path to personal growth and well-being.</p>",
-  //   imgSrc: "src/assets/img/Blog/Blog16_11zon.webp",
-  //   imgSrc1: "src/assets/img/Blog/Blog17_11zon.webp",
-  //   imgSrc2: "src/assets/img/Blog/Blog18_11zon.webp",
-  //   imgSrc3: "src/assets/img/Blog/Blog19_11zon.webp",
-  //   imgSrc4: "src/assets/img/Blog/Blog20_11zon.webp",
-  //   alt1: "Me sitting on a bridge looking at mountains",
-  //   alt2: "Me hiking, and admiring the view",
-  //   alt3: "Me standing on snow in mountains",
-  //   alt4: "Me looking at the mountains",
-  // },
+  {
+    title: "Sport: A healthy mind in a healthy body...",
+    description:
+      "<p>The adage <q>A healthy mind in a healthy body</q> perfectly encapsulates my relationship with sport. To me, sport is not just a physical activity; it's a sanctuary where the mind and body harmonize, a realm where every drop of sweat and every beat of the heart narrates a story of determination, resilience, and self-discovery. Engaging in sports has always been a cornerstone of my life, providing not only a physical outlet but also a means to cultivate discipline, focus, and a sense of achievement.</p> <p>Whether it's the solo pursuit of beating my own running record in the early morning mist or the collaborative spirit of a football match under the floodlights, each form of sport offers a unique blend of challenges and rewards. These experiences are not just about winning or losing; they're about setting goals, pushing boundaries, and overcoming limits. They teach invaluable life lessons about teamwork, perseverance, and the importance of maintaining a healthy lifestyle.</p> <p>The mental benefits of sports are just as significant as the physical ones. In the midst of competition and physical exertion, the mind finds clarity and the spirit, resilience. It's in these moments of complete immersion that worries fade, replaced by a profound sense of presence and vitality. This mental resilience cultivated on the field often translates into other areas of life, providing the strength to tackle challenges with a calm and focused mind.</p> <p>In embracing sports, I've learned that a healthy body is indeed the vessel for a healthy mind. It's a lifestyle choice that has shaped me into who I am today, teaching me the importance of balance, dedication, and the joy of pursuing a passion. As I continue on this journey, the lessons learned through sports remain a guiding light, illuminating the path to personal growth and well-being.</p>",
+    imgSrc: "src/assets/img/Blog/Blog16_11zon.webp",
+    imgSrc1: "src/assets/img/Blog/Blog17_11zon.webp",
+    imgSrc2: "src/assets/img/Blog/Blog18_11zon.webp",
+    imgSrc3: "src/assets/img/Blog/Blog19_11zon.webp",
+    imgSrc4: "src/assets/img/Blog/Blog20_11zon.webp",
+    alt1: "Me sitting on a bridge looking at mountains",
+    alt2: "Me hiking, and admiring the view",
+    alt3: "Me standing on snow in mountains",
+    alt4: "Me looking at the mountains",
+  },
   {
     title: "Computer Science: Never-ending learning...",
     description:
@@ -83,6 +83,34 @@ const blogContent = [
     alt2: "Family photo 2",
     alt3: "Family photo 3",
     alt4: "Family photo 4",
+  },
+  {
+    title: "GRADUATION: A new chapter begins...",
+    description:
+      "<p>Today marks a significant milestone in my life – the defense of my thesis and the culmination of years of dedicated study in computer science. Standing before the committee, presenting the results of months of research and countless hours of programming, I felt a profound sense of accomplishment. This moment represents not just an end, but a beginning – the threshold between academic learning and professional application.</p> <p>The journey to this point has been filled with challenges, late-night coding sessions, debugging complex systems, and pushing through moments of doubt. Yet, each obstacle overcome has strengthened my resolve and deepened my understanding of the field I'm passionate about. The knowledge gained through my studies has laid a solid foundation for my future career in technology.</p> <p>The thesis defense was more than just a formal requirement; it was an opportunity to demonstrate the practical application of theoretical concepts, to showcase problem-solving abilities, and to engage in meaningful technical discourse with experts in the field. The questions posed by the committee challenged me to think critically and defend my design decisions with confidence.</p> <p>As I look forward to the next chapter, I'm excited about the opportunities that await. This graduation isn't just an ending – it's the beginning of my professional journey. Armed with the knowledge, skills, and experiences gained during my studies, I'm ready to contribute to innovative projects, collaborate with talented teams, and continue learning in the ever-evolving world of technology. The future is full of possibilities, and I'm eager to embrace them.</p>",
+    imgSrc: "src/assets/img/Blog/obrona1.webp",
+    imgSrc1: "src/assets/img/Blog/obrona2.webp",
+    imgSrc2: "src/assets/img/Blog/obrona3.webp",
+    imgSrc3: "src/assets/img/Blog/praca1.webp",
+    imgSrc4: "src/assets/img/Blog/praca2.webp",
+    alt1: "Thesis defense ceremony",
+    alt2: "Graduation celebration",
+    alt3: "With professors after defense",
+    alt4: "Thesis presentation",
+  },
+  {
+    title: "EGYPT: Journey to ancient wonders...",
+    description:
+      "<p>Egypt – a land where ancient history meets modern life, where the sands of time have preserved wonders that continue to inspire awe thousands of years later. My vacation to this extraordinary country was more than just a holiday; it was a journey through time, a chance to walk in the footsteps of pharaohs and experience a culture that has captivated the world for millennia.</p> <p>Standing before the Great Pyramids of Giza, feeling the warmth of the desert sun and contemplating the architectural genius of ancient civilizations, I was struck by the timeless nature of human achievement. These monuments, built without modern technology, stand as testament to the ingenuity, determination, and vision of those who came before us. It's a humbling reminder that great things are possible when passion meets perseverance.</p> <p>Beyond the famous landmarks, Egypt offered countless moments of discovery – exploring vibrant markets filled with spices and handcrafted treasures, sailing on the Nile at sunset, engaging with locals whose hospitality and warmth made every experience memorable. Each day brought new adventures, from diving in the Red Sea's crystal-clear waters to wandering through ancient temples adorned with hieroglyphics that tell stories from another age.</p> <p>This journey reminded me of the importance of stepping away from the routine, of seeking new experiences and perspectives. Travel broadens not just our knowledge of the world, but our understanding of ourselves. The memories created in Egypt – the sights, sounds, flavors, and connections – will remain a source of inspiration and joy for years to come. Sometimes, the best way to recharge and gain new perspectives is to immerse yourself in a completely different world.</p>",
+    imgSrc: "src/assets/img/Blog/egpit1.webp",
+    imgSrc1: "src/assets/img/Blog/egpit2.webp",
+    imgSrc2: "src/assets/img/Blog/egpit1.webp",
+    imgSrc3: "src/assets/img/Blog/egipt5.webp",
+    imgSrc4: "src/assets/img/Blog/egpit4.webp",
+    alt1: "Exploring Egyptian pyramids",
+    alt2: "Amazing Egyptian landscapes",
+    alt3: "Ancient monuments 2",
+    alt4: "Egyptian vacation memories 3",
   },
 ];
 

@@ -1,33 +1,127 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Search Console Verification -->
+    <meta
+      name="google-site-verification"
+      content="7r55RGdRmrxfhXwM5IQgFf9kbnx4DEV0l7syp0mqqL8" />
+
+    <!-- SEO Meta Tags -->
     <meta
       name="description"
-      content="Discover Dawid Olko, an adept Frontend Developer with a passion for creating engaging websites. Dive into his portfolio to see his work on Curiosities Magazine, WidgetMart, and FitnessGym projects. Reach out to Dawid for freelance opportunities." />
+      content="Dawid Olko - Frontend Developer specializing in React, Vue, TypeScript. Explore my portfolio of web development projects including WorkStation, HirudoZdrowie, and more. Available for freelance opportunities." />
     <meta
       name="keywords"
-      content="Frontend Developer, portfolio, projects, freelance, studies, blog, Dawid Olko" />
+      content="Frontend Developer, React Developer, Vue Developer, TypeScript, Web Developer, Portfolio, Freelance Developer, Dawid Olko, dawidolko, JavaScript, HTML, CSS, SASS, Web Design, UI/UX" />
     <meta name="author" content="Dawid Olko" />
     <meta name="copyright" content="Dawid Olko" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://dawidolko.pl/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dawidolko.pl/" />
+    <meta
+      property="og:title"
+      content="Dawid Olko - Frontend Developer Portfolio" />
+    <meta
+      property="og:description"
+      content="Frontend Developer specializing in React, Vue, TypeScript. Explore my portfolio of innovative web development projects." />
+    <meta
+      property="og:image"
+      content="https://dawidolko.pl/src/assets/img/Home/Portret.webp" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Dawid Olko Portfolio" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://dawidolko.pl/" />
+    <meta
+      name="twitter:title"
+      content="Dawid Olko - Frontend Developer Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Frontend Developer specializing in React, Vue, TypeScript. Explore my portfolio of innovative web development projects." />
+    <meta
+      name="twitter:image"
+      content="https://dawidolko.pl/src/assets/img/Home/Portret.webp" />
+
+    <!-- Favicon -->
     <link
       rel="shortcut icon"
       href="src/assets/img/favicon.ico"
       type="image/x-icon" />
+    <link rel="icon" type="image/x-icon" href="src/assets/img/favicon.ico" />
+
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin />
+
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://kit.fontawesome.com" />
+
+    <!-- Fonts with display=swap for better performance -->
     <link
       href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap"
       rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
       rel="stylesheet" />
+
+    <!-- Preload Critical CSS -->
+    <link rel="preload" href="src/css/main.css" as="style" />
     <link rel="stylesheet" href="src/css/main.css" />
+
+    <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/fdc09ecfc9.js"
-      crossorigin="anonymous"></script>
-    <title>HOME - Dawid Olko</title>
+      crossorigin="anonymous"
+      defer></script>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Dawid Olko",
+        "url": "https://dawidolko.pl",
+        "image": "https://dawidolko.pl/src/assets/img/Home/Portret.webp",
+        "jobTitle": "Frontend Developer",
+        "description": "Frontend Developer specializing in React, Vue, and TypeScript",
+        "email": "dawid_olko@outlook.com",
+        "sameAs": [
+          "https://github.com/dawidolko",
+          "https://www.linkedin.com/in/dawidolko/",
+          "https://www.instagram.com/dawid_olko/",
+          "https://www.facebook.com/olkodawid/"
+        ],
+        "knowsAbout": [
+          "React",
+          "Vue",
+          "TypeScript",
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "SASS",
+          "Web Development"
+        ],
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "Computer Science Studies"
+        }
+      }
+    </script>
+
+    <title>Dawid Olko - Frontend Developer | Portfolio</title>
   </head>
   <body>
     <nav class="nav">
@@ -40,7 +134,7 @@
           dawidolko.pl</a
         >
         <div class="nav__button">
-          <img src="src/assets/img/icon_hamburger.png" alt="hamburger" />
+          <img src="src/assets/img/icon_hamburger.webp" alt="hamburger" />
         </div>
         <ul class="nav__links">
           <li><a class="nav__link" href="#">home</a></li>
@@ -79,7 +173,7 @@
           <div class="about__center">
             <img
               class="about__img"
-              src="src/assets/img/Home/Portret.jpg"
+              src="src/assets/img/Home/Portret.webp"
               alt="My photo" />
           </div>
           <div class="about__body">
@@ -358,8 +452,10 @@
         </div>
       </div>
     </footer>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="src/js/content.js"></script>
-    <script src="src/js/index.js"></script>
+    <script
+      src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"
+      defer></script>
+    <script src="src/js/content.js" defer></script>
+    <script src="src/js/index.js" defer></script>
   </body>
 </html>

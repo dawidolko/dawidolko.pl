@@ -128,7 +128,7 @@ body {
 
 .header {
   height: 60vh;
-  background: url("../assets/img/Backgrounds/BlogBackgroundNew.png")
+  background: url("../assets/img/Backgrounds/BlogBackgroundNew.webp")
     rgba(0, 0, 0, 0.1);
   background-blend-mode: darken;
   background-position: center;
@@ -341,7 +341,7 @@ li {
   }
   .header {
     height: 70vh;
-    background: url("../assets/img/Backgrounds/BlogBackgroundNew.png")
+    background: url("../assets/img/Backgrounds/BlogBackgroundNew.webp")
       rgba(0, 0, 0, 0.1);
     background-blend-mode: darken;
     background-position: center;

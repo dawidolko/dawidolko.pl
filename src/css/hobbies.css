@@ -52,7 +52,7 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
-  background-color: #080808;
+  background-color: #0d0d0d;
 }
 
 .container {
@@ -121,7 +121,7 @@ body {
 .header {
   height: 100vh;
   width: 100%;
-  background: url("../assets/img/Backgrounds/backgroundHobbies2-photoaidcom-greyscale.png")
+  background: url("../assets/img/Backgrounds/backgroundHobbies2-photoaidcom-greyscale.webp")
     rgba(16, 16, 16, 0.3);
   background-blend-mode: darken;
   background-size: cover;
@@ -160,10 +160,18 @@ body {
 
 .video-container,
 .photo-container {
-  background: #161616;
-  padding: 15px;
-  border-radius: 8px;
-  margin-bottom: 20px;
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 15px rgba(186, 0, 233, 0.1);
+  transition: all 0.3s ease;
+}
+.video-container:hover,
+.photo-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(186, 0, 233, 0.25);
+  background: #1f1f1f;
 }
 
 .content {
@@ -191,9 +199,11 @@ body {
 }
 
 .text-content h2 {
-  font-size: 1.5em;
-  color: #fff;
-  margin-bottom: 10px;
+  font-size: 1.8em;
+  color: #ba00e9;
+  margin-bottom: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 .text-content p {
@@ -202,16 +212,18 @@ body {
 }
 
 .description {
-  font-size: 1em;
-  color: #aaa;
+  font-size: 1.05em;
+  color: #c0c0c0;
   margin-bottom: 10px;
+  line-height: 1.6;
 }
 
 iframe,
 .instagram-media {
   width: 100%;
   border: none;
-  border-radius: 8px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 iframe {
@@ -244,6 +256,8 @@ iframe {
   font-size: 3.8rem;
   text-align: center;
   color: #ba00e9;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 @media (min-width: 810px) {
   .hobbies__heading {
@@ -253,7 +267,9 @@ iframe {
   .line {
     transform: translateY(150px);
     opacity: 0;
-    transition: opacity 2s, transform 1.5s;
+    transition:
+      opacity 2s,
+      transform 1.5s;
     color: #ba00e9;
   }
 }
@@ -340,14 +356,16 @@ iframe {
 .line {
   display: flex;
   justify-content: center;
-  margin-bottom: 2em;
+  margin-bottom: 2.5em;
 }
 .line__green {
   position: relative;
-  width: 100px;
-  height: 3px;
-  background-color: #ba00e9;
+  width: 120px;
+  height: 4px;
+  background: linear-gradient(90deg, #ba00e9, #d400ff, #ba00e9);
   overflow: hidden;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(186, 0, 233, 0.5);
 }
 .line__black {
   position: absolute;
@@ -430,7 +448,9 @@ li {
   overflow: hidden;
   border-radius: 8px;
   background: #161616;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .hobby-box:hover {
@@ -483,7 +503,9 @@ li {
   .photo-container {
     transform: translateY(150px);
     opacity: 0;
-    transition: opacity 2s, transform 1.5s;
+    transition:
+      opacity 2s,
+      transform 1.5s;
   }
   .video-container:hover,
   .photo-container:hover .portfolio__shadow {
@@ -552,7 +574,7 @@ li {
     height: 25px;
   }
   .header {
-    background: url("../assets/img/Backgrounds/backgroundHobbies2-photoaidcom-greyscale.png")
+    background: url("../assets/img/Backgrounds/backgroundHobbies2-photoaidcom-greyscale.webp")
       rgba(16, 16, 16, 0.3);
     background-blend-mode: darken;
     background-size: cover;

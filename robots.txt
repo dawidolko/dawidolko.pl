@@ -1,0 +1,22 @@
+# robots.txt for https://dawidolko.pl/
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://dawidolko.pl/sitemap.xml
+
+# Disallow specific files
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /*.js$
+Disallow: /*.json$
+Disallow: /package.json
+Disallow: /webpack.config.js
+
+# Allow CSS and images
+Allow: /src/css/
+Allow: /src/assets/img/
+
+# Crawl-delay (optional)
+Crawl-delay: 1
