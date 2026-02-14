@@ -156,10 +156,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 8em 0;
+  padding: 3em 0;
   color: #ba00e9;
   background-color: #0d0d0d;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .portfolio__heading {
   margin-bottom: 0.3em;
@@ -173,8 +173,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 9em;
-  margin-top: 3em;
+  gap: 2.5em;
+  margin-top: 2em;
 }
 .portfolio__box {
   width: 300px;

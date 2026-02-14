@@ -67,12 +67,19 @@
         </div>
         <ul class="nav__links">
           <li><a class="nav__link" href="index.html">home</a></li>
-          <li><a class="nav__link" href="hobbies.html">hobbies</a></li>
           <li><a class="nav__link" href="studies.html">studies</a></li>
           <li><a class="nav__link" href="projects.html">projects</a></li>
           <li><a class="nav__link" href="contact.html">contact</a></li>
           <li><a class="nav__link" href="gallery.html">gallery</a></li>
           <li><a class="nav__link" href="faq.html">faq</a></li>
+          <li>
+            <a
+              class="nav__link"
+              href="https://workstation.dawidolko.pl"
+              target="_blank"
+              >my station</a
+            >
+          </li>
           <li>
             <a class="nav__link nav__link-blog" href="blog.html">blog</a>
           </li>
@@ -126,72 +133,8 @@
           <div class="line__green"><span class="line__black"></span></div>
         </div>
         <div class="contact__wrapper container">
-          <form
-            id="contact-form"
-            onsubmit="
-              sendMail();
-              return false;
-            "
-            class="contact__form move">
-            <h4 class="contact__form-title">Message Me</h4>
-            <div class="contact__form-top">
-              <input
-                type="text"
-                class="contact__form-input"
-                name="name"
-                placeholder="Name"
-                required />
-              <input
-                type="email"
-                name="email"
-                class="contact__form-input"
-                placeholder="Email"
-                required />
-            </div>
-            <div class="contact__form-bottom">
-              <input
-                type="text"
-                class="contact__form-input"
-                name="subject"
-                placeholder="Subject"
-                required />
-              <textarea
-                class="contact__textarea"
-                name="message"
-                placeholder="Message"
-                required></textarea>
-            </div>
-            <button type="submit" name="send" class="contact__form-btn">
-              Send Message
-            </button>
-            <p class="contact__msg-status"></p>
-          </form>
-
-          <script>
-            function sendMail() {
-              var form = document.getElementById("contact-form");
-              var name = form.name.value;
-              var email = form.email.value;
-              var subject = form.subject.value;
-              var message = form.message.value;
-              var body =
-                "Name: " +
-                name +
-                "%0D%0A" +
-                "Email: " +
-                email +
-                "%0D%0A%0D%0A" +
-                message;
-              window.location.href =
-                "mailto:dawid_olko@outlook.com?subject=" +
-                encodeURIComponent(subject) +
-                "&body=" +
-                body;
-            }
-          </script>
-
-          <div class="info move">
-            <h3 class="info__heading">Conatact Info</h3>
+          <div style="text-align: center" class="info move">
+            <h3 class="info__heading">Contact Info</h3>
             <p class="info__text">
               Always available for freelance work. Feel free to contact me!
             </p>
@@ -204,18 +147,20 @@
                 <p><i class="info__icon fa-regular fa-paper-plane"></i></p>
               </div>
               <ul class="info__items">
-                <li class="info__item">
+                <li style="text-align: left" class="info__item">
                   Name
-                  <p class="info__item-name">Dawid</p>
+                  <p style="text-align: left" class="info__item-name">Dawid</p>
                 </li>
-                <li class="info__item">
+                <li style="text-align: left" class="info__item">
                   Location
                   <p class="info__item-name">Rzeszow</p>
                 </li>
-                <li class="info__item">
+                <li style="text-align: left" class="info__item">
                   Email Me
                   <a href="mailto:dawid_olko@outlook.com">
-                    <p class="info__item-name">dawid_olko@outlook.com</p>
+                    <p style="text-align: left" class="info__item-name">
+                      dawid_olko@outlook.com
+                    </p>
                   </a>
                 </li>
               </ul>

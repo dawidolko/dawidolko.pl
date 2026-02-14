@@ -269,7 +269,7 @@ li {
   padding-bottom: 20px;
 }
 .photo-gallery .item {
-  padding-bottom: 30px;
+  padding-bottom: 0px;
 }
 .galleries__heading {
   margin-bottom: 0.3em;
@@ -307,7 +307,7 @@ figcaption {
   font-size: 1.4rem;
   color: #fff;
   text-align: center;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
   transition: all 0.3s ease;
   font-weight: 500;
 }
@@ -392,6 +392,9 @@ figure:hover figcaption {
   gap: 1em;
   color: #9f9f9f;
   text-align: center;
+}
+.footer__text {
+  text-shadow: none;
 }
 .footer__icons {
   display: flex !important;

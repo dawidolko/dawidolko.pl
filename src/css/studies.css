@@ -252,7 +252,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  filter: blur(5px);
+  filter: blur(5px) grayscale(1);
   z-index: 0;
 }
 .container1::after {
@@ -422,10 +422,12 @@ h3 {
 
 .img-seventh {
   background-image: url(../assets/img/Studies/python.webp);
+  background-color: #808080;
 }
 
 .img-eighth {
   background-image: url(../assets/img/Studies/java.webp);
+  background-color: #808080;
 }
 
 .img-ninth {
