@@ -1,4 +1,4 @@
-# Welcome to My Portfolio Website!
+# Welcome to My Portfolio Website! 
 
 Welcome to my personal portfolio at [dawidolko.pl](http://dawidolko.pl)! This website is a comprehensive showcase of my professional journey, featuring my projects, works, and the diverse skills I've honed over the years. It's designed to be a dynamic platform where visitors can explore the breadth of my expertise and creativity across various domains.
 
