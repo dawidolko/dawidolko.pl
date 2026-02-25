@@ -160,3 +160,25 @@ smallImg.forEach((img) => {
     bigImg.setAttribute("src", changeImage);
   });
 });
+
+// Blog image modal (click to enlarge)
+const blogModal = document.getElementById("blogModal");
+const blogModalImage = document.getElementById("blogModalImage");
+const blogModalClose = document.getElementById("blogModalClose");
+
+document.querySelectorAll(".about__big-img").forEach((img) => {
+  img.addEventListener("click", () => {
+    blogModal.classList.add("active");
+    blogModalImage.src = img.getAttribute("src");
+  });
+});
+
+blogModalClose.addEventListener("click", () => {
+  blogModal.classList.remove("active");
+});
+
+blogModal.addEventListener("click", (e) => {
+  if (e.target === blogModal) {
+    blogModal.classList.remove("active");
+  }
+});
