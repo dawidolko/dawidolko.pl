@@ -288,6 +288,13 @@ body {
   height: 350px;
   position: relative;
   overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(186, 0, 233, 0.1);
+  transition: all 0.3s ease;
+}
+.portfolio__box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(186, 0, 233, 0.3);
 }
 .portfolio__shadow {
   display: flex;
@@ -302,23 +309,48 @@ body {
   height: 35%;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.7));
   z-index: 9;
+  transition: all 0.3s ease;
+}
+.portfolio__box:hover .portfolio__shadow {
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(186, 0, 233, 0.8),
+    rgba(0, 0, 0, 0.9)
+  );
 }
 .portfolio__shadow-title {
   font-size: 2.2rem;
   color: #fff;
   font-weight: 600;
+  transition: all 0.3s ease;
+}
+.portfolio__box:hover .portfolio__shadow-title {
+  transform: scale(1.05);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 .portfolio__title-icon {
   font-size: 2.8rem;
   color: #b0b0b0;
+  transition: all 0.3s ease;
+}
+.portfolio__box:hover .portfolio__title-icon {
+  color: #f0f0f0;
+  transform: scale(1.15) rotate(5deg);
+  filter: drop-shadow(0 0 8px rgba(186, 0, 233, 0.8));
 }
 .portfolio__icons {
   display: flex;
-  gap: 1em;
+  gap: 1.5em;
 }
 .portfolio__link {
   font-size: 2.2rem;
   color: #f0f0f0;
+  transition: all 0.3s ease;
+}
+.portfolio__link:hover {
+  color: #ba00e9;
+  transform: scale(1.2);
 }
 .portfolio__img {
   width: 100%;
@@ -327,6 +359,11 @@ body {
   object-fit: contain;
   padding: 1.5em;
   filter: grayscale(0.6);
+  transition: all 0.4s ease;
+}
+.portfolio__box:hover .portfolio__img {
+  filter: grayscale(0);
+  transform: scale(1.05);
 }
 .portfolio__stock {
   position: absolute;
@@ -339,6 +376,10 @@ body {
   justify-content: center;
   padding: 1em 0;
   z-index: 10;
+  transition: all 0.3s ease;
+}
+.portfolio__box:hover .portfolio__stock {
+  background: linear-gradient(to right, #080808, #ba00e9, #080808);
 }
 
 .portfolio__btn {
