@@ -178,6 +178,7 @@ body {
 }
 .portfolio__box {
   width: 300px;
+  flex: 0 0 auto;
   height: 350px;
   position: relative;
   border-radius: 8px;
@@ -794,6 +795,7 @@ li {
 @media (min-width: 930px) {
   .portfolio__body {
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 2.5em;
   }
 }
@@ -809,6 +811,7 @@ li {
   }
   .portfolio__body {
     flex-direction: row;
+    flex-wrap: wrap;
   }
   .portfolio__box {
     width: 350px;
