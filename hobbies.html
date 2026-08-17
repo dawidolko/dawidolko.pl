@@ -42,6 +42,11 @@
       rel="stylesheet" />
 
     <!-- CSS -->
+    <!-- Preload the header background (LCP) at the size this viewport will use -->
+    <link rel="preload" as="image" href="src/assets/img/Backgrounds/backgroundHobbies2-photoaidcom-greyscale-960.webp"
+      media="(max-width: 809px)" fetchpriority="high" />
+    <link rel="preload" as="image" href="src/assets/img/Backgrounds/backgroundHobbies2-photoaidcom-greyscale-1920.webp"
+      media="(min-width: 810px)" fetchpriority="high" />
     <link rel="preload" href="src/css/hobbies.css" as="style" />
     <link rel="stylesheet" href="src/css/hobbies.css" />
 
@@ -53,19 +58,20 @@
     <title>HOBBIES - Dawid Olko</title>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <nav class="nav">
       <div class="nav__body container">
         <a href="./index.html" class="nav__logo">
           <img
             class="nav__img"
-            src="src/assets/img/Home/Logotype.webp"
-            alt="Logotype Website" />
+            src="src/assets/img/Home/Logotype-96.webp"
+            alt="Logotype Website" width="96" height="96" />
           dawidolko.pl
         </a>
-        <div class="nav__button">
-          <img src="src/assets/img/icon_hamburger.webp" alt="hamburger" />
-        </div>
-        <ul class="nav__links">
+        <button class="nav__button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <img src="src/assets/img/icon_hamburger.webp" alt="" width="25" height="25" loading="lazy" decoding="async" />
+        </button>
+        <ul class="nav__links" id="nav-links">
           <li><a class="nav__link" href="index.html">home</a></li>
           <li><a class="nav__link" href="hobbies.html">hobbies</a></li>
           <li><a class="nav__link" href="studies.html">studies</a></li>
@@ -90,7 +96,7 @@
       </div>
     </header>
 
-    <main class="container" style="margin-bottom: 100px">
+    <main id="main-content" tabindex="-1" class="container" style="margin-bottom: 100px">
       <h2 class="hobbies__heading moves">Hobbies</h2>
       <div class="line moves">
         <div class="line__green">
@@ -102,7 +108,7 @@
         <!-- Box 1: YouTube -->
         <div class="hobby-box move">
           <div class="media">
-            <iframe
+            <iframe title="My gaming computer setup for PLN 6,000"
               src="https://www.youtube.com/embed/LQl7f9M2Y-w"
               frameborder="0"
               allowfullscreen>
@@ -150,7 +156,7 @@
         <!-- Box 3: YouTube -->
         <div class="hobby-box move">
           <div class="media">
-            <iframe
+            <iframe title="My personal command center"
               src="https://www.youtube.com/embed/EZagYbsGJeU"
               frameborder="0"
               allowfullscreen>
@@ -201,7 +207,7 @@
         <!-- Box 5: YouTube -->
         <div class="hobby-box move">
           <div class="media">
-            <iframe
+            <iframe title="TOP 5 GAMING HEADPHONES UP TO PLN 150/200/300"
               src="https://www.youtube.com/embed/uuKotb4_GxI"
               frameborder="0"
               allowfullscreen>
@@ -256,23 +262,23 @@
           Rights Reserved
         </p>
         <div class="footer__icons">
-          <a href="https://www.instagram.com/dawid_olko/" target="_blank">
-            <i class="footer__icon fa-brands fa-instagram"></i>
+          <a href="https://www.instagram.com/dawid_olko/" target="_blank" rel="noopener" aria-label="Instagram profile">
+            <i aria-hidden="true" class="footer__icon fa-brands fa-instagram"></i>
           </a>
-          <a href="https://github.com/dawidolko" target="_blank">
-            <i class="footer__icon fa-brands fa-github"></i>
+          <a href="https://github.com/dawidolko" target="_blank" rel="noopener" aria-label="GitHub profile">
+            <i aria-hidden="true" class="footer__icon fa-brands fa-github"></i>
           </a>
-          <a href="https://www.facebook.com/olkodawid/" target="_blank">
-            <i class="footer__icon fa-brands fa-square-facebook"></i>
+          <a href="https://www.facebook.com/olkodawid/" target="_blank" rel="noopener" aria-label="Facebook profile">
+            <i aria-hidden="true" class="footer__icon fa-brands fa-square-facebook"></i>
           </a>
-          <a href="https://www.linkedin.com/in/dawidolko/" target="_blank">
-            <i class="footer__icon fa-brands fa-linkedin"></i>
+          <a href="https://www.linkedin.com/in/dawidolko/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+            <i aria-hidden="true" class="footer__icon fa-brands fa-linkedin"></i>
           </a>
-          <a href="https://www.youtube.com/@dawid_olko" target="_blank">
-            <i class="footer__icon fa-brands fa-youtube"></i>
+          <a href="https://www.youtube.com/@dawid_olko" target="_blank" rel="noopener" aria-label="YouTube profile">
+            <i aria-hidden="true" class="footer__icon fa-brands fa-youtube"></i>
           </a>
-          <a href="https://www.tiktok.com/@dawid_olko" target="_blank">
-            <i class="footer__icon fa-brands fa-tiktok"></i>
+          <a href="https://www.tiktok.com/@dawid_olko" target="_blank" rel="noopener" aria-label="TikTok profile">
+            <i aria-hidden="true" class="footer__icon fa-brands fa-tiktok"></i>
           </a>
         </div>
       </div>
@@ -286,6 +292,27 @@
     <script>
       window.onload = function () {
         instgrm.Embeds.process();
+        // embed.js injects its iframes without a title, which leaves them
+        // unnamed for screen readers (WCAG 4.1.2). Name each one from the
+        // heading that already describes the post in the same box.
+        var nameEmbeds = function () {
+          document
+            .querySelectorAll(".hobby-box iframe:not([title])")
+            .forEach(function (frame) {
+              var box = frame.closest(".hobby-box");
+              var heading = box && box.querySelector(".overlay h2");
+              frame.setAttribute(
+                "title",
+                heading ? heading.textContent.trim() : "Embedded Instagram post"
+              );
+            });
+        };
+        nameEmbeds();
+        // The iframes appear asynchronously, so watch until they are all named.
+        new MutationObserver(nameEmbeds).observe(document.body, {
+          childList: true,
+          subtree: true,
+        });
       };
     </script>
   </body>

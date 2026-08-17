@@ -120,7 +120,7 @@ body {
 .header {
   height: 100vh;
   width: 100%;
-  background: url("../assets/img/Backgrounds/backgroundStudies2-photoaidcom-greyscale.webp")
+  background: url("../assets/img/Backgrounds/backgroundStudies2-photoaidcom-greyscale-960.webp")
     rgba(16, 16, 16, 0.3);
   background-blend-mode: darken;
   background-size: cover;
@@ -159,7 +159,7 @@ body {
   text-align: center;
 }
 .header__write {
-  color: #ba00e9;
+  color: #d264f5;
   font-weight: 600;
   font-size: 2.2rem;
 }
@@ -185,7 +185,7 @@ body {
   font-size: 2.4rem;
 }
 .info__icons {
-  color: #ba00e9;
+  color: #d264f5;
 }
 .info__items {
   font-size: 1.6rem;
@@ -213,7 +213,7 @@ body {
   display: none;
   margin-left: 4.7em;
   font-size: 1.2rem;
-  color: #ba00e9;
+  color: #d264f5;
 }
 
 .about__message {
@@ -443,14 +443,14 @@ h3 {
   margin-bottom: 0.3em;
   font-size: 3.8rem;
   text-align: center;
-  color: #ba00e9;
+  color: #d264f5;
 }
 
 .photo-gallery h2 {
   font-weight: bold;
   padding-top: 40px;
   color: inherit;
-  color: #ba00e9;
+  color: #d264f5;
 }
 @media (min-width: 810px) {
   .container1 .studies__heading,
@@ -460,7 +460,7 @@ h3 {
     transition:
       opacity 2s,
       transform 1.5s;
-    color: #ba00e9;
+    color: #d264f5;
   }
 }
 iframe {
@@ -672,7 +672,7 @@ li {
     height: 25px;
   }
   .header {
-    background: url("../assets/img/Backgrounds/backgroundStudies2-photoaidcom-greyscale.webp")
+    background: url("../assets/img/Backgrounds/backgroundStudies2-photoaidcom-greyscale-1920.webp")
       rgba(16, 16, 16, 0.3);
     background-blend-mode: darken;
     background-size: cover;
@@ -695,7 +695,7 @@ li {
     text-align: center;
   }
   .header__write {
-    color: #ba00e9;
+    color: #d264f5;
     font-weight: 600;
     font-size: 3rem;
   }
@@ -779,3 +779,125 @@ li {
     font-size: 4rem;
   }
 } /*# sourceMappingURL=main.css.map */
+
+/* ==========================================================================
+   Accessibility
+   Focus visibility, target sizing, motion and contrast rules shared by every
+   page. Appended as a block so it wins over the base rules above it.
+   ========================================================================== */
+
+/* SC 2.4.7 / 2.4.13 — a focus indicator that is always visible and keeps a
+   3:1 contrast against both the dark chrome and the light page areas. */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid #f0f0f0;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* The hamburger is a real <button>; strip the UA chrome so it still looks
+   like the icon it replaced. `display` is left alone so the desktop rule that
+   hides it above the breakpoint still wins. */
+.nav__button {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  place-items: center;
+}
+
+/* SC 2.5.8 — pointer targets stay at least 24px, and the icon rows get
+   enough padding to clear 44px on touch. */
+.footer__icons a,
+.about__icons a,
+.portfolio__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+/* SC 2.3.3 — honour a stated preference for reduced motion. The reveal
+   effect is applied inline by JS, so the transition is what gets removed;
+   content stays visible either way. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  .move,
+  .moves {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* SC 2.4.1 — bypass the repeated navigation. Off-screen until focused, then
+   pinned to the top-left above the fixed nav. */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  z-index: 10000;
+  padding: 0.75em 1.25em;
+  background-color: #101311;
+  color: #f0f0f0;
+  font-size: 1.6rem;
+  border: 2px solid #d264f5;
+  border-radius: 4px;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+/* Removes the outline the browser draws on the programmatically focused
+   landmark, which would otherwise ring the whole page after the jump. */
+main:focus {
+  outline: none;
+}
+
+/* SC 2.5.8 — the remaining inline controls (CV download, "See More", the
+   e-mail link) need a 24px minimum target. */
+.about__cv,
+.portfolio__btn,
+.about__name-email {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+}
+
+.portfolio__btn {
+  justify-content: center;
+  text-align: center;
+}
+
+/* SC 2.1.1 — a region that scrolls must be reachable by keyboard. The FAQ
+   answers can overflow, so they take a tab stop and a visible focus ring. */
+details > div:focus-visible {
+  outline: 3px solid #f0f0f0;
+  outline-offset: 2px;
+}
+
+/* SC 2.5.8 — the icons are 44px but sit close enough to clip each other's
+   clear space; a slightly wider gap gives every target its own 24px. */
+.footer__icons {
+  gap: 24px;
+  flex-wrap: wrap;
+}

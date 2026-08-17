@@ -77,6 +77,11 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
       rel="stylesheet" />
 
+    <!-- Preload the header background (LCP) at the size this viewport will use -->
+    <link rel="preload" as="image" href="src/assets/img/Backgrounds/backgroundHome2-photoaidcom-greyscale-960.webp"
+      media="(max-width: 809px)" fetchpriority="high" />
+    <link rel="preload" as="image" href="src/assets/img/Backgrounds/backgroundHome2-photoaidcom-greyscale-1920.webp"
+      media="(min-width: 810px)" fetchpriority="high" />
     <!-- Preload Critical CSS -->
     <link rel="preload" href="src/css/main.css" as="style" />
     <link rel="stylesheet" href="src/css/main.css" />
@@ -124,19 +129,20 @@
     <title>Dawid Olko - Frontend Developer | Portfolio</title>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <nav class="nav">
       <div class="nav__body container">
         <a href="./index.html" class="nav__logo"
           ><img
             class="nav__img"
-            src="src/assets/img/Home/Logotype.webp"
-            alt="Logotype Website" />
+            src="src/assets/img/Home/Logotype-96.webp"
+            alt="Logotype Website" width="96" height="96" />
           dawidolko.pl</a
         >
-        <div class="nav__button">
-          <img src="src/assets/img/icon_hamburger.webp" alt="hamburger" />
-        </div>
-        <ul class="nav__links">
+        <button class="nav__button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <img src="src/assets/img/icon_hamburger.webp" alt="" width="25" height="25" loading="lazy" decoding="async" />
+        </button>
+        <ul class="nav__links" id="nav-links">
           <li><a class="nav__link" href="#">home</a></li>
           <li><a class="nav__link" href="studies.html">studies</a></li>
           <li><a class="nav__link" href="projects.html">projects</a></li>
@@ -147,7 +153,7 @@
             <a
               class="nav__link"
               href="https://workstation.dawidolko.pl"
-              target="_blank"
+              target="_blank" rel="noopener"
               >my station</a
             >
           </li>
@@ -170,7 +176,7 @@
       </div>
     </header>
 
-    <main>
+    <main id="main-content" tabindex="-1">
       <section class="about" id="about">
         <h2 class="about__heading moves">About Me</h2>
         <div class="line move">
@@ -180,8 +186,8 @@
           <div class="about__center">
             <img
               class="about__img"
-              src="src/assets/img/Home/Portret.webp"
-              alt="My photo" />
+              src="src/assets/img/Home/Portret-640.webp"
+              alt="My photo" width="640" height="640" loading="eager" fetchpriority="high" decoding="async" />
           </div>
           <div class="about__body">
             <h3 class="about__who">Who am i ?</h3>
@@ -228,25 +234,23 @@
                 <a
                   class="about__cv moves"
                   href="src/assets/download/CV_Frontend.pdf"
-                  download>
-                  <button class="about__btn">Download CV</button></a
+                  download>Download CV</a
                 >
                 <div class="about__icons moves">
                   <a
                     href="https://www.instagram.com/dawid_olko/"
-                    target="_blank"
-                    ><i class="about__icon fa-brands fa-instagram"></i
+                    target="_blank" rel="noopener" aria-label="Instagram profile"><i aria-hidden="true" class="about__icon fa-brands fa-instagram"></i
                   ></a>
-                  <a href="https://github.com/dawidolko" target="_blank"
-                    ><i class="about__icon fa-brands fa-github"></i
+                  <a href="https://github.com/dawidolko" target="_blank" rel="noopener"
+                     aria-label="GitHub profile"><i aria-hidden="true" class="about__icon fa-brands fa-github"></i
                   ></a>
-                  <a href="https://www.facebook.com/olkodawid/" target="_blank"
-                    ><i class="about__icon fa-brands fa-square-facebook"></i
+                  <a href="https://www.facebook.com/olkodawid/" target="_blank" rel="noopener"
+                     aria-label="Facebook profile"><i aria-hidden="true" class="about__icon fa-brands fa-square-facebook"></i
                   ></a>
                   <a
                     href="https://www.linkedin.com/in/dawidolko/"
-                    target="_blank"
-                    ><i class="about__icon fa-brands fa-linkedin"></i
+                    target="_blank" rel="noopener"
+                     aria-label="LinkedIn profile"><i aria-hidden="true" class="about__icon fa-brands fa-linkedin"></i
                   ></a>
                 </div>
               </div>
@@ -268,19 +272,18 @@
                 <a
                   class="portfolio__link"
                   href="https://github.com/dawidolko/SmartRecommender-Projekt-Django-React"
-                  target="_blank"
-                  ><i class="fa-brands fa-github"></i
+                  target="_blank" rel="noopener"
+                   aria-label="GitHub profile"><i aria-hidden="true" class="fa-brands fa-github"></i
                 ></a>
                 <a
                   class="portfolio__link"
                   href="https://project.dawidolko.pl"
-                  target="_blank"
-                  ><i
+                  target="_blank" rel="noopener" aria-label="Open project.dawidolko.pl in a new tab"><i aria-hidden="true"
                     class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i
                 ></a>
               </div>
             </div>
-            <img class="portfolio__img" src="src/assets/img/Home/logo_project/logo3.svg" alt="SmartRecommender logo" />
+            <img class="portfolio__img" src="src/assets/img/Home/logo_project/logo3.svg" alt="SmartRecommender logo" width="50" height="50" loading="lazy" decoding="async" />
             <div class="portfolio__stock">
               <i class="fa-brands fa-react portfolio__title-icon"></i>
               <i class="fa-brands fa-square-js portfolio__title-icon"></i>
@@ -296,19 +299,18 @@
                 <a
                   class="portfolio__link"
                   href="https://github.com/dawidolko/FitnessGym-Project-React"
-                  target="_blank"
-                  ><i class="fa-brands fa-github"></i
+                  target="_blank" rel="noopener"
+                   aria-label="GitHub profile"><i aria-hidden="true" class="fa-brands fa-github"></i
                 ></a>
                 <a
                   class="portfolio__link"
                   href="https://fitnessgym.dawidolko.pl/"
-                  target="_blank"
-                  ><i
+                  target="_blank" rel="noopener" aria-label="Open fitnessgym.dawidolko.pl in a new tab"><i aria-hidden="true"
                     class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i
                 ></a>
               </div>
             </div>
-            <img class="portfolio__img" src="src/assets/img/Home/logo_project/logo20.svg" alt="FitnessGym logo" />
+            <img class="portfolio__img" src="src/assets/img/Home/logo_project/logo20.svg" alt="FitnessGym logo" width="50" height="50" loading="lazy" decoding="async" />
             <div class="portfolio__stock">
               <i class="fa-brands fa-react portfolio__title-icon"></i>
               <i class="fa-brands fa-square-js portfolio__title-icon"></i>
@@ -324,19 +326,18 @@
                 <a
                   class="portfolio__link"
                   href="https://github.com/dawidolko/Database-Project-ComputerStore"
-                  target="_blank"
-                  ><i class="fa-brands fa-github"></i
+                  target="_blank" rel="noopener"
+                   aria-label="GitHub profile"><i aria-hidden="true" class="fa-brands fa-github"></i
                 ></a>
                 <a
                   class="portfolio__link"
                   href="https://piotrsmola.dawidolko.pl/"
-                  target="_blank"
-                  ><i
+                  target="_blank" rel="noopener" aria-label="Open piotrsmola.dawidolko.pl in a new tab"><i aria-hidden="true"
                     class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i
                 ></a>
               </div>
             </div>
-            <img class="portfolio__img" src="src/assets/img/Home/logo_project/logo10.svg" alt="TechByte logo" />
+            <img class="portfolio__img" src="src/assets/img/Home/logo_project/logo10.svg" alt="TechByte logo" width="50" height="50" loading="lazy" decoding="async" />
             <div class="portfolio__stock">
               <i class="fa-brands fa-php portfolio__title-icon"></i>
               <i class="fa-brands fa-square-js portfolio__title-icon"></i>
@@ -345,9 +346,7 @@
             </div>
           </div>
         </div>
-        <button class="portfolio__btn">
-          <a href="projects.html">See More</a>
-        </button>
+        <a class="portfolio__btn" href="projects.html">See More</a>
       </section>
 
       <section class="contact" id="contact">
@@ -440,23 +439,23 @@
           Rights Reserved
         </p>
         <div class="footer__icons">
-          <a href="https://www.instagram.com/dawid_olko/" target="_blank"
-            ><i class="footer__icon fa-brands fa-instagram"></i
+          <a href="https://www.instagram.com/dawid_olko/" target="_blank" rel="noopener"
+             aria-label="Instagram profile"><i aria-hidden="true" class="footer__icon fa-brands fa-instagram"></i
           ></a>
-          <a href="https://github.com/dawidolko" target="_blank"
-            ><i class="footer__icon fa-brands fa-github"></i
+          <a href="https://github.com/dawidolko" target="_blank" rel="noopener"
+             aria-label="GitHub profile"><i aria-hidden="true" class="footer__icon fa-brands fa-github"></i
           ></a>
-          <a href="https://www.facebook.com/olkodawid/" target="_blank"
-            ><i class="footer__icon fa-brands fa-square-facebook"></i
+          <a href="https://www.facebook.com/olkodawid/" target="_blank" rel="noopener"
+             aria-label="Facebook profile"><i aria-hidden="true" class="footer__icon fa-brands fa-square-facebook"></i
           ></a>
-          <a href="https://www.linkedin.com/in/dawidolko/" target="_blank"
-            ><i class="footer__icon fa-brands fa-linkedin"></i
+          <a href="https://www.linkedin.com/in/dawidolko/" target="_blank" rel="noopener"
+             aria-label="LinkedIn profile"><i aria-hidden="true" class="footer__icon fa-brands fa-linkedin"></i
           ></a>
-          <a href="https://www.youtube.com/@dawid_olko" target="_blank"
-            ><i class="footer__icon fa-brands fa-youtube"></i
+          <a href="https://www.youtube.com/@dawid_olko" target="_blank" rel="noopener"
+             aria-label="YouTube profile"><i aria-hidden="true" class="footer__icon fa-brands fa-youtube"></i
           ></a>
-          <a href="https://www.tiktok.com/@dawid_olko" target="_blank"
-            ><i class="footer__icon fa-brands fa-tiktok"></i
+          <a href="https://www.tiktok.com/@dawid_olko" target="_blank" rel="noopener"
+             aria-label="TikTok profile"><i aria-hidden="true" class="footer__icon fa-brands fa-tiktok"></i
           ></a>
         </div>
       </div>

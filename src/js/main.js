@@ -5,16 +5,36 @@ const navBtn = document.querySelector(".nav__button");
 const navOpen = document.querySelector(".nav__open");
 const navAll = document.querySelectorAll(".nav__link");
 
+// Keeps the toggle's accessible state in step with the menu it controls, so
+// screen readers announce whether the menu is open and not just "button".
+const syncNavState = () => {
+  const isOpen = navLinks.classList.contains("nav__links--active");
+  navBtn.setAttribute("aria-expanded", String(isOpen));
+  navBtn.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+};
+
 navBtn.addEventListener("click", () => {
   navLinks.classList.toggle("nav__links--active");
   navOpen.classList.toggle("nav__hide");
+  syncNavState();
 });
 
 navAll.forEach((el) => {
   el.addEventListener("click", () => {
     navLinks.classList.remove("nav__links--active");
     navOpen.classList.toggle("nav__hide");
+    syncNavState();
   });
+});
+
+// Escape closes the menu and returns focus to the control that opened it.
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && navLinks.classList.contains("nav__links--active")) {
+    navLinks.classList.remove("nav__links--active");
+    navOpen.classList.toggle("nav__hide");
+    syncNavState();
+    navBtn.focus();
+  }
 });
 
 window.addEventListener("scroll", () => {

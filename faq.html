@@ -42,6 +42,11 @@
       rel="stylesheet" />
 
     <!-- CSS -->
+    <!-- Preload the header background (LCP) at the size this viewport will use -->
+    <link rel="preload" as="image" href="src/assets/img/Backgrounds/backgroundFaq2-photoaidcom-greyscale-960.webp"
+      media="(max-width: 809px)" fetchpriority="high" />
+    <link rel="preload" as="image" href="src/assets/img/Backgrounds/backgroundFaq2-photoaidcom-greyscale-1920.webp"
+      media="(min-width: 810px)" fetchpriority="high" />
     <link rel="preload" href="src/css/faq.css" as="style" />
     <link rel="stylesheet" href="src/css/faq.css" />
 
@@ -53,19 +58,20 @@
     <title>FAQ - Dawid Olko</title>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <nav class="nav">
       <div class="nav__body container">
         <a href="./index.html" class="nav__logo"
           ><img
             class="nav__img"
-            src="src/assets/img/Home/Logotype.webp"
-            alt="Logotype Website" />
+            src="src/assets/img/Home/Logotype-96.webp"
+            alt="Logotype Website" width="96" height="96" />
           dawidolko.pl</a
         >
-        <div class="nav__button">
-          <img src="src/assets/img/icon_hamburger.webp" alt="hamburger" />
-        </div>
-        <ul class="nav__links">
+        <button class="nav__button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <img src="src/assets/img/icon_hamburger.webp" alt="" width="25" height="25" loading="lazy" decoding="async" />
+        </button>
+        <ul class="nav__links" id="nav-links">
           <li><a class="nav__link" href="index.html">home</a></li>
           <li><a class="nav__link" href="studies.html">studies</a></li>
           <li><a class="nav__link" href="projects.html">projects</a></li>
@@ -76,7 +82,7 @@
             <a
               class="nav__link"
               href="https://workstation.dawidolko.pl"
-              target="_blank"
+              target="_blank" rel="noopener"
               >my station</a
             >
           </li>
@@ -99,7 +105,7 @@
       </div>
     </header>
 
-    <main class="container">
+    <main id="main-content" tabindex="-1" class="container">
       <section>
         <h2 class="faq__heading moves">Faq</h2>
         <div class="line moves">
@@ -108,8 +114,8 @@
         <div class="container1 move">
           <details open>
             <summary>What services do you offer?</summary>
-            <div>
-              <img src="src/assets/img/Faq/Faq1.webp" />
+            <div tabindex="0" role="group">
+              <img src="src/assets/img/Faq/Faq1.webp" alt="" width="1024" height="1024" loading="lazy" decoding="async" />
               <p>
                 I offer a wide range of services related to application
                 development and web design. My portfolio includes web and mobile
@@ -121,8 +127,8 @@
           </details>
           <details>
             <summary>What is the process of working with you?</summary>
-            <div>
-              <img src="src/assets/img/Faq/Faq2.webp" />
+            <div tabindex="0" role="group">
+              <img src="src/assets/img/Faq/Faq2.webp" alt="" width="1024" height="1024" loading="lazy" decoding="async" />
               <p>
                 The cooperation process begins with the first contact, followed
                 by the signing of the contract. Then we define the scope of work
@@ -134,8 +140,8 @@
           </details>
           <details>
             <summary>What technologies do you specialize in?</summary>
-            <div>
-              <img src="src/assets/img/Faq/Faq3.webp" />
+            <div tabindex="0" role="group">
+              <img src="src/assets/img/Faq/Faq3.webp" alt="" width="1024" height="1024" loading="lazy" decoding="async" />
               <p>
                 I specialize in creating applications using technologies such as
                 React, JavaScript, CSS, HTML, PHP, Laravel, as well as in
@@ -146,8 +152,8 @@
           </details>
           <details>
             <summary>What is the pricing of your services?</summary>
-            <div>
-              <img src="src/assets/img/Faq/Faq4.webp" />
+            <div tabindex="0" role="group">
+              <img src="src/assets/img/Faq/Faq4.webp" alt="" width="1024" height="1024" loading="lazy" decoding="async" />
               <p>
                 Prices for my services are determined individually, depending on
                 the scope and complexity of the project. I always strive to
@@ -158,8 +164,8 @@
           </details>
           <details>
             <summary>How long does a typical project take to complete?</summary>
-            <div>
-              <img src="src/assets/img/Faq/Faq5.webp" />
+            <div tabindex="0" role="group">
+              <img src="src/assets/img/Faq/Faq5.webp" alt="" width="1024" height="1024" loading="lazy" decoding="async" />
               <p>
                 The project implementation time depends on its scope and
                 requirements. Each project is different, so the completion date
@@ -171,8 +177,8 @@
             <summary>
               Do you offer support after the project is completed?
             </summary>
-            <div>
-              <img src="src/assets/img/Faq/Faq6.webp" />
+            <div tabindex="0" role="group">
+              <img src="src/assets/img/Faq/Faq6.webp" alt="" width="1024" height="1024" loading="lazy" decoding="async" />
               <p>
                 Yes, I offer a guarantee of a well-executed project and support
                 after its completion. I make sure that my clients are fully
@@ -184,8 +190,8 @@
             <summary>
               What are your main working principles or design philosophy?
             </summary>
-            <div>
-              <img src="src/assets/img/Faq/Faq7.webp" />
+            <div tabindex="0" role="group">
+              <img src="src/assets/img/Faq/Faq7.webp" alt="" width="1024" height="1024" loading="lazy" decoding="async" />
               <p>
                 My design philosophy is based on creating solutions that not
                 only look aesthetic, but are, above all, functional and tailored
@@ -198,8 +204,8 @@
             <summary>
               What information do you need from the client to get started?
             </summary>
-            <div>
-              <img src="src/assets/img/Faq/Faq8.webp" />
+            <div tabindex="0" role="group">
+              <img src="src/assets/img/Faq/Faq8.webp" alt="" width="1024" height="1024" loading="lazy" decoding="async" />
               <p>
                 What information do you need from the client to get started? To
                 get started, I need an initial design brief from the client that
@@ -211,8 +217,8 @@
           </details>
           <details>
             <summary>Additional questions to get to know you better:</summary>
-            <div>
-              <img src="src/assets/img/Faq/Faq9.webp" />
+            <div tabindex="0" role="group">
+              <img src="src/assets/img/Faq/Faq9.webp" alt="" width="1024" height="1024" loading="lazy" decoding="async" />
               <p>
                 What are your favorite projects in your portfolio and why? My
                 favorite projects are those that challenged me and allowed me to
@@ -227,8 +233,8 @@
               What hobbies or interests do you have outside of design and
               programming?
             </summary>
-            <div>
-              <img src="src/assets/img/Faq/Faq10.webp" />
+            <div tabindex="0" role="group">
+              <img src="src/assets/img/Faq/Faq10.webp" alt="" width="1024" height="1024" loading="lazy" decoding="async" />
               <p>
                 What hobbies or interests do you have outside of design and
                 programming? My passions outside the IT world are acting on the
@@ -249,23 +255,23 @@
           Rights Reserved
         </p>
         <div class="footer__icons">
-          <a href="https://www.instagram.com/dawid_olko/" target="_blank"
-            ><i class="footer__icon fa-brands fa-instagram"></i
+          <a href="https://www.instagram.com/dawid_olko/" target="_blank" rel="noopener"
+             aria-label="Instagram profile"><i aria-hidden="true" class="footer__icon fa-brands fa-instagram"></i
           ></a>
-          <a href="https://github.com/dawidolko" target="_blank"
-            ><i class="footer__icon fa-brands fa-github"></i
+          <a href="https://github.com/dawidolko" target="_blank" rel="noopener"
+             aria-label="GitHub profile"><i aria-hidden="true" class="footer__icon fa-brands fa-github"></i
           ></a>
-          <a href="https://www.facebook.com/olkodawid/" target="_blank"
-            ><i class="footer__icon fa-brands fa-square-facebook"></i
+          <a href="https://www.facebook.com/olkodawid/" target="_blank" rel="noopener"
+             aria-label="Facebook profile"><i aria-hidden="true" class="footer__icon fa-brands fa-square-facebook"></i
           ></a>
-          <a href="https://www.linkedin.com/in/dawidolko/" target="_blank"
-            ><i class="footer__icon fa-brands fa-linkedin"></i
+          <a href="https://www.linkedin.com/in/dawidolko/" target="_blank" rel="noopener"
+             aria-label="LinkedIn profile"><i aria-hidden="true" class="footer__icon fa-brands fa-linkedin"></i
           ></a>
-          <a href="https://www.youtube.com/@dawid_olko" target="_blank"
-            ><i class="footer__icon fa-brands fa-youtube"></i
+          <a href="https://www.youtube.com/@dawid_olko" target="_blank" rel="noopener"
+             aria-label="YouTube profile"><i aria-hidden="true" class="footer__icon fa-brands fa-youtube"></i
           ></a>
-          <a href="https://www.tiktok.com/@dawid_olko" target="_blank"
-            ><i class="footer__icon fa-brands fa-tiktok"></i
+          <a href="https://www.tiktok.com/@dawid_olko" target="_blank" rel="noopener"
+             aria-label="TikTok profile"><i aria-hidden="true" class="footer__icon fa-brands fa-tiktok"></i
           ></a>
         </div>
       </div>

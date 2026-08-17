@@ -50,6 +50,11 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css" />
+    <!-- Preload the header background (LCP) at the size this viewport will use -->
+    <link rel="preload" as="image" href="src/assets/img/Backgrounds/backgroundGallery2-photoaidcom-greyscale-960.webp"
+      media="(max-width: 809px)" fetchpriority="high" />
+    <link rel="preload" as="image" href="src/assets/img/Backgrounds/backgroundGallery2-photoaidcom-greyscale-1920.webp"
+      media="(min-width: 810px)" fetchpriority="high" />
     <link rel="preload" href="src/css/gallery.css" as="style" />
     <link rel="stylesheet" href="src/css/gallery.css" />
     <style>
@@ -209,19 +214,20 @@
     <title>GALLERY - Dawid Olko</title>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <nav class="nav">
       <div class="nav__body container">
         <a href="./index.html" class="nav__logo">
           <img
             class="nav__img"
-            src="src/assets/img/Home/Logotype.webp"
-            alt="Logotype Website" />
+            src="src/assets/img/Home/Logotype-96.webp"
+            alt="Logotype Website" width="96" height="96" />
           dawidolko.pl
         </a>
-        <div class="nav__button">
-          <img src="src/assets/img/icon_hamburger.webp" alt="hamburger" />
-        </div>
-        <ul class="nav__links">
+        <button class="nav__button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <img src="src/assets/img/icon_hamburger.webp" alt="" width="25" height="25" loading="lazy" decoding="async" />
+        </button>
+        <ul class="nav__links" id="nav-links">
           <li><a class="nav__link" href="index.html">home</a></li>
           <li><a class="nav__link" href="studies.html">studies</a></li>
           <li><a class="nav__link" href="projects.html">projects</a></li>
@@ -232,7 +238,7 @@
             <a
               class="nav__link"
               href="https://workstation.dawidolko.pl"
-              target="_blank"
+              target="_blank" rel="noopener"
               >my station</a
             >
           </li>
@@ -251,7 +257,7 @@
         </div>
       </div>
     </header>
-    <main>
+    <main id="main-content" tabindex="-1">
       <div class="photo-gallery gallery-container">
         <h2 class="galleries__heading moves">Gallery</h2>
         <div class="line moves">
@@ -271,8 +277,8 @@
                     class="img-fluid"
                     loading="lazy"
                     decoding="async"
-                    src="src/assets/img/Blog/obrona1.webp"
-                    alt="Graduation Defense 1" />
+                    src="src/assets/img/Blog/obrona1-thumb.webp"
+                    alt="Graduation Defense 1" width="800" height="1067" />
                 </a>
                 <figcaption>11.02.2026</figcaption>
               </figure>
@@ -287,8 +293,8 @@
                     class="img-fluid"
                     loading="lazy"
                     decoding="async"
-                    src="src/assets/img/Blog/obrona2.webp"
-                    alt="Graduation Defense 2" />
+                    src="src/assets/img/Blog/obrona2-thumb.webp"
+                    alt="Graduation Defense 2" width="800" height="1067" />
                 </a>
                 <figcaption>11.02.2026</figcaption>
               </figure>
@@ -303,8 +309,8 @@
                     class="img-fluid"
                     loading="lazy"
                     decoding="async"
-                    src="src/assets/img/Blog/obrona3.webp"
-                    alt="Graduation Defense 3" />
+                    src="src/assets/img/Blog/obrona3-thumb.webp"
+                    alt="Graduation Defense 3" width="800" height="1067" />
                 </a>
                 <figcaption>11.02.2026</figcaption>
               </figure>
@@ -319,8 +325,8 @@
                     class="img-fluid"
                     loading="lazy"
                     decoding="async"
-                    src="src/assets/img/Blog/praca1.webp"
-                    alt="Graduation Thesis 1" />
+                    src="src/assets/img/Blog/praca1-thumb.webp"
+                    alt="Graduation Thesis 1" width="800" height="637" />
                 </a>
                 <figcaption>11.02.2026</figcaption>
               </figure>
@@ -335,8 +341,8 @@
                     class="img-fluid"
                     loading="lazy"
                     decoding="async"
-                    src="src/assets/img/Blog/praca2.webp"
-                    alt="Graduation Thesis 2" />
+                    src="src/assets/img/Blog/praca2-thumb.webp"
+                    alt="Graduation Thesis 2" width="742" height="600" />
                 </a>
                 <figcaption>11.02.2026</figcaption>
               </figure>
@@ -351,8 +357,8 @@
                     class="img-fluid"
                     loading="lazy"
                     decoding="async"
-                    src="src/assets/img/Blog/egpit1.webp"
-                    alt="Egypt Vacation 1" />
+                    src="src/assets/img/Blog/egpit1-thumb.webp"
+                    alt="Egypt Vacation 1" width="800" height="1067" />
                 </a>
                 <figcaption>18.09.2025</figcaption>
               </figure>
@@ -367,8 +373,8 @@
                     class="img-fluid"
                     loading="lazy"
                     decoding="async"
-                    src="src/assets/img/Blog/egpit2.webp"
-                    alt="Egypt Vacation 2" />
+                    src="src/assets/img/Blog/egpit2-thumb.webp"
+                    alt="Egypt Vacation 2" width="800" height="1067" />
                 </a>
                 <figcaption>18.09.2025</figcaption>
               </figure>
@@ -383,8 +389,8 @@
                     class="img-fluid"
                     loading="lazy"
                     decoding="async"
-                    src="src/assets/img/Blog/egpit4.webp"
-                    alt="Egypt Vacation 3" />
+                    src="src/assets/img/Blog/egpit4-thumb.webp"
+                    alt="Egypt Vacation 3" width="800" height="600" />
                 </a>
                 <figcaption>18.09.2025</figcaption>
               </figure>
@@ -399,8 +405,8 @@
                     class="img-fluid"
                     loading="lazy"
                     decoding="async"
-                    src="src/assets/img/Blog/egipt5.webp"
-                    alt="Egypt Vacation 4" />
+                    src="src/assets/img/Blog/egipt5-thumb.webp"
+                    alt="Egypt Vacation 4" width="800" height="1067" />
                 </a>
                 <figcaption>18.09.2025</figcaption>
               </figure>
@@ -415,8 +421,8 @@
                     class="img-fluid"
                     loading="lazy"
                     decoding="async"
-                    src="src/assets/img/Gallery/Gallery1.webp"
-                    alt="Gallery 1" />
+                    src="src/assets/img/Gallery/Gallery1-thumb.webp"
+                    alt="Gallery 1" width="800" height="601" />
                 </a>
                 <figcaption>19.04.2023</figcaption>
               </figure>
@@ -431,8 +437,8 @@
                     class="img-fluid"
                     loading="lazy"
                     decoding="async"
-                    src="src/assets/img/Gallery/Gallery14.webp"
-                    alt="Gallery 14" />
+                    src="src/assets/img/Gallery/Gallery14-thumb.webp"
+                    alt="Gallery 14" width="800" height="601" />
                 </a>
                 <figcaption>07.10.2020</figcaption>
               </figure>
@@ -447,8 +453,8 @@
                     class="img-fluid"
                     loading="lazy"
                     decoding="async"
-                    src="src/assets/img/Gallery/Gallery15.webp"
-                    alt="Gallery 15" />
+                    src="src/assets/img/Gallery/Gallery15-thumb.webp"
+                    alt="Gallery 15" width="800" height="601" />
                 </a>
                 <figcaption>27.07.2021</figcaption>
               </figure>
@@ -463,8 +469,8 @@
                     class="img-fluid"
                     loading="lazy"
                     decoding="async"
-                    src="src/assets/img/Gallery/Gallery16.webp"
-                    alt="Gallery 16" />
+                    src="src/assets/img/Gallery/Gallery16-thumb.webp"
+                    alt="Gallery 16" width="800" height="601" />
                 </a>
                 <figcaption>23.07.2020</figcaption>
               </figure>
@@ -479,8 +485,8 @@
                     class="img-fluid"
                     loading="lazy"
                     decoding="async"
-                    src="src/assets/img/Gallery/Gallery17.webp"
-                    alt="Gallery 17" />
+                    src="src/assets/img/Gallery/Gallery17-thumb.webp"
+                    alt="Gallery 17" width="800" height="601" />
                 </a>
                 <figcaption>22.07.2020</figcaption>
               </figure>
@@ -495,8 +501,8 @@
                     class="img-fluid"
                     loading="lazy"
                     decoding="async"
-                    src="src/assets/img/Gallery/Gallery18.webp"
-                    alt="Gallery 18" />
+                    src="src/assets/img/Gallery/Gallery18-thumb.webp"
+                    alt="Gallery 18" width="800" height="533" />
                 </a>
                 <figcaption>23.04.2020</figcaption>
               </figure>
@@ -511,8 +517,8 @@
                     class="img-fluid"
                     loading="lazy"
                     decoding="async"
-                    src="src/assets/img/Gallery/Gallery19.webp"
-                    alt="Gallery 19" />
+                    src="src/assets/img/Gallery/Gallery19-thumb.webp"
+                    alt="Gallery 19" width="800" height="533" />
                 </a>
                 <figcaption>22.03.2020</figcaption>
               </figure>
@@ -527,8 +533,8 @@
                     class="img-fluid"
                     loading="lazy"
                     decoding="async"
-                    src="src/assets/img/Gallery/Gallery20.webp"
-                    alt="Gallery 20" />
+                    src="src/assets/img/Gallery/Gallery20-thumb.webp"
+                    alt="Gallery 20" width="800" height="601" />
                 </a>
                 <figcaption>01.07.2021</figcaption>
               </figure>
@@ -539,7 +545,7 @@
       <div class="modal-overlay" id="modal">
         <div class="modal-content">
           <div class="modal-img-wrapper">
-            <img src="" alt="Powiększone zdjęcie" id="modalImage" />
+            <img src="" alt="Powiększone zdjęcie" id="modalImage" loading="eager" decoding="async" />
             <button class="modal-close" id="modalClose">&times;</button>
           </div>
         </div>
@@ -552,23 +558,23 @@
           Rights Reserved
         </p>
         <div class="footer__icons">
-          <a href="https://www.instagram.com/dawid_olko/" target="_blank">
-            <i class="footer__icon fa-brands fa-instagram"></i>
+          <a href="https://www.instagram.com/dawid_olko/" target="_blank" rel="noopener" aria-label="Instagram profile">
+            <i aria-hidden="true" class="footer__icon fa-brands fa-instagram"></i>
           </a>
-          <a href="https://github.com/dawidolko" target="_blank">
-            <i class="footer__icon fa-brands fa-github"></i>
+          <a href="https://github.com/dawidolko" target="_blank" rel="noopener" aria-label="GitHub profile">
+            <i aria-hidden="true" class="footer__icon fa-brands fa-github"></i>
           </a>
-          <a href="https://www.facebook.com/olkodawid/" target="_blank">
-            <i class="footer__icon fa-brands fa-square-facebook"></i>
+          <a href="https://www.facebook.com/olkodawid/" target="_blank" rel="noopener" aria-label="Facebook profile">
+            <i aria-hidden="true" class="footer__icon fa-brands fa-square-facebook"></i>
           </a>
-          <a href="https://www.linkedin.com/in/dawidolko/" target="_blank">
-            <i class="footer__icon fa-brands fa-linkedin"></i>
+          <a href="https://www.linkedin.com/in/dawidolko/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+            <i aria-hidden="true" class="footer__icon fa-brands fa-linkedin"></i>
           </a>
-          <a href="https://www.youtube.com/@dawid_olko" target="_blank">
-            <i class="footer__icon fa-brands fa-youtube"></i>
+          <a href="https://www.youtube.com/@dawid_olko" target="_blank" rel="noopener" aria-label="YouTube profile">
+            <i aria-hidden="true" class="footer__icon fa-brands fa-youtube"></i>
           </a>
-          <a href="https://www.tiktok.com/@dawid_olko" target="_blank">
-            <i class="footer__icon fa-brands fa-tiktok"></i>
+          <a href="https://www.tiktok.com/@dawid_olko" target="_blank" rel="noopener" aria-label="TikTok profile">
+            <i aria-hidden="true" class="footer__icon fa-brands fa-tiktok"></i>
           </a>
         </div>
       </div>
