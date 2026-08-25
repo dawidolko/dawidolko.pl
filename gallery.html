@@ -20,6 +20,24 @@
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://dawidolko.pl/gallery.html" />
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dawidolko.pl/gallery.html" />
+    <meta property="og:title" content="Gallery - Dawid Olko" />
+    <meta property="og:description" content="Browse Dawid Olko's photo gallery showcasing personal moments, travels and life experiences of a passionate web developer." />
+    <meta property="og:image" content="https://dawidolko.pl/src/assets/img/Backgrounds/backgroundGallery2-photoaidcom-greyscale-1920.webp" />
+    <meta property="og:image:alt" content="Greyscale banner image for the photo gallery of dawidolko.pl" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Dawid Olko Portfolio" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://dawidolko.pl/gallery.html" />
+    <meta name="twitter:title" content="Gallery - Dawid Olko" />
+    <meta name="twitter:description" content="Browse Dawid Olko's photo gallery showcasing personal moments, travels and life experiences of a passionate web developer." />
+    <meta name="twitter:image" content="https://dawidolko.pl/src/assets/img/Backgrounds/backgroundGallery2-photoaidcom-greyscale-1920.webp" />
+    <meta name="twitter:image:alt" content="Greyscale banner image for the photo gallery of dawidolko.pl" />
+
     <!-- Favicon -->
     <link
       rel="shortcut icon"
@@ -212,6 +230,20 @@
       }
     </style>
     <title>GALLERY - Dawid Olko</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "url": "https://dawidolko.pl/gallery.html",
+        "name": "Gallery - Dawid Olko",
+        "description": "Photo gallery of personal moments, travels and experiences.",
+        "author": {
+          "@type": "Person",
+          "name": "Dawid Olko",
+          "url": "https://dawidolko.pl/"
+        }
+      }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -232,7 +264,7 @@
           <li><a class="nav__link" href="studies.html">studies</a></li>
           <li><a class="nav__link" href="projects.html">projects</a></li>
           <li><a class="nav__link" href="contact.html">contact</a></li>
-          <li><a class="nav__link" href="gallery.html">gallery</a></li>
+          <li><a class="nav__link" href="gallery.html" aria-current="page">gallery</a></li>
           <li><a class="nav__link" href="faq.html">faq</a></li>
           <li>
             <a
@@ -545,8 +577,8 @@
       <div class="modal-overlay" id="modal">
         <div class="modal-content">
           <div class="modal-img-wrapper">
-            <img src="" alt="Powiększone zdjęcie" id="modalImage" loading="eager" decoding="async" />
-            <button class="modal-close" id="modalClose">&times;</button>
+            <img src="" alt="Enlarged gallery photo" id="modalImage" loading="eager" decoding="async" />
+            <button class="modal-close" id="modalClose" type="button" aria-label="Close image viewer"><span aria-hidden="true">&times;</span></button>
           </div>
         </div>
       </div>

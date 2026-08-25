@@ -26,6 +26,18 @@
     <meta
       property="og:description"
       content="Personal stories and insights from a web developer's journey" />
+    <meta property="og:image" content="https://dawidolko.pl/src/assets/img/Backgrounds/BlogBackgroundNew-1920.webp" />
+    <meta property="og:image:alt" content="Banner image for the blog of dawidolko.pl" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Dawid Olko Portfolio" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://dawidolko.pl/blog.html" />
+    <meta name="twitter:title" content="Blog - Dawid Olko" />
+    <meta name="twitter:description" content="Personal stories from a web developer's journey: programming, graduation, travels to Egypt and life as a computer science student." />
+    <meta name="twitter:image" content="https://dawidolko.pl/src/assets/img/Backgrounds/BlogBackgroundNew-1920.webp" />
+    <meta name="twitter:image:alt" content="Banner image for the blog of dawidolko.pl" />
 
     <!-- Favicon -->
     <link
@@ -142,6 +154,20 @@
         transform: scale(1.1);
       }
     </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "url": "https://dawidolko.pl/blog.html",
+        "name": "Blog - Dawid Olko",
+        "description": "Personal stories from a web developer's journey.",
+        "author": {
+          "@type": "Person",
+          "name": "Dawid Olko",
+          "url": "https://dawidolko.pl/"
+        }
+      }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -173,19 +199,21 @@
             >
           </li>
           <li>
-            <a class="nav__link nav__link-blog" href="blog.html">blog</a>
+            <a class="nav__link nav__link-blog" href="blog.html" aria-current="page">blog</a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <header class="header"></header>
+    <header class="header">
+      <h1 class="visually-hidden">Blog</h1>
+    </header>
     <main id="main-content" tabindex="-1">
       <section class="about"></section>
     </main>
 
     <div class="blog-modal-overlay" id="blogModal">
-      <button class="blog-modal-close" id="blogModalClose">&times;</button>
+      <button class="blog-modal-close" id="blogModalClose" type="button" aria-label="Close image viewer"><span aria-hidden="true">&times;</span></button>
       <img id="blogModalImage" src="" alt="Enlarged photo" loading="eager" decoding="async" />
     </div>
 
