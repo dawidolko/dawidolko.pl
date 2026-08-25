@@ -1,80 +1,194 @@
-# Welcome to My Portfolio Website!
+# dawidolko.pl — Personal Website
 
-Welcome to my personal portfolio at [dawidolko.pl](http://dawidolko.pl)! This website is a comprehensive showcase of my professional journey, featuring my projects, works, and the diverse skills I've honed over the years. It's designed to be a dynamic platform where visitors can explore the breadth of my expertise and creativity across various domains.
+> 🚀 **Multi-page personal website built from scratch** — projects, studies, blog, gallery and contact, hand-built with semantic HTML, SASS and vanilla JavaScript.
 
-## About the Website
+Welcome to the repository behind [**dawidolko.pl**](https://dawidolko.pl) — my personal website and the
+central hub of my work. It is a static, multi-page site written without a frontend framework: every page
+is semantic HTML, styles are authored in modular SASS, and interactivity is plain ES modules bundled
+with webpack. The site collects my projects, academic path, hobbies and a photo blog in one place.
 
-dawidolko.pl serves as a digital representation of my career and personal interests. It's not just a collection of my work; it's a reflection of my passion for technology, design, and innovation. Here, you'll find detailed presentations of my projects, including the challenges I faced, the solutions I devised, and the outcomes achieved. The site is a testament to my dedication to continuous learning and professional growth.
+The repository doubles as a demonstration of a classic, dependency-light frontend toolchain — SASS
+compilation, webpack bundling, KSS style documentation, JSDoc for scripts, and an image pipeline that
+converts source photos to responsive WebP.
 
-## Featured Sections
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![SASS](https://img.shields.io/badge/SASS-CC6699?logo=sass&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![webpack](https://img.shields.io/badge/webpack-8DD6F9?logo=webpack&logoColor=black)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-- **Projects**: Dive into a curated selection of my best work, ranging from software development to digital design. Each project is accompanied by thorough documentation, including concept overviews, development processes, and reflections on lessons learned.
+---
 
-- **Works**: Explore a gallery of my professional endeavors and personal projects. This section showcases a variety of mediums and techniques, illustrating my versatility and creative approach.
+## 🎯 Key Features
 
-- **Blog**: Gain insights into my thoughts on the latest trends in technology, design, and beyond. The blog is a space where I share articles, tutorials, and opinion pieces that reflect my interests and expertise.
+- 🗂️ **Multi-page structure** — Home, Projects, Studies, Blog, Gallery, Hobbies, FAQ and Contact, each a standalone semantic HTML document
+- 🧱 **Modular SASS architecture** — styles split into partials and compiled to a single minified stylesheet
+- 🖼️ **Responsive image pipeline** — `convert-to-webp.js` and `convert-heic.js` generate WebP variants at multiple widths from source photography
+- 📬 **Contact form** — server-side handling through `mail.php`
+- 🔍 **SEO foundation** — `robots.txt`, `sitemap.xml`, canonical URLs, Open Graph metadata and Google Search Console verification
+- ♿ **Accessible markup** — landmark regions, skip links, labelled controls and descriptive alternative text
+- 📚 **Self-documenting** — KSS living style guide for CSS and JSDoc for JavaScript
+- ⚡ **No runtime framework** — ships plain HTML, compiled CSS and a small JS bundle
 
-- **About Me**: Learn more about my background, experiences, and the journey that has shaped my career. This section provides a glimpse into my motivations, aspirations, and the values that guide my work.
+---
 
-## Project Structure
+## 🖼️ Screenshots
+
+| Home | Projects |
+|---|---|
+| [<img src="docs/screenshots/home.webp" alt="Home page of dawidolko.pl with hero section and navigation"/>](docs/screenshots/home.webp) | [<img src="docs/screenshots/projects.webp" alt="Projects page listing portfolio work with descriptions and links"/>](docs/screenshots/projects.webp) |
+
+| Studies | Blog |
+|---|---|
+| [<img src="docs/screenshots/studies.webp" alt="Studies page describing academic background and coursework"/>](docs/screenshots/studies.webp) | [<img src="docs/screenshots/blog.webp" alt="Blog page with article cards and imagery"/>](docs/screenshots/blog.webp) |
+
+| Gallery | Contact |
+|---|---|
+| [<img src="docs/screenshots/gallery.webp" alt="Photo gallery page with a responsive image grid"/>](docs/screenshots/gallery.webp) | [<img src="docs/screenshots/contact.webp" alt="Contact page with a form and social media links"/>](docs/screenshots/contact.webp) |
+
+---
+
+## 🛠️ Technology Stack
+
+### Frontend
+
+- **HTML5** — semantic, accessible multi-page markup
+- **SASS/SCSS** — modular stylesheets compiled to compressed CSS
+- **JavaScript (ES6+)** — vanilla modules, no UI framework
+
+### Build & Tooling
+
+- **webpack 5** — bundling and development server
+- **sass** — stylesheet compilation (`build:css` / `watch:css`)
+- **sharp** + **heic-convert** — image conversion and responsive WebP generation
+- **KSS** — living CSS style guide
+- **JSDoc** — JavaScript API documentation
+
+### Backend & Hosting
+
+- **PHP** — `mail.php` handles contact form submissions
+- **GitHub Pages** — serves the built site from `docs/`
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- **Node.js** (version 16 or higher)
+- **npm** package manager
+- **Git** for version control
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/dawidolko/dawidolko.pl.git
+cd dawidolko.pl
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Start Development Server
+
+```bash
+npm start
+```
+
+webpack Dev Server opens the site in your browser with live reloading.
+
+### 4. Build for Production
+
+```bash
+npm run build      # bundle JavaScript with webpack
+npm run build:css  # compile SASS to docs/assets/css/main.css (compressed)
+```
+
+To recompile styles continuously while working:
+
+```bash
+npm run watch:css
+```
+
+### 5. Regenerate Responsive Images (optional)
+
+```bash
+node convert-heic.js     # convert HEIC source photos to a web format
+node convert-to-webp.js  # produce responsive WebP variants
+```
+
+---
+
+## 📁 Project Structure
 
 ```
-/dawidolko.pl
-   ├── /dist # Compiled files generated by webpack
-   │    └── bundle.js # Bundled JS file
-   ├── /docs # Folder for GitHub Pages, contains the built version of the website
-   │    └── jsDoc # Documentation javascript
-   │    └── KSS # Documentation CSS
-   │    └── SEO # Documentation Website
-   ├── /node_modules # Dependencies managed by npm
-   ├── /src # Source files for the project
-   │    ├── /assets # Assets to be processed or used in the source code
-   │    │   ├── /download # Files to be made available for download
-   │    │   ├── /fonts # Font files
-   │    │   └── /img # Images to be used in the source code
-   │    ├── /pages # HTML files for each page on the website
-   │    │   ├── blog.html
-   │    │   ├── contact.html
-   │    │   ├── faq.html
-   │    │   ├── gallery.html
-   │    │   ├── hobbies.html
-   │    │   ├── projects.html
-   │    │   └── studies.html
-   │    ├── /styles # SASS files for styling
-   ├── .gitignore # Specifies which files and folders to ignore in version control
-   ├── LICENSE # The license for the project
-   ├── package-lock.json # Auto-generated file to lock down the versions of npm dependencies
-   ├── package.json # Project metadata and scripts
-   ├── README.md # Project documentation for developers
-   └── webpack.config.js # Configuration for webpack build tool
+dawidolko.pl/
+├── 📄 index.html            # Home page
+├── 📄 projects.html         # Projects showcase
+├── 📄 studies.html          # Academic background
+├── 📄 blog.html             # Blog
+├── 📄 gallery.html          # Photo gallery
+├── 📄 hobbies.html          # Hobbies
+├── 📄 faq.html              # Frequently asked questions
+├── 📄 contact.html          # Contact form
+├── 📁 src/
+│   ├── 🎨 sass/             # Modular SASS partials
+│   ├── 🎨 css/              # Compiled stylesheets
+│   ├── 💻 js/               # Vanilla JavaScript modules
+│   └── 🖼️ assets/           # Images, fonts and downloadable files
+├── 📁 docs/
+│   └── 🖼️ screenshots/      # README screenshots
+├── ⚙️ webpack.config.js     # Bundler configuration
+├── 🔧 convert-to-webp.js    # Responsive WebP generation
+├── 🔧 convert-heic.js       # HEIC to web format conversion
+├── 📬 mail.php              # Contact form handler
+├── 🔍 robots.txt            # Crawler directives
+├── 🔍 sitemap.xml           # XML sitemap
+├── 📦 package.json          # Scripts and dependencies
+└── 📖 README.md             # Project documentation
 ```
 
-This repository is organized into several key directories:
+---
 
-- `/src`: The development directory containing source code, including SASS files, JavaScript, and HTML templates.
-- `/src/assets` in both `/docs` and `/src
+## 🔍 SEO & Accessibility
 
-: These folders contain the assets for the website. The `/src/assets` folder includes the original files used during development.
+- Semantic landmark structure (`header`, `nav`, `main`, `footer`) with a skip link on every page
+- Descriptive `alt` text on content imagery and `aria-label` on icon-only controls
+- Canonical URLs, Open Graph and Twitter Card metadata
+- `robots.txt` and `sitemap.xml` published at the site root
+- Google Search Console verification file included
+- Responsive WebP images with explicit dimensions to avoid layout shift
 
-For more details on the project structure, please refer to the repository's content.
+---
 
-## Why Visit dawidolko.pl?
+## 🌍 Live Demo
 
-Whether you're a potential employer, a fellow professional, or simply someone with a keen interest in technology and design, dawidolko.pl has something for you. It's an opportunity to:
+The site is deployed and available at: **[https://dawidolko.pl](https://dawidolko.pl)**
 
-- **Discover** innovative projects and creative works that push boundaries.
-- **Learn** through detailed case studies and insightful blog posts.
-- **Inspire** and be inspired by a shared passion for making and creating.
+---
 
-## 📫 How to Contact Me
+## 📫 Contact
 
-Interested in discussing a project, idea, or just want to say hi? You can contact me through the following channels:
+- **Website** — [dawidolko.pl](https://dawidolko.pl)
+- **LinkedIn** — [dawidolko](https://www.linkedin.com/in/dawidolko)
+- **Facebook** — [olkodawid](https://www.facebook.com/olkodawid/)
+- **Instagram** — [@dawid_olko](https://www.instagram.com/dawid_olko)
+- **YouTube** — [@dawid_olko](https://www.youtube.com/@dawid_olko)
 
-- LinkedIn: [My LinkedIn Profile](https://www.linkedin.com/in/dawidolko)
-- Facebook: [My Facebook Account](https://www.facebook.com/olkodawid/)
-- Instagram: [@dawid_olko](https://www.instagram.com/dawid_olko)
-- YouTube: [@dawidolko](https://www.youtube.com/@dawid_olko)
+---
 
-Thank you for visiting my portfolio. I'm excited to share my journey and creations with you. Explore, enjoy, and let's connect!
+## 📄 License
 
-"Create, innovate, inspire!" - dawidolko.pl
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+## 👨‍💻 Author
+
+Created by **[Dawid Olko](https://github.com/dawidolko)**
+
+- **Website** — [dawidolko.pl](https://dawidolko.pl/)
+- **LinkedIn** — [@dawidolko](https://www.linkedin.com/in/dawidolko/)
