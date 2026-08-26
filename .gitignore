@@ -119,3 +119,6 @@ public
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Machine-local Claude settings
+.claude/settings.local.json
