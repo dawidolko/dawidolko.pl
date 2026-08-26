@@ -16,6 +16,7 @@ converts source photos to responsive WebP.
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 ![webpack](https://img.shields.io/badge/webpack-8DD6F9?logo=webpack&logoColor=black)
 ![License](https://img.shields.io/badge/license-MIT-green)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
 
