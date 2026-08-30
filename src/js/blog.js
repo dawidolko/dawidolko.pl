@@ -166,19 +166,50 @@ const blogModal = document.getElementById("blogModal");
 const blogModalImage = document.getElementById("blogModalImage");
 const blogModalClose = document.getElementById("blogModalClose");
 
+// The element that opened the viewer, so focus returns there on close.
+let blogLastTrigger = null;
+
+function closeBlogModal() {
+  if (!blogModal.classList.contains("active")) return;
+  blogModal.classList.remove("active");
+  blogModal.setAttribute("aria-hidden", "true");
+  if (blogLastTrigger) {
+    blogLastTrigger.focus();
+    blogLastTrigger = null;
+  }
+}
+
 document.querySelectorAll(".about__big-img").forEach((img) => {
-  img.addEventListener("click", () => {
+  // The image is the control that opens the viewer, so it has to be reachable
+  // and operable from the keyboard as well as the mouse.
+  img.setAttribute("tabindex", "0");
+  img.setAttribute("role", "button");
+
+  const open = () => {
+    blogLastTrigger = img;
     blogModal.classList.add("active");
+    blogModal.setAttribute("aria-hidden", "false");
     blogModalImage.src = img.getAttribute("src");
+    blogModalImage.alt = img.getAttribute("alt") || "";
+    blogModalClose.focus();
+  };
+
+  img.addEventListener("click", open);
+  img.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      open();
+    }
   });
 });
 
-blogModalClose.addEventListener("click", () => {
-  blogModal.classList.remove("active");
-});
+blogModalClose.addEventListener("click", closeBlogModal);
 
 blogModal.addEventListener("click", (e) => {
-  if (e.target === blogModal) {
-    blogModal.classList.remove("active");
-  }
+  if (e.target === blogModal) closeBlogModal();
+});
+
+// Escape is the expected way out of a dialog.
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeBlogModal();
 });

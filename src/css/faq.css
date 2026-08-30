@@ -251,6 +251,13 @@ details > div {
 details > div > img {
   align-self: flex-start;
   max-width: 100%;
+  /* The source images are square. Without an explicit auto height the flex
+     container stretched them to its own height and the photo came out
+     squashed; object-fit keeps the aspect ratio whatever the row height. */
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
   margin-top: 20px;
 }
 
@@ -281,7 +288,10 @@ details[open] > summary {
 
   details[open] > div > img {
     opacity: 0;
-    height: 100%;
+    /* A fixed width with an auto height keeps the square photo undistorted;
+       `height: 100%` here was what squashed it against the text column. */
+    width: clamp(160px, 22vw, 260px);
+    height: auto;
     margin: 0;
     animation-name: showImage;
     animation-duration: 0.3s;
