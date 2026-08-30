@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" role="img" aria-label="FrameVision">
+  <defs>
+    <linearGradient id="fvPanel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f1a24"/>
+      <stop offset="100%" style="stop-color:#091119"/>
+    </linearGradient>
+  </defs>
+  <rect x="10" y="10" width="100" height="120" rx="22" fill="url(#fvPanel)" stroke="#3498db" stroke-width="2.5"/>
+  <!-- Camera body with viewfinder hump -->
+  <rect x="26" y="52" width="68" height="46" rx="7" fill="#2c3e50"/>
+  <path d="M50 52v-6a4 4 0 0 1 4-4h12a4 4 0 0 1 4 4v6z" fill="#1a252f"/>
+  <!-- Lens -->
+  <circle cx="60" cy="75" r="17" fill="#1a252f"/>
+  <circle cx="60" cy="75" r="12" fill="#3498db"/>
+  <circle cx="60" cy="75" r="6" fill="#12202c"/>
+  <circle cx="55" cy="70" r="3" fill="#eaf4fc" opacity="0.75"/>
+  <!-- Shutter indicator -->
+  <circle cx="84" cy="61" r="3" fill="#e74c3c"/>
+</svg>

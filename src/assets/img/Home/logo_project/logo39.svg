@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" role="img" aria-label="Rent App">
+  <defs>
+    <linearGradient id="raPanel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c2018"/>
+      <stop offset="100%" style="stop-color:#071410"/>
+    </linearGradient>
+  </defs>
+  <rect x="10" y="10" width="100" height="120" rx="22" fill="url(#raPanel)" stroke="#41b883" stroke-width="2.5"/>
+  <!-- Roof over the building -->
+  <path d="M60 36 L96 66 H24 Z" fill="#41b883"/>
+  <!-- Building body -->
+  <rect x="34" y="66" width="52" height="42" rx="4" fill="#1c3a2e"/>
+  <!-- Windows -->
+  <g fill="#41b883" opacity="0.85">
+    <rect x="43" y="74" width="12" height="12" rx="2"/>
+    <rect x="65" y="74" width="12" height="12" rx="2"/>
+  </g>
+  <!-- Door -->
+  <rect x="53" y="90" width="14" height="18" rx="2" fill="#41b883"/>
+  <!-- Key: the cue that this is renting, not just property listing -->
+  <circle cx="86" cy="102" r="6" fill="none" stroke="#8ee0b8" stroke-width="3"/>
+  <path d="M86 108v14M86 116h6" stroke="#8ee0b8" stroke-width="3" stroke-linecap="round"/>
+</svg>

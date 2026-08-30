@@ -1,11 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" fill="none">
-  <!-- Kebab-Project - Restaurant menu -->
-  <ellipse cx="25" cy="8" rx="10" ry="4" fill="#D4A574"/>
-  <rect x="22" y="11" width="6" height="4" fill="#8B4513"/>
-  <circle cx="25" cy="19" r="5" fill="#E74C3C"/>
-  <rect x="22" y="23" width="6" height="3" fill="#27AE60"/>
-  <circle cx="25" cy="30" r="5" fill="#F39C12"/>
-  <rect x="22" y="34" width="6" height="3" fill="#E74C3C" opacity="0.7"/>
-  <circle cx="25" cy="41" r="4" fill="#8B4513"/>
-  <rect x="24" y="44" width="2" height="4" rx="1" fill="#666"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" role="img" aria-label="Kebab Project">
+  <defs>
+    <linearGradient id="kbPanel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#241505"/>
+      <stop offset="100%" style="stop-color:#170d03"/>
+    </linearGradient>
+    <linearGradient id="kbBread" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8cf7a"/>
+      <stop offset="100%" style="stop-color:#d99b33"/>
+    </linearGradient>
+  </defs>
+  <!-- Rounded panel -->
+  <rect x="10" y="10" width="100" height="120" rx="22" fill="url(#kbPanel)" stroke="#f0a532" stroke-width="2.5"/>
+
+  <!-- Wrap seen end-on: a cone of flatbread with the filling stacked inside.
+       Drawn as one large silhouette so the shape survives at 48px, where the
+       previous version collapsed into an unreadable blob. -->
+  <path d="M60 30 L86 104 H34 Z" fill="url(#kbBread)"/>
+
+  <!-- Filling bands across the cone: meat, salad, sauce -->
+  <path d="M46 74h28l3 9H43z" fill="#8c3b1e"/>
+  <path d="M50 60h20l3 9H47z" fill="#4a9b46"/>
+  <path d="M54 47h12l3 8H51z" fill="#c8552a"/>
+
+  <!-- Wrapper fold line down the front of the cone -->
+  <path d="M60 34v66" stroke="#a86c1c" stroke-width="2" opacity="0.45" stroke-linecap="round"/>
+
+  <!-- Base of the wrap -->
+  <rect x="32" y="104" width="56" height="7" rx="3.5" fill="#e8b862"/>
+
+  <!-- Steam: signals hot food and balances the composition -->
+  <g stroke="#f8cf7a" stroke-width="2.5" stroke-linecap="round" opacity="0.4" fill="none">
+    <path d="M48 122c0-4 4-4 4-8"/>
+    <path d="M60 124c0-4 4-4 4-8"/>
+    <path d="M72 122c0-4 4-4 4-8"/>
+  </g>
 </svg>
