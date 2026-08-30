@@ -107,7 +107,7 @@ body {
   letter-spacing: 0.7px;
   background-color: #101311;
   transform: translateY(-105%);
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 .nav__links--active {
   transform: translateY(0);
@@ -291,7 +291,7 @@ body {
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(186, 0, 233, 0.1);
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 .portfolio__box:hover {
   transform: translateY(-10px);
@@ -310,7 +310,7 @@ body {
   height: 35%;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.7));
   z-index: 9;
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 .portfolio__box:hover .portfolio__shadow {
   height: 100%;
@@ -324,7 +324,7 @@ body {
   font-size: 2.2rem;
   color: #fff;
   font-weight: 600;
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 .portfolio__box:hover .portfolio__shadow-title {
   transform: scale(1.05);
@@ -333,7 +333,7 @@ body {
 .portfolio__title-icon {
   font-size: 2.8rem;
   color: #b0b0b0;
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 .portfolio__box:hover .portfolio__title-icon {
   color: #f0f0f0;
@@ -347,7 +347,7 @@ body {
 .portfolio__link {
   font-size: 2.2rem;
   color: #f0f0f0;
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 .portfolio__link:hover {
   color: #d264f5;
@@ -360,7 +360,7 @@ body {
   object-fit: contain;
   padding: 1.5em;
   filter: grayscale(0.6);
-  transition: all 0.4s ease;
+  transition: opacity 0.4s ease, transform 0.4s ease, color 0.4s ease, background-color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
 }
 .portfolio__box:hover .portfolio__img {
   filter: grayscale(0);
@@ -377,7 +377,7 @@ body {
   justify-content: center;
   padding: 1em 0;
   z-index: 10;
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 .portfolio__box:hover .portfolio__stock {
   background: linear-gradient(to right, #080808, #ba00e9, #080808);
