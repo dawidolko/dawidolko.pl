@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img"
+     aria-label="EzScout — raporty skautingowe">
+  <defs>
+    <linearGradient id="esTlo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141a25"/>
+      <stop offset="100%" stop-color="#080b10"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="26" fill="url(#esTlo)"/>
+  <!-- luk linii bocznej boiska -->
+  <path d="M22 96 A44 44 0 0 1 98 96" fill="none" stroke="#f5a524"
+        stroke-opacity="0.28" stroke-width="3"/>
+  <!-- pilka jako punkt obserwacji -->
+  <circle cx="60" cy="52" r="17" fill="none" stroke="#f5a524" stroke-width="4"/>
+  <circle cx="60" cy="52" r="5" fill="#f5a524"/>
+  <!-- celownik skauta -->
+  <path d="M60 24 v9 M60 71 v9 M32 52 h9 M79 52 h9" stroke="#f5a524"
+        stroke-width="4" stroke-linecap="round"/>
+  <text x="60" y="110" font-family="Arial Narrow, Arial, sans-serif" font-size="17"
+        font-weight="700" text-anchor="middle" fill="#dbe2ec" letter-spacing="1">EZ</text>
+</svg>

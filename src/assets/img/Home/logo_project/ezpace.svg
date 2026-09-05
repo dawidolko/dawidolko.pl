@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img"
+     aria-label="EzPace — plany biegowe">
+  <defs>
+    <linearGradient id="epTlo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f5d47"/>
+      <stop offset="100%" stop-color="#0b4837"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="26" fill="url(#epTlo)"/>
+  <!-- tarcza stopera -->
+  <circle cx="60" cy="58" r="30" fill="none" stroke="#eaefec" stroke-width="5"/>
+  <path d="M60 40 v18 l13 8" fill="none" stroke="#d1643a" stroke-width="5"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- przycisk stopera -->
+  <path d="M53 22 h14" stroke="#eaefec" stroke-width="6" stroke-linecap="round"/>
+  <!-- znaczniki kilometrowe -->
+  <path d="M24 102 h14 M46 102 h14 M68 102 h14 M90 102 h8" stroke="#eaefec"
+        stroke-opacity="0.5" stroke-width="4" stroke-linecap="round"/>
+</svg>
