@@ -1,5 +1,5 @@
 let typed = new Typed(".header__write", {
-  strings: ["Web Developer", "Front-End Developer"],
+  strings: ["Web Developer", "Full-Stack Developer"],
   typeSpeed: 150,
   backSpeed: 100,
   loop: true,
