@@ -721,3 +721,30 @@ details > div:focus-visible {
   gap: 24px;
   flex-wrap: wrap;
 }
+
+/*
+ * Wysokość navbara na stronie galerii.
+ *
+ * Ta jedna podstrona ładuje Bootstrapa (potrzebnego przez lightbox2), a ten
+ * ustawia `line-height: 1.5` na `body`. Logo w nawigacji dziedziczyło tę
+ * wartość i rosło z 60 do 66 px, przez co cały pasek miał 76 px zamiast 70 —
+ * przy przejściu z innej zakładki navbar widocznie „podskakiwał”.
+ *
+ * Przywracamy `normal` tylko w obrębie nawigacji; reszta strony korzysta
+ * z Bootstrapa bez zmian.
+ */
+.nav,
+.nav__logo,
+.nav__links,
+.nav__links a {
+  line-height: normal;
+}
+
+/*
+ * Bootstrap dokłada `margin-bottom: 1rem` do każdej listy. Lista linków
+ * w nawigacji dostawała przez to 10 px z dołu (1rem = 10 px, bo `html` ma
+ * `font-size: 10px`), co razem z interlinią dawało pasek o 4 px wyższy.
+ */
+.nav__links {
+  margin-bottom: 0;
+}
