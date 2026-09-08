@@ -2,7 +2,7 @@ const blogContent = [
   {
     title: "Hello!",
     description:
-      "<p>I'm really glad you decided to get to know me better. I'd like to share a few things about myself. My name is Dawid and I'm 22 years old. Despite my young age, I've already embarked on a significant journey – studying computer science. This field not only captivates me but also presents an endless path of learning and discovery.</p> <p>I have a strong passion for programming and cherish the opportunity to work in teams. I believe that collaboration not only enhances the quality of projects but also fosters personal growth and development. Through teamwork, I've learned the importance of communication, mutual respect, and the beauty of combining diverse thoughts and ideas to create something truly remarkable.</p> <p>Outside of my academic pursuits, I love spending my time engaging in activities that challenge me both mentally and physically. Although my adventures might not take me to mountain peaks or crystal-clear waters, I find joy and fulfillment in the world of technology, exploring new programming languages, and working on collaborative projects that aim to make a difference.</p> <p>I'm committed to pursuing my dream of becoming a proficient programmer, understanding that it requires continuous effort, learning, and collaboration. I'm excited about the journey ahead and the opportunities to not only grow as a developer but also to contribute to meaningful projects alongside talented individuals.</p>",
+      "<p>I'm really glad you decided to get to know me better. I'd like to share a few things about myself. My name is Dawid and I'm 24 years old. Despite my young age, I've already embarked on a significant journey – studying computer science. This field not only captivates me but also presents an endless path of learning and discovery.</p> <p>I have a strong passion for programming and cherish the opportunity to work in teams. I believe that collaboration not only enhances the quality of projects but also fosters personal growth and development. Through teamwork, I've learned the importance of communication, mutual respect, and the beauty of combining diverse thoughts and ideas to create something truly remarkable.</p> <p>Outside of my academic pursuits, I love spending my time engaging in activities that challenge me both mentally and physically. Although my adventures might not take me to mountain peaks or crystal-clear waters, I find joy and fulfillment in the world of technology, exploring new programming languages, and working on collaborative projects that aim to make a difference.</p> <p>I'm committed to pursuing my dream of becoming a proficient programmer, understanding that it requires continuous effort, learning, and collaboration. I'm excited about the journey ahead and the opportunities to not only grow as a developer but also to contribute to meaningful projects alongside talented individuals.</p>",
     imgSrc: "src/assets/img/Blog/Blog1_11zon.webp",
     imgSrc1: "src/assets/img/Blog/Blog2_11zon.webp",
     imgSrc2: "src/assets/img/Blog/blog3.webp",
@@ -111,6 +111,20 @@ const blogContent = [
     alt2: "Amazing Egyptian landscapes",
     alt3: "Ancient monuments 2",
     alt4: "Egyptian vacation memories 3",
+  },
+  {
+    title: "ZAKOPANE: A month ago, above the tree line...",
+    description:
+      "<p>Zakopane in late summer is a strange, wonderful contradiction. The town below is loud with people, wooden stalls and the smell of oscypek, while twenty minutes upwards the noise simply stops. That contrast is exactly why I keep going back. A month ago I packed a bag, drove down south and gave myself a few days without a screen in front of my face.</p> <p>The trip started, as it always does, at Kuznice - the little station at the foot of Kasprowy Wierch where the queue for the cable car becomes its own small community. Standing there among people in proper boots and people in flip-flops, watching the gondolas crawl up the wire, you get a preview of the whole day: everyone is heading for the same view, and the mountain does not care in the slightest who arrives first.</p> <p>Higher up, riding a chairlift with your legs hanging over a green slope, there is nothing to do but look. No notifications, no tabs, no half-finished branch waiting to be merged. Just the sound of the cable and the ridge slowly getting closer. I spend most of my life solving problems that exist only inside a computer, and a few hours above the tree line is a very effective reminder that most of them are not urgent.</p> <p>The best part came afterwards. Coming down tired, with sore legs and a sunburnt neck, and going straight to the thermal baths - sitting in hot water outdoors while the air cools around you is a kind of reset that no weekend at home has ever matched. Travel always has its small frictions too: something on the car needed attention on the way, plans shifted, the weather did what mountain weather does. None of it mattered by the evening. That, I think, is what a good trip actually is - not everything going to plan, but nothing going wrong badly enough to be remembered.</p>",
+    imgSrc: "src/assets/img/Blog/zakopane1.webp",
+    imgSrc1: "src/assets/img/Blog/zakopane2.webp",
+    imgSrc2: "src/assets/img/Blog/zakopane3.webp",
+    imgSrc3: "src/assets/img/Blog/zakopane4.webp",
+    imgSrc4: "src/assets/img/Blog/zakopane1.webp",
+    alt1: "Kuznice station at the foot of Kasprowy Wierch",
+    alt2: "Riding a chairlift over a green mountain slope",
+    alt3: "Thermal baths near Zakopane",
+    alt4: "A detail from the drive south",
   },
 ];
 
