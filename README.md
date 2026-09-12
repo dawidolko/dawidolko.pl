@@ -2,8 +2,7 @@
 
 > 🚀 **Multi-page personal website built from scratch** — projects, studies, blog, gallery and contact, hand-built with semantic HTML, SASS and vanilla JavaScript.
 
-Welcome to the repository behind [**dawidolko.pl**](https://dawidolko.pl) — my personal website and the
-central hub of my work. It is a static, multi-page site written without a frontend framework: every page
+**dawidolko.pl** is my personal website and the central hub of my work. It is a static, multi-page site written without a frontend framework: every page
 is semantic HTML, styles are authored in modular SASS, and interactivity is plain ES modules bundled
 with webpack. The site collects my projects, academic path, hobbies and a photo blog in one place.
 
