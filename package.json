@@ -27,11 +27,11 @@
     "kss": "^3.1.0",
     "sass": "^1.70.0",
     "sass-loader": "^14.1.0",
-    "sharp": "^0.34.5",
+    "sharp": "^0.35.5",
     "style-loader": "^3.3.4",
     "webpack": "^5.90.1",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.0.1"
+    "webpack-dev-server": "^6.1.0"
   },
   "directories": {
     "doc": "docs"
@@ -39,5 +39,9 @@
   "keywords": [],
   "dependencies": {
     "heic-convert": "^2.1.0"
+  },
+  "overrides": {
+    "locutus": "^3.0.26",
+    "braces": "^3.0.3"
   }
 }
