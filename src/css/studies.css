@@ -270,6 +270,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  filter: blur(5px) grayscale(1);
   z-index: 0;
 }
 .container1::after {
@@ -915,7 +916,7 @@ details > div:focus-visible {
 /* Phones crop the wide hero, so aim the crop at the subject. */
 @media (max-width: 809px) {
   .header__photo {
-    object-position: 36% top;
+    object-position: 7% top;
   }
 }
 
