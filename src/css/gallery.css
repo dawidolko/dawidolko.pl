@@ -166,6 +166,7 @@ li {
   background-position: top;
 }
 .header__body {
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.8);
   display: flex;
   flex-direction: column;
   justify-content: center;
