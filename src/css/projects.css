@@ -970,6 +970,17 @@ details > div:focus-visible {
 /* Phones crop the wide hero, so aim the crop at the subject. */
 @media (max-width: 809px) {
   .header__photo {
-    object-position: 7% top;
+    object-position: 50% top;
   }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
