@@ -142,7 +142,7 @@ body {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.5) 45%, rgba(0, 0, 0, 0.5) 62%, rgba(0, 0, 0, 0.3) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.2) 22%, rgba(0, 0, 0, 0.32) 45%, rgba(0, 0, 0, 0.32) 62%, rgba(0, 0, 0, 0.12) 100%);
 }
 .header::before {
   content: "";
@@ -252,7 +252,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(../assets/img/Studies/university1.webp);
+  background-image: url(../assets/img/Studies/desk-1.webp);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -270,7 +270,6 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  filter: blur(5px) grayscale(1);
   z-index: 0;
 }
 .container1::after {
@@ -337,11 +336,11 @@ body {
   box-shadow: 0px 29px 38px -15px rgba(0, 0, 0, 0.43);
 }
 .second {
-  background-image: url(../assets/img/Studies/university2.webp);
+  background-image: url(../assets/img/Studies/desk-2.webp);
   background-attachment: fixed;
 }
 .second::before {
-  background-image: url(../assets/img/Studies/university2.webp);
+  background-image: url(../assets/img/Studies/desk-2.webp);
 }
 
 .blank h3 {

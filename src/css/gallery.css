@@ -181,7 +181,7 @@ li {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.5) 45%, rgba(0, 0, 0, 0.5) 62%, rgba(0, 0, 0, 0.3) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.2) 22%, rgba(0, 0, 0, 0.32) 45%, rgba(0, 0, 0, 0.32) 62%, rgba(0, 0, 0, 0.12) 100%);
 }
 .header__body {
   text-shadow: 0 1px 10px rgba(0, 0, 0, 0.8);
