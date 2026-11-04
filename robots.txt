@@ -10,8 +10,7 @@ Sitemap: https://dawidolko.pl/sitemap.xml
 Disallow: /node_modules/
 Disallow: /package.json
 Disallow: /webpack.config.js
-Disallow: /convert-heic.js
-Disallow: /convert-to-webp.js
+Disallow: /scripts/
 Disallow: /mail.php
 
 # Allow CSS, JS and images for proper rendering
@@ -19,5 +18,3 @@ Allow: /src/css/
 Allow: /src/js/
 Allow: /src/assets/img/
 
-# Crawl-delay (optional)
-Crawl-delay: 1

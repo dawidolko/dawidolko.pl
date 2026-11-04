@@ -12,6 +12,7 @@ const textArea = document.querySelector(".contact__textarea");
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("contact-form");
   const msgStatus = document.querySelector(".contact__msg-status");
+  if (!form) return;
 
   form.addEventListener("submit", function (event) {
     event.preventDefault();

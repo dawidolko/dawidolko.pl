@@ -118,14 +118,31 @@ body {
 }
 
 .header {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   height: 100vh;
   width: 100%;
-  background: url("../assets/img/Backgrounds/backgroundStudies2-photoaidcom-greyscale-960.webp")
-    rgba(16, 16, 16, 0.3);
-  background-blend-mode: darken;
-  background-size: cover;
-  background-position: center;
-  position: relative;
+  background-color: #0d0d0d;
+}
+.header__photo {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: top;
+}
+/* A flat scrim keeps the hero text readable on any photo without baking
+   darkness into the image files themselves. */
+.header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.5) 45%, rgba(0, 0, 0, 0.5) 62%, rgba(0, 0, 0, 0.3) 100%);
 }
 .header::before {
   content: "";
@@ -672,13 +689,6 @@ li {
     position: absolute;
     height: 25px;
   }
-  .header {
-    background: url("../assets/img/Backgrounds/backgroundStudies2-photoaidcom-greyscale-1920.webp")
-      rgba(16, 16, 16, 0.3);
-    background-blend-mode: darken;
-    background-size: cover;
-    background-position: top;
-  }
   .header__body {
     display: flex;
     flex-direction: column;
@@ -901,4 +911,11 @@ details > div:focus-visible {
 .footer__icons {
   gap: 24px;
   flex-wrap: wrap;
+}
+
+/* Phones crop the wide hero, so aim the crop at the subject. */
+@media (max-width: 809px) {
+  .header__photo {
+    object-position: 50% top;
+  }
 }

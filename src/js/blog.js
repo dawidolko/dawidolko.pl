@@ -130,6 +130,11 @@ const blogContent = [
 
 const blogAbout = document.querySelector(".about");
 
+/* The originals are several megabytes each, so the page shows resized copies
+   and only the viewer loads the full file. */
+const sized = (src, width) =>
+  src.replace("Blog/", "Blog/web/").replace(".webp", `-${width}.webp`);
+
 const showImg = () => {
   blogContent.forEach((about) => {
     blogAbout.innerHTML += `
@@ -144,17 +149,18 @@ const showImg = () => {
 		<div class="about__body">
 			<div class="about__main-img">
 				<img
-					src="${about.imgSrc}"
+					src="${sized(about.imgSrc, 740)}"
+					data-full="${about.imgSrc}"
 					alt="${about.alt1}"
 					class="about__big-img about__img"
-					id="product-img"
+					width="370" height="400" loading="lazy" decoding="async"
 				/>
 			</div>
 			<div class="about__images">
-				<img src="${about.imgSrc1}" alt="${about.alt1}" class="about__img" />
-				<img src="${about.imgSrc2}" alt="${about.alt2}" class="about__img" />
-				<img src="${about.imgSrc3}" alt="${about.alt3}" class="about__img" />
-				<img src="${about.imgSrc4}" alt="${about.alt4}" class="about__img" />
+				<img src="${sized(about.imgSrc1, 180)}" data-full="${about.imgSrc1}" alt="${about.alt1}" class="about__img" width="90" height="90" loading="lazy" decoding="async" />
+				<img src="${sized(about.imgSrc2, 180)}" data-full="${about.imgSrc2}" alt="${about.alt2}" class="about__img" width="90" height="90" loading="lazy" decoding="async" />
+				<img src="${sized(about.imgSrc3, 180)}" data-full="${about.imgSrc3}" alt="${about.alt3}" class="about__img" width="90" height="90" loading="lazy" decoding="async" />
+				<img src="${sized(about.imgSrc4, 180)}" data-full="${about.imgSrc4}" alt="${about.alt4}" class="about__img" width="90" height="90" loading="lazy" decoding="async" />
 			</div>
 		</div>
 		</div>
@@ -168,10 +174,10 @@ const smallImg = document.querySelectorAll(".about__img");
 
 smallImg.forEach((img) => {
   img.addEventListener("click", () => {
-    const changeImage = img.getAttribute("src");
     const parentDiv = img.closest(".about__body");
     const bigImg = parentDiv.querySelector(".about__big-img");
-    bigImg.setAttribute("src", changeImage);
+    bigImg.setAttribute("src", sized(img.dataset.full, 740));
+    bigImg.dataset.full = img.dataset.full;
   });
 });
 
@@ -203,7 +209,7 @@ document.querySelectorAll(".about__big-img").forEach((img) => {
     blogLastTrigger = img;
     blogModal.classList.add("active");
     blogModal.setAttribute("aria-hidden", "false");
-    blogModalImage.src = img.getAttribute("src");
+    blogModalImage.src = img.dataset.full;
     blogModalImage.alt = img.getAttribute("alt") || "";
     blogModalClose.focus();
   };

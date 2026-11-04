@@ -18,24 +18,24 @@
     <meta name="author" content="Dawid Olko" />
     <meta name="copyright" content="Dawid Olko" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://dawidolko.pl/contact.html" />
+    <link rel="canonical" href="https://dawidolko.pl/contact" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://dawidolko.pl/contact.html" />
+    <meta property="og:url" content="https://dawidolko.pl/contact" />
     <meta property="og:title" content="Contact - Dawid Olko" />
     <meta property="og:description" content="Get in touch with Dawid Olko for freelance web development projects, collaborations or questions." />
-    <meta property="og:image" content="https://dawidolko.pl/src/assets/img/Backgrounds/backgroundContact2-photoaidcom-greyscale-1920.webp" />
+    <meta property="og:image" content="https://dawidolko.pl/src/assets/img/og-image.jpg" />
     <meta property="og:image:alt" content="Greyscale banner image for the contact page of dawidolko.pl" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="Dawid Olko Portfolio" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://dawidolko.pl/contact.html" />
+    <meta name="twitter:url" content="https://dawidolko.pl/contact" />
     <meta name="twitter:title" content="Contact - Dawid Olko" />
     <meta name="twitter:description" content="Get in touch with Dawid Olko for freelance web development projects, collaborations or questions." />
-    <meta name="twitter:image" content="https://dawidolko.pl/src/assets/img/Backgrounds/backgroundContact2-photoaidcom-greyscale-1920.webp" />
+    <meta name="twitter:image" content="https://dawidolko.pl/src/assets/img/og-image.jpg" />
     <meta name="twitter:image:alt" content="Greyscale banner image for the contact page of dawidolko.pl" />
 
     <!-- Favicon -->
@@ -45,40 +45,24 @@
       type="image/x-icon" />
     <link rel="icon" type="image/x-icon" href="src/assets/img/favicon.ico" />
 
-    <!-- Preconnect -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin />
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-
     <!-- Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap"
-      rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
-      rel="stylesheet" />
 
     <!-- CSS -->
     <!-- Preload the header background (LCP) at the size this viewport will use -->
-    <link rel="preload" as="image" href="src/assets/img/Backgrounds/backgroundContact2-photoaidcom-greyscale-960.webp"
-      media="(max-width: 809px)" fetchpriority="high" />
-    <link rel="preload" as="image" href="src/assets/img/Backgrounds/backgroundContact2-photoaidcom-greyscale-1920.webp"
-      media="(min-width: 810px)" fetchpriority="high" />
+    <link rel="preload" as="image" imagesrcset="src/assets/img/hero/contact-640.webp 640w, src/assets/img/hero/contact-960.webp 960w, src/assets/img/hero/contact-1600.webp 1600w, src/assets/img/hero/contact-2400.webp 2400w, src/assets/img/hero/contact-3200.webp 3200w"
+      imagesizes="(max-width: 809px) 120vw, max(100vw, 152vh)" fetchpriority="high" />
+    <link rel="preload" as="font" type="font/woff2" href="src/assets/fonts/web/opensans-latin.woff2" crossorigin />
+    <link rel="stylesheet" href="src/css/fonts.css" />
     <link rel="preload" href="src/css/contact.css" as="style" />
     <link rel="stylesheet" href="src/css/contact.css" />
 
     <!-- Scripts -->
-    <script
-      src="https://kit.fontawesome.com/fdc09ecfc9.js"
-      crossorigin="anonymous"
-      defer></script>
     <title>CONTACT - Dawid Olko</title>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "ContactPage",
-        "url": "https://dawidolko.pl/contact.html",
+        "url": "https://dawidolko.pl/contact",
         "name": "Contact - Dawid Olko",
         "description": "Get in touch with Dawid Olko for freelance web development work.",
         "mainEntity": {
@@ -94,7 +78,7 @@
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <nav class="nav">
       <div class="nav__body container">
-        <a href="./index.html" class="nav__logo"
+        <a href="/" class="nav__logo"
           ><img
             class="nav__img"
             src="src/assets/img/Home/Logotype-96.webp"
@@ -105,12 +89,12 @@
           <img src="src/assets/img/icon_hamburger.webp" alt="" width="25" height="25" loading="lazy" decoding="async" />
         </button>
         <ul class="nav__links" id="nav-links">
-          <li><a class="nav__link" href="index.html">home</a></li>
-          <li><a class="nav__link" href="studies.html">studies</a></li>
-          <li><a class="nav__link" href="projects.html">projects</a></li>
-          <li><a class="nav__link" href="contact.html" aria-current="page">contact</a></li>
-          <li><a class="nav__link" href="gallery.html">gallery</a></li>
-          <li><a class="nav__link" href="faq.html">faq</a></li>
+          <li><a class="nav__link" href="/">home</a></li>
+          <li><a class="nav__link" href="/studies">studies</a></li>
+          <li><a class="nav__link" href="/projects">projects</a></li>
+          <li><a class="nav__link" href="/contact" aria-current="page">contact</a></li>
+          <li><a class="nav__link" href="/gallery">gallery</a></li>
+          <li><a class="nav__link" href="/faq">faq</a></li>
           <li>
             <a
               class="nav__link"
@@ -128,13 +112,17 @@
               >
             </li>
           <li>
-            <a class="nav__link nav__link-blog" href="blog.html">blog</a>
+            <a class="nav__link nav__link-blog" href="/blog">blog</a>
           </li>
         </ul>
       </div>
     </nav>
 
     <header class="header">
+      <img class="header__photo" src="src/assets/img/hero/contact-1600.webp"
+        srcset="src/assets/img/hero/contact-640.webp 640w, src/assets/img/hero/contact-960.webp 960w, src/assets/img/hero/contact-1600.webp 1600w, src/assets/img/hero/contact-2400.webp 2400w, src/assets/img/hero/contact-3200.webp 3200w"
+        sizes="(max-width: 809px) 120vw, max(100vw, 152vh)"
+        alt="" width="1600" height="1051" fetchpriority="high" decoding="async" />
       <div class="header__body container">
         <p class="header__text">Welcome!</p>
         <h1 class="header__heading">CONTACT</h1>
@@ -247,7 +235,7 @@
       </div>
     </footer>
     <script
-      src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"
+      src="src/js/vendor/typed.umd.js"
       defer></script>
     <script src="src/js/contentContact.js" defer></script>
     <script src="src/js/index.js" defer></script>

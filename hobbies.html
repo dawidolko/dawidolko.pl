@@ -18,24 +18,24 @@
     <meta name="author" content="Dawid Olko" />
     <meta name="copyright" content="Dawid Olko" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://dawidolko.pl/hobbies.html" />
+    <link rel="canonical" href="https://dawidolko.pl/hobbies" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://dawidolko.pl/hobbies.html" />
+    <meta property="og:url" content="https://dawidolko.pl/hobbies" />
     <meta property="og:title" content="Hobbies - Dawid Olko" />
     <meta property="og:description" content="Explore Dawid Olko's hobbies beyond programming: gaming setups, hardware builds, keyboards and headphones." />
-    <meta property="og:image" content="https://dawidolko.pl/src/assets/img/Backgrounds/backgroundHobbies2-photoaidcom-greyscale-1920.webp" />
+    <meta property="og:image" content="https://dawidolko.pl/src/assets/img/og-image.jpg" />
     <meta property="og:image:alt" content="Greyscale banner image for the hobbies page of dawidolko.pl" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="Dawid Olko Portfolio" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://dawidolko.pl/hobbies.html" />
+    <meta name="twitter:url" content="https://dawidolko.pl/hobbies" />
     <meta name="twitter:title" content="Hobbies - Dawid Olko" />
     <meta name="twitter:description" content="Explore Dawid Olko's hobbies beyond programming: gaming setups, hardware builds, keyboards and headphones." />
-    <meta name="twitter:image" content="https://dawidolko.pl/src/assets/img/Backgrounds/backgroundHobbies2-photoaidcom-greyscale-1920.webp" />
+    <meta name="twitter:image" content="https://dawidolko.pl/src/assets/img/og-image.jpg" />
     <meta name="twitter:image:alt" content="Greyscale banner image for the hobbies page of dawidolko.pl" />
 
     <!-- Favicon -->
@@ -45,40 +45,24 @@
       type="image/x-icon" />
     <link rel="icon" type="image/x-icon" href="src/assets/img/favicon.ico" />
 
-    <!-- Preconnect -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin />
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-
     <!-- Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap"
-      rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
-      rel="stylesheet" />
 
     <!-- CSS -->
     <!-- Preload the header background (LCP) at the size this viewport will use -->
-    <link rel="preload" as="image" href="src/assets/img/Backgrounds/backgroundHobbies2-photoaidcom-greyscale-960.webp"
-      media="(max-width: 809px)" fetchpriority="high" />
-    <link rel="preload" as="image" href="src/assets/img/Backgrounds/backgroundHobbies2-photoaidcom-greyscale-1920.webp"
-      media="(min-width: 810px)" fetchpriority="high" />
+    <link rel="preload" as="image" imagesrcset="src/assets/img/hero/hobbies-640.webp 640w, src/assets/img/hero/hobbies-960.webp 960w, src/assets/img/hero/hobbies-1600.webp 1600w, src/assets/img/hero/hobbies-2400.webp 2400w, src/assets/img/hero/hobbies-3200.webp 3200w"
+      imagesizes="(max-width: 809px) 120vw, max(100vw, 152vh)" fetchpriority="high" />
+    <link rel="preload" as="font" type="font/woff2" href="src/assets/fonts/web/opensans-latin.woff2" crossorigin />
+    <link rel="stylesheet" href="src/css/fonts.css" />
     <link rel="preload" href="src/css/hobbies.css" as="style" />
     <link rel="stylesheet" href="src/css/hobbies.css" />
 
     <!-- Scripts -->
-    <script
-      src="https://kit.fontawesome.com/fdc09ecfc9.js"
-      crossorigin="anonymous"
-      defer></script>
     <title>HOBBIES - Dawid Olko</title>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
-        "url": "https://dawidolko.pl/hobbies.html",
+        "url": "https://dawidolko.pl/hobbies",
         "name": "Hobbies - Dawid Olko",
         "description": "Hobbies and interests beyond programming.",
         "author": {
@@ -93,7 +77,7 @@
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <nav class="nav">
       <div class="nav__body container">
-        <a href="./index.html" class="nav__logo"
+        <a href="/" class="nav__logo"
           ><img
             class="nav__img"
             src="src/assets/img/Home/Logotype-96.webp"
@@ -104,19 +88,23 @@
           <img src="src/assets/img/icon_hamburger.webp" alt="" width="25" height="25" loading="lazy" decoding="async" />
         </button>
         <ul class="nav__links" id="nav-links">
-          <li><a class="nav__link" href="index.html">home</a></li>
-          <li><a class="nav__link" href="hobbies.html" aria-current="page">hobbies</a></li>
-          <li><a class="nav__link" href="studies.html">studies</a></li>
-          <li><a class="nav__link" href="projects.html">projects</a></li>
-          <li><a class="nav__link" href="contact.html">contact</a></li>
-          <li><a class="nav__link" href="gallery.html">gallery</a></li>
-          <li><a class="nav__link" href="faq.html">faq</a></li>
-          <li><a class="nav__link nav__link-blog" href="blog.html">blog</a></li>
+          <li><a class="nav__link" href="/">home</a></li>
+          <li><a class="nav__link" href="/hobbies" aria-current="page">hobbies</a></li>
+          <li><a class="nav__link" href="/studies">studies</a></li>
+          <li><a class="nav__link" href="/projects">projects</a></li>
+          <li><a class="nav__link" href="/contact">contact</a></li>
+          <li><a class="nav__link" href="/gallery">gallery</a></li>
+          <li><a class="nav__link" href="/faq">faq</a></li>
+          <li><a class="nav__link nav__link-blog" href="/blog">blog</a></li>
         </ul>
       </div>
     </nav>
 
     <header class="header">
+      <img class="header__photo" src="src/assets/img/hero/hobbies-1600.webp"
+        srcset="src/assets/img/hero/hobbies-640.webp 640w, src/assets/img/hero/hobbies-960.webp 960w, src/assets/img/hero/hobbies-1600.webp 1600w, src/assets/img/hero/hobbies-2400.webp 2400w, src/assets/img/hero/hobbies-3200.webp 3200w"
+        sizes="(max-width: 809px) 120vw, max(100vw, 152vh)"
+        alt="" width="1600" height="1051" fetchpriority="high" decoding="async" />
       <div class="header__body container">
         <p class="header__text">Welcome!</p>
         <h1 class="header__heading">HOBBIES</h1>
@@ -140,11 +128,10 @@
         <!-- Box 1: YouTube -->
         <div class="hobby-box move">
           <div class="media">
-            <iframe title="My gaming computer setup for PLN 6,000"
-              src="https://www.youtube.com/embed/LQl7f9M2Y-w"
-              frameborder="0"
-              allowfullscreen>
-            </iframe>
+            <a class="video-facade" href="https://www.youtube.com/@dawid_olko" target="_blank" rel="noopener" aria-label="My gaming computer setup for PLN 6,000, watch on my YouTube channel">
+              <img src="src/assets/img/hero/gallery-640.webp" alt="" width="640" height="421" loading="lazy" decoding="async" />
+              <span class="video-facade__play" aria-hidden="true"></span>
+            </a>
           </div>
           <div class="overlay">
             <h2>My gaming computer setup for PLN 6,000</h2>
@@ -188,11 +175,10 @@
         <!-- Box 3: YouTube -->
         <div class="hobby-box move">
           <div class="media">
-            <iframe title="My personal command center"
-              src="https://www.youtube.com/embed/EZagYbsGJeU"
-              frameborder="0"
-              allowfullscreen>
-            </iframe>
+            <button class="video-facade" type="button" data-video="EZagYbsGJeU" data-title="My personal command center" aria-label="Play video: My personal command center">
+              <img src="src/assets/img/Hobbies/yt-EZagYbsGJeU.webp" alt="" width="320" height="180" loading="lazy" decoding="async" />
+              <span class="video-facade__play" aria-hidden="true"></span>
+            </button>
           </div>
           <div class="overlay">
             <h2>TOP 5 GAMING HEADPHONES UP TO PLN 150/200/300</h2>
@@ -239,11 +225,10 @@
         <!-- Box 5: YouTube -->
         <div class="hobby-box move">
           <div class="media">
-            <iframe title="TOP 5 GAMING HEADPHONES UP TO PLN 150/200/300"
-              src="https://www.youtube.com/embed/uuKotb4_GxI"
-              frameborder="0"
-              allowfullscreen>
-            </iframe>
+            <button class="video-facade" type="button" data-video="uuKotb4_GxI" data-title="TOP 5 GAMING HEADPHONES UP TO PLN 150/200/300" aria-label="Play video: TOP 5 GAMING HEADPHONES UP TO PLN 150/200/300">
+              <img src="src/assets/img/Hobbies/yt-uuKotb4_GxI.webp" alt="" width="320" height="180" loading="lazy" decoding="async" />
+              <span class="video-facade__play" aria-hidden="true"></span>
+            </button>
           </div>
           <div class="overlay">
             <h2>TOP 5 GAMING KEYBOARDS UP TO PLN 200</h2>
@@ -316,14 +301,21 @@
       </div>
     </footer>
     <script
-      src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"
+      src="src/js/vendor/typed.umd.js"
       defer></script>
     <script src="src/js/contentHobbies.js" defer></script>
     <script src="src/js/index.js" defer></script>
-    <script async src="https://www.instagram.com/embed.js"></script>
     <script>
-      window.onload = function () {
-        instgrm.Embeds.process();
+      /* embed.js pulls in several megabytes, so it waits until a post is close
+         to the viewport instead of slowing down every visit. */
+      var loadInstagram = function () {
+        var script = document.createElement("script");
+        script.src = "https://www.instagram.com/embed.js";
+        script.async = true;
+        script.onload = function () {
+          instgrm.Embeds.process();
+        };
+        document.body.appendChild(script);
         // embed.js injects its iframes without a title, which leaves them
         // unnamed for screen readers (WCAG 4.1.2). Name each one from the
         // heading that already describes the post in the same box.
@@ -346,6 +338,25 @@
           subtree: true,
         });
       };
+      var firstPost = document.querySelector(".instagram-media");
+      new IntersectionObserver(function (entries, observer) {
+        if (entries[0].isIntersecting) {
+          observer.disconnect();
+          loadInstagram();
+        }
+      }, { rootMargin: "300px" }).observe(firstPost);
+
+      document.querySelectorAll(".video-facade").forEach(function (button) {
+        button.addEventListener("click", function () {
+          var frame = document.createElement("iframe");
+          frame.title = button.dataset.title;
+          frame.src = "https://www.youtube-nocookie.com/embed/" + button.dataset.video + "?autoplay=1";
+          frame.allow = "autoplay; encrypted-media; picture-in-picture";
+          frame.allowFullscreen = true;
+          button.replaceWith(frame);
+          frame.focus();
+        });
+      });
     </script>
   </body>
 </html>

@@ -62,37 +62,14 @@
       type="image/x-icon" />
     <link rel="icon" type="image/x-icon" href="src/assets/img/favicon.ico" />
 
-    <!-- Preconnect for Performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin />
-
-    <!-- DNS Prefetch -->
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-    <link rel="dns-prefetch" href="https://kit.fontawesome.com" />
-
-    <!-- Fonts with display=swap for better performance -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap"
-      rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
-      rel="stylesheet" />
-
     <!-- Preload the header background (LCP) at the size this viewport will use -->
-    <link rel="preload" as="image" href="src/assets/img/Backgrounds/backgroundHome2-photoaidcom-greyscale-960.webp"
-      media="(max-width: 809px)" fetchpriority="high" />
-    <link rel="preload" as="image" href="src/assets/img/Backgrounds/backgroundHome2-photoaidcom-greyscale-1920.webp"
-      media="(min-width: 810px)" fetchpriority="high" />
+    <link rel="preload" as="image" imagesrcset="src/assets/img/hero/home-640.webp 640w, src/assets/img/hero/home-960.webp 960w, src/assets/img/hero/home-1600.webp 1600w, src/assets/img/hero/home-2400.webp 2400w, src/assets/img/hero/home-3200.webp 3200w"
+      imagesizes="(max-width: 809px) 120vw, max(100vw, 152vh)" fetchpriority="high" />
     <!-- Preload Critical CSS -->
+    <link rel="preload" as="font" type="font/woff2" href="src/assets/fonts/web/opensans-latin.woff2" crossorigin />
+    <link rel="stylesheet" href="src/css/fonts.css" />
     <link rel="preload" href="src/css/main.css" as="style" />
     <link rel="stylesheet" href="src/css/main.css" />
-
-    <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/fdc09ecfc9.js"
-      crossorigin="anonymous"
-      defer></script>
 
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -134,7 +111,7 @@
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <nav class="nav">
       <div class="nav__body container">
-        <a href="./index.html" class="nav__logo"
+        <a href="/" class="nav__logo"
           ><img
             class="nav__img"
             src="src/assets/img/Home/Logotype-96.webp"
@@ -146,11 +123,11 @@
         </button>
         <ul class="nav__links" id="nav-links">
           <li><a class="nav__link" href="#" aria-current="page">home</a></li>
-          <li><a class="nav__link" href="studies.html">studies</a></li>
-          <li><a class="nav__link" href="projects.html">projects</a></li>
-          <li><a class="nav__link" href="contact.html">contact</a></li>
-          <li><a class="nav__link" href="gallery.html">gallery</a></li>
-          <li><a class="nav__link" href="faq.html">faq</a></li>
+          <li><a class="nav__link" href="/studies">studies</a></li>
+          <li><a class="nav__link" href="/projects">projects</a></li>
+          <li><a class="nav__link" href="/contact">contact</a></li>
+          <li><a class="nav__link" href="/gallery">gallery</a></li>
+          <li><a class="nav__link" href="/faq">faq</a></li>
           <li>
             <a
               class="nav__link"
@@ -168,13 +145,17 @@
               >
             </li>
           <li>
-            <a class="nav__link nav__link-blog" href="blog.html">blog</a>
+            <a class="nav__link nav__link-blog" href="/blog">blog</a>
           </li>
         </ul>
       </div>
     </nav>
 
     <header class="header">
+      <img class="header__photo" src="src/assets/img/hero/home-1600.webp"
+        srcset="src/assets/img/hero/home-640.webp 640w, src/assets/img/hero/home-960.webp 960w, src/assets/img/hero/home-1600.webp 1600w, src/assets/img/hero/home-2400.webp 2400w, src/assets/img/hero/home-3200.webp 3200w"
+        sizes="(max-width: 809px) 120vw, max(100vw, 152vh)"
+        alt="" width="1600" height="1051" fetchpriority="high" decoding="async" />
       <div class="header__body container">
         <p class="header__text">Hi!</p>
         <h1 class="header__heading">I'm Dawid</h1>
@@ -197,7 +178,9 @@
             <img
               class="about__img"
               src="src/assets/img/Home/Portret-640.webp"
-              alt="Portrait of Dawid Olko" width="640" height="640" loading="eager" fetchpriority="high" decoding="async" />
+              srcset="src/assets/img/Home/Portret-400.webp 400w, src/assets/img/Home/Portret-640.webp 640w"
+              sizes="(max-width: 500px) 90vw, 350px"
+              alt="Portrait of Dawid Olko" width="640" height="640" loading="lazy" decoding="async" />
           </div>
           <div class="about__body">
             <h3 class="about__who">Who am i ?</h3>
@@ -348,7 +331,7 @@
           </div>
           </div>
         </div>
-        <a class="portfolio__btn" href="projects.html">See More</a>
+        <a class="portfolio__btn" href="/projects">See all projects</a>
       </section>
 
       <section class="contact" id="contact">
@@ -463,7 +446,7 @@
       </div>
     </footer>
     <script
-      src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"
+      src="src/js/vendor/typed.umd.js"
       defer></script>
     <script src="src/js/content.js" defer></script>
     <script src="src/js/index.js" defer></script>

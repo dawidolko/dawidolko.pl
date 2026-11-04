@@ -23,7 +23,7 @@ converts source photos to responsive WebP.
 
 - 🗂️ **Multi-page structure** — Home, Projects, Studies, Blog, Gallery, Hobbies, FAQ and Contact, each a standalone semantic HTML document
 - 🧱 **Modular SASS architecture** — styles split into partials and compiled to a single minified stylesheet
-- 🖼️ **Responsive image pipeline** — `convert-to-webp.js` and `convert-heic.js` generate WebP variants at multiple widths from source photography
+- 🖼️ **Responsive image pipeline** — `scripts/convert-to-webp.js` and `scripts/convert-heic.js` generate WebP variants at multiple widths from source photography
 - 📬 **Contact form** — server-side handling through `mail.php`
 - 🔍 **SEO foundation** — `robots.txt`, `sitemap.xml`, canonical URLs, Open Graph metadata and Google Search Console verification
 - ♿ **Accessible markup** — landmark regions, skip links, labelled controls and descriptive alternative text
@@ -116,8 +116,8 @@ npm run watch:css
 ### 5. Regenerate Responsive Images (optional)
 
 ```bash
-node convert-heic.js     # convert HEIC source photos to a web format
-node convert-to-webp.js  # produce responsive WebP variants
+node scripts/convert-heic.js     # convert HEIC source photos to a web format
+node scripts/convert-to-webp.js  # produce responsive WebP variants
 ```
 
 ---
@@ -142,8 +142,7 @@ dawidolko.pl/
 ├── 📁 docs/
 │   └── 🖼️ screenshots/      # README screenshots
 ├── ⚙️ webpack.config.js     # Bundler configuration
-├── 🔧 convert-to-webp.js    # Responsive WebP generation
-├── 🔧 convert-heic.js       # HEIC to web format conversion
+├── 📁 scripts/              # Image conversion (HEIC, responsive WebP)
 ├── 📬 mail.php              # Contact form handler
 ├── 🔍 robots.txt            # Crawler directives
 ├── 🔍 sitemap.xml           # XML sitemap
@@ -157,6 +156,7 @@ dawidolko.pl/
 
 - Semantic landmark structure (`header`, `nav`, `main`, `footer`) with a skip link on every page
 - Descriptive `alt` text on content imagery and `aria-label` on icon-only controls
+- Clean, extensionless URLs (`/studies`, `/projects`); GitHub Pages serves them from the matching `.html` file
 - Canonical URLs, Open Graph and Twitter Card metadata
 - `robots.txt` and `sitemap.xml` published at the site root
 - Google Search Console verification file included

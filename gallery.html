@@ -18,24 +18,24 @@
     <meta name="author" content="Dawid Olko" />
     <meta name="copyright" content="Dawid Olko" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://dawidolko.pl/gallery.html" />
+    <link rel="canonical" href="https://dawidolko.pl/gallery" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://dawidolko.pl/gallery.html" />
+    <meta property="og:url" content="https://dawidolko.pl/gallery" />
     <meta property="og:title" content="Gallery - Dawid Olko" />
     <meta property="og:description" content="Browse Dawid Olko's photo gallery showcasing personal moments, travels and life experiences of a passionate fullstack / AI developer." />
-    <meta property="og:image" content="https://dawidolko.pl/src/assets/img/Backgrounds/backgroundGallery2-photoaidcom-greyscale-1920.webp" />
+    <meta property="og:image" content="https://dawidolko.pl/src/assets/img/og-image.jpg" />
     <meta property="og:image:alt" content="Greyscale banner image for the photo gallery of dawidolko.pl" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="Dawid Olko Portfolio" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://dawidolko.pl/gallery.html" />
+    <meta name="twitter:url" content="https://dawidolko.pl/gallery" />
     <meta name="twitter:title" content="Gallery - Dawid Olko" />
     <meta name="twitter:description" content="Browse Dawid Olko's photo gallery showcasing personal moments, travels and life experiences of a passionate fullstack / AI developer." />
-    <meta name="twitter:image" content="https://dawidolko.pl/src/assets/img/Backgrounds/backgroundGallery2-photoaidcom-greyscale-1920.webp" />
+    <meta name="twitter:image" content="https://dawidolko.pl/src/assets/img/og-image.jpg" />
     <meta name="twitter:image:alt" content="Greyscale banner image for the photo gallery of dawidolko.pl" />
 
     <!-- Favicon -->
@@ -45,35 +45,15 @@
       type="image/x-icon" />
     <link rel="icon" type="image/x-icon" href="src/assets/img/favicon.ico" />
 
-    <!-- Preconnect -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
-    <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin />
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
-
     <!-- Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap"
-      rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
-      rel="stylesheet" />
 
     <!-- CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css" />
     <!-- Preload the header background (LCP) at the size this viewport will use -->
-    <link rel="preload" as="image" href="src/assets/img/Backgrounds/backgroundGallery2-photoaidcom-greyscale-960.webp"
-      media="(max-width: 809px)" fetchpriority="high" />
-    <link rel="preload" as="image" href="src/assets/img/Backgrounds/backgroundGallery2-photoaidcom-greyscale-1920.webp"
-      media="(min-width: 810px)" fetchpriority="high" />
+    <link rel="preload" as="image" imagesrcset="src/assets/img/hero/gallery-640.webp 640w, src/assets/img/hero/gallery-960.webp 960w, src/assets/img/hero/gallery-1600.webp 1600w, src/assets/img/hero/gallery-2400.webp 2400w, src/assets/img/hero/gallery-3200.webp 3200w"
+      imagesizes="(max-width: 809px) 120vw, max(100vw, 152vh)" fetchpriority="high" />
     <link rel="preload" href="src/css/gallery.css?v=2" as="style" />
+    <link rel="preload" as="font" type="font/woff2" href="src/assets/fonts/web/opensans-latin.woff2" crossorigin />
+    <link rel="stylesheet" href="src/css/fonts.css" />
     <link rel="stylesheet" href="src/css/gallery.css?v=2" />
     <style>
       .photos {
@@ -234,7 +214,7 @@
       {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
-        "url": "https://dawidolko.pl/gallery.html",
+        "url": "https://dawidolko.pl/gallery",
         "name": "Gallery - Dawid Olko",
         "description": "Photo gallery of personal moments, travels and experiences.",
         "author": {
@@ -249,7 +229,7 @@
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <nav class="nav">
       <div class="nav__body container">
-        <a href="./index.html" class="nav__logo"
+        <a href="/" class="nav__logo"
           ><img
             class="nav__img"
             src="src/assets/img/Home/Logotype-96.webp"
@@ -260,12 +240,12 @@
           <img src="src/assets/img/icon_hamburger.webp" alt="" width="25" height="25" loading="lazy" decoding="async" />
         </button>
         <ul class="nav__links" id="nav-links">
-          <li><a class="nav__link" href="index.html">home</a></li>
-          <li><a class="nav__link" href="studies.html">studies</a></li>
-          <li><a class="nav__link" href="projects.html">projects</a></li>
-          <li><a class="nav__link" href="contact.html">contact</a></li>
-          <li><a class="nav__link" href="gallery.html" aria-current="page">gallery</a></li>
-          <li><a class="nav__link" href="faq.html">faq</a></li>
+          <li><a class="nav__link" href="/">home</a></li>
+          <li><a class="nav__link" href="/studies">studies</a></li>
+          <li><a class="nav__link" href="/projects">projects</a></li>
+          <li><a class="nav__link" href="/contact">contact</a></li>
+          <li><a class="nav__link" href="/gallery" aria-current="page">gallery</a></li>
+          <li><a class="nav__link" href="/faq">faq</a></li>
           <li>
             <a
               class="nav__link"
@@ -282,11 +262,15 @@
                 >cv</a
               >
             </li>
-          <li><a class="nav__link nav__link-blog" href="blog.html">blog</a></li>
+          <li><a class="nav__link nav__link-blog" href="/blog">blog</a></li>
         </ul>
       </div>
     </nav>
     <header class="header">
+      <img class="header__photo" src="src/assets/img/hero/gallery-1600.webp"
+        srcset="src/assets/img/hero/gallery-640.webp 640w, src/assets/img/hero/gallery-960.webp 960w, src/assets/img/hero/gallery-1600.webp 1600w, src/assets/img/hero/gallery-2400.webp 2400w, src/assets/img/hero/gallery-3200.webp 3200w"
+        sizes="(max-width: 809px) 120vw, max(100vw, 152vh)"
+        alt="" width="1600" height="1051" fetchpriority="high" decoding="async" />
       <div class="header__body container">
         <p class="header__text">Welcome!</p>
         <h1 class="header__heading">GALLERY</h1>
@@ -318,6 +302,8 @@
                     loading="lazy"
                     decoding="async"
                     src="src/assets/img/Gallery/Gallery2026-1-thumb.webp"
+                    srcset="src/assets/img/Gallery/Gallery2026-1-thumb-400.webp 400w, src/assets/img/Gallery/Gallery2026-1-thumb.webp 800w"
+                    sizes="(min-width: 1200px) 400px, (min-width: 768px) 45vw, 92vw"
                     alt="Dawid pointing at a monitor at his desk" width="800" height="526" />
                 </a>
                 <figcaption>2026</figcaption>
@@ -334,6 +320,8 @@
                     loading="lazy"
                     decoding="async"
                     src="src/assets/img/Gallery/Gallery2026-2-thumb.webp"
+                    srcset="src/assets/img/Gallery/Gallery2026-2-thumb-400.webp 400w, src/assets/img/Gallery/Gallery2026-2-thumb.webp 800w"
+                    sizes="(min-width: 1200px) 400px, (min-width: 768px) 45vw, 92vw"
                     alt="Dawid at his desk, looking at the camera" width="800" height="526" />
                 </a>
                 <figcaption>2026</figcaption>
@@ -350,6 +338,8 @@
                     loading="lazy"
                     decoding="async"
                     src="src/assets/img/Gallery/Gallery2026-3-thumb.webp"
+                    srcset="src/assets/img/Gallery/Gallery2026-3-thumb-400.webp 400w, src/assets/img/Gallery/Gallery2026-3-thumb.webp 800w"
+                    sizes="(min-width: 1200px) 400px, (min-width: 768px) 45vw, 92vw"
                     alt="Dawid typing at his desk, seen in profile" width="800" height="526" />
                 </a>
                 <figcaption>2026</figcaption>
@@ -366,6 +356,8 @@
                     loading="lazy"
                     decoding="async"
                     src="src/assets/img/Gallery/Gallery2026-4-thumb.webp"
+                    srcset="src/assets/img/Gallery/Gallery2026-4-thumb-400.webp 400w, src/assets/img/Gallery/Gallery2026-4-thumb.webp 800w"
+                    sizes="(min-width: 1200px) 400px, (min-width: 768px) 45vw, 92vw"
                     alt="Dawid working at three monitors, seen from behind" width="800" height="526" />
                 </a>
                 <figcaption>2026</figcaption>
@@ -382,6 +374,8 @@
                     loading="lazy"
                     decoding="async"
                     src="src/assets/img/Gallery/Gallery2026-5-thumb.webp"
+                    srcset="src/assets/img/Gallery/Gallery2026-5-thumb-400.webp 400w, src/assets/img/Gallery/Gallery2026-5-thumb.webp 800w"
+                    sizes="(min-width: 1200px) 400px, (min-width: 768px) 45vw, 92vw"
                     alt="Dawid leaning on his hand at his desk" width="800" height="526" />
                 </a>
                 <figcaption>2026</figcaption>
@@ -398,6 +392,8 @@
                     loading="lazy"
                     decoding="async"
                     src="src/assets/img/Gallery/Gallery2026-6-thumb.webp"
+                    srcset="src/assets/img/Gallery/Gallery2026-6-thumb-400.webp 400w, src/assets/img/Gallery/Gallery2026-6-thumb.webp 800w"
+                    sizes="(min-width: 1200px) 400px, (min-width: 768px) 45vw, 92vw"
                     alt="Black and white portrait of Dawid in a checked blazer" width="800" height="800" />
                 </a>
                 <figcaption>2026</figcaption>
@@ -414,6 +410,8 @@
                     loading="lazy"
                     decoding="async"
                     src="src/assets/img/Blog/wakacje-morskieoko-thumb.webp"
+                    srcset="src/assets/img/Blog/wakacje-morskieoko-thumb-400.webp 400w, src/assets/img/Blog/wakacje-morskieoko-thumb.webp 800w"
+                    sizes="(min-width: 1200px) 400px, (min-width: 768px) 45vw, 92vw"
                     alt="Morskie Oko lake in the Tatra Mountains, standing on a boulder at the shoreline" width="600" height="800" />
                 </a>
                 <figcaption>02.08.2026</figcaption>
@@ -430,6 +428,8 @@
                     loading="lazy"
                     decoding="async"
                     src="src/assets/img/Blog/wakacje-kolejka-thumb.webp"
+                    srcset="src/assets/img/Blog/wakacje-kolejka-thumb-400.webp 400w, src/assets/img/Blog/wakacje-kolejka-thumb.webp 800w"
+                    sizes="(min-width: 1200px) 400px, (min-width: 768px) 45vw, 92vw"
                     alt="Riding a mountain funicular in the rain, action camera mounted on the window rail" width="600" height="800" />
                 </a>
                 <figcaption>15.07.2026</figcaption>
@@ -446,6 +446,8 @@
                     loading="lazy"
                     decoding="async"
                     src="src/assets/img/Blog/wakacje-solina-thumb.webp"
+                    srcset="src/assets/img/Blog/wakacje-solina-thumb-400.webp 400w, src/assets/img/Blog/wakacje-solina-thumb.webp 800w"
+                    sizes="(min-width: 1200px) 400px, (min-width: 768px) 45vw, 92vw"
                     alt="On board a cruise on Lake Solina, wooded hills of the Bieszczady in the background" width="600" height="800" />
                 </a>
                 <figcaption>01.07.2026</figcaption>
@@ -462,6 +464,8 @@
                     loading="lazy"
                     decoding="async"
                     src="src/assets/img/Blog/obrona1-thumb.webp"
+                    srcset="src/assets/img/Blog/obrona1-thumb-400.webp 400w, src/assets/img/Blog/obrona1-thumb.webp 800w"
+                    sizes="(min-width: 1200px) 400px, (min-width: 768px) 45vw, 92vw"
                     alt="Graduation Defense 1" width="800" height="1067" />
                 </a>
                 <figcaption>11.02.2026</figcaption>
@@ -478,6 +482,8 @@
                     loading="lazy"
                     decoding="async"
                     src="src/assets/img/Blog/obrona2-thumb.webp"
+                    srcset="src/assets/img/Blog/obrona2-thumb-400.webp 400w, src/assets/img/Blog/obrona2-thumb.webp 800w"
+                    sizes="(min-width: 1200px) 400px, (min-width: 768px) 45vw, 92vw"
                     alt="Graduation Defense 2" width="800" height="1067" />
                 </a>
                 <figcaption>11.02.2026</figcaption>
@@ -494,6 +500,8 @@
                     loading="lazy"
                     decoding="async"
                     src="src/assets/img/Blog/obrona3-thumb.webp"
+                    srcset="src/assets/img/Blog/obrona3-thumb-400.webp 400w, src/assets/img/Blog/obrona3-thumb.webp 800w"
+                    sizes="(min-width: 1200px) 400px, (min-width: 768px) 45vw, 92vw"
                     alt="Graduation Defense 3" width="800" height="1067" />
                 </a>
                 <figcaption>11.02.2026</figcaption>
@@ -510,6 +518,8 @@
                     loading="lazy"
                     decoding="async"
                     src="src/assets/img/Blog/praca1-thumb.webp"
+                    srcset="src/assets/img/Blog/praca1-thumb-400.webp 400w, src/assets/img/Blog/praca1-thumb.webp 800w"
+                    sizes="(min-width: 1200px) 400px, (min-width: 768px) 45vw, 92vw"
                     alt="Graduation Thesis 1" width="800" height="637" />
                 </a>
                 <figcaption>11.02.2026</figcaption>
@@ -526,6 +536,8 @@
                     loading="lazy"
                     decoding="async"
                     src="src/assets/img/Blog/praca2-thumb.webp"
+                    srcset="src/assets/img/Blog/praca2-thumb-400.webp 400w, src/assets/img/Blog/praca2-thumb.webp 800w"
+                    sizes="(min-width: 1200px) 400px, (min-width: 768px) 45vw, 92vw"
                     alt="Graduation Thesis 2" width="742" height="600" />
                 </a>
                 <figcaption>11.02.2026</figcaption>
@@ -542,6 +554,8 @@
                     loading="lazy"
                     decoding="async"
                     src="src/assets/img/Blog/egpit1-thumb.webp"
+                    srcset="src/assets/img/Blog/egpit1-thumb-400.webp 400w, src/assets/img/Blog/egpit1-thumb.webp 800w"
+                    sizes="(min-width: 1200px) 400px, (min-width: 768px) 45vw, 92vw"
                     alt="Egypt Vacation 1" width="800" height="1067" />
                 </a>
                 <figcaption>18.09.2025</figcaption>
@@ -558,6 +572,8 @@
                     loading="lazy"
                     decoding="async"
                     src="src/assets/img/Blog/egpit2-thumb.webp"
+                    srcset="src/assets/img/Blog/egpit2-thumb-400.webp 400w, src/assets/img/Blog/egpit2-thumb.webp 800w"
+                    sizes="(min-width: 1200px) 400px, (min-width: 768px) 45vw, 92vw"
                     alt="Egypt Vacation 2" width="800" height="1067" />
                 </a>
                 <figcaption>18.09.2025</figcaption>
@@ -574,6 +590,8 @@
                     loading="lazy"
                     decoding="async"
                     src="src/assets/img/Blog/egpit4-thumb.webp"
+                    srcset="src/assets/img/Blog/egpit4-thumb-400.webp 400w, src/assets/img/Blog/egpit4-thumb.webp 800w"
+                    sizes="(min-width: 1200px) 400px, (min-width: 768px) 45vw, 92vw"
                     alt="Egypt Vacation 3" width="800" height="600" />
                 </a>
                 <figcaption>18.09.2025</figcaption>
@@ -590,6 +608,8 @@
                     loading="lazy"
                     decoding="async"
                     src="src/assets/img/Blog/egipt5-thumb.webp"
+                    srcset="src/assets/img/Blog/egipt5-thumb-400.webp 400w, src/assets/img/Blog/egipt5-thumb.webp 800w"
+                    sizes="(min-width: 1200px) 400px, (min-width: 768px) 45vw, 92vw"
                     alt="Egypt Vacation 4" width="800" height="1067" />
                 </a>
                 <figcaption>18.09.2025</figcaption>
@@ -606,6 +626,8 @@
                     loading="lazy"
                     decoding="async"
                     src="src/assets/img/Gallery/Gallery1-thumb.webp"
+                    srcset="src/assets/img/Gallery/Gallery1-thumb-400.webp 400w, src/assets/img/Gallery/Gallery1-thumb.webp 800w"
+                    sizes="(min-width: 1200px) 400px, (min-width: 768px) 45vw, 92vw"
                     alt="Gallery 1" width="800" height="601" />
                 </a>
                 <figcaption>19.04.2023</figcaption>
@@ -622,6 +644,8 @@
                     loading="lazy"
                     decoding="async"
                     src="src/assets/img/Gallery/Gallery14-thumb.webp"
+                    srcset="src/assets/img/Gallery/Gallery14-thumb-400.webp 400w, src/assets/img/Gallery/Gallery14-thumb.webp 800w"
+                    sizes="(min-width: 1200px) 400px, (min-width: 768px) 45vw, 92vw"
                     alt="Gallery 14" width="800" height="601" />
                 </a>
                 <figcaption>07.10.2020</figcaption>
@@ -638,6 +662,8 @@
                     loading="lazy"
                     decoding="async"
                     src="src/assets/img/Gallery/Gallery15-thumb.webp"
+                    srcset="src/assets/img/Gallery/Gallery15-thumb-400.webp 400w, src/assets/img/Gallery/Gallery15-thumb.webp 800w"
+                    sizes="(min-width: 1200px) 400px, (min-width: 768px) 45vw, 92vw"
                     alt="Gallery 15" width="800" height="601" />
                 </a>
                 <figcaption>27.07.2021</figcaption>
@@ -654,6 +680,8 @@
                     loading="lazy"
                     decoding="async"
                     src="src/assets/img/Gallery/Gallery16-thumb.webp"
+                    srcset="src/assets/img/Gallery/Gallery16-thumb-400.webp 400w, src/assets/img/Gallery/Gallery16-thumb.webp 800w"
+                    sizes="(min-width: 1200px) 400px, (min-width: 768px) 45vw, 92vw"
                     alt="Gallery 16" width="800" height="601" />
                 </a>
                 <figcaption>23.07.2020</figcaption>
@@ -670,6 +698,8 @@
                     loading="lazy"
                     decoding="async"
                     src="src/assets/img/Gallery/Gallery17-thumb.webp"
+                    srcset="src/assets/img/Gallery/Gallery17-thumb-400.webp 400w, src/assets/img/Gallery/Gallery17-thumb.webp 800w"
+                    sizes="(min-width: 1200px) 400px, (min-width: 768px) 45vw, 92vw"
                     alt="Gallery 17" width="800" height="601" />
                 </a>
                 <figcaption>22.07.2020</figcaption>
@@ -686,6 +716,8 @@
                     loading="lazy"
                     decoding="async"
                     src="src/assets/img/Gallery/Gallery18-thumb.webp"
+                    srcset="src/assets/img/Gallery/Gallery18-thumb-400.webp 400w, src/assets/img/Gallery/Gallery18-thumb.webp 800w"
+                    sizes="(min-width: 1200px) 400px, (min-width: 768px) 45vw, 92vw"
                     alt="Gallery 18" width="800" height="533" />
                 </a>
                 <figcaption>23.04.2020</figcaption>
@@ -702,6 +734,8 @@
                     loading="lazy"
                     decoding="async"
                     src="src/assets/img/Gallery/Gallery19-thumb.webp"
+                    srcset="src/assets/img/Gallery/Gallery19-thumb-400.webp 400w, src/assets/img/Gallery/Gallery19-thumb.webp 800w"
+                    sizes="(min-width: 1200px) 400px, (min-width: 768px) 45vw, 92vw"
                     alt="Gallery 19" width="800" height="533" />
                 </a>
                 <figcaption>22.03.2020</figcaption>
@@ -718,6 +752,8 @@
                     loading="lazy"
                     decoding="async"
                     src="src/assets/img/Gallery/Gallery20-thumb.webp"
+                    srcset="src/assets/img/Gallery/Gallery20-thumb-400.webp 400w, src/assets/img/Gallery/Gallery20-thumb.webp 800w"
+                    sizes="(min-width: 1200px) 400px, (min-width: 768px) 45vw, 92vw"
                     alt="Gallery 20" width="800" height="601" />
                 </a>
                 <figcaption>01.07.2021</figcaption>
@@ -764,16 +800,10 @@
       </div>
     </footer>
     <script
-      src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"
+      src="src/js/vendor/typed.umd.js"
       defer></script>
     <script src="src/js/contentGallery.js" defer></script>
     <script src="src/js/index.js" defer></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
-      defer></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"
-      defer></script>
     <script>
       document.querySelector(".footer__date").textContent =
         new Date().getFullYear();
