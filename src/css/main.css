@@ -142,7 +142,7 @@ body {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.2) 22%, rgba(0, 0, 0, 0.32) 45%, rgba(0, 0, 0, 0.32) 62%, rgba(0, 0, 0, 0.12) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.28) 0%, rgba(0, 0, 0, 0.1) 22%, rgba(0, 0, 0, 0.26) 45%, rgba(0, 0, 0, 0.26) 62%, rgba(0, 0, 0, 0.05) 100%);
 }
 .header__body {
   text-shadow: 0 1px 10px rgba(0, 0, 0, 0.8);
@@ -1118,6 +1118,6 @@ details > div:focus-visible {
 /* Phones crop the wide hero, so aim the crop at the subject. */
 @media (max-width: 809px) {
   .header__photo {
-    object-position: 31% top;
+    object-position: 21% top;
   }
 }
