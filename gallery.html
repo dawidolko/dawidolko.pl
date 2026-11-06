@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
 
     <!-- Google Search Console Verification -->
     <meta
@@ -209,7 +211,7 @@
         transform: scale(1.1);
       }
     </style>
-    <title>GALLERY - Dawid Olko</title>
+    <title>Gallery - Dawid Olko, Fullstack / AI Developer</title>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -251,7 +253,7 @@
             <a
               class="nav__link"
               href="https://workstation.dawidolko.pl"
-              target="_blank" rel="noopener"
+              target="_blank" rel="noopener noreferrer"
               >my station</a
             >
           </li>
@@ -259,7 +261,7 @@
               <a
                 class="nav__link"
                 href="https://cv.dawidolko.pl"
-                target="_blank" rel="noopener"
+                target="_blank" rel="noopener noreferrer"
                 >cv</a
               >
             </li>
@@ -689,22 +691,22 @@
           Rights Reserved
         </p>
         <div class="footer__icons">
-          <a href="https://www.instagram.com/dawid_olko/" target="_blank" rel="noopener" aria-label="Instagram profile">
+          <a href="https://www.instagram.com/dawid_olko/" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile">
             <i aria-hidden="true" class="footer__icon fa-brands fa-instagram"></i>
           </a>
-          <a href="https://github.com/dawidolko" target="_blank" rel="noopener" aria-label="GitHub profile">
+          <a href="https://github.com/dawidolko" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
             <i aria-hidden="true" class="footer__icon fa-brands fa-github"></i>
           </a>
-          <a href="https://www.facebook.com/olkodawid/" target="_blank" rel="noopener" aria-label="Facebook profile">
+          <a href="https://www.facebook.com/olkodawid/" target="_blank" rel="noopener noreferrer" aria-label="Facebook profile">
             <i aria-hidden="true" class="footer__icon fa-brands fa-square-facebook"></i>
           </a>
-          <a href="https://www.linkedin.com/in/dawidolko/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+          <a href="https://www.linkedin.com/in/dawidolko/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
             <i aria-hidden="true" class="footer__icon fa-brands fa-linkedin"></i>
           </a>
-          <a href="https://www.youtube.com/@dawid_olko" target="_blank" rel="noopener" aria-label="YouTube profile">
+          <a href="https://www.youtube.com/@dawid_olko" target="_blank" rel="noopener noreferrer" aria-label="YouTube profile">
             <i aria-hidden="true" class="footer__icon fa-brands fa-youtube"></i>
           </a>
-          <a href="https://www.tiktok.com/@dawid_olko" target="_blank" rel="noopener" aria-label="TikTok profile">
+          <a href="https://www.tiktok.com/@dawid_olko" target="_blank" rel="noopener noreferrer" aria-label="TikTok profile">
             <i aria-hidden="true" class="footer__icon fa-brands fa-tiktok"></i>
           </a>
         </div>
@@ -715,29 +717,6 @@
       defer></script>
     <script src="src/js/contentGallery.js" defer></script>
     <script src="src/js/index.js" defer></script>
-    <script>
-      document.querySelector(".footer__date").textContent =
-        new Date().getFullYear();
-      document.addEventListener("DOMContentLoaded", function () {
-        const modal = document.getElementById("modal");
-        const modalImage = document.getElementById("modalImage");
-        const modalClose = document.getElementById("modalClose");
-        document.querySelectorAll(".img-link").forEach((link) => {
-          link.addEventListener("click", function (e) {
-            e.preventDefault();
-            modal.classList.add("active");
-            modalImage.src = this.getAttribute("data-src");
-          });
-        });
-        modalClose.addEventListener("click", function () {
-          modal.classList.remove("active");
-        });
-        modal.addEventListener("click", function (e) {
-          if (e.target === modal) {
-            modal.classList.remove("active");
-          }
-        });
-      });
-    </script>
+    <script src="src/js/galleryModal.js" defer></script>
   </body>
 </html>

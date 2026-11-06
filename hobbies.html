@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.instagram.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src https://www.instagram.com https://www.youtube-nocookie.com; object-src 'none'; base-uri 'self'; form-action 'self'" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
 
     <!-- Google Search Console Verification -->
     <meta
@@ -57,7 +59,7 @@
     <link rel="stylesheet" href="src/css/hobbies.css?v=8" />
 
     <!-- Scripts -->
-    <title>HOBBIES - Dawid Olko</title>
+    <title>Hobbies - Dawid Olko, Fullstack / AI Developer</title>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -124,12 +126,11 @@
           <span class="line__black"></span>
         </div>
       </div>
-      <!-- Nowa siatka boxów hobby -->
-      <div class="hobbies-grid">
+            <div class="hobbies-grid">
         <!-- Box 1: YouTube -->
         <div class="hobby-box move">
           <div class="media">
-            <a class="video-facade" href="https://www.youtube.com/@dawid_olko" target="_blank" rel="noopener" aria-label="My gaming computer setup for PLN 6,000, watch on my YouTube channel">
+            <a class="video-facade" href="https://www.youtube.com/@dawid_olko" target="_blank" rel="noopener noreferrer" aria-label="My gaming computer setup for PLN 6,000, watch on my YouTube channel">
               <img src="src/assets/img/hero/gallery-640.webp" alt="" width="640" height="421" loading="lazy" decoding="async" />
               <span class="video-facade__play" aria-hidden="true"></span>
             </a>
@@ -280,22 +281,22 @@
           Rights Reserved
         </p>
         <div class="footer__icons">
-          <a href="https://www.instagram.com/dawid_olko/" target="_blank" rel="noopener" aria-label="Instagram profile">
+          <a href="https://www.instagram.com/dawid_olko/" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile">
             <i aria-hidden="true" class="footer__icon fa-brands fa-instagram"></i>
           </a>
-          <a href="https://github.com/dawidolko" target="_blank" rel="noopener" aria-label="GitHub profile">
+          <a href="https://github.com/dawidolko" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
             <i aria-hidden="true" class="footer__icon fa-brands fa-github"></i>
           </a>
-          <a href="https://www.facebook.com/olkodawid/" target="_blank" rel="noopener" aria-label="Facebook profile">
+          <a href="https://www.facebook.com/olkodawid/" target="_blank" rel="noopener noreferrer" aria-label="Facebook profile">
             <i aria-hidden="true" class="footer__icon fa-brands fa-square-facebook"></i>
           </a>
-          <a href="https://www.linkedin.com/in/dawidolko/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+          <a href="https://www.linkedin.com/in/dawidolko/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
             <i aria-hidden="true" class="footer__icon fa-brands fa-linkedin"></i>
           </a>
-          <a href="https://www.youtube.com/@dawid_olko" target="_blank" rel="noopener" aria-label="YouTube profile">
+          <a href="https://www.youtube.com/@dawid_olko" target="_blank" rel="noopener noreferrer" aria-label="YouTube profile">
             <i aria-hidden="true" class="footer__icon fa-brands fa-youtube"></i>
           </a>
-          <a href="https://www.tiktok.com/@dawid_olko" target="_blank" rel="noopener" aria-label="TikTok profile">
+          <a href="https://www.tiktok.com/@dawid_olko" target="_blank" rel="noopener noreferrer" aria-label="TikTok profile">
             <i aria-hidden="true" class="footer__icon fa-brands fa-tiktok"></i>
           </a>
         </div>
@@ -306,58 +307,7 @@
       defer></script>
     <script src="src/js/contentHobbies.js" defer></script>
     <script src="src/js/index.js" defer></script>
-    <script>
-      /* embed.js pulls in several megabytes, so it waits until a post is close
-         to the viewport instead of slowing down every visit. */
-      var loadInstagram = function () {
-        var script = document.createElement("script");
-        script.src = "https://www.instagram.com/embed.js";
-        script.async = true;
-        script.onload = function () {
-          instgrm.Embeds.process();
-        };
-        document.body.appendChild(script);
-        // embed.js injects its iframes without a title, which leaves them
-        // unnamed for screen readers (WCAG 4.1.2). Name each one from the
-        // heading that already describes the post in the same box.
-        var nameEmbeds = function () {
-          document
-            .querySelectorAll(".hobby-box iframe:not([title])")
-            .forEach(function (frame) {
-              var box = frame.closest(".hobby-box");
-              var heading = box && box.querySelector(".overlay h2");
-              frame.setAttribute(
-                "title",
-                heading ? heading.textContent.trim() : "Embedded Instagram post"
-              );
-            });
-        };
-        nameEmbeds();
-        // The iframes appear asynchronously, so watch until they are all named.
-        new MutationObserver(nameEmbeds).observe(document.body, {
-          childList: true,
-          subtree: true,
-        });
-      };
-      var firstPost = document.querySelector(".instagram-media");
-      new IntersectionObserver(function (entries, observer) {
-        if (entries[0].isIntersecting) {
-          observer.disconnect();
-          loadInstagram();
-        }
-      }, { rootMargin: "300px" }).observe(firstPost);
-
-      document.querySelectorAll(".video-facade").forEach(function (button) {
-        button.addEventListener("click", function () {
-          var frame = document.createElement("iframe");
-          frame.title = button.dataset.title;
-          frame.src = "https://www.youtube-nocookie.com/embed/" + button.dataset.video + "?autoplay=1";
-          frame.allow = "autoplay; encrypted-media; picture-in-picture";
-          frame.allowFullscreen = true;
-          button.replaceWith(frame);
-          frame.focus();
-        });
-      });
-    </script>
+    <script src="src/js/instagramEmbeds.js" defer></script>
+    <script src="src/js/videoFacade.js" defer></script>
   </body>
 </html>

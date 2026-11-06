@@ -119,7 +119,16 @@ To recompile styles continuously while working:
 npm run watch:css
 ```
 
-### 5. Regenerate Responsive Images (optional)
+### 5. Regenerate Project Pages
+
+```bash
+npm install --no-save sharp        # only needed for social images and video posters
+npm run generate:projects
+```
+
+`data/projects.json` is the source for the pages in `projects/`, the cards on the home and projects pages, `sitemap.xml`, `llms.txt` and `data/media.json`. Whatever sits in `src/assets/img/work/<slug>/` when the script runs ends up on the page, so rerun it after adding files.
+
+### 6. Regenerate Responsive Images (optional)
 
 ```bash
 node scripts/convert-heic.js     # convert HEIC source photos to a web format
@@ -139,7 +148,9 @@ dawidolko.pl/
 ├── 📄 gallery.html          # Photo gallery
 ├── 📄 hobbies.html          # Hobbies
 ├── 📄 faq.html              # Frequently asked questions
-├── 📄 contact.html          # Contact form
+├── 📄 contact.html          # Contact details
+├── 📁 projects/             # Generated project detail pages
+├── 📁 data/                 # Project data and the generated media list
 ├── 📁 src/
 │   ├── 🎨 sass/             # Modular SASS partials
 │   ├── 🎨 css/              # Compiled stylesheets
@@ -148,10 +159,11 @@ dawidolko.pl/
 ├── 📁 docs/
 │   └── 🖼️ screenshots/      # README screenshots
 ├── ⚙️ webpack.config.js     # Bundler configuration
-├── 📁 scripts/              # Image conversion (HEIC, responsive WebP)
+├── 📁 scripts/              # Project page generator, image conversion
 ├── 📬 mail.php              # Contact form handler
 ├── 🔍 robots.txt            # Crawler directives
-├── 🔍 sitemap.xml           # XML sitemap
+├── 🔍 sitemap.xml           # XML sitemap (generated)
+├── 🔍 llms.txt              # Site summary for language models (generated)
 ├── 📦 package.json          # Scripts and dependencies
 └── 📖 README.md             # Project documentation
 ```
@@ -164,9 +176,13 @@ dawidolko.pl/
 - Descriptive `alt` text on content imagery and `aria-label` on icon-only controls
 - Clean, extensionless URLs (`/studies`, `/projects`); GitHub Pages serves them from the matching `.html` file
 - Canonical URLs, Open Graph and Twitter Card metadata
-- `robots.txt` and `sitemap.xml` published at the site root
+- `robots.txt`, `sitemap.xml` and `llms.txt` published at the site root
 - Google Search Console verification file included
 - Responsive WebP images with explicit dimensions to avoid layout shift
+
+---
+
+## ♿ Accessibility
 
 An accessibility panel in the corner of every page changes text size, contrast, font and motion, and remembers the choice on the device. It sits on top of the markup and does not replace accessible markup.
 
