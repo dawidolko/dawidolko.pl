@@ -81,9 +81,30 @@
     "videoPoster": ""
   },
   "mp-industries": {
-    "gallery": [],
-    "demo": false,
-    "still": "",
+    "gallery": [
+      {
+        "file": "desktop-1.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-2.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-3.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "mobile.webp",
+        "width": 620,
+        "height": 1342
+      }
+    ],
+    "demo": true,
+    "still": "/src/assets/img/work/mp-industries/poster.webp",
     "videoPoster": ""
   },
   "cvforge": {
@@ -145,7 +166,17 @@
       {
         "file": "desktop-1.webp",
         "width": 1280,
-        "height": 800
+        "height": 720
+      },
+      {
+        "file": "desktop-2.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-3.webp",
+        "width": 1280,
+        "height": 720
       },
       {
         "file": "mobile.webp",
@@ -153,8 +184,8 @@
         "height": 1342
       }
     ],
-    "demo": false,
-    "still": "/src/assets/img/work/neobank/desktop-1.webp",
+    "demo": true,
+    "still": "/src/assets/img/work/neobank/poster.webp",
     "videoPoster": ""
   },
   "bodykit": {
@@ -861,9 +892,30 @@
     "videoPoster": "/src/assets/img/video/Rjnw00AN1Xw.webp"
   },
   "techbyte": {
-    "gallery": [],
-    "demo": false,
-    "still": "",
+    "gallery": [
+      {
+        "file": "desktop-1.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-2.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-3.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "mobile.webp",
+        "width": 620,
+        "height": 1342
+      }
+    ],
+    "demo": true,
+    "still": "/src/assets/img/work/techbyte/poster.webp",
     "videoPoster": ""
   },
   "rentalvod": {
