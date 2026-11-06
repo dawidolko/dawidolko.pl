@@ -8,7 +8,7 @@
     "dateSource": "user",
     "kind": "Developer tools for AI coding agents",
     "tagline": "From a task to an approved commit",
-    "summary": "Skribly is a set of three tools for people who build software with AI coding agents. Skribly Tracker holds the tasks, Skribly Agent starts AI agents on those tasks and shows what each one is doing, and agent-skills gives every agent the same rules for testing, reviewing and committing. Each app does one job and can be used alone; together they connect the task, the agent and the review, so nothing gets lost between them. Co-created with Piotr Smoła as a non-commercial project.",
+    "summary": "Skribly is a set of three tools for people who build software with AI coding agents. Skribly Tracker holds the tasks, Skribly Agent starts AI agents on those tasks and shows what each one is doing, and agent-skills gives every agent the same rules for testing, reviewing and committing. Each app does one job and can be used alone; together they connect the task, the agent and the review, so nothing gets lost between them. Co-created with Piotr Smoła, Michał Pilecki, Konrad Pluta and Mateusz Olko as a non-commercial project.",
     "shows": [
       "Task tracking people and agents can share",
       "Agents you can watch while they work",
@@ -24,7 +24,7 @@
     "live": "https://skribly.pl",
     "video": "",
     "private": true,
-    "credit": "Piotr Smoła"
+    "credit": "Piotr Smoła, Michał Pilecki, Konrad Pluta, Mateusz Olko"
   },
   {
     "repo": "cv.dawidolko.pl",
