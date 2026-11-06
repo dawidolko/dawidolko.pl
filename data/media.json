@@ -740,7 +740,7 @@
     "gallery": [],
     "demo": false,
     "still": "/src/assets/img/work/shop-app/poster.webp",
-    "videoPoster": "/src/assets/img/video/WTi2i2wHPt0.webp"
+    "videoPoster": ""
   },
   "weather-app": {
     "gallery": [
@@ -772,7 +772,7 @@
     ],
     "demo": false,
     "still": "/src/assets/img/work/weather-app/shot-1.webp",
-    "videoPoster": "/src/assets/img/video/WTi2i2wHPt0.webp"
+    "videoPoster": ""
   },
   "wifidirect-file-transfer": {
     "gallery": [
