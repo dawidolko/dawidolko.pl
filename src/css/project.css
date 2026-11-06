@@ -63,6 +63,14 @@
   font-size: clamp(1.8rem, 3vw, 2.2rem);
   line-height: 1.4;
 }
+.project__credit {
+  color: #c8c8c8;
+  font-size: 1.6rem;
+}
+.project__credit a {
+  color: inherit;
+  text-decoration: underline;
+}
 .project__actions {
   display: flex;
   flex-wrap: wrap;

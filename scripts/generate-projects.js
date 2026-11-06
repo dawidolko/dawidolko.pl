@@ -222,7 +222,12 @@ function renderPage(p, index, shell, media, posters, ogImage) {
     keywords: p.stack.join(", "),
     inLanguage: "en",
   };
-  if (p.credit) work.contributor = { "@type": "Person", name: p.credit };
+  /*
+   * A credit with a link names the project this one was built from, not a person
+   * who worked on it, so it must not reach the structured data as a contributor.
+   */
+  if (p.creditUrl) work.isBasedOn = p.creditUrl;
+  else if (p.credit) work.contributor = { "@type": "Person", name: p.credit };
   const sameAs = [p.live, p.repo && !p.private ? `https://github.com/dawidolko/${p.repo}` : ""].filter(Boolean);
   if (sameAs.length) work.sameAs = sameAs;
   const breadcrumbs = {
@@ -267,7 +272,7 @@ function renderPage(p, index, shell, media, posters, ogImage) {
     <link rel="preload" as="font" type="font/woff2" href="/src/assets/fonts/web/opensans-latin.woff2" crossorigin />
     <link rel="stylesheet" href="/src/css/fonts.css?v=8" />
     <link rel="stylesheet" href="/src/css/projects.css?v=8" />
-    <link rel="stylesheet" href="/src/css/project.css?v=1" />
+    <link rel="stylesheet" href="/src/css/project.css?v=2" />
     <script type="application/ld+json">${JSON.stringify(work)}</script>
     <script type="application/ld+json">${JSON.stringify(breadcrumbs)}</script>
     <script src="/a11y/a11y-panel.js" data-accent="#9b00c2" defer></script>
@@ -289,7 +294,7 @@ function renderPage(p, index, shell, media, posters, ogImage) {
         <h1 class="project__title">${esc(p.title)}</h1>
         <p class="project__dates">${dateHtml(p)}</p>
         <p class="project__tagline">${esc(p.tagline)}</p>
-${links.length ? `        <div class="project__actions">\n          ${links.join("\n          ")}\n        </div>\n` : ""}      </div>
+${p.creditUrl ? `        <p class="project__credit"><a href="${esc(p.creditUrl)}" target="_blank" rel="noopener noreferrer">${esc(p.credit)}</a></p>\n` : ""}${links.length ? `        <div class="project__actions">\n          ${links.join("\n          ")}\n        </div>\n` : ""}      </div>
     </header>
 
     <main id="main-content" class="project__inner" tabindex="-1">
@@ -331,7 +336,7 @@ function tipMarkup(p) {
     .join("");
   return [
     `<button class="tip-btn" type="button" aria-label="${esc(`About ${p.title}`)}" aria-describedby="tip-${p.slug}"><span aria-hidden="true">i</span></button>`,
-    `<div class="tip" id="tip-${p.slug}" role="tooltip" hidden><p class="tip__title">${esc(p.title)}</p><p class="tip__date">${esc(dateRange(p))}</p><p class="tip__kind">${esc(p.kind)}</p><p class="tip__label">Demonstrates</p><ul class="tip__list">${shows}</ul></div>`,
+    `<div class="tip" id="tip-${p.slug}" role="tooltip" hidden><p class="tip__title">${esc(p.title)}</p><p class="tip__date">${esc(dateRange(p))}</p><p class="tip__kind">${esc(p.kind)}</p>${p.creditUrl ? `<p class="tip__kind">${esc(p.credit)}</p>` : ""}<p class="tip__label">Demonstrates</p><ul class="tip__list">${shows}</ul></div>`,
   ];
 }
 
