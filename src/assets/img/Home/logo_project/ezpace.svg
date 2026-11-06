@@ -7,13 +7,19 @@
     </linearGradient>
   </defs>
   <rect width="120" height="120" rx="26" fill="url(#epTlo)"/>
-  <!-- tarcza stopera -->
+  <!--
+    Stopwatch dial
+  -->
   <circle cx="60" cy="58" r="30" fill="none" stroke="#eaefec" stroke-width="5"/>
   <path d="M60 40 v18 l13 8" fill="none" stroke="#d1643a" stroke-width="5"
         stroke-linecap="round" stroke-linejoin="round"/>
-  <!-- przycisk stopera -->
+  <!--
+    Stopwatch button
+  -->
   <path d="M53 22 h14" stroke="#eaefec" stroke-width="6" stroke-linecap="round"/>
-  <!-- znaczniki kilometrowe -->
+  <!--
+    Kilometre markers
+  -->
   <path d="M24 102 h14 M46 102 h14 M68 102 h14 M90 102 h8" stroke="#eaefec"
         stroke-opacity="0.5" stroke-width="4" stroke-linecap="round"/>
 </svg>

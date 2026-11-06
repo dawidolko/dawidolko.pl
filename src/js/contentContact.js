@@ -21,7 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch("https://form.dawidolko.pl/mail.php", {
       method: "POST",
       body: formData,
-      // mode: 'cors' // Jeśli serwer jest odpowiednio skonfigurowany
+      /*
+       * mode: 'cors' // If the server is configured accordingly
+       */
     })
       .then((response) => {
         if (response.ok) {

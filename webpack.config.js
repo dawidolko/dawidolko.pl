@@ -1,36 +1,34 @@
 const path = require('path');
 
 module.exports = {
-  // Tryb budowania: 'development' dla deweloperki, 'production' dla produkcji
+  /*
+   * Build mode: 'development' or 'production'
+   */
   mode: 'development',
 
-  // Plik wejściowy aplikacji
   entry: './src/index.js',
 
-  // Konfiguracja wynikowego pliku
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
   },
 
-  // Konfiguracja serwera deweloperskiego
   devServer: {
     static: './dist',
   },
 
-  // Konfiguracja modułów
   module: {
     rules: [
       {
-        test: /\.css$/, // Ładowanie plików CSS
+        test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.scss$/, // Ładowanie plików SCSS/SASS
+        test: /\.scss$/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/, // Ładowanie obrazów
+        test: /\.(png|svg|jpg|jpeg|gif)$/,
         type: 'asset/resource',
       },
     ],

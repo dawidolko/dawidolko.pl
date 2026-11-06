@@ -1,4 +1,6 @@
-/* RESET & GLOBALNE USTAWIENIA */
+/*
+ * RESET & GLOBAL SETTINGS
+ */
 *,
 *::after,
 *::before {
@@ -61,7 +63,9 @@ li {
   padding: 0 0.5em;
 }
 
-/* NAWIGACJA */
+/*
+ * NAVIGATION
+ */
 .nav {
   position: fixed;
   width: 100%;
@@ -299,7 +303,9 @@ li {
   letter-spacing: 1px;
 }
 
-/* Animacje przy przewijaniu galerii */
+/*
+ * Gallery scroll animations
+ */
 @media (min-width: 810px) {
   .galleries__heading,
   .line {
@@ -312,7 +318,9 @@ li {
   }
 }
 
-/* FIGURE I DATA NA ZDJĘCIU */
+/*
+ * FIGURE AND DATE ON THE PHOTO
+ */
 figure {
   margin: 0;
   position: relative;
@@ -428,7 +436,9 @@ figure:hover figcaption {
   color: #f0eded;
 }
 
-/* LINIA ANIMACJI */
+/*
+ * ANIMATION LINE
+ */
 .line {
   display: flex;
   justify-content: center;
@@ -735,15 +745,15 @@ details > div:focus-visible {
 }
 
 /*
- * Wysokość navbara na stronie galerii.
+ * Navbar height on the gallery page.
  *
- * Ta jedna podstrona ładuje Bootstrapa (potrzebnego przez lightbox2), a ten
- * ustawia `line-height: 1.5` na `body`. Logo w nawigacji dziedziczyło tę
- * wartość i rosło z 60 do 66 px, przez co cały pasek miał 76 px zamiast 70 —
- * przy przejściu z innej zakładki navbar widocznie „podskakiwał”.
+ * This one subpage loads Bootstrap (required by lightbox2), which sets
+ * `line-height: 1.5` on `body`. The navigation logo inherited that value and
+ * grew from 60 to 66 px, making the whole bar 76 px instead of 70, so the
+ * navbar visibly jumped when switching from another tab.
  *
- * Przywracamy `normal` tylko w obrębie nawigacji; reszta strony korzysta
- * z Bootstrapa bez zmian.
+ * Restore `normal` inside the navigation only; the rest of the page uses
+ * Bootstrap unchanged.
  */
 .nav,
 .nav__logo,
@@ -753,9 +763,9 @@ details > div:focus-visible {
 }
 
 /*
- * Bootstrap dokłada `margin-bottom: 1rem` do każdej listy. Lista linków
- * w nawigacji dostawała przez to 10 px z dołu (1rem = 10 px, bo `html` ma
- * `font-size: 10px`), co razem z interlinią dawało pasek o 4 px wyższy.
+ * Bootstrap adds `margin-bottom: 1rem` to every list. The navigation link list
+ * got 10 px at the bottom (1rem = 10 px because `html` has `font-size: 10px`),
+ * which together with the line height made the bar 4 px taller.
  */
 .nav__links {
   margin-bottom: 0;
