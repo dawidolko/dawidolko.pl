@@ -351,7 +351,7 @@ function cardLinks(p, pad) {
   return items.map((item) => pad + item).join("\n");
 }
 
-function refreshCards(html) {
+function refreshCards(html, showTitle = true) {
   let out = html;
   for (const p of projects) {
     const [button, tip] = tipMarkup(p);
@@ -361,8 +361,8 @@ function refreshCards(html) {
       return `${open}
 ${pad}${button}
 ${pad}${tip}
-${pad}<div class="portfolio__shadow">
-${pad}  <p class="portfolio__shadow-title">${esc(p.title)}</p>
+${pad}<div class="portfolio__shadow">${showTitle ? `
+${pad}  <p class="portfolio__shadow-title">${esc(p.title)}</p>` : ""}
 ${pad}  <div class="portfolio__icons">
 ${cardLinks(p, `${pad}    `)}
 ${pad}  </div>
@@ -548,7 +548,7 @@ async function main() {
     `<script type="application/ld+json">\n${collectionJsonLd()}\n    </script>`,
   );
   writeIfChanged("projects.html", refreshedList);
-  writeIfChanged("index.html", refreshCards(read("index.html")));
+  writeIfChanged("index.html", refreshCards(read("index.html"), false));
 
   const shell = {
     nav: sectionBetween(refreshedList, '<nav class="nav">', "</nav>").replace(/src="src\//g, 'src="/src/').replace(' aria-current="page"', ""),
