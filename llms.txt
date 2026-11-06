@@ -1,0 +1,67 @@
+# Dawid Olko
+
+> Personal website of Dawid Olko, a Fullstack / AI Developer from Rzeszów, Poland: projects, studies, a photo blog and contact details.
+
+## Pages
+
+- [Home](https://dawidolko.pl/): Who Dawid Olko is, selected projects and contact details.
+- [Projects](https://dawidolko.pl/projects): Every project with its dates, stack and links.
+- [Blog](https://dawidolko.pl/blog): A personal photo blog about studies, travel and programming.
+- [Studies](https://dawidolko.pl/studies): Computer Science at the University of Rzeszów.
+- [Hobbies](https://dawidolko.pl/hobbies): Gaming setups, hardware builds and interests outside work.
+- [Gallery](https://dawidolko.pl/gallery): Personal photographs.
+- [Contact](https://dawidolko.pl/contact): Email and social profiles.
+- [FAQ](https://dawidolko.pl/faq): Questions about technologies, working style and interests.
+
+## Projects
+
+- [Skribly](https://dawidolko.pl/projects/skribly/): Developer tools for AI coding agents, Oct 2026 – present. From a task to an approved commit.
+- [CV](https://dawidolko.pl/projects/cv/): Static résumé website, Sep 2026 – present. The page is the source, the PDF is the export.
+- [ZbudujKompa](https://dawidolko.pl/projects/zbudujkompa/): Bilingual reference website for PC builders, Jul 2026 – present. Build your PC without guessing.
+- [MP Industries](https://dawidolko.pl/projects/mp-industries/): Laravel company website, Jun 2025 – present. Four businesses, one website.
+- [CVForge](https://dawidolko.pl/projects/cvforge/): CV builder that runs in the browser, Aug 2026 – Sep 2026. The preview is the print.
+- [ReelCut](https://dawidolko.pl/projects/reelcut/): Video editor that runs in the browser, Aug 2026 – Sep 2026. The footage never leaves the tab.
+- [NeoBank](https://dawidolko.pl/projects/neobank/): Full-stack retail banking system, Jul 2026 – Aug 2026. Fullstack Retail Banking Platform.
+- [BodyKit](https://dawidolko.pl/projects/bodykit/): Front-end web shop with static export, Jun 2026 – Jul 2026. A front-end shop for car body kits and styling parts.
+- [EzPace](https://dawidolko.pl/projects/ezpace/): Running coach product site, Jun 2026 – Jul 2026. A plan counted back from the race date, not bolted onto it.
+- [EzScout](https://dawidolko.pl/projects/ezscout/): Football scouting product site, Jun 2026 – Jul 2026. A report that says whether he is worth buying.
+- [Airline Passenger Satisfaction](https://dawidolko.pl/projects/airline-passenger-satisfaction/): Machine learning classifier, May 2026 – Jun 2026. Multiclass flight-class prediction with a PyTorch MLP built from scratch.
+- [Cyber Security Attacks Classifier](https://dawidolko.pl/projects/cyber-security-attacks-classifier/): Machine learning classifier, Apr 2026 – Jun 2026. End-to-end multiclass classification of network attacks.
+- [Wine Quality Classification](https://dawidolko.pl/projects/wine-quality-classification/): Machine learning study, Apr 2026 – May 2026. Multiclass wine quality classification with leakage-free scikit-learn pipelines.
+- [BitRecruit](https://dawidolko.pl/projects/bitrecruit/): IT job board front end, Feb 2026 – Mar 2026. IT Career Platform.
+- [CinemaReserve](https://dawidolko.pl/projects/cinemareserve/): Full-stack cinema booking application, Jan 2026 – Feb 2026. Full-Stack Cinema Seat Reservation Platform.
+- [DevPulse](https://dawidolko.pl/projects/devpulse/): Developer blog as a React single-page app, Jan 2026 – Feb 2026. Modern Developer Tech Blog with React & TypeScript.
+- [MovieVault](https://dawidolko.pl/projects/movievault/): Full-stack movie review platform, Jan 2026 – Feb 2026. Full-Stack Movie Review Platform.
+- [SmartRecommender](https://dawidolko.pl/projects/smartrecommender/): Full-stack e-commerce recommendation platform, Dec 2024 – Feb 2026. Full-Stack Product Recommendation Platform.
+- [HirudoZdrowie](https://dawidolko.pl/projects/hirudozdrowie/): Clinic information website, Jan 2026 – Feb 2026. A clinic site that answers before it sells.
+- [WorkStation](https://dawidolko.pl/projects/workstation/): Interactive hardware setup showcase, Apr 2025 – Jan 2026. Interactive Gaming & Work Setup Showcase with Vue 3 + TypeScript.
+- [ANFIS vs Classical Machine Learning](https://dawidolko.pl/projects/anfis-vs-classical-machine-learning/): Machine learning comparison study, Oct 2025 – Dec 2025. A model that can be read out loud.
+- [IT Help Desk](https://dawidolko.pl/projects/it-help-desk/): Full-stack ticketing system, Oct 2025 – Nov 2025. Modern IT Help Desk Ticketing System.
+- [TaskApp](https://dawidolko.pl/projects/taskapp/): JavaFX desktop application, Mar 2025 – Jun 2025. Four roles, four applications.
+- [DataFusion](https://dawidolko.pl/projects/datafusion/): Python desktop application for data preparation, Mar 2025 – May 2025. A CSV workbench that runs on the desktop.
+- [FrameVision](https://dawidolko.pl/projects/framevision/): Single-page studio website, May 2025. One page, five sections, no framework.
+- [Rent App](https://dawidolko.pl/projects/rent-app/): Vue property search page, Apr 2025. Filters that show their work.
+- [Kebab](https://dawidolko.pl/projects/kebab/): React restaurant ordering page, Mar 2025. The cart is in one place.
+- [Shop](https://dawidolko.pl/projects/shop/): Serverless Vue and Firestore shop, Mar 2025. The same shop, without a backend.
+- [Employee Directory](https://dawidolko.pl/projects/employee-directory/): Laravel data browser, Feb 2025. 300 000 employees, one query at a time.
+- [Layout Simple](https://dawidolko.pl/projects/layout-simple/): Vue landing page built from components, Feb 2025. Content lives in files, not in templates.
+- [Shop App](https://dawidolko.pl/projects/shop-app/): Full-stack Laravel and Vue shop, Feb 2025. A basket that survives the browser.
+- [Weather App](https://dawidolko.pl/projects/weather-app/): Full-stack Laravel and React weather app, Jan 2025. Weather that remembers.
+- [WiFiDirect File Transfer](https://dawidolko.pl/projects/wifidirect-file-transfer/): Android application, Nov 2024 – Jan 2025. Two phones, no network.
+- [dawidolko.pl](https://dawidolko.pl/projects/dawidolko-pl/): Personal website without a framework, Jan 2023 – Dec 2024. Multi-page personal website built from scratch.
+- [Language Courses](https://dawidolko.pl/projects/language-courses/): Laravel course enrolment platform, May 2024 – Jun 2024. Enrolment, not just a catalogue.
+- [TechByte](https://dawidolko.pl/projects/techbyte/): Laravel computer store on Oracle, Mar 2024 – May 2024. A shop that runs on Oracle.
+- [RentalVOD](https://dawidolko.pl/projects/rentalvod/): Laravel film rental platform, Apr 2024 – May 2024. Rules the admin can rewrite.
+- [WidgetMart](https://dawidolko.pl/projects/widgetmart/): Shop front without a framework, Jan 2024 – Feb 2024. Nine pages, one browser.
+- [ATM Simulator](https://dawidolko.pl/projects/atm-simulator/): Java desktop simulator, Dec 2023 – Jan 2024. A cash machine with a real ledger.
+- [Curiosities Magazine](https://dawidolko.pl/projects/curiosities-magazine/): Website template without JavaScript, Nov 2023 – Dec 2023. Sixteen pages, no JavaScript.
+- [FitnessGym](https://dawidolko.pl/projects/fitnessgym/): React marketing site with a shop, Mar 2023 – Apr 2023. A gym site with a shop attached.
+- [F1 Zone](https://dawidolko.pl/projects/f1-zone/): Poster shop in plain JavaScript, Feb 2023 – Mar 2023. A poster shop without a framework.
+- [Windows Desktop Portfolio](https://dawidolko.pl/projects/windows-desktop-portfolio/): Portfolio shaped like a Windows desktop, Apr 2024. A portfolio that boots.
+- [Ubuntu Desktop Portfolio](https://dawidolko.pl/projects/ubuntu-desktop-portfolio/): Portfolio shaped like an Ubuntu desktop, Jul 2023. GNOME, rebuilt as a static site.
+- [Deepin Desktop Portfolio](https://dawidolko.pl/projects/deepin-desktop-portfolio/): Portfolio shaped like a Deepin desktop, Jun 2023. A desktop with a blog inside it.
+- [macOS Desktop Portfolio](https://dawidolko.pl/projects/macos-desktop-portfolio/): Portfolio shaped like a macOS desktop, Jun 2023. The dock, the launchpad and the animations.
+- [Website Templates](https://dawidolko.pl/projects/website-templates/): Collection of HTML templates, Jul 2023. 170 templates, all of them openable.
+- [GitHub Achievements](https://dawidolko.pl/projects/github-achievements/): Reference site for GitHub badges, Jul 2023. Every badge, with the numbers behind it.
+- [Portfolio](https://dawidolko.pl/projects/portfolio/): React personal portfolio, Feb 2026. Personal portfolio website of Dawid Olko.
+- [WordPress Cinema](https://dawidolko.pl/projects/wordpress-cinema/): WordPress site run in Docker, Feb 2025. A cinema in two containers.

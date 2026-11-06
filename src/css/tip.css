@@ -1,0 +1,209 @@
+/*
+ * Project tooltip, card button and Show link, shared by the home page and the
+ * projects page. The look follows Tippy.js: dark box, arrow, short fade.
+ */
+.tip-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+  display: inline-grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid rgba(240, 240, 240, 0.65);
+  border-radius: 50%;
+  background: rgba(13, 13, 13, 0.82);
+  color: #f0f0f0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.6rem;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1;
+  cursor: help;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+.tip-btn:hover,
+.tip-btn:focus-visible {
+  background: #8b00b3;
+  border-color: #f0f0f0;
+}
+.tip-btn:focus-visible {
+  border-radius: 50%;
+}
+.tip {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10001;
+  width: max-content;
+  max-width: min(300px, calc(100vw - 16px));
+  padding: 10px 12px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: #2b2b2b;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.55);
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.45;
+  text-align: left;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+.tip--open {
+  opacity: 1;
+}
+.tip::after {
+  content: "";
+  position: absolute;
+  left: var(--tip-arrow, 50%);
+  width: 0;
+  height: 0;
+  margin-left: -8px;
+  border: 8px solid transparent;
+}
+.tip[data-placement="top"]::after {
+  top: 100%;
+  border-top-color: #2b2b2b;
+}
+.tip[data-placement="bottom"]::after {
+  bottom: 100%;
+  border-bottom-color: #2b2b2b;
+}
+.tip__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.tip__date {
+  color: #e2b4f7;
+  font-size: 1.3rem;
+}
+.tip__kind {
+  margin-top: 4px;
+}
+.tip__label {
+  margin-top: 8px;
+  color: #cfcfcf;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.tip__list li {
+  position: relative;
+  padding-left: 12px;
+}
+.tip__list li::before {
+  content: "";
+  position: absolute;
+  top: 0.6em;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #e2b4f7;
+}
+.project-show {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0 14px;
+  border: 1px solid #f0f0f0;
+  border-radius: 999px;
+  color: #f0f0f0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.project-show:hover {
+  background: #f0f0f0;
+  color: #0d0d0d;
+}
+.portfolio__icons {
+  align-items: center;
+}
+.portfolio__box:focus-within .portfolio__shadow {
+  height: 100%;
+}
+.card .tip-btn {
+  z-index: 3;
+}
+.container1 .card:focus-within .face.face1 {
+  transform: translateY(0);
+}
+.container1 .card:focus-within .face.face1 .content {
+  opacity: 1;
+}
+.container1 .card:focus-within .face.face2 {
+  transform: translateY(0);
+}
+.container1 .card .face.face2 .content .project-show {
+  margin: 15px 0 0 8px;
+  border-color: #333;
+  color: #111;
+  font-size: 10pt;
+}
+.container1 .card .face.face2 .content .project-show:hover {
+  background: #333;
+  color: whitesmoke;
+}
+.more {
+  padding: 2em 16px 5em;
+  background-color: #0d0d0d;
+}
+.more__heading {
+  margin-bottom: 1em;
+  color: #d264f5;
+  font-size: 3.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+.more__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr));
+  gap: 20px;
+}
+.more__card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 18px;
+  border: 1px solid rgba(186, 0, 233, 0.3);
+  border-radius: 8px;
+  background: #1a1a1a;
+  color: #f0f0f0;
+}
+.more__title {
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+.more__date {
+  color: #d9a0f2;
+  font-size: 1.4rem;
+}
+.more__tagline {
+  flex: 1;
+  color: #d8d8d8;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.more__actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+.more__actions .tip-btn {
+  position: static;
+}
+@media (prefers-reduced-motion: reduce) {
+  .tip,
+  .tip-btn,
+  .project-show {
+    transition: none;
+  }
+}
+@media (forced-colors: active) {
+  .tip {
+    border-color: CanvasText;
+  }
+}

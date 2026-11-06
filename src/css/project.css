@@ -1,0 +1,342 @@
+/*
+ * Project detail pages. Loaded after projects.css, which supplies the reset,
+ * navigation, footer, focus ring and skip link shared with the listing page.
+ */
+.project-page {
+  background-color: #0d0d0d;
+  color: #f0f0f0;
+}
+.project__inner {
+  width: min(1040px, calc(100% - 32px));
+  margin-inline: auto;
+}
+.project__head {
+  padding: 96px 0 16px;
+}
+.project__head .project__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.crumbs {
+  font-size: 1.4rem;
+}
+.crumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+}
+.crumbs li {
+  display: flex;
+  gap: 8px;
+  color: #c8c8c8;
+}
+.crumbs li + li::before {
+  content: "/";
+  color: #9f9f9f;
+}
+.crumbs a {
+  color: #e2b4f7;
+  text-decoration: underline;
+}
+.project__kind {
+  margin-top: 14px;
+  color: #d264f5;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.project__title {
+  color: #f0f0f0;
+  font-size: clamp(3.4rem, 7vw, 6rem);
+  font-weight: 700;
+  line-height: 1.1;
+  overflow-wrap: anywhere;
+}
+.project__dates {
+  color: #c8c8c8;
+  font-size: 1.6rem;
+}
+.project__tagline {
+  color: #e8e8e8;
+  font-size: clamp(1.8rem, 3vw, 2.2rem);
+  line-height: 1.4;
+}
+.project__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 12px;
+}
+.project__button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 24px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ba00e9, #8b00b3);
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.project__button:hover {
+  background: linear-gradient(135deg, #9f00c7, #76009a);
+}
+.project__button--ghost {
+  background: none;
+  border-color: #f0f0f0;
+}
+.project__button--ghost:hover {
+  background: #f0f0f0;
+  color: #0d0d0d;
+}
+.project__section {
+  padding-top: 40px;
+}
+.project__heading {
+  margin-bottom: 14px;
+  color: #d264f5;
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+.project__text {
+  max-width: 72ch;
+  color: #e0e0e0;
+  font-size: 1.7rem;
+  line-height: 1.7;
+}
+.project__shows {
+  display: grid;
+  gap: 8px;
+  color: #e0e0e0;
+  font-size: 1.7rem;
+  line-height: 1.5;
+}
+.project__shows li {
+  position: relative;
+  padding-left: 20px;
+}
+.project__shows li::before {
+  content: "";
+  position: absolute;
+  top: 0.6em;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #d264f5;
+}
+.project__stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.project__stack li {
+  padding: 6px 14px;
+  border: 1px solid rgba(186, 0, 233, 0.45);
+  border-radius: 999px;
+  background: #1a1a1a;
+  color: #f0f0f0;
+  font-size: 1.5rem;
+}
+.project__note {
+  margin-top: 12px;
+  font-size: 1.5rem;
+}
+.project__link {
+  color: #e2b4f7;
+  text-decoration: underline;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+  gap: 14px;
+}
+.gallery__link {
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  border: 1px solid rgba(186, 0, 233, 0.3);
+  border-radius: 8px;
+  background: #1a1a1a;
+}
+.gallery__link img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.3s ease;
+}
+.gallery__link:hover img {
+  transform: scale(1.03);
+}
+.video-frame {
+  overflow: hidden;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  background: #000;
+}
+.video-frame--portrait {
+  max-width: 320px;
+  aspect-ratio: 9 / 16;
+}
+.video-frame iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.video-facade {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: #000;
+  cursor: pointer;
+}
+.video-facade img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.video-facade__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 68px;
+  height: 48px;
+  border-radius: 12px;
+  background: #e60000;
+  transform: translate(-50%, -50%);
+}
+.video-facade__play::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  border-style: solid;
+  border-width: 10px 0 10px 18px;
+  border-color: transparent transparent transparent #fff;
+  transform: translate(-50%, -50%);
+}
+.demo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  max-width: 800px;
+}
+.demo__media {
+  width: 100%;
+  border-radius: 8px;
+}
+.demo__toggle {
+  cursor: pointer;
+}
+.pager {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+  gap: 14px;
+  padding: 48px 0 56px;
+}
+.pager__link {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 14px 18px;
+  border: 1px solid rgba(186, 0, 233, 0.3);
+  border-radius: 8px;
+  background: #1a1a1a;
+  color: #f0f0f0;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.pager__link:hover {
+  border-color: #d264f5;
+}
+.pager__link--next {
+  text-align: right;
+}
+.pager__label {
+  color: #c8c8c8;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.lightbox {
+  width: 100vw;
+  max-width: none;
+  height: 100vh;
+  height: 100dvh;
+  max-height: none;
+  padding: 56px 16px 44px;
+  border: 0;
+  background: rgba(0, 0, 0, 0.94);
+  color: #f0f0f0;
+}
+.lightbox[open] {
+  display: grid;
+  place-items: center;
+}
+.lightbox::backdrop {
+  background: rgba(0, 0, 0, 0.8);
+}
+.lightbox__image {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+}
+.lightbox__caption {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  width: 100%;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.lightbox__control {
+  position: absolute;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(240, 240, 240, 0.6);
+  border-radius: 50%;
+  background: rgba(26, 26, 26, 0.9);
+  color: #f0f0f0;
+  font-size: 2.6rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.lightbox__control:hover {
+  background: #8b00b3;
+}
+.lightbox__close {
+  top: 8px;
+  right: 12px;
+}
+.lightbox__prev {
+  top: 50%;
+  left: 12px;
+  margin-top: -22px;
+}
+.lightbox__next {
+  top: 50%;
+  right: 12px;
+  margin-top: -22px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .gallery__link img {
+    transition: none;
+  }
+  .gallery__link:hover img {
+    transform: none;
+  }
+}

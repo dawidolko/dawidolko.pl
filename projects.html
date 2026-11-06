@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
     
     <!-- Google Search Console Verification -->
     <meta name="google-site-verification" content="7r55RGdRmrxfhXwM5IQgFf9kbnx4DEV0l7syp0mqqL8" />
     
     <meta
       name="description"
-      content="Explore Dawid Olko's web development projects: WorkStation, HirudoZdrowie, Kebab Project, and more. Real-world applications built with React, Vue, TypeScript, and modern web technologies." />
+      content="Explore Dawid Olko's web development projects: Skribly, WorkStation, HirudoZdrowie and more, built with React, Vue, TypeScript and modern web tools." />
     <meta
       name="keywords"
       content="Web Development Projects, React Projects, Vue Projects, TypeScript, Portfolio Projects, Frontend Development, Dawid Olko Projects" />
@@ -48,8 +50,9 @@
     <link rel="stylesheet" href="src/css/fonts.css?v=8" />
     <link rel="preload" href="src/css/projects.css?v=8" as="style" />
     <link rel="stylesheet" href="src/css/projects.css?v=8" />
+    <link rel="stylesheet" href="src/css/tip.css?v=1" />
     
-    <title>PROJECTS - Dawid Olko</title>
+    <title>Projects - Dawid Olko, Fullstack / AI Developer</title>
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -64,122 +67,307 @@
   },
   "mainEntity": {
     "@type": "ItemList",
-    "numberOfItems": 19,
+    "numberOfItems": 50,
     "itemListElement": [
       {
         "@type": "ListItem",
         "position": 1,
-        "name": "SmartRecommender"
+        "name": "Skribly",
+        "url": "https://dawidolko.pl/projects/skribly/"
       },
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "MP Industries"
+        "name": "CV",
+        "url": "https://dawidolko.pl/projects/cv/"
       },
       {
         "@type": "ListItem",
         "position": 3,
-        "name": "NeoBank"
+        "name": "ZbudujKompa",
+        "url": "https://dawidolko.pl/projects/zbudujkompa/"
       },
       {
         "@type": "ListItem",
         "position": 4,
-        "name": "TechByte"
+        "name": "MP Industries",
+        "url": "https://dawidolko.pl/projects/mp-industries/"
       },
       {
         "@type": "ListItem",
         "position": 5,
-        "name": "MovieVault"
+        "name": "CVForge",
+        "url": "https://dawidolko.pl/projects/cvforge/"
       },
       {
         "@type": "ListItem",
         "position": 6,
-        "name": "CinemaReserve"
+        "name": "ReelCut",
+        "url": "https://dawidolko.pl/projects/reelcut/"
       },
       {
         "@type": "ListItem",
         "position": 7,
-        "name": "ZbudujKompa"
+        "name": "NeoBank",
+        "url": "https://dawidolko.pl/projects/neobank/"
       },
       {
         "@type": "ListItem",
-        "name": "EzScout",
-        "position": 8
+        "position": 8,
+        "name": "BodyKit",
+        "url": "https://dawidolko.pl/projects/bodykit/"
       },
       {
         "@type": "ListItem",
-        "name": "CVForge",
-        "position": 9
-      },
-      {
-        "@type": "ListItem",
-        "name": "ReelCut",
-        "position": 10
-      },
-      {
-        "@type": "ListItem",
+        "position": 9,
         "name": "EzPace",
-        "position": 11
+        "url": "https://dawidolko.pl/projects/ezpace/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 10,
+        "name": "EzScout",
+        "url": "https://dawidolko.pl/projects/ezscout/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 11,
+        "name": "Airline Passenger Satisfaction",
+        "url": "https://dawidolko.pl/projects/airline-passenger-satisfaction/"
       },
       {
         "@type": "ListItem",
         "position": 12,
-        "name": "Weather App"
+        "name": "Cyber Security Attacks Classifier",
+        "url": "https://dawidolko.pl/projects/cyber-security-attacks-classifier/"
       },
       {
         "@type": "ListItem",
         "position": 13,
-        "name": "BodyKit"
+        "name": "Wine Quality Classification",
+        "url": "https://dawidolko.pl/projects/wine-quality-classification/"
       },
       {
         "@type": "ListItem",
         "position": 14,
-        "name": "BitRecruit"
+        "name": "BitRecruit",
+        "url": "https://dawidolko.pl/projects/bitrecruit/"
       },
       {
         "@type": "ListItem",
         "position": 15,
-        "name": "HirudoZdrowie"
+        "name": "CinemaReserve",
+        "url": "https://dawidolko.pl/projects/cinemareserve/"
       },
       {
         "@type": "ListItem",
         "position": 16,
-        "name": "WorkStation"
+        "name": "DevPulse",
+        "url": "https://dawidolko.pl/projects/devpulse/"
       },
       {
         "@type": "ListItem",
         "position": 17,
-        "name": "DevTechBlog"
+        "name": "MovieVault",
+        "url": "https://dawidolko.pl/projects/movievault/"
       },
       {
         "@type": "ListItem",
         "position": 18,
-        "name": "FitnessGym"
+        "name": "SmartRecommender",
+        "url": "https://dawidolko.pl/projects/smartrecommender/"
       },
       {
         "@type": "ListItem",
         "position": 19,
-        "name": "Kebab Project"
+        "name": "HirudoZdrowie",
+        "url": "https://dawidolko.pl/projects/hirudozdrowie/"
       },
       {
         "@type": "ListItem",
         "position": 20,
-        "name": "F1Zone"
+        "name": "WorkStation",
+        "url": "https://dawidolko.pl/projects/workstation/"
       },
       {
         "@type": "ListItem",
         "position": 21,
-        "name": "CuriositiesMagazine"
+        "name": "ANFIS vs Classical Machine Learning",
+        "url": "https://dawidolko.pl/projects/anfis-vs-classical-machine-learning/"
       },
       {
         "@type": "ListItem",
         "position": 22,
-        "name": "WidgetMart"
+        "name": "IT Help Desk",
+        "url": "https://dawidolko.pl/projects/it-help-desk/"
       },
       {
         "@type": "ListItem",
         "position": 23,
-        "name": "Simple Layout"
+        "name": "TaskApp",
+        "url": "https://dawidolko.pl/projects/taskapp/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 24,
+        "name": "DataFusion",
+        "url": "https://dawidolko.pl/projects/datafusion/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 25,
+        "name": "FrameVision",
+        "url": "https://dawidolko.pl/projects/framevision/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 26,
+        "name": "Rent App",
+        "url": "https://dawidolko.pl/projects/rent-app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 27,
+        "name": "Kebab",
+        "url": "https://dawidolko.pl/projects/kebab/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 28,
+        "name": "Shop",
+        "url": "https://dawidolko.pl/projects/shop/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 29,
+        "name": "Employee Directory",
+        "url": "https://dawidolko.pl/projects/employee-directory/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 30,
+        "name": "Layout Simple",
+        "url": "https://dawidolko.pl/projects/layout-simple/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 31,
+        "name": "Shop App",
+        "url": "https://dawidolko.pl/projects/shop-app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 32,
+        "name": "Weather App",
+        "url": "https://dawidolko.pl/projects/weather-app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 33,
+        "name": "WiFiDirect File Transfer",
+        "url": "https://dawidolko.pl/projects/wifidirect-file-transfer/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 34,
+        "name": "dawidolko.pl",
+        "url": "https://dawidolko.pl/projects/dawidolko-pl/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 35,
+        "name": "Language Courses",
+        "url": "https://dawidolko.pl/projects/language-courses/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 36,
+        "name": "TechByte",
+        "url": "https://dawidolko.pl/projects/techbyte/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 37,
+        "name": "RentalVOD",
+        "url": "https://dawidolko.pl/projects/rentalvod/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 38,
+        "name": "WidgetMart",
+        "url": "https://dawidolko.pl/projects/widgetmart/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 39,
+        "name": "ATM Simulator",
+        "url": "https://dawidolko.pl/projects/atm-simulator/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 40,
+        "name": "Curiosities Magazine",
+        "url": "https://dawidolko.pl/projects/curiosities-magazine/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 41,
+        "name": "FitnessGym",
+        "url": "https://dawidolko.pl/projects/fitnessgym/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 42,
+        "name": "F1 Zone",
+        "url": "https://dawidolko.pl/projects/f1-zone/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 43,
+        "name": "Windows Desktop Portfolio",
+        "url": "https://dawidolko.pl/projects/windows-desktop-portfolio/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 44,
+        "name": "Ubuntu Desktop Portfolio",
+        "url": "https://dawidolko.pl/projects/ubuntu-desktop-portfolio/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 45,
+        "name": "Deepin Desktop Portfolio",
+        "url": "https://dawidolko.pl/projects/deepin-desktop-portfolio/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 46,
+        "name": "macOS Desktop Portfolio",
+        "url": "https://dawidolko.pl/projects/macos-desktop-portfolio/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 47,
+        "name": "Website Templates",
+        "url": "https://dawidolko.pl/projects/website-templates/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 48,
+        "name": "GitHub Achievements",
+        "url": "https://dawidolko.pl/projects/github-achievements/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 49,
+        "name": "Portfolio",
+        "url": "https://dawidolko.pl/projects/portfolio/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 50,
+        "name": "WordPress Cinema",
+        "url": "https://dawidolko.pl/projects/wordpress-cinema/"
       }
     ]
   }
@@ -208,12 +396,12 @@
           <li><a class="nav__link" href="/contact">contact</a></li>
           <li><a class="nav__link" href="/gallery">gallery</a></li>
           <li><a class="nav__link" href="/faq">faq</a></li>
-          <li><a class="nav__link" href="https://workstation.dawidolko.pl" target="_blank" rel="noopener">my station</a></li>
+          <li><a class="nav__link" href="https://workstation.dawidolko.pl" target="_blank" rel="noopener noreferrer">my station</a></li>
             <li>
               <a
                 class="nav__link"
                 href="https://cv.dawidolko.pl"
-                target="_blank" rel="noopener"
+                target="_blank" rel="noopener noreferrer"
                 >cv</a
               >
             </li>
@@ -248,22 +436,32 @@
         </div>
 
         <div class="portfolio__body container">
-          <div class="portfolio__box move">
+          <div class="portfolio__box move" data-project="skribly">
+            <button class="tip-btn" type="button" aria-label="About Skribly" aria-describedby="tip-skribly"><span aria-hidden="true">i</span></button>
+            <div class="tip" id="tip-skribly" role="tooltip" hidden><p class="tip__title">Skribly</p><p class="tip__date">Oct 2026 – present</p><p class="tip__kind">Developer tools for AI coding agents</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>Task tracking people and agents can share</li><li>Agents you can watch while they work</li><li>One library of rules for every agent</li></ul></div>
+            <div class="portfolio__shadow">
+              <p class="portfolio__shadow-title">Skribly</p>
+              <div class="portfolio__icons">
+                <a class="portfolio__link" href="https://skribly.pl" target="_blank" rel="noopener noreferrer" aria-label="Skribly live site (opens in a new tab)"><i aria-hidden="true" class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a class="project-show" href="/projects/skribly/">Show<span class="visually-hidden"> Skribly</span></a>
+              </div>
+            </div>
+            <img class="portfolio__img" src="src/assets/img/Home/logo_project/skribly.svg" alt="Skribly logo" width="64" height="64" loading="lazy" decoding="async" />
+            <div class="portfolio__stock">
+              <i class="fa-brands fa-laravel portfolio__title-icon"></i>
+              <i class="fa-brands fa-node-js portfolio__title-icon"></i>
+              <i class="fa-brands fa-square-js portfolio__title-icon"></i>
+            </div>
+          </div>
+          <div class="portfolio__box move" data-project="smartrecommender">
+            <button class="tip-btn" type="button" aria-label="About SmartRecommender" aria-describedby="tip-smartrecommender"><span aria-hidden="true">i</span></button>
+            <div class="tip" id="tip-smartrecommender" role="tooltip" hidden><p class="tip__title">SmartRecommender</p><p class="tip__date">Dec 2024 – Feb 2026</p><p class="tip__kind">Full-stack e-commerce recommendation platform</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>Collaborative Filtering</li><li>Content-Based Filtering</li><li>Association Rules</li></ul></div>
             <div class="portfolio__shadow">
               <p class="portfolio__shadow-title">SmartRecommender</p>
               <div class="portfolio__icons">
-                <a
-                  class="portfolio__link"
-                  href="https://github.com/dawidolko/SmartRecommender-Projekt-Django-React"
-                  target="_blank" rel="noopener"
-                   aria-label="GitHub profile"><i aria-hidden="true" class="fa-brands fa-github"></i
-                ></a>
-                <a
-                  class="portfolio__link"
-                  href="https://project.dawidolko.pl"
-                  target="_blank" rel="noopener" aria-label="Open project.dawidolko.pl in a new tab"><i aria-hidden="true"
-                    class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
+                <a class="portfolio__link" href="https://github.com/dawidolko/SmartRecommender-Project-Django-React" target="_blank" rel="noopener noreferrer" aria-label="SmartRecommender source code on GitHub (opens in a new tab)"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
+                <a class="portfolio__link" href="https://project.dawidolko.pl" target="_blank" rel="noopener noreferrer" aria-label="SmartRecommender live site (opens in a new tab)"><i aria-hidden="true" class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a class="project-show" href="/projects/smartrecommender/">Show<span class="visually-hidden"> SmartRecommender</span></a>
               </div>
             </div>
             <img class="portfolio__img" src="src/assets/img/Home/logo_project/logo3.svg" alt="SmartRecommender logo" width="50" height="50" loading="lazy" decoding="async" />
@@ -274,16 +472,14 @@
               <i class="fa-brands fa-sass portfolio__title-icon"></i>
             </div>
           </div>
-          <div class="portfolio__box moves">
+          <div class="portfolio__box moves" data-project="mp-industries">
+            <button class="tip-btn" type="button" aria-label="About MP Industries" aria-describedby="tip-mp-industries"><span aria-hidden="true">i</span></button>
+            <div class="tip" id="tip-mp-industries" role="tooltip" hidden><p class="tip__title">MP Industries</p><p class="tip__date">Jun 2025 – present</p><p class="tip__kind">Laravel company website</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>A real model per branch</li><li>Everything editable in Filament</li><li>Page content is data</li></ul></div>
             <div class="portfolio__shadow">
               <p class="portfolio__shadow-title">MP Industries</p>
               <div class="portfolio__icons">
-                <a
-                  class="portfolio__link"
-                  href="https://mp-industries.pl/"
-                  target="_blank" rel="noopener" aria-label="Open mp-industries.pl in a new tab"><i aria-hidden="true"
-                    class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
+                <a class="portfolio__link" href="https://mp-industries.pl" target="_blank" rel="noopener noreferrer" aria-label="MP Industries live site (opens in a new tab)"><i aria-hidden="true" class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a class="project-show" href="/projects/mp-industries/">Show<span class="visually-hidden"> MP Industries</span></a>
               </div>
             </div>
             <img class="portfolio__img" src="src/assets/img/Home/logo_project/logo30.svg" alt="MP Industries logo" width="120" height="120" loading="lazy" decoding="async" />
@@ -293,18 +489,15 @@
               <i class="fa-brands fa-css3-alt portfolio__title-icon"></i>
             </div>
           </div>
-          <div class="portfolio__box move">
+          <div class="portfolio__box move" data-project="neobank">
+            <button class="tip-btn" type="button" aria-label="About NeoBank" aria-describedby="tip-neobank"><span aria-hidden="true">i</span></button>
+            <div class="tip" id="tip-neobank" role="tooltip" hidden><p class="tip__title">NeoBank</p><p class="tip__date">Jul 2026 – Aug 2026</p><p class="tip__kind">Full-stack retail banking system</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>Multi-Currency Accounts</li><li>Double-Entry Ledger</li><li>Instant Internal Transfers</li></ul></div>
             <div class="portfolio__shadow">
               <p class="portfolio__shadow-title">NeoBank</p>
               <div class="portfolio__icons">
-                <a
-                  class="portfolio__link"
-                  href="https://github.com/dawidolko/NeoBank-Platform-Nuxt"
-                  target="_blank"
-                  rel="noopener"
-                  aria-label="NeoBank source code on GitHub"
-                  ><i class="fa-brands fa-github" aria-hidden="true"></i
-                ></a>
+                <a class="portfolio__link" href="https://github.com/dawidolko/NeoBank-Platform-Nuxt" target="_blank" rel="noopener noreferrer" aria-label="NeoBank source code on GitHub (opens in a new tab)"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
+                <a class="portfolio__link" href="https://neobank.dawidolko.pl" target="_blank" rel="noopener noreferrer" aria-label="NeoBank live site (opens in a new tab)"><i aria-hidden="true" class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a class="project-show" href="/projects/neobank/">Show<span class="visually-hidden"> NeoBank</span></a>
               </div>
             </div>
             <img class="portfolio__img" src="src/assets/img/Home/logo_project/logo36.svg" alt="NeoBank logo" width="120" height="140" loading="lazy" decoding="async" />
@@ -314,22 +507,15 @@
               <i class="fa-brands fa-docker portfolio__title-icon"></i>
             </div>
           </div>
-          <div class="portfolio__box moves">
+          <div class="portfolio__box moves" data-project="techbyte">
+            <button class="tip-btn" type="button" aria-label="About TechByte" aria-describedby="tip-techbyte"><span aria-hidden="true">i</span></button>
+            <div class="tip" id="tip-techbyte" role="tooltip" hidden><p class="tip__title">TechByte</p><p class="tip__date">Mar 2024 – May 2024</p><p class="tip__kind">Laravel computer store on Oracle</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>Oracle as the primary database</li><li>Logic in PL/SQL where it belongs</li><li>Two guards, two areas</li></ul></div>
             <div class="portfolio__shadow">
               <p class="portfolio__shadow-title">TechByte</p>
               <div class="portfolio__icons">
-                <a
-                  class="portfolio__link"
-                  href="https://github.com/dawidolko/Database-Project-ComputerStore"
-                  target="_blank" rel="noopener"
-                   aria-label="GitHub profile"><i aria-hidden="true" class="fa-brands fa-github"></i
-                ></a>
-                <a
-                  class="portfolio__link"
-                  href="https://piotrsmola.dawidolko.pl/"
-                  target="_blank" rel="noopener" aria-label="Open piotrsmola.dawidolko.pl in a new tab"><i aria-hidden="true"
-                    class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
+                <a class="portfolio__link" href="https://github.com/dawidolko/TechByte-Project-Laravel" target="_blank" rel="noopener noreferrer" aria-label="TechByte source code on GitHub (opens in a new tab)"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
+                <a class="portfolio__link" href="https://techbyte.dawidolko.pl" target="_blank" rel="noopener noreferrer" aria-label="TechByte live site (opens in a new tab)"><i aria-hidden="true" class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a class="project-show" href="/projects/techbyte/">Show<span class="visually-hidden"> TechByte</span></a>
               </div>
             </div>
             <img class="portfolio__img" src="src/assets/img/Home/logo_project/logo10.svg" alt="TechByte logo" width="50" height="50" loading="lazy" decoding="async" />
@@ -340,21 +526,15 @@
               <i class="fa-brands fa-sass portfolio__title-icon"></i>
             </div>
           </div>
-            <div class="portfolio__box move">
+            <div class="portfolio__box move" data-project="movievault">
+              <button class="tip-btn" type="button" aria-label="About MovieVault" aria-describedby="tip-movievault"><span aria-hidden="true">i</span></button>
+              <div class="tip" id="tip-movievault" role="tooltip" hidden><p class="tip__title">MovieVault</p><p class="tip__date">Jan 2026 – Feb 2026</p><p class="tip__kind">Full-stack movie review platform</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>Movie Catalogue</li><li>Filtering &amp; Sorting</li><li>JWT Authentication</li></ul></div>
               <div class="portfolio__shadow">
                 <p class="portfolio__shadow-title">MovieVault</p>
                 <div class="portfolio__icons">
-                  <a
-                    class="portfolio__link"
-                    href="https://github.com/dawidolko/MovieVault-Project-SpringBoot-React"
-                    target="_blank" rel="noopener"
-                     aria-label="GitHub profile"><i aria-hidden="true" class="fa-brands fa-github"></i
-                  ></a>
-                  <a
-                    class="portfolio__link"
-                    href="https://youtu.be/ooIoa_PGRzk"
-                    target="_blank" rel="noopener" aria-label="Open youtu.be/ooIoa_PGRzk in a new tab"><i aria-hidden="true" class="fa-brands fa-youtube"></i
-                  ></a>
+                  <a class="portfolio__link" href="https://github.com/dawidolko/MovieVault-Project-SpringBoot-React" target="_blank" rel="noopener noreferrer" aria-label="MovieVault source code on GitHub (opens in a new tab)"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
+                  <a class="portfolio__link" href="https://youtu.be/ooIoa_PGRzk" target="_blank" rel="noopener noreferrer" aria-label="MovieVault video on YouTube (opens in a new tab)"><i aria-hidden="true" class="fa-brands fa-youtube"></i></a>
+                  <a class="project-show" href="/projects/movievault/">Show<span class="visually-hidden"> MovieVault</span></a>
                 </div>
               </div>
               <img class="portfolio__img" src="src/assets/img/Home/logo_project/logo28.svg" alt="MovieVault logo" width="64" height="64" loading="lazy" decoding="async" />
@@ -364,21 +544,15 @@
                 <i class="fa-brands fa-square-js portfolio__title-icon"></i>
               </div>
             </div>
-          <div class="portfolio__box move">
+          <div class="portfolio__box move" data-project="cinemareserve">
+            <button class="tip-btn" type="button" aria-label="About CinemaReserve" aria-describedby="tip-cinemareserve"><span aria-hidden="true">i</span></button>
+            <div class="tip" id="tip-cinemareserve" role="tooltip" hidden><p class="tip__title">CinemaReserve</p><p class="tip__date">Jan 2026 – Feb 2026</p><p class="tip__kind">Full-stack cinema booking application</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>Home</li><li>Movie Detail</li><li>Seat Selection</li></ul></div>
             <div class="portfolio__shadow">
               <p class="portfolio__shadow-title">CinemaReserve</p>
               <div class="portfolio__icons">
-                <a
-                  class="portfolio__link"
-                  href="https://github.com/dawidolko/CinemaReserve-Project-Node-Angular"
-                  target="_blank" rel="noopener"
-                   aria-label="GitHub profile"><i aria-hidden="true" class="fa-brands fa-github"></i
-                ></a>
-                <a
-                  class="portfolio__link"
-                  href="https://youtu.be/7ygXIAm0sFc"
-                  target="_blank" rel="noopener" aria-label="Open youtu.be/7ygXIAm0sFc in a new tab"><i aria-hidden="true" class="fa-brands fa-youtube"></i
-                ></a>
+                <a class="portfolio__link" href="https://github.com/dawidolko/CinemaReserve-Project-Node-Angular" target="_blank" rel="noopener noreferrer" aria-label="CinemaReserve source code on GitHub (opens in a new tab)"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
+                <a class="portfolio__link" href="https://youtu.be/7ygXIAm0sFc" target="_blank" rel="noopener noreferrer" aria-label="CinemaReserve video on YouTube (opens in a new tab)"><i aria-hidden="true" class="fa-brands fa-youtube"></i></a>
+                <a class="project-show" href="/projects/cinemareserve/">Show<span class="visually-hidden"> CinemaReserve</span></a>
               </div>
             </div>
             <img class="portfolio__img" src="src/assets/img/Home/logo_project/logo11.svg" alt="CinemaReserve logo" width="40" height="40" loading="lazy" decoding="async" />
@@ -388,28 +562,15 @@
               <i class="fa-brands fa-square-js portfolio__title-icon"></i>
             </div>
           </div>
-          <div class="portfolio__box move">
+          <div class="portfolio__box move" data-project="zbudujkompa">
+            <button class="tip-btn" type="button" aria-label="About ZbudujKompa" aria-describedby="tip-zbudujkompa"><span aria-hidden="true">i</span></button>
+            <div class="tip" id="tip-zbudujkompa" role="tooltip" hidden><p class="tip__title">ZbudujKompa</p><p class="tip__date">Jul 2026 – present</p><p class="tip__kind">Bilingual reference website for PC builders</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>Configurator</li><li>Components</li><li>Platforms</li></ul></div>
             <div class="portfolio__shadow">
               <p class="portfolio__shadow-title">ZbudujKompa</p>
               <div class="portfolio__icons">
-                <a
-                  class="portfolio__link"
-                  href="https://github.com/dawidolko/ZbudujKompa"
-                  target="_blank"
-                  rel="noopener"
-                  aria-label="ZbudujKompa source code on GitHub"
-                  ><i class="fa-brands fa-github" aria-hidden="true"></i
-                ></a>
-                <a
-                  class="portfolio__link"
-                  href="https://zbudujkompa.dawidolko.pl/"
-                  target="_blank"
-                  rel="noopener"
-                  aria-label="Open the ZbudujKompa live site"
-                  ><i
-                    class="portfolio__icon fa-solid fa-arrow-up-right-from-square"
-                    aria-hidden="true"></i
-                ></a>
+                <a class="portfolio__link" href="https://github.com/dawidolko/ZbudujKompa" target="_blank" rel="noopener noreferrer" aria-label="ZbudujKompa source code on GitHub (opens in a new tab)"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
+                <a class="portfolio__link" href="https://zbudujkompa.dawidolko.pl/pl" target="_blank" rel="noopener noreferrer" aria-label="ZbudujKompa live site (opens in a new tab)"><i aria-hidden="true" class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a class="project-show" href="/projects/zbudujkompa/">Show<span class="visually-hidden"> ZbudujKompa</span></a>
               </div>
             </div>
             <img class="portfolio__img" src="src/assets/img/Home/logo_project/logo37.svg" alt="ZbudujKompa logo" width="120" height="140" loading="lazy" decoding="async" />
@@ -419,22 +580,15 @@
               <i class="fa-brands fa-css3-alt portfolio__title-icon"></i>
             </div>
           </div>
-          <div class="portfolio__box moves">
+          <div class="portfolio__box moves" data-project="ezscout">
+            <button class="tip-btn" type="button" aria-label="About EzScout" aria-describedby="tip-ezscout"><span aria-hidden="true">i</span></button>
+            <div class="tip" id="tip-ezscout" role="tooltip" hidden><p class="tip__title">EzScout</p><p class="tip__date">Jun 2026 – Jul 2026</p><p class="tip__kind">Football scouting product site</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>Four packages</li><li>A sample report card in the hero</li><li>Honest results section</li></ul></div>
             <div class="portfolio__shadow">
               <p class="portfolio__shadow-title">EzScout</p>
               <div class="portfolio__icons">
-                <a
-                  class="portfolio__link"
-                  href="https://github.com/dawidolko/EzScout-Platform-NextJS"
-                  target="_blank" rel="noopener"
-                   aria-label="EzScout on GitHub"><i aria-hidden="true" class="fa-brands fa-github"></i
-                ></a>
-                <a
-                  class="portfolio__link"
-                  href="https://ezscout.dawidolko.pl"
-                  target="_blank" rel="noopener" aria-label="Open ezscout.dawidolko.pl in a new tab"><i aria-hidden="true"
-                    class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
+                <a class="portfolio__link" href="https://github.com/dawidolko/EzScout-Platform-NextJS" target="_blank" rel="noopener noreferrer" aria-label="EzScout source code on GitHub (opens in a new tab)"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
+                <a class="portfolio__link" href="https://ezscout.dawidolko.pl" target="_blank" rel="noopener noreferrer" aria-label="EzScout live site (opens in a new tab)"><i aria-hidden="true" class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a class="project-show" href="/projects/ezscout/">Show<span class="visually-hidden"> EzScout</span></a>
               </div>
             </div>
             <img class="portfolio__img" src="src/assets/img/Home/logo_project/ezscout.svg" alt="EzScout logo" width="50" height="50" loading="lazy" decoding="async" />
@@ -444,22 +598,15 @@
               <i class="fa-brands fa-css3 portfolio__title-icon"></i>
             </div>
           </div>
-          <div class="portfolio__box move">
+          <div class="portfolio__box move" data-project="cvforge">
+            <button class="tip-btn" type="button" aria-label="About CVForge" aria-describedby="tip-cvforge"><span aria-hidden="true">i</span></button>
+            <div class="tip" id="tip-cvforge" role="tooltip" hidden><p class="tip__title">CVForge</p><p class="tip__date">Aug 2026 – Sep 2026</p><p class="tip__kind">CV builder that runs in the browser</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>The preview is the printed sheet</li><li>Open the finished CV in its own tab</li><li>Import an existing CV from a PDF</li></ul></div>
             <div class="portfolio__shadow">
               <p class="portfolio__shadow-title">CVForge</p>
               <div class="portfolio__icons">
-                <a
-                  class="portfolio__link"
-                  href="https://github.com/dawidolko/CVForge-Platform"
-                  target="_blank" rel="noopener"
-                   aria-label="CVForge on GitHub"><i aria-hidden="true" class="fa-brands fa-github"></i
-                ></a>
-                <a
-                  class="portfolio__link"
-                  href="https://cvforge.dawidolko.pl"
-                  target="_blank" rel="noopener" aria-label="Open cvforge.dawidolko.pl in a new tab"><i aria-hidden="true"
-                    class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
+                <a class="portfolio__link" href="https://github.com/dawidolko/CVForge-Platform" target="_blank" rel="noopener noreferrer" aria-label="CVForge source code on GitHub (opens in a new tab)"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
+                <a class="portfolio__link" href="https://cvforge.dawidolko.pl" target="_blank" rel="noopener noreferrer" aria-label="CVForge live site (opens in a new tab)"><i aria-hidden="true" class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a class="project-show" href="/projects/cvforge/">Show<span class="visually-hidden"> CVForge</span></a>
               </div>
             </div>
             <img class="portfolio__img" src="src/assets/img/Home/logo_project/cvforge.svg" alt="CVForge logo" width="50" height="50" loading="lazy" decoding="async" />
@@ -469,22 +616,15 @@
               <i class="fa-brands fa-css3 portfolio__title-icon"></i>
             </div>
           </div>
-          <div class="portfolio__box move">
+          <div class="portfolio__box move" data-project="reelcut">
+            <button class="tip-btn" type="button" aria-label="About ReelCut" aria-describedby="tip-reelcut"><span aria-hidden="true">i</span></button>
+            <div class="tip" id="tip-reelcut" role="tooltip" hidden><p class="tip__title">ReelCut</p><p class="tip__date">Aug 2026 – Sep 2026</p><p class="tip__kind">Video editor that runs in the browser</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>Several clips on one timeline</li><li>Delete, not just disable</li><li>Nothing is uploaded</li></ul></div>
             <div class="portfolio__shadow">
               <p class="portfolio__shadow-title">ReelCut</p>
               <div class="portfolio__icons">
-                <a
-                  class="portfolio__link"
-                  href="https://github.com/dawidolko/ReelCut-Platform"
-                  target="_blank" rel="noopener"
-                   aria-label="ReelCut on GitHub"><i aria-hidden="true" class="fa-brands fa-github"></i
-                ></a>
-                <a
-                  class="portfolio__link"
-                  href="https://reelcut.dawidolko.pl"
-                  target="_blank" rel="noopener" aria-label="Open reelcut.dawidolko.pl in a new tab"><i aria-hidden="true"
-                    class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
+                <a class="portfolio__link" href="https://github.com/dawidolko/ReelCut-Platform" target="_blank" rel="noopener noreferrer" aria-label="ReelCut source code on GitHub (opens in a new tab)"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
+                <a class="portfolio__link" href="https://reelcut.dawidolko.pl" target="_blank" rel="noopener noreferrer" aria-label="ReelCut live site (opens in a new tab)"><i aria-hidden="true" class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a class="project-show" href="/projects/reelcut/">Show<span class="visually-hidden"> ReelCut</span></a>
               </div>
             </div>
             <img class="portfolio__img" src="src/assets/img/Home/logo_project/reelcut.svg" alt="ReelCut logo" width="50" height="50" loading="lazy" decoding="async" />
@@ -494,22 +634,15 @@
               <i class="fa-brands fa-css3 portfolio__title-icon"></i>
             </div>
           </div>
-          <div class="portfolio__box move">
+          <div class="portfolio__box move" data-project="ezpace">
+            <button class="tip-btn" type="button" aria-label="About EzPace" aria-describedby="tip-ezpace"><span aria-hidden="true">i</span></button>
+            <div class="tip" id="tip-ezpace" role="tooltip" hidden><p class="tip__title">EzPace</p><p class="tip__date">Jun 2026 – Jul 2026</p><p class="tip__kind">Running coach product site</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>A pace calculator that is not a mock-up</li><li>Splits that include the leftover distance</li><li>Three plans, one price each</li></ul></div>
             <div class="portfolio__shadow">
               <p class="portfolio__shadow-title">EzPace</p>
               <div class="portfolio__icons">
-                <a
-                  class="portfolio__link"
-                  href="https://github.com/dawidolko/EzPace-Platform-NextJS"
-                  target="_blank" rel="noopener"
-                   aria-label="EzPace on GitHub"><i aria-hidden="true" class="fa-brands fa-github"></i
-                ></a>
-                <a
-                  class="portfolio__link"
-                  href="https://ezpace.dawidolko.pl"
-                  target="_blank" rel="noopener" aria-label="Open ezpace.dawidolko.pl in a new tab"><i aria-hidden="true"
-                    class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
+                <a class="portfolio__link" href="https://github.com/dawidolko/EzPace-Platform-NextJS" target="_blank" rel="noopener noreferrer" aria-label="EzPace source code on GitHub (opens in a new tab)"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
+                <a class="portfolio__link" href="https://ezpace.dawidolko.pl" target="_blank" rel="noopener noreferrer" aria-label="EzPace live site (opens in a new tab)"><i aria-hidden="true" class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a class="project-show" href="/projects/ezpace/">Show<span class="visually-hidden"> EzPace</span></a>
               </div>
             </div>
             <img class="portfolio__img" src="src/assets/img/Home/logo_project/ezpace.svg" alt="EzPace logo" width="50" height="50" loading="lazy" decoding="async" />
@@ -519,22 +652,15 @@
               <i class="fa-brands fa-css3 portfolio__title-icon"></i>
             </div>
           </div>
-          <div class="portfolio__box move">
+          <div class="portfolio__box move" data-project="weather-app">
+            <button class="tip-btn" type="button" aria-label="About Weather App" aria-describedby="tip-weather-app"><span aria-hidden="true">i</span></button>
+            <div class="tip" id="tip-weather-app" role="tooltip" hidden><p class="tip__title">Weather App</p><p class="tip__date">Jan 2025</p><p class="tip__kind">Full-stack Laravel and React weather app</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>Readings are kept, not discarded</li><li>Your own list of cities</li><li>Search any city in the world</li></ul></div>
             <div class="portfolio__shadow">
               <p class="portfolio__shadow-title">Weather App</p>
               <div class="portfolio__icons">
-                <a
-                  class="portfolio__link"
-                  href="https://github.com/dawidolko/Weather-App-Laravel-React"
-                  target="_blank" rel="noopener"
-                   aria-label="GitHub profile"><i aria-hidden="true" class="fa-brands fa-github"></i
-                ></a>
-                <a
-                  class="portfolio__link"
-                  href="https://www.youtube.com/watch?v=WTi2i2wHPt0"
-                  target="_blank" rel="noopener"
-                   aria-label="YouTube profile"><i aria-hidden="true" class="fa-brands fa-youtube"></i
-                ></a>
+                <a class="portfolio__link" href="https://github.com/dawidolko/Weather-App-Laravel-React" target="_blank" rel="noopener noreferrer" aria-label="Weather App source code on GitHub (opens in a new tab)"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
+                <a class="portfolio__link" href="https://www.youtube.com/watch?v=WTi2i2wHPt0" target="_blank" rel="noopener noreferrer" aria-label="Weather App video on YouTube (opens in a new tab)"><i aria-hidden="true" class="fa-brands fa-youtube"></i></a>
+                <a class="project-show" href="/projects/weather-app/">Show<span class="visually-hidden"> Weather App</span></a>
               </div>
             </div>
             <img class="portfolio__img" src="src/assets/img/Home/logo_project/logo8.svg" alt="Weather App logo" width="50" height="50" loading="lazy" decoding="async" />
@@ -544,28 +670,15 @@
               <i class="fa-brands fa-square-js portfolio__title-icon"></i>
             </div>
           </div>
-          <div class="portfolio__box move">
+          <div class="portfolio__box move" data-project="bodykit">
+            <button class="tip-btn" type="button" aria-label="About BodyKit" aria-describedby="tip-bodykit"><span aria-hidden="true">i</span></button>
+            <div class="tip" id="tip-bodykit" role="tooltip" hidden><p class="tip__title">BodyKit</p><p class="tip__date">Jun 2026 – Jul 2026</p><p class="tip__kind">Front-end web shop with static export</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>Bilingual</li><li>Full catalog</li><li>Cart &amp; checkout</li></ul></div>
             <div class="portfolio__shadow">
               <p class="portfolio__shadow-title">BodyKit</p>
               <div class="portfolio__icons">
-                <a
-                  class="portfolio__link"
-                  href="https://github.com/dawidolko/BodyKit-Shop-Frontend-NextJS"
-                  target="_blank"
-                  rel="noopener"
-                  aria-label="BodyKit source code on GitHub"
-                  ><i class="fa-brands fa-github" aria-hidden="true"></i
-                ></a>
-                <a
-                  class="portfolio__link"
-                  href="https://bodykit.dawidolko.pl/"
-                  target="_blank"
-                  rel="noopener"
-                  aria-label="Open the BodyKit live site"
-                  ><i
-                    class="portfolio__icon fa-solid fa-arrow-up-right-from-square"
-                    aria-hidden="true"></i
-                ></a>
+                <a class="portfolio__link" href="https://github.com/dawidolko/BodyKit-Shop-Frontend-NextJS" target="_blank" rel="noopener noreferrer" aria-label="BodyKit source code on GitHub (opens in a new tab)"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
+                <a class="portfolio__link" href="https://bodykit.dawidolko.pl" target="_blank" rel="noopener noreferrer" aria-label="BodyKit live site (opens in a new tab)"><i aria-hidden="true" class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a class="project-show" href="/projects/bodykit/">Show<span class="visually-hidden"> BodyKit</span></a>
               </div>
             </div>
             <img class="portfolio__img" src="src/assets/img/Home/logo_project/logo35.svg" alt="BodyKit logo" width="120" height="140" loading="lazy" decoding="async" />
@@ -575,22 +688,15 @@
               <i class="fa-brands fa-css3-alt portfolio__title-icon"></i>
             </div>
           </div>
-          <div class="portfolio__box move">
+          <div class="portfolio__box move" data-project="bitrecruit">
+            <button class="tip-btn" type="button" aria-label="About BitRecruit" aria-describedby="tip-bitrecruit"><span aria-hidden="true">i</span></button>
+            <div class="tip" id="tip-bitrecruit" role="tooltip" hidden><p class="tip__title">BitRecruit</p><p class="tip__date">Feb 2026 – Mar 2026</p><p class="tip__kind">IT job board front end</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>Filter offers</li><li>Pagination</li><li>Sorting</li></ul></div>
             <div class="portfolio__shadow">
               <p class="portfolio__shadow-title">BitRecruit</p>
               <div class="portfolio__icons">
-                <a
-                  class="portfolio__link"
-                  href="https://github.com/dawidolko/BitRecruit-Platform-NextJS"
-                  target="_blank" rel="noopener"
-                   aria-label="GitHub profile"><i aria-hidden="true" class="fa-brands fa-github"></i
-                ></a>
-                <a
-                  class="portfolio__link"
-                  href="https://BitRecruit.dawidolko.pl"
-                  target="_blank" rel="noopener" aria-label="Open BitRecruit.dawidolko.pl in a new tab"><i aria-hidden="true"
-                    class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
+                <a class="portfolio__link" href="https://github.com/dawidolko/BitRecruit-Platform-NextJS" target="_blank" rel="noopener noreferrer" aria-label="BitRecruit source code on GitHub (opens in a new tab)"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
+                <a class="portfolio__link" href="https://bitrecruit.dawidolko.pl" target="_blank" rel="noopener noreferrer" aria-label="BitRecruit live site (opens in a new tab)"><i aria-hidden="true" class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a class="project-show" href="/projects/bitrecruit/">Show<span class="visually-hidden"> BitRecruit</span></a>
               </div>
             </div>
             <img class="portfolio__img" src="src/assets/img/Home/logo_project/logo29.svg" alt="BitRecruit logo" width="120" height="120" loading="lazy" decoding="async" />
@@ -600,47 +706,32 @@
               <i class="fa-brands fa-square-js portfolio__title-icon"></i>
             </div>
           </div>
-          <div class="portfolio__box move">
+          <div class="portfolio__box move" data-project="hirudozdrowie">
+            <button class="tip-btn" type="button" aria-label="About HirudoZdrowie" aria-describedby="tip-hirudozdrowie"><span aria-hidden="true">i</span></button>
+            <div class="tip" id="tip-hirudozdrowie" role="tooltip" hidden><p class="tip__title">HirudoZdrowie</p><p class="tip__date">Jan 2026 – Feb 2026</p><p class="tip__kind">Clinic information website</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>Every route prerendered</li><li>Type-checked before it ships</li><li>Content as typed data</li></ul></div>
             <div class="portfolio__shadow">
               <p class="portfolio__shadow-title">HirudoZdrowie</p>
               <div class="portfolio__icons">
-                <a
-                  class="portfolio__link"
-                  href="https://github.com/dawidolko/hirudozdrowie"
-                  target="_blank" rel="noopener"
-                   aria-label="GitHub profile"><i aria-hidden="true" class="fa-brands fa-github"></i
-                ></a>
-                <a
-                  class="portfolio__link"
-                  href="https://hirudozdrowie.com/"
-                  target="_blank" rel="noopener" aria-label="Open hirudozdrowie.com in a new tab"><i aria-hidden="true"
-                    class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
+                <a class="portfolio__link" href="https://hirudozdrowie.com" target="_blank" rel="noopener noreferrer" aria-label="HirudoZdrowie live site (opens in a new tab)"><i aria-hidden="true" class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a class="project-show" href="/projects/hirudozdrowie/">Show<span class="visually-hidden"> HirudoZdrowie</span></a>
               </div>
             </div>
-            <img class="portfolio__img" src="src/assets/img/Home/logo_project/logo8.svg" alt="HirudoZdrowie logo" width="50" height="50" loading="lazy" decoding="async" />
+            <img class="portfolio__img" src="src/assets/img/Home/logo_project/hirudozdrowie.webp" alt="HirudoZdrowie logo" width="360" height="360" loading="lazy" decoding="async" />
             <div class="portfolio__stock">
               <i class="fa-brands fa-react portfolio__title-icon"></i>
               <i class="fa-brands fa-html5 portfolio__title-icon"></i>
               <i class="fa-brands fa-sass portfolio__title-icon"></i>
             </div>
           </div>
-          <div class="portfolio__box moves">
+          <div class="portfolio__box moves" data-project="workstation">
+            <button class="tip-btn" type="button" aria-label="About WorkStation" aria-describedby="tip-workstation"><span aria-hidden="true">i</span></button>
+            <div class="tip" id="tip-workstation" role="tooltip" hidden><p class="tip__title">WorkStation</p><p class="tip__date">Apr 2025 – Jan 2026</p><p class="tip__kind">Interactive hardware setup showcase</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>Full Setup Showcase</li><li>Six Hardware Categories</li><li>Detailed Specifications</li></ul></div>
             <div class="portfolio__shadow">
               <p class="portfolio__shadow-title">WorkStation</p>
               <div class="portfolio__icons">
-                <a
-                  class="portfolio__link"
-                  href="https://github.com/dawidolko/WorkStation-Vue-TypeScript"
-                  target="_blank" rel="noopener"
-                   aria-label="GitHub profile"><i aria-hidden="true" class="fa-brands fa-github"></i
-                ></a>
-                <a
-                  class="portfolio__link"
-                  href="https://workstation.dawidolko.pl/"
-                  target="_blank" rel="noopener" aria-label="Open workstation.dawidolko.pl in a new tab"><i aria-hidden="true"
-                    class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
+                <a class="portfolio__link" href="https://github.com/dawidolko/WorkStation-Vue-TypeScript" target="_blank" rel="noopener noreferrer" aria-label="WorkStation source code on GitHub (opens in a new tab)"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
+                <a class="portfolio__link" href="https://workstation.dawidolko.pl" target="_blank" rel="noopener noreferrer" aria-label="WorkStation live site (opens in a new tab)"><i aria-hidden="true" class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a class="project-show" href="/projects/workstation/">Show<span class="visually-hidden"> WorkStation</span></a>
               </div>
             </div>
             <img class="portfolio__img" src="src/assets/img/Home/logo_project/logo13.svg" alt="WorkStation logo" width="50" height="50" loading="lazy" decoding="async" />
@@ -649,22 +740,15 @@
               <i class="fa-brands fa-square-js portfolio__title-icon"></i>
             </div>
           </div>
-          <div class="portfolio__box moves">
+          <div class="portfolio__box moves" data-project="devpulse">
+            <button class="tip-btn" type="button" aria-label="About DevPulse" aria-describedby="tip-devpulse"><span aria-hidden="true">i</span></button>
+            <div class="tip" id="tip-devpulse" role="tooltip" hidden><p class="tip__title">DevPulse</p><p class="tip__date">Jan 2026 – Feb 2026</p><p class="tip__kind">Developer blog as a React single-page app</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>Blog Post Cards</li><li>Post Detail Pages</li><li>Category System</li></ul></div>
             <div class="portfolio__shadow">
-              <p class="portfolio__shadow-title">DevTechBlog</p>
+              <p class="portfolio__shadow-title">DevPulse</p>
               <div class="portfolio__icons">
-                <a
-                  class="portfolio__link"
-                  href="https://github.com/dawidolko/DevTechBlog-Platform-React"
-                  target="_blank" rel="noopener"
-                   aria-label="GitHub profile"><i aria-hidden="true" class="fa-brands fa-github"></i
-                ></a>
-                <a
-                  class="portfolio__link"
-                  href="https://devtechblog.dawidolko.pl/#/"
-                  target="_blank" rel="noopener" aria-label="Open devtechblog.dawidolko.pl/# in a new tab"><i aria-hidden="true"
-                    class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
+                <a class="portfolio__link" href="https://github.com/dawidolko/DevTechBlog-Platform-React" target="_blank" rel="noopener noreferrer" aria-label="DevPulse source code on GitHub (opens in a new tab)"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
+                <a class="portfolio__link" href="https://devtechblog.dawidolko.pl" target="_blank" rel="noopener noreferrer" aria-label="DevPulse live site (opens in a new tab)"><i aria-hidden="true" class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a class="project-show" href="/projects/devpulse/">Show<span class="visually-hidden"> DevPulse</span></a>
               </div>
             </div>
             <img class="portfolio__img" src="src/assets/img/Home/logo_project/logo12.svg" alt="DevTechBlog logo" width="64" height="64" loading="lazy" decoding="async" />
@@ -675,22 +759,15 @@
               <i class="fa-brands fa-sass portfolio__title-icon"></i>
             </div>
           </div>
-          <div class="portfolio__box move">
+          <div class="portfolio__box move" data-project="rent-app">
+            <button class="tip-btn" type="button" aria-label="About Rent App" aria-describedby="tip-rent-app"><span aria-hidden="true">i</span></button>
+            <div class="tip" id="tip-rent-app" role="tooltip" hidden><p class="tip__title">Rent App</p><p class="tip__date">Apr 2025</p><p class="tip__kind">Vue property search page</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>Active filters are visible and individually clearable</li><li>Three range sliders, not six number fields</li><li>A panel that expands</li></ul></div>
             <div class="portfolio__shadow">
               <p class="portfolio__shadow-title">Rent App</p>
               <div class="portfolio__icons">
-                <a
-                  class="portfolio__link"
-                  href="https://github.com/dawidolko/Rent-App-Vue"
-                  target="_blank" rel="noopener"
-                   aria-label="GitHub profile"><i aria-hidden="true" class="fa-brands fa-github"></i
-                ></a>
-                <a
-                  class="portfolio__link"
-                  href="https://rent.dawidolko.pl/"
-                  target="_blank" rel="noopener" aria-label="Open rent.dawidolko.pl in a new tab"><i aria-hidden="true"
-                    class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
+                <a class="portfolio__link" href="https://github.com/dawidolko/Rent-App-Vue" target="_blank" rel="noopener noreferrer" aria-label="Rent App source code on GitHub (opens in a new tab)"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
+                <a class="portfolio__link" href="https://rent.dawidolko.pl" target="_blank" rel="noopener noreferrer" aria-label="Rent App live site (opens in a new tab)"><i aria-hidden="true" class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a class="project-show" href="/projects/rent-app/">Show<span class="visually-hidden"> Rent App</span></a>
               </div>
             </div>
             <img class="portfolio__img" src="src/assets/img/Home/logo_project/logo39.svg" alt="Rent App logo" width="50" height="50" loading="lazy" decoding="async" />
@@ -700,22 +777,15 @@
               <i class="fa-brands fa-html5 portfolio__title-icon"></i>
             </div>
           </div>
-          <div class="portfolio__box move">
+          <div class="portfolio__box move" data-project="fitnessgym">
+            <button class="tip-btn" type="button" aria-label="About FitnessGym" aria-describedby="tip-fitnessgym"><span aria-hidden="true">i</span></button>
+            <div class="tip" id="tip-fitnessgym" role="tooltip" hidden><p class="tip__title">FitnessGym</p><p class="tip__date">Mar 2023 – Apr 2023</p><p class="tip__kind">React marketing site with a shop</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>A cart that survives a refresh</li><li>Scroll as a narrative device</li><li>Page transitions, not page jumps</li></ul></div>
             <div class="portfolio__shadow">
               <p class="portfolio__shadow-title">FitnessGym</p>
               <div class="portfolio__icons">
-                <a
-                  class="portfolio__link"
-                  href="https://github.com/dawidolko/FitnessGym-Project-React"
-                  target="_blank" rel="noopener"
-                   aria-label="GitHub profile"><i aria-hidden="true" class="fa-brands fa-github"></i
-                ></a>
-                <a
-                  class="portfolio__link"
-                  href="https://fitnessgym.dawidolko.pl/"
-                  target="_blank" rel="noopener" aria-label="Open fitnessgym.dawidolko.pl in a new tab"><i aria-hidden="true"
-                    class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
+                <a class="portfolio__link" href="https://github.com/dawidolko/FitnessGym-Project-React" target="_blank" rel="noopener noreferrer" aria-label="FitnessGym source code on GitHub (opens in a new tab)"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
+                <a class="portfolio__link" href="https://fitnessgym.dawidolko.pl" target="_blank" rel="noopener noreferrer" aria-label="FitnessGym live site (opens in a new tab)"><i aria-hidden="true" class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a class="project-show" href="/projects/fitnessgym/">Show<span class="visually-hidden"> FitnessGym</span></a>
               </div>
             </div>
             <img class="portfolio__img" src="src/assets/img/Home/logo_project/logo20.svg" alt="FitnessGym logo" width="50" height="50" loading="lazy" decoding="async" />
@@ -726,22 +796,15 @@
               <i class="fa-brands fa-sass portfolio__title-icon"></i>
             </div>
           </div>
-          <div class="portfolio__box moves">
+          <div class="portfolio__box moves" data-project="kebab">
+            <button class="tip-btn" type="button" aria-label="About Kebab" aria-describedby="tip-kebab"><span aria-hidden="true">i</span></button>
+            <div class="tip" id="tip-kebab" role="tooltip" hidden><p class="tip__title">Kebab</p><p class="tip__date">Mar 2025</p><p class="tip__kind">React restaurant ordering page</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>One cart, three consumers</li><li>Quantities keyed by product name</li><li>A sidebar, not a separate page</li></ul></div>
             <div class="portfolio__shadow">
-              <p class="portfolio__shadow-title">Kebab Project</p>
+              <p class="portfolio__shadow-title">Kebab</p>
               <div class="portfolio__icons">
-                <a
-                  class="portfolio__link"
-                  href="https://github.com/dawidolko/Kebab-Project-React"
-                  target="_blank" rel="noopener"
-                   aria-label="GitHub profile"><i aria-hidden="true" class="fa-brands fa-github"></i
-                ></a>
-                <a
-                  class="portfolio__link"
-                  href="https://kebab.dawidolko.pl/"
-                  target="_blank" rel="noopener" aria-label="Open kebab.dawidolko.pl in a new tab"><i aria-hidden="true"
-                    class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
+                <a class="portfolio__link" href="https://github.com/dawidolko/Kebab-Project-React" target="_blank" rel="noopener noreferrer" aria-label="Kebab source code on GitHub (opens in a new tab)"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
+                <a class="portfolio__link" href="https://kebab.dawidolko.pl" target="_blank" rel="noopener noreferrer" aria-label="Kebab live site (opens in a new tab)"><i aria-hidden="true" class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a class="project-show" href="/projects/kebab/">Show<span class="visually-hidden"> Kebab</span></a>
               </div>
             </div>
             <img class="portfolio__img" src="src/assets/img/Home/logo_project/logo17.svg" alt="Kebab Project logo" width="50" height="50" loading="lazy" decoding="async" />
@@ -751,22 +814,15 @@
               <i class="fa-brands fa-html5 portfolio__title-icon"></i>
             </div>
           </div>
-          <div class="portfolio__box move">
+          <div class="portfolio__box move" data-project="f1-zone">
+            <button class="tip-btn" type="button" aria-label="About F1 Zone" aria-describedby="tip-f1-zone"><span aria-hidden="true">i</span></button>
+            <div class="tip" id="tip-f1-zone" role="tooltip" hidden><p class="tip__title">F1 Zone</p><p class="tip__date">Feb 2023 – Mar 2023</p><p class="tip__kind">Poster shop in plain JavaScript</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>A cart that survives the tab</li><li>Duplicate protection with feedback</li><li>The catalogue is data</li></ul></div>
             <div class="portfolio__shadow">
-              <p class="portfolio__shadow-title">F1Zone</p>
+              <p class="portfolio__shadow-title">F1 Zone</p>
               <div class="portfolio__icons">
-                <a
-                  class="portfolio__link"
-                  href="https://github.com/dawidolko/F1Zone-Project-HTML-CSS-JS-SASS"
-                  target="_blank" rel="noopener"
-                   aria-label="GitHub profile"><i aria-hidden="true" class="fa-brands fa-github"></i
-                ></a>
-                <a
-                  class="portfolio__link"
-                  href="https://f1.dawidolko.pl/"
-                  target="_blank" rel="noopener" aria-label="Open f1.dawidolko.pl in a new tab"><i aria-hidden="true"
-                    class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
+                <a class="portfolio__link" href="https://github.com/dawidolko/F1Zone-Project-HTML-CSS-JS-SASS" target="_blank" rel="noopener noreferrer" aria-label="F1 Zone source code on GitHub (opens in a new tab)"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
+                <a class="portfolio__link" href="https://f1.dawidolko.pl" target="_blank" rel="noopener noreferrer" aria-label="F1 Zone live site (opens in a new tab)"><i aria-hidden="true" class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a class="project-show" href="/projects/f1-zone/">Show<span class="visually-hidden"> F1 Zone</span></a>
               </div>
             </div>
             <img class="portfolio__img" src="src/assets/img/Home/logo_project/logo21.svg" alt="F1Zone logo" width="50" height="50" loading="lazy" decoding="async" />
@@ -776,22 +832,15 @@
               <i class="fa-brands fa-sass portfolio__title-icon"></i>
             </div>
           </div>
-          <div class="portfolio__box moves">
+          <div class="portfolio__box moves" data-project="curiosities-magazine">
+            <button class="tip-btn" type="button" aria-label="About Curiosities Magazine" aria-describedby="tip-curiosities-magazine"><span aria-hidden="true">i</span></button>
+            <div class="tip" id="tip-curiosities-magazine" role="tooltip" hidden><p class="tip__title">Curiosities Magazine</p><p class="tip__date">Nov 2023 – Dec 2023</p><p class="tip__kind">Website template without JavaScript</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>No behavioural JavaScript</li><li>Sixteen pages, one visual language</li><li>A full purchase path</li></ul></div>
             <div class="portfolio__shadow">
-              <p class="portfolio__shadow-title">CuriositiesMagazine</p>
+              <p class="portfolio__shadow-title">Curiosities Magazine</p>
               <div class="portfolio__icons">
-                <a
-                  class="portfolio__link"
-                  href="https://github.com/dawidolko/Responsive-Website-Design-HTML-CSS"
-                  target="_blank" rel="noopener"
-                   aria-label="GitHub profile"><i aria-hidden="true" class="fa-brands fa-github"></i
-                ></a>
-                <a
-                  class="portfolio__link"
-                  href="https://projekt1.dawidolko.pl/index.html"
-                  target="_blank" rel="noopener" aria-label="Open projekt1.dawidolko.pl/index.html in a new tab"><i aria-hidden="true"
-                    class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
+                <a class="portfolio__link" href="https://github.com/dawidolko/CuriositiesMagazine-Project-HTML-CSS" target="_blank" rel="noopener noreferrer" aria-label="Curiosities Magazine source code on GitHub (opens in a new tab)"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
+                <a class="portfolio__link" href="https://projekt1.dawidolko.pl" target="_blank" rel="noopener noreferrer" aria-label="Curiosities Magazine live site (opens in a new tab)"><i aria-hidden="true" class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a class="project-show" href="/projects/curiosities-magazine/">Show<span class="visually-hidden"> Curiosities Magazine</span></a>
               </div>
             </div>
             <img class="portfolio__img" src="src/assets/img/Home/logo_project/logo19.svg" alt="CuriositiesMagazine logo" width="50" height="50" loading="lazy" decoding="async" />
@@ -801,22 +850,15 @@
               <i class="fa-brands fa-sass portfolio__title-icon"></i>
             </div>
           </div>
-        <div class="portfolio__box move">
+        <div class="portfolio__box move" data-project="widgetmart">
+          <button class="tip-btn" type="button" aria-label="About WidgetMart" aria-describedby="tip-widgetmart"><span aria-hidden="true">i</span></button>
+          <div class="tip" id="tip-widgetmart" role="tooltip" hidden><p class="tip__title">WidgetMart</p><p class="tip__date">Jan 2024 – Feb 2024</p><p class="tip__kind">Shop front without a framework</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>A cart in localStorage</li><li>Live weather with a search history</li><li>A note manager as a real class</li></ul></div>
           <div class="portfolio__shadow">
             <p class="portfolio__shadow-title">WidgetMart</p>
             <div class="portfolio__icons">
-              <a
-                class="portfolio__link"
-                href="https://github.com/dawidolko/Responsive-Website-Design-HTML-CSS-JS"
-                target="_blank" rel="noopener"
-                 aria-label="GitHub profile"><i aria-hidden="true" class="fa-brands fa-github"></i
-              ></a>
-              <a
-                class="portfolio__link"
-                href="https://projekt2.dawidolko.pl/index.html"
-                target="_blank" rel="noopener" aria-label="Open projekt2.dawidolko.pl/index.html in a new tab"><i aria-hidden="true"
-                  class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
+              <a class="portfolio__link" href="https://github.com/dawidolko/WidgetMart-Project-HTML-CSS-JS" target="_blank" rel="noopener noreferrer" aria-label="WidgetMart source code on GitHub (opens in a new tab)"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
+              <a class="portfolio__link" href="https://projekt2.dawidolko.pl" target="_blank" rel="noopener noreferrer" aria-label="WidgetMart live site (opens in a new tab)"><i aria-hidden="true" class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a class="project-show" href="/projects/widgetmart/">Show<span class="visually-hidden"> WidgetMart</span></a>
             </div>
           </div>
           <img class="portfolio__img" src="src/assets/img/Home/logo_project/logo18.svg" alt="WidgetMart logo" width="50" height="50" loading="lazy" decoding="async" />
@@ -826,22 +868,15 @@
             <i class="fa-brands fa-sass portfolio__title-icon"></i>
           </div>
         </div>
-          <div class="portfolio__box moves">
+          <div class="portfolio__box moves" data-project="layout-simple">
+            <button class="tip-btn" type="button" aria-label="About Layout Simple" aria-describedby="tip-layout-simple"><span aria-hidden="true">i</span></button>
+            <div class="tip" id="tip-layout-simple" role="tooltip" hidden><p class="tip__title">Layout Simple</p><p class="tip__date">Feb 2025</p><p class="tip__kind">Vue landing page built from components</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>Content as data modules</li><li>One stylesheet per section</li><li>Nine sections that stand alone</li></ul></div>
             <div class="portfolio__shadow">
-              <p class="portfolio__shadow-title">Simple Layout</p>
+              <p class="portfolio__shadow-title">Layout Simple</p>
               <div class="portfolio__icons">
-                <a
-                  class="portfolio__link"
-                  href="https://github.com/dawidolko/Layout-Simple-Vue"
-                  target="_blank" rel="noopener"
-                   aria-label="GitHub profile"><i aria-hidden="true" class="fa-brands fa-github"></i
-                ></a>
-                <a
-                  class="portfolio__link"
-                  href="https://simplelayout.dawidolko.pl/"
-                  target="_blank" rel="noopener" aria-label="Open simplelayout.dawidolko.pl in a new tab"><i aria-hidden="true"
-                    class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
+                <a class="portfolio__link" href="https://github.com/dawidolko/Layout-Simple-Vue" target="_blank" rel="noopener noreferrer" aria-label="Layout Simple source code on GitHub (opens in a new tab)"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
+                <a class="portfolio__link" href="https://simplelayout.dawidolko.pl" target="_blank" rel="noopener noreferrer" aria-label="Layout Simple live site (opens in a new tab)"><i aria-hidden="true" class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a class="project-show" href="/projects/layout-simple/">Show<span class="visually-hidden"> Layout Simple</span></a>
               </div>
             </div>
             <img class="portfolio__img" src="src/assets/img/Home/logo_project/logo15.svg" alt="Simple Layout logo" width="50" height="50" loading="lazy" decoding="async" />
@@ -850,22 +885,15 @@
               <i class="fa-brands fa-square-js portfolio__title-icon"></i>
             </div>
           </div>
-          <div class="portfolio__box moves">
+          <div class="portfolio__box moves" data-project="framevision">
+            <button class="tip-btn" type="button" aria-label="About FrameVision" aria-describedby="tip-framevision"><span aria-hidden="true">i</span></button>
+            <div class="tip" id="tip-framevision" role="tooltip" hidden><p class="tip__title">FrameVision</p><p class="tip__date">May 2025</p><p class="tip__kind">Single-page studio website</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>Reveal animations written by hand</li><li>A navigation that reacts to position</li><li>A burger menu that closes itself</li></ul></div>
             <div class="portfolio__shadow">
               <p class="portfolio__shadow-title">FrameVision</p>
               <div class="portfolio__icons">
-                <a
-                  class="portfolio__link"
-                  href="https://github.com/dawidolko/FrameVision-Project-HTML-CSS-JS-SASS"
-                  target="_blank" rel="noopener"
-                   aria-label="GitHub profile"><i aria-hidden="true" class="fa-brands fa-github"></i
-                ></a>
-                <a
-                  class="portfolio__link"
-                  href="https://framevision.dawidolko.pl/"
-                  target="_blank" rel="noopener" aria-label="Open framevision.dawidolko.pl in a new tab"><i aria-hidden="true"
-                    class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
+                <a class="portfolio__link" href="https://github.com/dawidolko/FrameVision-Project-HTML-CSS-JS-SASS" target="_blank" rel="noopener noreferrer" aria-label="FrameVision source code on GitHub (opens in a new tab)"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
+                <a class="portfolio__link" href="https://framevision.dawidolko.pl" target="_blank" rel="noopener noreferrer" aria-label="FrameVision live site (opens in a new tab)"><i aria-hidden="true" class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a class="project-show" href="/projects/framevision/">Show<span class="visually-hidden"> FrameVision</span></a>
               </div>
             </div>
             <img class="portfolio__img" src="src/assets/img/Home/logo_project/logo38.svg" alt="FrameVision logo" width="50" height="50" loading="lazy" decoding="async" />
@@ -878,12 +906,232 @@
         </div>
       </section>
 
+      <!-- more-projects:start -->
+      <section class="more" aria-labelledby="more-heading">
+        <h2 class="more__heading" id="more-heading">More projects</h2>
+        <ul class="more__grid container">
+          <li class="more__card">
+            <h3 class="more__title">CV</h3>
+            <p class="more__date">Sep 2026 – present</p>
+            <p class="more__tagline">The page is the source, the PDF is the export</p>
+            <div class="more__actions">
+              <a class="project-show" href="/projects/cv/">Show<span class="visually-hidden"> CV</span></a>
+              <button class="tip-btn" type="button" aria-label="About CV" aria-describedby="tip-cv"><span aria-hidden="true">i</span></button>
+              <div class="tip" id="tip-cv" role="tooltip" hidden><p class="tip__title">CV</p><p class="tip__date">Sep 2026 – present</p><p class="tip__kind">Static résumé website</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>One layout, two languages</li><li>The print output is the deliverable</li><li>Light palette forced when printing</li></ul></div>
+            </div>
+          </li>
+          <li class="more__card">
+            <h3 class="more__title">Airline Passenger Satisfaction</h3>
+            <p class="more__date">May 2026 – Jun 2026</p>
+            <p class="more__tagline">Multiclass flight-class prediction with a PyTorch MLP built from scratch</p>
+            <div class="more__actions">
+              <a class="project-show" href="/projects/airline-passenger-satisfaction/">Show<span class="visually-hidden"> Airline Passenger Satisfaction</span></a>
+              <button class="tip-btn" type="button" aria-label="About Airline Passenger Satisfaction" aria-describedby="tip-airline-passenger-satisfaction"><span aria-hidden="true">i</span></button>
+              <div class="tip" id="tip-airline-passenger-satisfaction" role="tooltip" hidden><p class="tip__title">Airline Passenger Satisfaction</p><p class="tip__date">May 2026 – Jun 2026</p><p class="tip__kind">Machine learning classifier</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>MLP from scratch in PyTorch</li><li>18-configuration grid search</li><li>Random Forest reference</li></ul></div>
+            </div>
+          </li>
+          <li class="more__card">
+            <h3 class="more__title">Cyber Security Attacks Classifier</h3>
+            <p class="more__date">Apr 2026 – Jun 2026</p>
+            <p class="more__tagline">End-to-end multiclass classification of network attacks</p>
+            <div class="more__actions">
+              <a class="project-show" href="/projects/cyber-security-attacks-classifier/">Show<span class="visually-hidden"> Cyber Security Attacks Classifier</span></a>
+              <button class="tip-btn" type="button" aria-label="About Cyber Security Attacks Classifier" aria-describedby="tip-cyber-security-attacks-classifier"><span aria-hidden="true">i</span></button>
+              <div class="tip" id="tip-cyber-security-attacks-classifier" role="tooltip" hidden><p class="tip__title">Cyber Security Attacks Classifier</p><p class="tip__date">Apr 2026 – Jun 2026</p><p class="tip__kind">Machine learning classifier</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>Balanced three-class target</li><li>Automatic data acquisition</li><li>Full EDA suite</li></ul></div>
+            </div>
+          </li>
+          <li class="more__card">
+            <h3 class="more__title">Wine Quality Classification</h3>
+            <p class="more__date">Apr 2026 – May 2026</p>
+            <p class="more__tagline">Multiclass wine quality classification with leakage-free scikit-learn pipelines</p>
+            <div class="more__actions">
+              <a class="project-show" href="/projects/wine-quality-classification/">Show<span class="visually-hidden"> Wine Quality Classification</span></a>
+              <button class="tip-btn" type="button" aria-label="About Wine Quality Classification" aria-describedby="tip-wine-quality-classification"><span aria-hidden="true">i</span></button>
+              <div class="tip" id="tip-wine-quality-classification" role="tooltip" hidden><p class="tip__title">Wine Quality Classification</p><p class="tip__date">Apr 2026 – May 2026</p><p class="tip__kind">Machine learning study</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>Multiclass target</li><li>Nine classifier variants</li><li>Majority-voting ensemble</li></ul></div>
+            </div>
+          </li>
+          <li class="more__card">
+            <h3 class="more__title">ANFIS vs Classical Machine Learning</h3>
+            <p class="more__date">Oct 2025 – Dec 2025</p>
+            <p class="more__tagline">A model that can be read out loud</p>
+            <div class="more__actions">
+              <a class="project-show" href="/projects/anfis-vs-classical-machine-learning/">Show<span class="visually-hidden"> ANFIS vs Classical Machine Learning</span></a>
+              <button class="tip-btn" type="button" aria-label="About ANFIS vs Classical Machine Learning" aria-describedby="tip-anfis-vs-classical-machine-learning"><span aria-hidden="true">i</span></button>
+              <div class="tip" id="tip-anfis-vs-classical-machine-learning" role="tooltip" hidden><p class="tip__title">ANFIS vs Classical Machine Learning</p><p class="tip__date">Oct 2025 – Dec 2025</p><p class="tip__kind">Machine learning comparison study</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>ANFIS implemented, not imported</li><li>Rules exported as JSON</li><li>Membership functions plotted</li></ul></div>
+            </div>
+          </li>
+          <li class="more__card">
+            <h3 class="more__title">IT Help Desk</h3>
+            <p class="more__date">Oct 2025 – Nov 2025</p>
+            <p class="more__tagline">Modern IT Help Desk Ticketing System</p>
+            <div class="more__actions">
+              <a class="project-show" href="/projects/it-help-desk/">Show<span class="visually-hidden"> IT Help Desk</span></a>
+              <button class="tip-btn" type="button" aria-label="About IT Help Desk" aria-describedby="tip-it-help-desk"><span aria-hidden="true">i</span></button>
+              <div class="tip" id="tip-it-help-desk" role="tooltip" hidden><p class="tip__title">IT Help Desk</p><p class="tip__date">Oct 2025 – Nov 2025</p><p class="tip__kind">Full-stack ticketing system</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>Full CRUD Operations</li><li>Assignment System</li><li>Seven Ticket Statuses</li></ul></div>
+            </div>
+          </li>
+          <li class="more__card">
+            <h3 class="more__title">TaskApp</h3>
+            <p class="more__date">Mar 2025 – Jun 2025</p>
+            <p class="more__tagline">Four roles, four applications</p>
+            <div class="more__actions">
+              <a class="project-show" href="/projects/taskapp/">Show<span class="visually-hidden"> TaskApp</span></a>
+              <button class="tip-btn" type="button" aria-label="About TaskApp" aria-describedby="tip-taskapp"><span aria-hidden="true">i</span></button>
+              <div class="tip" id="tip-taskapp" role="tooltip" hidden><p class="tip__title">TaskApp</p><p class="tip__date">Mar 2025 – Jun 2025</p><p class="tip__kind">JavaFX desktop application</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>A separate interface per role</li><li>Tasks with a history</li><li>Projects, teams and members as real relations</li></ul></div>
+            </div>
+          </li>
+          <li class="more__card">
+            <h3 class="more__title">DataFusion</h3>
+            <p class="more__date">Mar 2025 – May 2025</p>
+            <p class="more__tagline">A CSV workbench that runs on the desktop</p>
+            <div class="more__actions">
+              <a class="project-show" href="/projects/datafusion/">Show<span class="visually-hidden"> DataFusion</span></a>
+              <button class="tip-btn" type="button" aria-label="About DataFusion" aria-describedby="tip-datafusion"><span aria-hidden="true">i</span></button>
+              <div class="tip" id="tip-datafusion" role="tooltip" hidden><p class="tip__title">DataFusion</p><p class="tip__date">Mar 2025 – May 2025</p><p class="tip__kind">Python desktop application for data preparation</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>Undo is a first-class button</li><li>Descriptive statistics on demand</li><li>Both correlation matrices, side by side</li></ul></div>
+            </div>
+          </li>
+          <li class="more__card">
+            <h3 class="more__title">Shop</h3>
+            <p class="more__date">Mar 2025</p>
+            <p class="more__tagline">The same shop, without a backend</p>
+            <div class="more__actions">
+              <a class="project-show" href="/projects/shop/">Show<span class="visually-hidden"> Shop</span></a>
+              <button class="tip-btn" type="button" aria-label="About Shop" aria-describedby="tip-shop"><span aria-hidden="true">i</span></button>
+              <div class="tip" id="tip-shop" role="tooltip" hidden><p class="tip__title">Shop</p><p class="tip__date">Mar 2025</p><p class="tip__kind">Serverless Vue and Firestore shop</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>No backend to run</li><li>The dataset ships with the code</li><li>A basket per account</li></ul></div>
+            </div>
+          </li>
+          <li class="more__card">
+            <h3 class="more__title">Employee Directory</h3>
+            <p class="more__date">Feb 2025</p>
+            <p class="more__tagline">300 000 employees, one query at a time</p>
+            <div class="more__actions">
+              <a class="project-show" href="/projects/employee-directory/">Show<span class="visually-hidden"> Employee Directory</span></a>
+              <button class="tip-btn" type="button" aria-label="About Employee Directory" aria-describedby="tip-employee-directory"><span aria-hidden="true">i</span></button>
+              <div class="tip" id="tip-employee-directory" role="tooltip" hidden><p class="tip__title">Employee Directory</p><p class="tip__date">Feb 2025</p><p class="tip__kind">Laravel data browser</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>Filters that compose</li><li>Exports match the screen</li><li>One person, their whole history</li></ul></div>
+            </div>
+          </li>
+          <li class="more__card">
+            <h3 class="more__title">Shop App</h3>
+            <p class="more__date">Feb 2025</p>
+            <p class="more__tagline">A basket that survives the browser</p>
+            <div class="more__actions">
+              <a class="project-show" href="/projects/shop-app/">Show<span class="visually-hidden"> Shop App</span></a>
+              <button class="tip-btn" type="button" aria-label="About Shop App" aria-describedby="tip-shop-app"><span aria-hidden="true">i</span></button>
+              <div class="tip" id="tip-shop-app" role="tooltip" hidden><p class="tip__title">Shop App</p><p class="tip__date">Feb 2025</p><p class="tip__kind">Full-stack Laravel and Vue shop</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>The basket is a table, not browser state</li><li>Checkout writes the paperwork</li><li>Browse by category or by brand</li></ul></div>
+            </div>
+          </li>
+          <li class="more__card">
+            <h3 class="more__title">WiFiDirect File Transfer</h3>
+            <p class="more__date">Nov 2024 – Jan 2025</p>
+            <p class="more__tagline">Two phones, no network</p>
+            <div class="more__actions">
+              <a class="project-show" href="/projects/wifidirect-file-transfer/">Show<span class="visually-hidden"> WiFiDirect File Transfer</span></a>
+              <button class="tip-btn" type="button" aria-label="About WiFiDirect File Transfer" aria-describedby="tip-wifidirect-file-transfer"><span aria-hidden="true">i</span></button>
+              <div class="tip" id="tip-wifidirect-file-transfer" role="tooltip" hidden><p class="tip__title">WiFiDirect File Transfer</p><p class="tip__date">Nov 2024 – Jan 2025</p><p class="tip__kind">Android application</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>Peer-to-peer, not cloud</li><li>Sender and receiver are separate screens</li><li>Transfer history</li></ul></div>
+            </div>
+          </li>
+          <li class="more__card">
+            <h3 class="more__title">dawidolko.pl</h3>
+            <p class="more__date">Jan 2023 – Dec 2024</p>
+            <p class="more__tagline">Multi-page personal website built from scratch</p>
+            <div class="more__actions">
+              <a class="project-show" href="/projects/dawidolko-pl/">Show<span class="visually-hidden"> dawidolko.pl</span></a>
+              <button class="tip-btn" type="button" aria-label="About dawidolko.pl" aria-describedby="tip-dawidolko-pl"><span aria-hidden="true">i</span></button>
+              <div class="tip" id="tip-dawidolko-pl" role="tooltip" hidden><p class="tip__title">dawidolko.pl</p><p class="tip__date">Jan 2023 – Dec 2024</p><p class="tip__kind">Personal website without a framework</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>Multi-page structure</li><li>Modular SASS architecture</li><li>Responsive image pipeline</li></ul></div>
+            </div>
+          </li>
+          <li class="more__card">
+            <h3 class="more__title">Language Courses</h3>
+            <p class="more__date">May 2024 – Jun 2024</p>
+            <p class="more__tagline">Enrolment, not just a catalogue</p>
+            <div class="more__actions">
+              <a class="project-show" href="/projects/language-courses/">Show<span class="visually-hidden"> Language Courses</span></a>
+              <button class="tip-btn" type="button" aria-label="About Language Courses" aria-describedby="tip-language-courses"><span aria-hidden="true">i</span></button>
+              <div class="tip" id="tip-language-courses" role="tooltip" hidden><p class="tip__title">Language Courses</p><p class="tip__date">May 2024 – Jun 2024</p><p class="tip__kind">Laravel course enrolment platform</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>A basket that produces enrolments</li><li>A date chosen at the point of buying</li><li>Roles enforced by middleware</li></ul></div>
+            </div>
+          </li>
+          <li class="more__card">
+            <h3 class="more__title">RentalVOD</h3>
+            <p class="more__date">Apr 2024 – May 2024</p>
+            <p class="more__tagline">Rules the admin can rewrite</p>
+            <div class="more__actions">
+              <a class="project-show" href="/projects/rentalvod/">Show<span class="visually-hidden"> RentalVOD</span></a>
+              <button class="tip-btn" type="button" aria-label="About RentalVOD" aria-describedby="tip-rentalvod"><span aria-hidden="true">i</span></button>
+              <div class="tip" id="tip-rentalvod" role="tooltip" hidden><p class="tip__title">RentalVOD</p><p class="tip__date">Apr 2024 – May 2024</p><p class="tip__kind">Laravel film rental platform</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>An editable recommendation rule</li><li>Rentals, not purchases</li><li>Loyalty points and referral codes</li></ul></div>
+            </div>
+          </li>
+          <li class="more__card">
+            <h3 class="more__title">ATM Simulator</h3>
+            <p class="more__date">Dec 2023 – Jan 2024</p>
+            <p class="more__tagline">A cash machine with a real ledger</p>
+            <div class="more__actions">
+              <a class="project-show" href="/projects/atm-simulator/">Show<span class="visually-hidden"> ATM Simulator</span></a>
+              <button class="tip-btn" type="button" aria-label="About ATM Simulator" aria-describedby="tip-atm-simulator"><span aria-hidden="true">i</span></button>
+              <div class="tip" id="tip-atm-simulator" role="tooltip" hidden><p class="tip__title">ATM Simulator</p><p class="tip__date">Dec 2023 – Jan 2024</p><p class="tip__kind">Java desktop simulator</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>State in the database, not in the process</li><li>A PIN gate with card selection</li><li>Four operations, each its own window</li></ul></div>
+            </div>
+          </li>
+          <li class="more__card">
+            <h3 class="more__title">Deepin Desktop Portfolio</h3>
+            <p class="more__date">Jun 2023</p>
+            <p class="more__tagline">A desktop with a blog inside it</p>
+            <div class="more__actions">
+              <a class="project-show" href="/projects/deepin-desktop-portfolio/">Show<span class="visually-hidden"> Deepin Desktop Portfolio</span></a>
+              <button class="tip-btn" type="button" aria-label="About Deepin Desktop Portfolio" aria-describedby="tip-deepin-desktop-portfolio"><span aria-hidden="true">i</span></button>
+              <div class="tip" id="tip-deepin-desktop-portfolio" role="tooltip" hidden><p class="tip__title">Deepin Desktop Portfolio</p><p class="tip__date">Jun 2023</p><p class="tip__kind">Portfolio shaped like a Deepin desktop</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>A blog that lives in a window</li><li>A toy terminal</li><li>A music player</li></ul></div>
+            </div>
+          </li>
+          <li class="more__card">
+            <h3 class="more__title">Website Templates</h3>
+            <p class="more__date">Jul 2023</p>
+            <p class="more__tagline">170 templates, all of them openable</p>
+            <div class="more__actions">
+              <a class="project-show" href="/projects/website-templates/">Show<span class="visually-hidden"> Website Templates</span></a>
+              <button class="tip-btn" type="button" aria-label="About Website Templates" aria-describedby="tip-website-templates"><span aria-hidden="true">i</span></button>
+              <div class="tip" id="tip-website-templates" role="tooltip" hidden><p class="tip__title">Website Templates</p><p class="tip__date">Jul 2023</p><p class="tip__kind">Collection of HTML templates</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>Every template previewable</li><li>Complete sites, not fragments</li><li>Responsive throughout</li></ul></div>
+            </div>
+          </li>
+          <li class="more__card">
+            <h3 class="more__title">GitHub Achievements</h3>
+            <p class="more__date">Jul 2023</p>
+            <p class="more__tagline">Every badge, with the numbers behind it</p>
+            <div class="more__actions">
+              <a class="project-show" href="/projects/github-achievements/">Show<span class="visually-hidden"> GitHub Achievements</span></a>
+              <button class="tip-btn" type="button" aria-label="About GitHub Achievements" aria-describedby="tip-github-achievements"><span aria-hidden="true">i</span></button>
+              <div class="tip" id="tip-github-achievements" role="tooltip" hidden><p class="tip__title">GitHub Achievements</p><p class="tip__date">Jul 2023</p><p class="tip__kind">Reference site for GitHub badges</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>Every achievement with its thresholds</li><li>Honest about the unknowns</li><li>Skin-tone variants</li></ul></div>
+            </div>
+          </li>
+          <li class="more__card">
+            <h3 class="more__title">Portfolio</h3>
+            <p class="more__date">Feb 2026</p>
+            <p class="more__tagline">Personal portfolio website of Dawid Olko</p>
+            <div class="more__actions">
+              <a class="project-show" href="/projects/portfolio/">Show<span class="visually-hidden"> Portfolio</span></a>
+              <button class="tip-btn" type="button" aria-label="About Portfolio" aria-describedby="tip-portfolio"><span aria-hidden="true">i</span></button>
+              <div class="tip" id="tip-portfolio" role="tooltip" hidden><p class="tip__title">Portfolio</p><p class="tip__date">Feb 2026</p><p class="tip__kind">React personal portfolio</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>Modern UI</li><li>Responsive Design</li><li>Project Showcase</li></ul></div>
+            </div>
+          </li>
+          <li class="more__card">
+            <h3 class="more__title">WordPress Cinema</h3>
+            <p class="more__date">Feb 2025</p>
+            <p class="more__tagline">A cinema in two containers</p>
+            <div class="more__actions">
+              <a class="project-show" href="/projects/wordpress-cinema/">Show<span class="visually-hidden"> WordPress Cinema</span></a>
+              <button class="tip-btn" type="button" aria-label="About WordPress Cinema" aria-describedby="tip-wordpress-cinema"><span aria-hidden="true">i</span></button>
+              <div class="tip" id="tip-wordpress-cinema" role="tooltip" hidden><p class="tip__title">WordPress Cinema</p><p class="tip__date">Feb 2025</p><p class="tip__kind">WordPress site run in Docker</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>One command from nothing to a running site</li><li>wp-content in git, core in the image</li><li>A custom theme</li></ul></div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- more-projects:end -->
+
       <div class="container1">
-        <div class="card move">
+        <div class="card move" data-project="ubuntu-desktop-portfolio">
           <div class="face face1">
+            <button class="tip-btn" type="button" aria-label="About Ubuntu Desktop Portfolio" aria-describedby="tip-ubuntu-desktop-portfolio"><span aria-hidden="true">i</span></button>
+            <div class="tip" id="tip-ubuntu-desktop-portfolio" role="tooltip" hidden><p class="tip__title">Ubuntu Desktop Portfolio</p><p class="tip__date">Jul 2023</p><p class="tip__kind">Portfolio shaped like an Ubuntu desktop</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>Applications defined in one config</li><li>A GNOME dock and window behaviour</li><li>Static export</li></ul></div>
             <div class="content">
               <i class="fa-brands fa-ubuntu"></i>
-              <h3>Simulaing Ubuntu system's GUI</h3>
+              <h3>Simulating Ubuntu system's GUI</h3>
             </div>
           </div>
           <div class="face face2">
@@ -894,18 +1142,21 @@
                 author's projects and experience in an attractive way, a modern link with electric 
                 navigation.
               </p>
-              <a href="https://ubuntu.dawidolko.pl/" type="button"
-                >Read More<span class="visually-hidden"> about Simulaing Ubuntu system's GUI</span></a
+              <a href="https://ubuntu.dawidolko.pl/"
+                >Read More<span class="visually-hidden"> about Simulating Ubuntu system's GUI</span></a
               >
+              <a class="project-show" href="/projects/ubuntu-desktop-portfolio/">Show<span class="visually-hidden"> Ubuntu Desktop Portfolio</span></a>
             </div>
           </div>
         </div>
 
-        <div class="card move">
+        <div class="card move" data-project="macos-desktop-portfolio">
           <div class="face face1">
+            <button class="tip-btn" type="button" aria-label="About macOS Desktop Portfolio" aria-describedby="tip-macos-desktop-portfolio"><span aria-hidden="true">i</span></button>
+            <div class="tip" id="tip-macos-desktop-portfolio" role="tooltip" hidden><p class="tip__title">macOS Desktop Portfolio</p><p class="tip__date">Jun 2023</p><p class="tip__kind">Portfolio shaped like a macOS desktop</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>A dock that magnifies</li><li>Launchpad and window management</li><li>A real markdown editor</li></ul></div>
             <div class="content">
               <i class="fa-brands fa-apple"></i>
-              <h3>Simulaing Macos system's GUI</h3>
+              <h3>Simulating macOS system's GUI</h3>
             </div>
           </div>
           <div class="face face2">
@@ -915,18 +1166,21 @@
                 created using React, UnoCSS, TypeScript and Vite. Thanks to a faithful simulation
                  of the appearance of the macOS system.
               </p>
-              <a href="https://macos.dawidolko.pl/" type="button"
-                >Read More<span class="visually-hidden"> about Simulaing Macos system's GUI</span></a
+              <a href="https://macos.dawidolko.pl/"
+                >Read More<span class="visually-hidden"> about Simulating macOS system's GUI</span></a
               >
+              <a class="project-show" href="/projects/macos-desktop-portfolio/">Show<span class="visually-hidden"> macOS Desktop Portfolio</span></a>
             </div>
           </div>
         </div>
 
-        <div class="card move">
+        <div class="card move" data-project="windows-desktop-portfolio">
           <div class="face face1">
+            <button class="tip-btn" type="button" aria-label="About Windows Desktop Portfolio" aria-describedby="tip-windows-desktop-portfolio"><span aria-hidden="true">i</span></button>
+            <div class="tip" id="tip-windows-desktop-portfolio" role="tooltip" hidden><p class="tip__title">Windows Desktop Portfolio</p><p class="tip__date">Apr 2024</p><p class="tip__kind">Portfolio shaped like a Windows desktop</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>Windows that behave like windows</li><li>A working start menu</li><li>Fluent UI for the controls</li></ul></div>
             <div class="content">
               <i class="fab fa-windows"></i>
-              <h3>Simulaing Windows system's GUI</h3>
+              <h3>Simulating Windows system's GUI</h3>
             </div>
           </div>
           <div class="face face2">
@@ -936,9 +1190,10 @@
                 interactively showcase your projects and experience. It was created using JavaScript, React and 
                 other modern technologies.
               </p>
-              <a href="https://windows.dawidolko.pl/" type="button"
-                >Read More<span class="visually-hidden"> about Simulaing Windows system's GUI</span></a
+              <a href="https://windows.dawidolko.pl/"
+                >Read More<span class="visually-hidden"> about Simulating Windows system's GUI</span></a
               >
+              <a class="project-show" href="/projects/windows-desktop-portfolio/">Show<span class="visually-hidden"> Windows Desktop Portfolio</span></a>
             </div>
           </div>
         </div>
@@ -952,21 +1207,21 @@
           Rights Reserved
         </p>
         <div class="footer__icons">
-          <a href="https://www.instagram.com/dawid_olko/" target="_blank" rel="noopener" aria-label="Instagram profile"><i aria-hidden="true" class="footer__icon fa-brands fa-instagram"></i
+          <a href="https://www.instagram.com/dawid_olko/" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile"><i aria-hidden="true" class="footer__icon fa-brands fa-instagram"></i
           ></a>
-          <a href="https://github.com/dawidolko" target="_blank" rel="noopener"
+          <a href="https://github.com/dawidolko" target="_blank" rel="noopener noreferrer"
              aria-label="GitHub profile"><i aria-hidden="true" class="footer__icon fa-brands fa-github"></i
           ></a>
-          <a href="https://www.facebook.com/olkodawid/" target="_blank" rel="noopener"
+          <a href="https://www.facebook.com/olkodawid/" target="_blank" rel="noopener noreferrer"
              aria-label="Facebook profile"><i aria-hidden="true" class="footer__icon fa-brands fa-square-facebook"></i
           ></a>
-          <a href="https://www.linkedin.com/in/dawidolko/" target="_blank" rel="noopener"
+          <a href="https://www.linkedin.com/in/dawidolko/" target="_blank" rel="noopener noreferrer"
              aria-label="LinkedIn profile"><i aria-hidden="true" class="footer__icon fa-brands fa-linkedin"></i
           ></a>
-          <a href="https://www.youtube.com/@dawid_olko" target="_blank" rel="noopener"
+          <a href="https://www.youtube.com/@dawid_olko" target="_blank" rel="noopener noreferrer"
              aria-label="YouTube profile"><i aria-hidden="true" class="footer__icon fa-brands fa-youtube"></i
           ></a>
-          <a href="https://www.tiktok.com/@dawid_olko" target="_blank" rel="noopener"
+          <a href="https://www.tiktok.com/@dawid_olko" target="_blank" rel="noopener noreferrer"
              aria-label="TikTok profile"><i aria-hidden="true" class="footer__icon fa-brands fa-tiktok"></i
           ></a>
         </div>
@@ -975,5 +1230,6 @@
     <script src="src/js/vendor/typed.umd.js" defer></script>
     <script src="src/js/contentProjects.js" defer></script>
     <script src="src/js/index.js" defer></script>
+    <script src="src/js/tip.js" defer></script>
   </body>
 </html>

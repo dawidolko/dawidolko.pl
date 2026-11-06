@@ -1,0 +1,1377 @@
+[
+  {
+    "repo": "",
+    "slug": "skribly",
+    "title": "Skribly",
+    "start": "Oct 2026",
+    "end": "present",
+    "dateSource": "user",
+    "kind": "Developer tools for AI coding agents",
+    "tagline": "From a task to an approved commit",
+    "summary": "Skribly is a set of three tools for people who build software with AI coding agents. Skribly Tracker holds the tasks, Skribly Agent starts AI agents on those tasks and shows what each one is doing, and agent-skills gives every agent the same rules for testing, reviewing and committing. Each app does one job and can be used alone; together they connect the task, the agent and the review, so nothing gets lost between them. Co-created with Piotr Smoła as a non-commercial project.",
+    "shows": [
+      "Task tracking people and agents can share",
+      "Agents you can watch while they work",
+      "One library of rules for every agent",
+      "You read every change before it goes in",
+      "Work stays on your own computer and server"
+    ],
+    "stack": [
+      "Electron",
+      "Laravel",
+      "TypeScript"
+    ],
+    "live": "https://skribly.pl",
+    "video": "",
+    "private": true,
+    "credit": "Piotr Smoła"
+  },
+  {
+    "repo": "cv.dawidolko.pl",
+    "slug": "cv",
+    "title": "CV",
+    "start": "Sep 2026",
+    "end": "present",
+    "dateSource": "linkedin",
+    "kind": "Static résumé website",
+    "tagline": "The page is the source, the PDF is the export",
+    "summary": "CV is my curriculum vitae as a website, in Polish and English. The page is the original; the PDFs in this repository are printed from it. One layout means the two versions cannot drift apart, and the print stylesheet is tuned so the browser's own Save as PDF produces exactly the single A4 sheet that is checked in.",
+    "shows": [
+      "One layout, two languages",
+      "The print output is the deliverable",
+      "Light palette forced when printing",
+      "No JavaScript at all",
+      "Accessible by construction"
+    ],
+    "stack": [
+      "HTML5",
+      "CSS3",
+      "No JavaScript"
+    ],
+    "live": "https://cv.dawidolko.pl",
+    "video": "",
+    "private": false
+  },
+  {
+    "repo": "ZbudujKompa",
+    "slug": "zbudujkompa",
+    "title": "ZbudujKompa",
+    "start": "Jul 2026",
+    "end": "present",
+    "dateSource": "linkedin",
+    "kind": "Bilingual reference website for PC builders",
+    "tagline": "Build your PC without guessing",
+    "summary": "ZbudujKompa is a reference site for anyone assembling a computer, published in Polish and English. It covers CPU platforms and sockets, cooling classes, a catalogue of real components, complete reference builds and step-by-step assembly guides — including installing Windows and Linux, which most build guides skip entirely. Each recommendation ships with the reasoning behind it rather than just the verdict.",
+    "shows": [
+      "Configurator",
+      "Components",
+      "Platforms",
+      "Cooling",
+      "Guides"
+    ],
+    "stack": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "live": "https://zbudujkompa.dawidolko.pl/pl",
+    "video": "",
+    "private": false
+  },
+  {
+    "repo": "",
+    "slug": "mp-industries",
+    "title": "MP Industries",
+    "start": "Jun 2025",
+    "end": "present",
+    "dateSource": "linkedin",
+    "kind": "Laravel company website",
+    "tagline": "Four businesses, one website",
+    "summary": "MP Industries is a company website for a business that runs in four directions at once: CNC machinery, LPG installations, dog breeding and natural honey. Rather than flattening those into one generic page, each branch gets the model it actually needs — machines have categories and specifications, dogs have breeds and litters with breeding documents, honey has products and categories.",
+    "shows": [
+      "A real model per branch",
+      "Everything editable in Filament",
+      "Page content is data",
+      "Settings with an audit trail",
+      "Media through Spatie"
+    ],
+    "stack": [
+      "Laravel",
+      "PHP",
+      "Filament",
+      "Tailwind CSS",
+      "Alpine.js",
+      "MySQL"
+    ],
+    "live": "https://mp-industries.pl",
+    "video": "",
+    "private": true
+  },
+  {
+    "repo": "CVForge-Platform",
+    "slug": "cvforge",
+    "title": "CVForge",
+    "start": "Aug 2026",
+    "end": "Sep 2026",
+    "dateSource": "linkedin",
+    "kind": "CV builder that runs in the browser",
+    "tagline": "The preview is the print",
+    "summary": "CVForge turns a form into a finished CV. Fill in your details, choose one of six templates, and print an A4 sheet that looks exactly like the preview. A separate tab reviews the document the way an applicant tracking system would, and tells you what it found.",
+    "shows": [
+      "The preview is the printed sheet",
+      "Open the finished CV in its own tab",
+      "Import an existing CV from a PDF",
+      "An ATS check that explains itself",
+      "Six templates, one set of content"
+    ],
+    "stack": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "live": "https://cvforge.dawidolko.pl",
+    "video": "",
+    "private": false
+  },
+  {
+    "repo": "ReelCut-Platform",
+    "slug": "reelcut",
+    "title": "ReelCut",
+    "start": "Aug 2026",
+    "end": "Sep 2026",
+    "dateSource": "linkedin",
+    "kind": "Video editor that runs in the browser",
+    "tagline": "The footage never leaves the tab",
+    "summary": "ReelCut is a video editor that runs inside a browser tab. Load a clip from disk, split it on the timeline, switch off the parts you do not want, crop it to the shape the platform wants, correct picture and sound, and render a finished file you can download straight away.",
+    "shows": [
+      "Several clips on one timeline",
+      "Delete, not just disable",
+      "Nothing is uploaded",
+      "Non-destructive cutting",
+      "A render that actually produces a file"
+    ],
+    "stack": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "live": "https://reelcut.dawidolko.pl",
+    "video": "",
+    "private": false
+  },
+  {
+    "repo": "NeoBank-Platform-Nuxt",
+    "slug": "neobank",
+    "title": "NeoBank",
+    "start": "Jul 2026",
+    "end": "Aug 2026",
+    "dateSource": "linkedin",
+    "kind": "Full-stack retail banking system",
+    "tagline": "Fullstack Retail Banking Platform",
+    "summary": "NeoBank is a working retail banking system built from scratch with Nuxt 4, TypeScript, Prisma and PostgreSQL — not a UI mock-up. Balances are derived from an immutable double-entry ledger, and money can only move through transactions that are guaranteed to balance. Customers hold multi-currency accounts with checksum-correct IBANs, send internal and external transfers, schedule standing orders and export statements; administrators manage users and review an append-only audit trail.",
+    "shows": [
+      "Multi-Currency Accounts",
+      "Double-Entry Ledger",
+      "Instant Internal Transfers",
+      "Overdrafts",
+      "Per-Transaction Ceilings"
+    ],
+    "stack": [
+      "Nuxt",
+      "TypeScript",
+      "Prisma",
+      "PostgreSQL",
+      "Vitest"
+    ],
+    "live": "https://neobank.dawidolko.pl",
+    "video": "",
+    "private": false
+  },
+  {
+    "repo": "BodyKit-Shop-Frontend-NextJS",
+    "slug": "bodykit",
+    "title": "BodyKit",
+    "start": "Jun 2026",
+    "end": "Jul 2026",
+    "dateSource": "linkedin",
+    "kind": "Front-end web shop with static export",
+    "tagline": "A front-end shop for car body kits and styling parts",
+    "summary": "BodyKit Shop is a complete front-end store selling body modification parts: front splitters, spoilers, diffusers, wheels and carbon fibre components. There is no backend — the whole thing compiles to static HTML that can be hosted on GitHub Pages, any CDN, or behind nginx in a container.",
+    "shows": [
+      "Bilingual",
+      "Full catalog",
+      "Cart & checkout",
+      "Themes",
+      "Accessibility"
+    ],
+    "stack": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "live": "https://bodykit.dawidolko.pl",
+    "video": "",
+    "private": false
+  },
+  {
+    "repo": "EzPace-Platform-NextJS",
+    "slug": "ezpace",
+    "title": "EzPace",
+    "start": "Jun 2026",
+    "end": "Jul 2026",
+    "dateSource": "linkedin",
+    "kind": "Running coach product site",
+    "tagline": "A plan counted back from the race date, not bolted onto it",
+    "summary": "EzPace is a product site for a running coach. Three plans, a calculator that actually computes, the coaching process and real-looking results. The premise is that a training plan is derived from the race date rather than appended to it, and every section on the page argues that point.",
+    "shows": [
+      "A pace calculator that is not a mock-up",
+      "Splits that include the leftover distance",
+      "Three plans, one price each",
+      "Results with real numbers",
+      "CSS-only FAQ"
+    ],
+    "stack": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "live": "https://ezpace.dawidolko.pl",
+    "video": "",
+    "private": false
+  },
+  {
+    "repo": "EzScout-Platform-NextJS",
+    "slug": "ezscout",
+    "title": "EzScout",
+    "start": "Jun 2026",
+    "end": "Jul 2026",
+    "dateSource": "linkedin",
+    "kind": "Football scouting product site",
+    "tagline": "A report that says whether he is worth buying",
+    "summary": "EzScout is a product site for a football scouting service: packages, process, results and an enquiry form. The premise is deliberately narrow — data collected by hand, minute by minute, and conclusions written by the person who did the watching. Every section on the page exists to support that one claim.",
+    "shows": [
+      "Four packages",
+      "A sample report card in the hero",
+      "Honest results section",
+      "CSS-only FAQ",
+      "Form that admits what it is"
+    ],
+    "stack": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "live": "https://ezscout.dawidolko.pl",
+    "video": "",
+    "private": false
+  },
+  {
+    "repo": "Airline-Passenger-Classifier-Python-MLP-Classifier-Python",
+    "slug": "airline-passenger-satisfaction",
+    "title": "Airline Passenger Satisfaction",
+    "start": "May 2026",
+    "end": "Jun 2026",
+    "dateSource": "linkedin",
+    "kind": "Machine learning classifier",
+    "tagline": "Multiclass flight-class prediction with a PyTorch MLP built from scratch",
+    "summary": "A multiclass project that predicts the flight class (Business, Eco or Eco Plus) on the Airline Passenger Satisfaction dataset from Kaggle. The main model is a multilayer perceptron built from scratch in PyTorch, with a scikit-learn Random Forest as the reference. Preprocessing is fitted on the training split alone, hyperparameters come from an 18-configuration grid search on a dedicated validation split, and the test split is touched exactly once at the end.",
+    "shows": [
+      "MLP from scratch in PyTorch",
+      "18-configuration grid search",
+      "Random Forest reference",
+      "No data leakage by construction",
+      "Minority-class handling without resampling"
+    ],
+    "stack": [
+      "Python",
+      "PyTorch",
+      "scikit-learn",
+      "pandas",
+      "Streamlit"
+    ],
+    "live": "",
+    "video": "",
+    "private": false
+  },
+  {
+    "repo": "CyberAttack-Classifier-Python",
+    "slug": "cyber-security-attacks-classifier",
+    "title": "Cyber Security Attacks Classifier",
+    "start": "Apr 2026",
+    "end": "Jun 2026",
+    "dateSource": "linkedin",
+    "kind": "Machine learning classifier",
+    "tagline": "End-to-end multiclass classification of network attacks",
+    "summary": "A machine learning project that classifies network security events into three attack types — DDoS, Malware and Intrusion — using the Cyber Security Attacks dataset from Kaggle. The primary model is a Random Forest; Gradient Boosting and k-NN are trained alongside it for comparison. A Streamlit dashboard walks through exploratory analysis, preprocessing, model design, comparison and evaluation.",
+    "shows": [
+      "Balanced three-class target",
+      "Automatic data acquisition",
+      "Full EDA suite",
+      "Documented preprocessing",
+      "Three models compared"
+    ],
+    "stack": [
+      "Python",
+      "scikit-learn",
+      "pandas",
+      "Streamlit",
+      "Kaggle"
+    ],
+    "live": "",
+    "video": "",
+    "private": false
+  },
+  {
+    "repo": "WineQuality-Classifier-Python",
+    "slug": "wine-quality-classification",
+    "title": "Wine Quality Classification",
+    "start": "Apr 2026",
+    "end": "May 2026",
+    "dateSource": "linkedin",
+    "kind": "Machine learning study",
+    "tagline": "Multiclass wine quality classification with leakage-free scikit-learn pipelines",
+    "summary": "An end-to-end machine learning study on the Wine Quality dataset. Nine classifier variants — Decision Tree, k-NN and Random Forest, three hyperparameter settings each — are evaluated with stratified 5-fold cross-validation, alongside a VotingClassifier ensemble that aggregates all nine by majority vote.",
+    "shows": [
+      "Multiclass target",
+      "Nine classifier variants",
+      "Majority-voting ensemble",
+      "Leakage-free by construction",
+      "Two metrics, deliberately"
+    ],
+    "stack": [
+      "Python",
+      "scikit-learn",
+      "pandas",
+      "Plotly",
+      "Streamlit"
+    ],
+    "live": "",
+    "video": "",
+    "private": false
+  },
+  {
+    "repo": "BitRecruit-Platform-NextJS",
+    "slug": "bitrecruit",
+    "title": "BitRecruit",
+    "start": "Feb 2026",
+    "end": "Mar 2026",
+    "dateSource": "linkedin",
+    "kind": "IT job board front end",
+    "tagline": "IT Career Platform",
+    "summary": "BitRecruit is a modern IT job board platform built with Next.js 13, React 18, Mantine UI and Tailwind CSS. It ships with built-in mock data — 48 realistic job offers generated at build time — so the whole application runs client-side with no server required.",
+    "shows": [
+      "Filter offers",
+      "Pagination",
+      "Sorting",
+      "Grid / List view",
+      "Salary display"
+    ],
+    "stack": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Mantine",
+      "Tailwind CSS"
+    ],
+    "live": "https://bitrecruit.dawidolko.pl",
+    "video": "",
+    "private": false
+  },
+  {
+    "repo": "CinemaReserve-Project-Node-Angular",
+    "slug": "cinemareserve",
+    "title": "CinemaReserve",
+    "start": "Jan 2026",
+    "end": "Feb 2026",
+    "dateSource": "linkedin",
+    "kind": "Full-stack cinema booking application",
+    "tagline": "Full-Stack Cinema Seat Reservation Platform",
+    "summary": "CinemaReserve is a full-stack cinema booking application inspired by real-world systems such as Multikino and Helios. Visitors browse the \"Now Showing\" catalogue, pick a screening, choose seats on an interactive colour-coded seat map, and manage their own reservations. Administrators get a Berry-inspired panel covering movies, screenings, halls, users, reservations and site content.",
+    "shows": [
+      "Home",
+      "Movie Detail",
+      "Seat Selection",
+      "My Reservations",
+      "Auth"
+    ],
+    "stack": [
+      "Angular",
+      "TypeScript",
+      "Node.js",
+      "Sequelize",
+      "MySQL",
+      "Tailwind CSS"
+    ],
+    "live": "",
+    "video": "https://youtu.be/7ygXIAm0sFc",
+    "private": false
+  },
+  {
+    "repo": "DevTechBlog-Platform-React",
+    "slug": "devpulse",
+    "title": "DevPulse",
+    "start": "Jan 2026",
+    "end": "Feb 2026",
+    "dateSource": "linkedin",
+    "kind": "Developer blog as a React single-page app",
+    "tagline": "Modern Developer Tech Blog with React & TypeScript",
+    "summary": "DevPulse is a modern developer tech blog built as a single-page React application with TypeScript, Ant Design and Styled Components. It presents practical engineering articles across categories such as React, TypeScript, Node.js, DevOps, System Design, AI & ML, Web Performance and Career.",
+    "shows": [
+      "Blog Post Cards",
+      "Post Detail Pages",
+      "Category System",
+      "Separated Data Layer",
+      "Lazy-Loaded Routing"
+    ],
+    "stack": [
+      "React",
+      "TypeScript",
+      "Ant Design",
+      "Styled Components"
+    ],
+    "live": "https://devtechblog.dawidolko.pl",
+    "video": "",
+    "private": false
+  },
+  {
+    "repo": "MovieVault-Project-SpringBoot-React",
+    "slug": "movievault",
+    "title": "MovieVault",
+    "start": "Jan 2026",
+    "end": "Feb 2026",
+    "dateSource": "linkedin",
+    "kind": "Full-stack movie review platform",
+    "tagline": "Full-Stack Movie Review Platform",
+    "summary": "MovieVault is a full-stack movie review platform inspired by IMDb and Filmweb. Users can browse a catalogue of movies, write and rate reviews, curate a personal watchlist, and explore detailed platform statistics. Critic reviews are weighted differently from regular user reviews, giving the rating system an editorial dimension.",
+    "shows": [
+      "Movie Catalogue",
+      "Filtering & Sorting",
+      "JWT Authentication",
+      "Reviews & Ratings",
+      "Review Likes"
+    ],
+    "stack": [
+      "Java",
+      "Spring Boot",
+      "React",
+      "TypeScript",
+      "MariaDB",
+      "Docker"
+    ],
+    "live": "",
+    "video": "https://youtu.be/ooIoa_PGRzk",
+    "private": false
+  },
+  {
+    "repo": "SmartRecommender-Project-Django-React",
+    "slug": "smartrecommender",
+    "title": "SmartRecommender",
+    "start": "Dec 2024",
+    "end": "Feb 2026",
+    "dateSource": "linkedin",
+    "kind": "Full-stack e-commerce recommendation platform",
+    "tagline": "Full-Stack Product Recommendation Platform",
+    "summary": "SmartRecommender is a full-stack e-commerce platform that delivers personalized product recommendations by combining collaborative filtering, content analysis, association mining, fuzzy logic, sentiment analysis and probabilistic modelling. Every recommendation method is implemented from the ground up on top of NumPy, pandas and scikit-learn rather than pulled in from a ready-made recommender library, which makes the repository as much a study of the algorithms as it is a shop.",
+    "shows": [
+      "Collaborative Filtering",
+      "Content-Based Filtering",
+      "Association Rules",
+      "Fuzzy Search",
+      "Sentiment Analysis"
+    ],
+    "stack": [
+      "Python",
+      "Django",
+      "React",
+      "PostgreSQL",
+      "Docker"
+    ],
+    "live": "https://project.dawidolko.pl",
+    "video": "",
+    "private": false
+  },
+  {
+    "repo": "",
+    "slug": "hirudozdrowie",
+    "title": "HirudoZdrowie",
+    "start": "Jan 2026",
+    "end": "Feb 2026",
+    "dateSource": "linkedin",
+    "kind": "Clinic information website",
+    "tagline": "A clinic site that answers before it sells",
+    "summary": "HirudoZdrowie is the website of a Polish hirudotherapy clinic — treatment with medicinal leeches. Most of it is explanation rather than promotion: what the therapy is, what it is indicated for, what it is contraindicated for, how to prepare, and what the results look like. The contact page and the FAQ are there for the questions the pages do not already answer.",
+    "shows": [
+      "Every route prerendered",
+      "Type-checked before it ships",
+      "Content as typed data",
+      "Meta tags handled per page",
+      "Contraindications given their own page"
+    ],
+    "stack": [
+      "Vue.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Vite",
+      "Pinia"
+    ],
+    "live": "https://hirudozdrowie.com",
+    "video": "",
+    "private": true
+  },
+  {
+    "repo": "WorkStation-Vue-TypeScript",
+    "slug": "workstation",
+    "title": "WorkStation",
+    "start": "Apr 2025",
+    "end": "Jan 2026",
+    "dateSource": "linkedin",
+    "kind": "Interactive hardware setup showcase",
+    "tagline": "Interactive Gaming & Work Setup Showcase with Vue 3 + TypeScript",
+    "summary": "WorkStation is an interactive portfolio for visualizing a complete gaming and productivity workspace. Built with Vue 3, TypeScript and Vite, it breaks a real setup down into six hardware categories — PC, laptop, monitors, peripherals, audio and workspace — each with its own category page, per-component detail page, photo gallery and full technical specifications.",
+    "shows": [
+      "Full Setup Showcase",
+      "Six Hardware Categories",
+      "Detailed Specifications",
+      "Programmatic Routing",
+      "Per-Route SEO"
+    ],
+    "stack": [
+      "Vue",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "Cypress"
+    ],
+    "live": "https://workstation.dawidolko.pl",
+    "video": "",
+    "private": false
+  },
+  {
+    "repo": "Comparison-ANFIS-Classical-Machine-Learning-Models-Python",
+    "slug": "anfis-vs-classical-machine-learning",
+    "title": "ANFIS vs Classical Machine Learning",
+    "start": "Oct 2025",
+    "end": "Dec 2025",
+    "dateSource": "linkedin",
+    "kind": "Machine learning comparison study",
+    "tagline": "A model that can be read out loud",
+    "summary": "ANFIS vs Classical ML puts an Adaptive Neuro-Fuzzy Inference System next to SVM and Random Forest on two real datasets — wine quality (classification) and concrete compressive strength (regression) — and measures them on identical splits with a single seed.",
+    "shows": [
+      "ANFIS implemented, not imported",
+      "Rules exported as JSON",
+      "Membership functions plotted",
+      "Both task types on the same footing",
+      "Scaling inside the pipeline"
+    ],
+    "stack": [
+      "Python",
+      "TensorFlow",
+      "scikit-learn",
+      "pandas",
+      "Streamlit"
+    ],
+    "live": "",
+    "video": "https://youtu.be/O3X3MsWPVi8",
+    "private": false
+  },
+  {
+    "repo": "ITHelpDeskSystem-Project-ASPNetCore-Vue",
+    "slug": "it-help-desk",
+    "title": "IT Help Desk",
+    "start": "Oct 2025",
+    "end": "Nov 2025",
+    "dateSource": "linkedin",
+    "kind": "Full-stack ticketing system",
+    "tagline": "Modern IT Help Desk Ticketing System",
+    "summary": "IT Help Desk System manages technical support requests inside an organisation: an ASP.NET Core 9.0 REST API behind a Vue 3 + TypeScript single-page application, covering the ticket lifecycle, role-based access, search and filtering.",
+    "shows": [
+      "Full CRUD Operations",
+      "Assignment System",
+      "Seven Ticket Statuses",
+      "Four Priority Levels with SLA",
+      "Seven Categories"
+    ],
+    "stack": [
+      "Vue.js",
+      "ASP.NET Core",
+      "MySQL",
+      "TypeScript",
+      "Docker"
+    ],
+    "live": "https://ithelpdesk.dawidolko.pl",
+    "video": "https://youtu.be/CjPaI4beypc",
+    "private": false
+  },
+  {
+    "repo": "TaskApp-JavaFX",
+    "slug": "taskapp",
+    "title": "TaskApp",
+    "start": "Mar 2025",
+    "end": "Jun 2025",
+    "dateSource": "linkedin",
+    "kind": "JavaFX desktop application",
+    "tagline": "Four roles, four applications",
+    "summary": "TaskApp manages projects, teams and tasks for an IT company. An administrator, a manager, a team leader and an employee each sign into the same application and get a different interface: separate FXML trees, separate controllers, separate dashboards. A role does not simply hide buttons — it loads a different view.",
+    "shows": [
+      "A separate interface per role",
+      "Tasks with a history",
+      "Projects, teams and members as real relations",
+      "PDF reports",
+      "Migration and seeder scripts included"
+    ],
+    "stack": [
+      "Java",
+      "JavaFX",
+      "MariaDB",
+      "Maven",
+      "JUnit 5",
+      "iText"
+    ],
+    "live": "",
+    "video": "",
+    "private": false
+  },
+  {
+    "repo": "DataFusion-App-Python",
+    "slug": "datafusion",
+    "title": "DataFusion",
+    "start": "Mar 2025",
+    "end": "May 2025",
+    "dateSource": "linkedin",
+    "kind": "Python desktop application for data preparation",
+    "tagline": "A CSV workbench that runs on the desktop",
+    "summary": "DataFusion is a desktop application for the part of data science that comes before the model: opening a file, finding out what is wrong with it, and fixing it. Load a CSV or one of the two bundled UCI datasets, read the statistics, fill or drop the missing values, encode the categorical columns, scale the numeric ones, and draw the chart that shows whether any of it worked.",
+    "shows": [
+      "Undo is a first-class button",
+      "Descriptive statistics on demand",
+      "Both correlation matrices, side by side",
+      "Missing values handled by strategy, not by hand",
+      "Three encodings for categorical columns"
+    ],
+    "stack": [
+      "Python",
+      "PySimpleGUI",
+      "pandas",
+      "scikit-learn",
+      "Matplotlib"
+    ],
+    "live": "https://datafusion.dawidolko.pl",
+    "video": "",
+    "private": false
+  },
+  {
+    "repo": "FrameVision-Project-HTML-CSS-JS-SASS",
+    "slug": "framevision",
+    "title": "FrameVision",
+    "start": "May 2025",
+    "end": "May 2025",
+    "dateSource": "linkedin",
+    "kind": "Single-page studio website",
+    "tagline": "One page, five sections, no framework",
+    "summary": "FrameVision is a single-page site for a photography studio: opening header, about, services, team and contact. Sections reveal as they enter the viewport, the navigation gains a background once you scroll past the header, a scroll-to-top button appears after 450 pixels, and a booking modal collects a name and a phone number with its own validation.",
+    "shows": [
+      "Reveal animations written by hand",
+      "A navigation that reacts to position",
+      "A burger menu that closes itself",
+      "A booking modal with validation",
+      "A scroll-to-top button that stays out of the way"
+    ],
+    "stack": [
+      "HTML5",
+      "Sass",
+      "JavaScript",
+      "WebP"
+    ],
+    "live": "https://framevision.dawidolko.pl",
+    "video": "",
+    "private": false
+  },
+  {
+    "repo": "Rent-App-Vue",
+    "slug": "rent-app",
+    "title": "Rent App",
+    "start": "Apr 2025",
+    "end": "Apr 2025",
+    "dateSource": "linkedin",
+    "kind": "Vue property search page",
+    "tagline": "Filters that show their work",
+    "summary": "Rent App is the search page of a property developer's site: a list of flats with a filter panel above it. Floor, area and price are range sliders; project, finishing standard and completion deadline are dropdowns. Whatever is active appears as a labelled chip with its own clear button, so the list never quietly hides results behind a filter you forgot you set.",
+    "shows": [
+      "Active filters are visible and individually clearable",
+      "Three range sliders, not six number fields",
+      "A panel that expands",
+      "Flats as cards",
+      "An icon set as files, not a font"
+    ],
+    "stack": [
+      "Vue.js",
+      "Vite",
+      "noUiSlider"
+    ],
+    "live": "https://rent.dawidolko.pl",
+    "video": "",
+    "private": false
+  },
+  {
+    "repo": "Kebab-Project-React",
+    "slug": "kebab",
+    "title": "Kebab",
+    "start": "Mar 2025",
+    "end": "Mar 2025",
+    "dateSource": "linkedin",
+    "kind": "React restaurant ordering page",
+    "tagline": "The cart is in one place",
+    "summary": "Kebab is an ordering page for a kebab restaurant: the menu, a sidebar cart and a checkout preview. The cart lives in a React context with a reducer, because three separate parts of the tree need it at once — the add buttons on each product, the counter in the navbar and the panel that lists what you picked. Passing it down as props would have meant threading state through every layer between them.",
+    "shows": [
+      "One cart, three consumers",
+      "Quantities keyed by product name",
+      "A sidebar, not a separate page",
+      "Menu driven by data",
+      "Styled with styled-components"
+    ],
+    "stack": [
+      "React",
+      "React Router",
+      "styled-components"
+    ],
+    "live": "https://kebab.dawidolko.pl",
+    "video": "",
+    "private": false
+  },
+  {
+    "repo": "Shop-Vue-Firestore-Demo",
+    "slug": "shop",
+    "title": "Shop",
+    "start": "Mar 2025",
+    "end": "Mar 2025",
+    "dateSource": "linkedin",
+    "kind": "Serverless Vue and Firestore shop",
+    "tagline": "The same shop, without a backend",
+    "summary": "Shop — Vue + Firestore is the serverless twin of a classic Laravel storefront. The catalogue, baskets, purchases and checkout details live in Firestore collections; the Vue 3 app reads and writes them directly, and Firebase Authentication decides who may write what. There is no API layer in between, because the security rules are the API layer.",
+    "shows": [
+      "No backend to run",
+      "The dataset ships with the code",
+      "A basket per account",
+      "Checkout keeps its paperwork separate",
+      "Browse by category or brand"
+    ],
+    "stack": [
+      "Vue.js",
+      "Firebase",
+      "Firestore",
+      "Pinia",
+      "Vite"
+    ],
+    "live": "",
+    "video": "https://www.youtube.com/watch?v=WTi2i2wHPt0",
+    "private": false
+  },
+  {
+    "repo": "Employees-List-Project-Laravel",
+    "slug": "employee-directory",
+    "title": "Employee Directory",
+    "start": "Feb 2025",
+    "end": "Feb 2025",
+    "dateSource": "linkedin",
+    "kind": "Laravel data browser",
+    "tagline": "300 000 employees, one query at a time",
+    "summary": "Employee Directory puts a readable interface on the MySQL Employees sample database — the one with six tables, three hundred thousand people and forty years of salary history. It lists them with pagination, narrows the list by department, gender, salary range and employment status, and opens a single person's record with their titles, departments and pay over time.",
+    "shows": [
+      "Filters that compose",
+      "Exports match the screen",
+      "One person, their whole history",
+      "Paginated by design",
+      "A per-employee PDF"
+    ],
+    "stack": [
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "Blade",
+      "dompdf"
+    ],
+    "live": "",
+    "video": "https://youtu.be/IrXowM1RJ0U?si=BhE7ExEXMQ9pChby",
+    "private": false
+  },
+  {
+    "repo": "Layout-Simple-Vue",
+    "slug": "layout-simple",
+    "title": "Layout Simple",
+    "start": "Feb 2025",
+    "end": "Feb 2025",
+    "dateSource": "linkedin",
+    "kind": "Vue landing page built from components",
+    "tagline": "Content lives in files, not in templates",
+    "summary": "Layout Simple is a corporate landing page rebuilt out of nine independent sections: navbar, slider, services, industries, products, news, partner logos, sidebar and footer. Each one is a component with two companions — a data module under src/data and a stylesheet under src/styles — so changing the wording or the figures never means opening a template.",
+    "shows": [
+      "Content as data modules",
+      "One stylesheet per section",
+      "Nine sections that stand alone",
+      "A slider, a logo wall and a news strip",
+      "A sidebar that folds on mobile"
+    ],
+    "stack": [
+      "Vue.js",
+      "Vue CLI",
+      "CSS3"
+    ],
+    "live": "https://simplelayout.dawidolko.pl",
+    "video": "",
+    "private": false
+  },
+  {
+    "repo": "Shop-App-Laravel-Vue",
+    "slug": "shop-app",
+    "title": "Shop App",
+    "start": "Feb 2025",
+    "end": "Feb 2025",
+    "dateSource": "linkedin",
+    "kind": "Full-stack Laravel and Vue shop",
+    "tagline": "A basket that survives the browser",
+    "summary": "Shop App is a full-stack shop. Vue 3 renders the storefront — catalogue, categories, brands, product pages, basket and checkout — and Laravel 11 serves it over a JSON API secured with Sanctum. The basket is a table in the database, tied to the signed-in user, so it is still there on the next device and the next day.",
+    "shows": [
+      "The basket is a table, not browser state",
+      "Checkout writes the paperwork",
+      "Browse by category or by brand",
+      "Search over the catalogue",
+      "Token authentication"
+    ],
+    "stack": [
+      "Laravel",
+      "PHP",
+      "Vue.js",
+      "Pinia",
+      "Vite",
+      "MySQL"
+    ],
+    "live": "",
+    "video": "https://www.youtube.com/watch?v=WTi2i2wHPt0",
+    "private": false
+  },
+  {
+    "repo": "Weather-App-Laravel-React",
+    "slug": "weather-app",
+    "title": "Weather App",
+    "start": "Jan 2025",
+    "end": "Jan 2025",
+    "dateSource": "linkedin",
+    "kind": "Full-stack Laravel and React weather app",
+    "tagline": "Weather that remembers",
+    "summary": "Weather App shows the current weather for Polish cities and keeps every reading it fetches. A logged-in user builds their own list of cities; the backend asks OpenWeatherMap for the conditions, writes the answer into the database and serves the history back, so each city has a chart of where the temperature has actually been — not just where it is right now.",
+    "shows": [
+      "Readings are kept, not discarded",
+      "Your own list of cities",
+      "Search any city in the world",
+      "A five-day forecast beside the current reading",
+      "Token authentication"
+    ],
+    "stack": [
+      "Laravel",
+      "PHP",
+      "React",
+      "Vite",
+      "Sass",
+      "MySQL"
+    ],
+    "live": "",
+    "video": "https://www.youtube.com/watch?v=WTi2i2wHPt0",
+    "private": false
+  },
+  {
+    "repo": "WiFiDirectFileTransfer-Kotlin",
+    "slug": "wifidirect-file-transfer",
+    "title": "WiFiDirect File Transfer",
+    "start": "Nov 2024",
+    "end": "Jan 2025",
+    "dateSource": "linkedin",
+    "kind": "Android application",
+    "tagline": "Two phones, no network",
+    "summary": "WiFiDirect File Transfer moves files straight between two Android devices. Wi-Fi Direct negotiates the link, one device becomes the sender and the other the receiver, and the bytes go over a socket between them. Nothing is uploaded, nothing passes through a server, and the two phones do not need to be on the same network — or on any network at all.",
+    "shows": [
+      "Peer-to-peer, not cloud",
+      "Sender and receiver are separate screens",
+      "Transfer history",
+      "Trusted devices",
+      "Battery awareness"
+    ],
+    "stack": [
+      "Kotlin",
+      "Android",
+      "Gradle",
+      "Jetpack Compose"
+    ],
+    "live": "",
+    "video": "https://www.youtube.com/shorts/CwdRK33g_8U",
+    "private": false
+  },
+  {
+    "repo": "dawidolko.pl",
+    "slug": "dawidolko-pl",
+    "title": "dawidolko.pl",
+    "start": "Jan 2023",
+    "end": "Dec 2024",
+    "dateSource": "linkedin",
+    "kind": "Personal website without a framework",
+    "tagline": "Multi-page personal website built from scratch",
+    "summary": "dawidolko.pl is my personal website and the central hub of my work. It is a static, multi-page site written without a frontend framework: every page is semantic HTML, styles are authored in modular SASS, and interactivity is plain ES modules bundled with webpack. The site collects my projects, academic path, hobbies and a photo blog in one place.",
+    "shows": [
+      "Multi-page structure",
+      "Modular SASS architecture",
+      "Responsive image pipeline",
+      "SEO foundation",
+      "Accessible by default"
+    ],
+    "stack": [
+      "HTML5",
+      "SASS",
+      "JavaScript",
+      "webpack"
+    ],
+    "live": "https://dawidolko.pl",
+    "video": "",
+    "private": false
+  },
+  {
+    "repo": "LanguageCourses-Project-Laravel",
+    "slug": "language-courses",
+    "title": "Language Courses",
+    "start": "May 2024",
+    "end": "Jun 2024",
+    "dateSource": "linkedin",
+    "kind": "Laravel course enrolment platform",
+    "tagline": "Enrolment, not just a catalogue",
+    "summary": "Language Courses is a course enrolment platform. Visitors browse the catalogue, open a course to see its lessons and teacher, and add it to a basket with the date they want. Checking out turns the basket into enrolments — real rows against the user, each with a lesson date and a status — rather than an order that somebody has to type into a system afterwards.",
+    "shows": [
+      "A basket that produces enrolments",
+      "A date chosen at the point of buying",
+      "Roles enforced by middleware",
+      "An admin area that covers the whole model",
+      "Accounts with a profile"
+    ],
+    "stack": [
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "Blade",
+      "Docker"
+    ],
+    "live": "",
+    "video": "https://youtu.be/Rjnw00AN1Xw",
+    "private": false
+  },
+  {
+    "repo": "TechByte-Project-Laravel",
+    "slug": "techbyte",
+    "title": "TechByte",
+    "start": "Mar 2024",
+    "end": "May 2024",
+    "dateSource": "linkedin",
+    "kind": "Laravel computer store on Oracle",
+    "tagline": "A shop that runs on Oracle",
+    "summary": "TechByte is a computer store: laptops, desktops, components and accessories, with a basket, favourites, opinions, complaints and a newsletter. What makes it different from a standard Laravel shop is the database — it runs against Oracle 19c through yajra/laravel-oci8, and a good part of the logic sits in PL/SQL procedures and functions rather than in controllers.",
+    "shows": [
+      "Oracle as the primary database",
+      "Logic in PL/SQL where it belongs",
+      "Two guards, two areas",
+      "Favourites and a basket per account",
+      "Opinions and complaints as first-class records"
+    ],
+    "stack": [
+      "Laravel",
+      "PHP",
+      "Oracle",
+      "PL/SQL",
+      "Blade"
+    ],
+    "live": "https://techbyte.dawidolko.pl",
+    "video": "",
+    "private": false
+  },
+  {
+    "repo": "RentalVOD-Project-Laravel",
+    "slug": "rentalvod",
+    "title": "RentalVOD",
+    "start": "Apr 2024",
+    "end": "May 2024",
+    "dateSource": "linkedin",
+    "kind": "Laravel film rental platform",
+    "tagline": "Rules the admin can rewrite",
+    "summary": "RentalVOD rents films. A visitor browses the catalogue, a signed-in user fills a basket, checks out and gets a loan with a return date; a premium upgrade unlocks the extended version of a title. Around that sit loyalty points, referral codes, friendships, opinions and recommendations between users.",
+    "shows": [
+      "An editable recommendation rule",
+      "Rentals, not purchases",
+      "Loyalty points and referral codes",
+      "Friends who can recommend",
+      "Opinions with ratings"
+    ],
+    "stack": [
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "Stripe",
+      "Hoa Ruler"
+    ],
+    "live": "",
+    "video": "https://www.youtube.com/watch?v=uPIp8MLDDec",
+    "private": false
+  },
+  {
+    "repo": "WidgetMart-Project-HTML-CSS-JS",
+    "slug": "widgetmart",
+    "title": "WidgetMart",
+    "start": "Jan 2024",
+    "end": "Feb 2024",
+    "dateSource": "linkedin",
+    "kind": "Shop front without a framework",
+    "tagline": "Nine pages, one browser",
+    "summary": "WidgetMart is a full shop front built without a framework or a backend: home, products, product detail, gallery, cart, services, about, FAQ, contact and privacy. The cart persists between visits, a live weather panel pulls from OpenWeatherMap, a note manager keeps its own list, the theme switch remembers your choice and the cookie banner remembers that you dismissed it.",
+    "shows": [
+      "A cart in localStorage",
+      "Live weather with a search history",
+      "A note manager as a real class",
+      "Light and dark theme, remembered",
+      "A cookie banner that stays dismissed"
+    ],
+    "stack": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "OpenWeatherMap",
+      "WebP"
+    ],
+    "live": "https://projekt2.dawidolko.pl",
+    "video": "",
+    "private": false
+  },
+  {
+    "repo": "ATM-System-Java-Swing",
+    "slug": "atm-simulator",
+    "title": "ATM Simulator",
+    "start": "Dec 2023",
+    "end": "Jan 2024",
+    "dateSource": "linkedin",
+    "kind": "Java desktop simulator",
+    "tagline": "A cash machine with a real ledger",
+    "summary": "ATM Simulator reproduces the flow of a cash machine: insert a card, enter a PIN, check the balance, withdraw, deposit, pay a bill, review the transaction history. The state lives in MySQL — cards, balances and history are three tables — so closing the application and reopening it finds the account exactly where it was left.",
+    "shows": [
+      "State in the database, not in the process",
+      "A PIN gate with card selection",
+      "Four operations, each its own window",
+      "History as a table, backed by a model",
+      "A random-password generator"
+    ],
+    "stack": [
+      "Java",
+      "MySQL",
+      "IntelliJ IDEA",
+      "PlantUML"
+    ],
+    "live": "",
+    "video": "https://www.youtube.com/watch?v=PrwN3nVvUKE",
+    "private": false
+  },
+  {
+    "repo": "CuriositiesMagazine-Project-HTML-CSS",
+    "slug": "curiosities-magazine",
+    "title": "Curiosities Magazine",
+    "start": "Nov 2023",
+    "end": "Dec 2023",
+    "dateSource": "linkedin",
+    "kind": "Website template without JavaScript",
+    "tagline": "Sixteen pages, no JavaScript",
+    "summary": "Curiosities Magazine is a website template for a magazine that also sells: home, articles, three product pages with their own checkout screens, gallery, services, about, FAQ, contact and privacy — sixteen pages in all. Every layout, every hover state and every breakpoint is CSS — no scripted behaviour anywhere, which was the constraint it was built under.",
+    "shows": [
+      "No behavioural JavaScript",
+      "Sixteen pages, one visual language",
+      "A full purchase path",
+      "Forms with HTML validation",
+      "Responsive without a framework"
+    ],
+    "stack": [
+      "HTML5",
+      "CSS3",
+      "No JavaScript",
+      "JSON-LD",
+      "W3C"
+    ],
+    "live": "https://projekt1.dawidolko.pl",
+    "video": "",
+    "private": false
+  },
+  {
+    "repo": "FitnessGym-Project-React",
+    "slug": "fitnessgym",
+    "title": "FitnessGym",
+    "start": "Mar 2023",
+    "end": "Apr 2023",
+    "dateSource": "linkedin",
+    "kind": "React marketing site with a shop",
+    "tagline": "A gym site with a shop attached",
+    "summary": "FitnessGym is a marketing site for a gym that happens to sell things. Seven pages — home, about, shop, cart, blog, FAQ and contact — with scroll-triggered sections, an animated counter, a testimonial slider and a map. The shop keeps its cart in localStorage, so closing the tab does not empty it.",
+    "shows": [
+      "A cart that survives a refresh",
+      "Scroll as a narrative device",
+      "Page transitions, not page jumps",
+      "Forms that validate before they submit",
+      "Images converted before the build"
+    ],
+    "stack": [
+      "React",
+      "React Router",
+      "Sass",
+      "Framer Motion"
+    ],
+    "live": "https://fitnessgym.dawidolko.pl",
+    "video": "",
+    "private": false
+  },
+  {
+    "repo": "F1Zone-Project-HTML-CSS-JS-SASS",
+    "slug": "f1-zone",
+    "title": "F1 Zone",
+    "start": "Feb 2023",
+    "end": "Mar 2023",
+    "dateSource": "linkedin",
+    "kind": "Poster shop in plain JavaScript",
+    "tagline": "A poster shop without a framework",
+    "summary": "F1 Zone sells Formula 1 posters: tracks, cars and drivers. The catalogue lives in a JavaScript data file, a modal opens any poster full size, and the cart keeps its contents in localStorage, so closing the tab does not empty it.",
+    "shows": [
+      "A cart that survives the tab",
+      "Duplicate protection with feedback",
+      "The catalogue is data",
+      "A product modal built by hand",
+      "Live totals in the navigation"
+    ],
+    "stack": [
+      "HTML5",
+      "Sass",
+      "JavaScript",
+      "WebP"
+    ],
+    "live": "https://f1.dawidolko.pl",
+    "video": "",
+    "private": false
+  },
+  {
+    "repo": "Windows-Simulaing-System-GUI",
+    "slug": "windows-desktop-portfolio",
+    "title": "Windows Desktop Portfolio",
+    "start": "Apr 2024",
+    "end": "",
+    "dateSource": "first commit",
+    "kind": "Portfolio shaped like a Windows desktop",
+    "tagline": "A portfolio that boots",
+    "summary": "Instead of a page with sections, this portfolio opens as a desktop. Windows drag, resize and stack, the start menu works, the wallpaper changes, and each \"application\" is a part of the CV — projects, contact, notes.",
+    "shows": [
+      "Windows that behave like windows",
+      "A working start menu",
+      "Fluent UI for the controls",
+      "A rich-text note app",
+      "A contact form without a backend"
+    ],
+    "stack": [
+      "React",
+      "Fluent UI",
+      "Firebase",
+      "EmailJS"
+    ],
+    "live": "https://windows.dawidolko.pl",
+    "video": "",
+    "private": false
+  },
+  {
+    "repo": "Ubuntu-Simulaing-System-GUI",
+    "slug": "ubuntu-desktop-portfolio",
+    "title": "Ubuntu Desktop Portfolio",
+    "start": "Jul 2023",
+    "end": "",
+    "dateSource": "first commit",
+    "kind": "Portfolio shaped like an Ubuntu desktop",
+    "tagline": "GNOME, rebuilt as a static site",
+    "summary": "A portfolio shaped like Ubuntu 20.04: the dock down the left, draggable windows, the dark-orange palette and the GNOME behaviours that go with them.",
+    "shows": [
+      "Applications defined in one config",
+      "A GNOME dock and window behaviour",
+      "Static export",
+      "A contact form without a backend",
+      "A working calculator"
+    ],
+    "stack": [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "EmailJS"
+    ],
+    "live": "https://ubuntu.dawidolko.pl",
+    "video": "",
+    "private": false
+  },
+  {
+    "repo": "Linux-Simulaing-System-GUI",
+    "slug": "deepin-desktop-portfolio",
+    "title": "Deepin Desktop Portfolio",
+    "start": "Jun 2023",
+    "end": "",
+    "dateSource": "first commit",
+    "kind": "Portfolio shaped like a Deepin desktop",
+    "tagline": "A desktop with a blog inside it",
+    "summary": "A portfolio and blog wearing the Deepin Linux desktop. Windows open, move, resize and layer as they do on the real system, and the applications are not decorative: a toy terminal, a music player, a recursive file system and a blog whose articles are markdown files rendered in a window.",
+    "shows": [
+      "A blog that lives in a window",
+      "A toy terminal",
+      "A music player",
+      "Real window management",
+      "Pre-rendered to static files"
+    ],
+    "stack": [
+      "Vue.js",
+      "Vuetify",
+      "Tailwind CSS",
+      "Markdown"
+    ],
+    "live": "https://linux.dawidolko.pl",
+    "video": "",
+    "private": false
+  },
+  {
+    "repo": "Macos-Simulaing-System-GUI",
+    "slug": "macos-desktop-portfolio",
+    "title": "macOS Desktop Portfolio",
+    "start": "Jun 2023",
+    "end": "",
+    "dateSource": "first commit",
+    "kind": "Portfolio shaped like a macOS desktop",
+    "tagline": "The dock, the launchpad and the animations",
+    "summary": "A macOS desktop in the browser: the dock with its magnification, launchpad, draggable windows, and an appearance that follows the system light/dark preference.",
+    "shows": [
+      "A dock that magnifies",
+      "Launchpad and window management",
+      "A real markdown editor",
+      "Appearance follows the system",
+      "TypeScript throughout"
+    ],
+    "stack": [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Framer Motion",
+      "Milkdown"
+    ],
+    "live": "https://macos.dawidolko.pl",
+    "video": "",
+    "private": false
+  },
+  {
+    "repo": "Website-Templates",
+    "slug": "website-templates",
+    "title": "Website Templates",
+    "start": "Jul 2023",
+    "end": "",
+    "dateSource": "first commit",
+    "kind": "Collection of HTML templates",
+    "tagline": "170 templates, all of them openable",
+    "summary": "Website Templates is a collection of 170 free, editable HTML templates — portfolios, business sites, blogs, shops, agencies, restaurants, photography and more. Every one of them is checked in whole, and every one has a working preview: the whole repository is published through GitHub Pages, so a template can be opened and judged before it is downloaded.",
+    "shows": [
+      "Every template previewable",
+      "Complete sites, not fragments",
+      "Responsive throughout",
+      "Free to edit",
+      "Categorised by purpose"
+    ],
+    "stack": [
+      "HTML5",
+      "Bootstrap",
+      "CSS3"
+    ],
+    "live": "https://templateswebsite.dawidolko.pl",
+    "video": "",
+    "private": false
+  },
+  {
+    "repo": "Github-Badges-Achievements",
+    "slug": "github-achievements",
+    "title": "GitHub Achievements",
+    "start": "Jul 2023",
+    "end": "",
+    "dateSource": "first commit",
+    "kind": "Reference site for GitHub badges",
+    "tagline": "Every badge, with the numbers behind it",
+    "summary": "GitHub Achievements documents the badges that appear on a GitHub profile: what each one is, how it is earned, and exactly how many actions each tier takes. Where GitHub states a requirement, it is here; where it does not, the entry says so rather than guessing.",
+    "shows": [
+      "Every achievement with its thresholds",
+      "Honest about the unknowns",
+      "Skin-tone variants",
+      "Badges no longer earnable",
+      "How tiers and highlights work"
+    ],
+    "stack": [
+      "Jekyll",
+      "Markdown",
+      "GitHub Pages"
+    ],
+    "live": "https://achievements.dawidolko.pl",
+    "video": "",
+    "private": false
+  },
+  {
+    "repo": "portfolio",
+    "slug": "portfolio",
+    "title": "Portfolio",
+    "start": "Feb 2026",
+    "end": "",
+    "dateSource": "first commit",
+    "kind": "React personal portfolio",
+    "tagline": "Personal portfolio website of Dawid Olko",
+    "summary": "Portfolio is a personal website built as a single-page React application. It has a dark theme, a card grid of projects, a photo blog with a lightbox viewer, a built-in PDF viewer for the resume and an about page with a GitHub activity calendar.",
+    "shows": [
+      "Modern UI",
+      "Responsive Design",
+      "Project Showcase",
+      "Personal Blog",
+      "Resume/CV"
+    ],
+    "stack": [
+      "React",
+      "React Router",
+      "Bootstrap"
+    ],
+    "live": "https://olkodawid.dawidolko.pl",
+    "video": "",
+    "private": false
+  },
+  {
+    "repo": "Wordpress-Cinema-Docker",
+    "slug": "wordpress-cinema",
+    "title": "WordPress Cinema",
+    "start": "Feb 2025",
+    "end": "",
+    "dateSource": "first commit",
+    "kind": "WordPress site run in Docker",
+    "tagline": "A cinema in two containers",
+    "summary": "WordPress Cinema is a cinema website built on WordPress and run in Docker. docker compose up starts WordPress on port 8080 and MySQL 8 beside it; wp-content is mounted from the repository, so the custom theme, the plugins and the uploads are version-controlled while the WordPress core stays where it belongs — inside the image.",
+    "shows": [
+      "One command from nothing to a running site",
+      "wp-content in git, core in the image",
+      "A custom theme",
+      "Ticketing through WooCommerce",
+      "Trailers with a proper player"
+    ],
+    "stack": [
+      "WordPress",
+      "Docker",
+      "MySQL",
+      "WooCommerce",
+      "Elementor"
+    ],
+    "live": "",
+    "video": "",
+    "private": false
+  }
+]

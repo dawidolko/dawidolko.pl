@@ -1,0 +1,1149 @@
+{
+  "skribly": {
+    "gallery": [],
+    "demo": false,
+    "still": "",
+    "videoPoster": ""
+  },
+  "cv": {
+    "gallery": [
+      {
+        "file": "desktop-1.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-2.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-3.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "mobile.webp",
+        "width": 620,
+        "height": 1342
+      }
+    ],
+    "demo": true,
+    "still": "/src/assets/img/work/cv/poster.webp",
+    "videoPoster": ""
+  },
+  "zbudujkompa": {
+    "gallery": [
+      {
+        "file": "desktop-1.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-2.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-3.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "mobile.webp",
+        "width": 620,
+        "height": 1342
+      }
+    ],
+    "demo": true,
+    "still": "/src/assets/img/work/zbudujkompa/poster.webp",
+    "videoPoster": ""
+  },
+  "mp-industries": {
+    "gallery": [],
+    "demo": false,
+    "still": "",
+    "videoPoster": ""
+  },
+  "cvforge": {
+    "gallery": [
+      {
+        "file": "desktop-1.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-2.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-3.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "mobile.webp",
+        "width": 620,
+        "height": 1342
+      }
+    ],
+    "demo": true,
+    "still": "/src/assets/img/work/cvforge/poster.webp",
+    "videoPoster": ""
+  },
+  "reelcut": {
+    "gallery": [
+      {
+        "file": "desktop-1.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-2.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-3.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "mobile.webp",
+        "width": 620,
+        "height": 1342
+      }
+    ],
+    "demo": true,
+    "still": "/src/assets/img/work/reelcut/poster.webp",
+    "videoPoster": ""
+  },
+  "neobank": {
+    "gallery": [
+      {
+        "file": "desktop-1.webp",
+        "width": 1280,
+        "height": 800
+      },
+      {
+        "file": "mobile.webp",
+        "width": 620,
+        "height": 1342
+      }
+    ],
+    "demo": false,
+    "still": "/src/assets/img/work/neobank/desktop-1.webp",
+    "videoPoster": ""
+  },
+  "bodykit": {
+    "gallery": [
+      {
+        "file": "desktop-1.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-2.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-3.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "mobile.webp",
+        "width": 620,
+        "height": 1342
+      }
+    ],
+    "demo": true,
+    "still": "/src/assets/img/work/bodykit/poster.webp",
+    "videoPoster": ""
+  },
+  "ezpace": {
+    "gallery": [
+      {
+        "file": "desktop-1.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-2.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-3.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "mobile.webp",
+        "width": 620,
+        "height": 1342
+      }
+    ],
+    "demo": true,
+    "still": "/src/assets/img/work/ezpace/poster.webp",
+    "videoPoster": ""
+  },
+  "ezscout": {
+    "gallery": [
+      {
+        "file": "desktop-1.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-2.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-3.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "mobile.webp",
+        "width": 620,
+        "height": 1342
+      }
+    ],
+    "demo": true,
+    "still": "/src/assets/img/work/ezscout/poster.webp",
+    "videoPoster": ""
+  },
+  "airline-passenger-satisfaction": {
+    "gallery": [
+      {
+        "file": "shot-1.webp",
+        "width": 960,
+        "height": 480
+      },
+      {
+        "file": "shot-2.webp",
+        "width": 960,
+        "height": 480
+      },
+      {
+        "file": "shot-3.webp",
+        "width": 1200,
+        "height": 840
+      },
+      {
+        "file": "shot-4.webp",
+        "width": 1280,
+        "height": 533
+      },
+      {
+        "file": "shot-5.webp",
+        "width": 1200,
+        "height": 600
+      }
+    ],
+    "demo": false,
+    "still": "/src/assets/img/work/airline-passenger-satisfaction/shot-1.webp",
+    "videoPoster": ""
+  },
+  "cyber-security-attacks-classifier": {
+    "gallery": [
+      {
+        "file": "shot-1.webp",
+        "width": 1280,
+        "height": 640
+      }
+    ],
+    "demo": false,
+    "still": "/src/assets/img/work/cyber-security-attacks-classifier/shot-1.webp",
+    "videoPoster": ""
+  },
+  "wine-quality-classification": {
+    "gallery": [
+      {
+        "file": "shot-1.webp",
+        "width": 1280,
+        "height": 800
+      },
+      {
+        "file": "shot-2.webp",
+        "width": 1280,
+        "height": 683
+      },
+      {
+        "file": "shot-3.webp",
+        "width": 1280,
+        "height": 996
+      },
+      {
+        "file": "shot-4.webp",
+        "width": 1280,
+        "height": 605
+      },
+      {
+        "file": "shot-5.webp",
+        "width": 1280,
+        "height": 683
+      }
+    ],
+    "demo": false,
+    "still": "/src/assets/img/work/wine-quality-classification/shot-1.webp",
+    "videoPoster": ""
+  },
+  "bitrecruit": {
+    "gallery": [
+      {
+        "file": "desktop-1.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-2.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-3.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "mobile.webp",
+        "width": 620,
+        "height": 1342
+      }
+    ],
+    "demo": true,
+    "still": "/src/assets/img/work/bitrecruit/poster.webp",
+    "videoPoster": ""
+  },
+  "cinemareserve": {
+    "gallery": [
+      {
+        "file": "shot-1.webp",
+        "width": 1280,
+        "height": 800
+      },
+      {
+        "file": "shot-2.webp",
+        "width": 1280,
+        "height": 800
+      },
+      {
+        "file": "shot-3.webp",
+        "width": 1280,
+        "height": 800
+      },
+      {
+        "file": "shot-4.webp",
+        "width": 1280,
+        "height": 800
+      },
+      {
+        "file": "shot-5.webp",
+        "width": 1280,
+        "height": 800
+      }
+    ],
+    "demo": false,
+    "still": "/src/assets/img/work/cinemareserve/shot-1.webp",
+    "videoPoster": "/src/assets/img/video/7ygXIAm0sFc.webp"
+  },
+  "devpulse": {
+    "gallery": [
+      {
+        "file": "desktop-1.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-2.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-3.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "mobile.webp",
+        "width": 620,
+        "height": 1342
+      }
+    ],
+    "demo": true,
+    "still": "/src/assets/img/work/devpulse/poster.webp",
+    "videoPoster": ""
+  },
+  "movievault": {
+    "gallery": [
+      {
+        "file": "shot-1.webp",
+        "width": 1280,
+        "height": 800
+      },
+      {
+        "file": "shot-2.webp",
+        "width": 1280,
+        "height": 800
+      },
+      {
+        "file": "shot-3.webp",
+        "width": 1280,
+        "height": 800
+      },
+      {
+        "file": "shot-4.webp",
+        "width": 1280,
+        "height": 800
+      }
+    ],
+    "demo": false,
+    "still": "/src/assets/img/work/movievault/shot-1.webp",
+    "videoPoster": "/src/assets/img/video/ooIoa_PGRzk.webp"
+  },
+  "smartrecommender": {
+    "gallery": [
+      {
+        "file": "desktop-1.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-2.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-3.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "mobile.webp",
+        "width": 620,
+        "height": 1342
+      }
+    ],
+    "demo": true,
+    "still": "/src/assets/img/work/smartrecommender/poster.webp",
+    "videoPoster": ""
+  },
+  "hirudozdrowie": {
+    "gallery": [
+      {
+        "file": "desktop-1.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-2.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-3.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "mobile.webp",
+        "width": 620,
+        "height": 1342
+      }
+    ],
+    "demo": true,
+    "still": "/src/assets/img/work/hirudozdrowie/poster.webp",
+    "videoPoster": ""
+  },
+  "workstation": {
+    "gallery": [
+      {
+        "file": "desktop-1.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-2.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-3.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "mobile.webp",
+        "width": 620,
+        "height": 1342
+      }
+    ],
+    "demo": true,
+    "still": "/src/assets/img/work/workstation/poster.webp",
+    "videoPoster": ""
+  },
+  "anfis-vs-classical-machine-learning": {
+    "gallery": [],
+    "demo": false,
+    "still": "/src/assets/img/work/anfis-vs-classical-machine-learning/poster.webp",
+    "videoPoster": "/src/assets/img/video/O3X3MsWPVi8.webp"
+  },
+  "it-help-desk": {
+    "gallery": [
+      {
+        "file": "desktop-1.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "mobile.webp",
+        "width": 620,
+        "height": 1342
+      }
+    ],
+    "demo": false,
+    "still": "/src/assets/img/work/it-help-desk/desktop-1.webp",
+    "videoPoster": "/src/assets/img/video/CjPaI4beypc.webp"
+  },
+  "taskapp": {
+    "gallery": [
+      {
+        "file": "shot-1.webp",
+        "width": 841,
+        "height": 573
+      },
+      {
+        "file": "shot-2.webp",
+        "width": 841,
+        "height": 575
+      },
+      {
+        "file": "shot-3.webp",
+        "width": 841,
+        "height": 575
+      },
+      {
+        "file": "shot-4.webp",
+        "width": 841,
+        "height": 575
+      },
+      {
+        "file": "shot-5.webp",
+        "width": 841,
+        "height": 575
+      }
+    ],
+    "demo": false,
+    "still": "/src/assets/img/work/taskapp/shot-1.webp",
+    "videoPoster": ""
+  },
+  "datafusion": {
+    "gallery": [
+      {
+        "file": "desktop-1.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-2.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-3.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "mobile.webp",
+        "width": 620,
+        "height": 1342
+      }
+    ],
+    "demo": true,
+    "still": "/src/assets/img/work/datafusion/poster.webp",
+    "videoPoster": ""
+  },
+  "framevision": {
+    "gallery": [
+      {
+        "file": "desktop-1.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-2.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-3.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "mobile.webp",
+        "width": 620,
+        "height": 1342
+      }
+    ],
+    "demo": true,
+    "still": "/src/assets/img/work/framevision/poster.webp",
+    "videoPoster": ""
+  },
+  "rent-app": {
+    "gallery": [
+      {
+        "file": "desktop-1.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-2.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-3.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "mobile.webp",
+        "width": 620,
+        "height": 1342
+      }
+    ],
+    "demo": true,
+    "still": "/src/assets/img/work/rent-app/poster.webp",
+    "videoPoster": ""
+  },
+  "kebab": {
+    "gallery": [
+      {
+        "file": "desktop-1.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-2.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-3.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "mobile.webp",
+        "width": 620,
+        "height": 1342
+      }
+    ],
+    "demo": true,
+    "still": "/src/assets/img/work/kebab/poster.webp",
+    "videoPoster": ""
+  },
+  "shop": {
+    "gallery": [
+      {
+        "file": "shot-1.webp",
+        "width": 1280,
+        "height": 691
+      },
+      {
+        "file": "shot-2.webp",
+        "width": 1280,
+        "height": 691
+      },
+      {
+        "file": "shot-3.webp",
+        "width": 1280,
+        "height": 401
+      },
+      {
+        "file": "shot-4.webp",
+        "width": 1280,
+        "height": 698
+      },
+      {
+        "file": "shot-5.webp",
+        "width": 1280,
+        "height": 607
+      }
+    ],
+    "demo": false,
+    "still": "/src/assets/img/work/shop/shot-1.webp",
+    "videoPoster": "/src/assets/img/video/WTi2i2wHPt0.webp"
+  },
+  "employee-directory": {
+    "gallery": [
+      {
+        "file": "shot-1.webp",
+        "width": 1280,
+        "height": 697
+      },
+      {
+        "file": "shot-2.webp",
+        "width": 1280,
+        "height": 710
+      },
+      {
+        "file": "shot-3.webp",
+        "width": 1280,
+        "height": 593
+      },
+      {
+        "file": "shot-4.webp",
+        "width": 1280,
+        "height": 637
+      }
+    ],
+    "demo": false,
+    "still": "/src/assets/img/work/employee-directory/shot-1.webp",
+    "videoPoster": "/src/assets/img/video/IrXowM1RJ0U.webp"
+  },
+  "layout-simple": {
+    "gallery": [
+      {
+        "file": "desktop-1.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-2.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-3.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "mobile.webp",
+        "width": 620,
+        "height": 1342
+      }
+    ],
+    "demo": true,
+    "still": "/src/assets/img/work/layout-simple/poster.webp",
+    "videoPoster": ""
+  },
+  "shop-app": {
+    "gallery": [],
+    "demo": false,
+    "still": "/src/assets/img/work/shop-app/poster.webp",
+    "videoPoster": "/src/assets/img/video/WTi2i2wHPt0.webp"
+  },
+  "weather-app": {
+    "gallery": [
+      {
+        "file": "shot-1.webp",
+        "width": 1280,
+        "height": 702
+      },
+      {
+        "file": "shot-2.webp",
+        "width": 1280,
+        "height": 695
+      },
+      {
+        "file": "shot-3.webp",
+        "width": 1280,
+        "height": 690
+      },
+      {
+        "file": "shot-4.webp",
+        "width": 1280,
+        "height": 703
+      },
+      {
+        "file": "shot-5.webp",
+        "width": 1280,
+        "height": 697
+      }
+    ],
+    "demo": false,
+    "still": "/src/assets/img/work/weather-app/shot-1.webp",
+    "videoPoster": "/src/assets/img/video/WTi2i2wHPt0.webp"
+  },
+  "wifidirect-file-transfer": {
+    "gallery": [
+      {
+        "file": "shot-1.webp",
+        "width": 1080,
+        "height": 2400
+      },
+      {
+        "file": "shot-2.webp",
+        "width": 1080,
+        "height": 2400
+      },
+      {
+        "file": "shot-3.webp",
+        "width": 1080,
+        "height": 2400
+      },
+      {
+        "file": "shot-4.webp",
+        "width": 1080,
+        "height": 2400
+      },
+      {
+        "file": "shot-5.webp",
+        "width": 1080,
+        "height": 2400
+      }
+    ],
+    "demo": false,
+    "still": "/src/assets/img/work/wifidirect-file-transfer/shot-1.webp",
+    "videoPoster": "/src/assets/img/video/CwdRK33g_8U.webp"
+  },
+  "dawidolko-pl": {
+    "gallery": [
+      {
+        "file": "desktop-1.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-2.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-3.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "mobile.webp",
+        "width": 620,
+        "height": 1342
+      }
+    ],
+    "demo": true,
+    "still": "/src/assets/img/work/dawidolko-pl/poster.webp",
+    "videoPoster": ""
+  },
+  "language-courses": {
+    "gallery": [],
+    "demo": false,
+    "still": "/src/assets/img/work/language-courses/poster.webp",
+    "videoPoster": "/src/assets/img/video/Rjnw00AN1Xw.webp"
+  },
+  "techbyte": {
+    "gallery": [],
+    "demo": false,
+    "still": "",
+    "videoPoster": ""
+  },
+  "rentalvod": {
+    "gallery": [],
+    "demo": false,
+    "still": "/src/assets/img/work/rentalvod/poster.webp",
+    "videoPoster": "/src/assets/img/video/uPIp8MLDDec.webp"
+  },
+  "widgetmart": {
+    "gallery": [
+      {
+        "file": "desktop-1.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-2.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-3.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "mobile.webp",
+        "width": 620,
+        "height": 1342
+      }
+    ],
+    "demo": true,
+    "still": "/src/assets/img/work/widgetmart/poster.webp",
+    "videoPoster": ""
+  },
+  "atm-simulator": {
+    "gallery": [
+      {
+        "file": "shot-1.webp",
+        "width": 128,
+        "height": 200
+      },
+      {
+        "file": "shot-2.webp",
+        "width": 200,
+        "height": 130
+      },
+      {
+        "file": "shot-3.webp",
+        "width": 200,
+        "height": 130
+      },
+      {
+        "file": "shot-4.webp",
+        "width": 300,
+        "height": 400
+      },
+      {
+        "file": "shot-5.webp",
+        "width": 200,
+        "height": 130
+      }
+    ],
+    "demo": false,
+    "still": "/src/assets/img/work/atm-simulator/shot-1.webp",
+    "videoPoster": "/src/assets/img/video/PrwN3nVvUKE.webp"
+  },
+  "curiosities-magazine": {
+    "gallery": [
+      {
+        "file": "desktop-1.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-2.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-3.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "mobile.webp",
+        "width": 620,
+        "height": 1342
+      }
+    ],
+    "demo": true,
+    "still": "/src/assets/img/work/curiosities-magazine/poster.webp",
+    "videoPoster": ""
+  },
+  "fitnessgym": {
+    "gallery": [
+      {
+        "file": "desktop-1.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-2.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-3.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "mobile.webp",
+        "width": 620,
+        "height": 1342
+      }
+    ],
+    "demo": true,
+    "still": "/src/assets/img/work/fitnessgym/poster.webp",
+    "videoPoster": ""
+  },
+  "f1-zone": {
+    "gallery": [
+      {
+        "file": "desktop-1.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-2.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-3.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "mobile.webp",
+        "width": 620,
+        "height": 1342
+      }
+    ],
+    "demo": true,
+    "still": "/src/assets/img/work/f1-zone/poster.webp",
+    "videoPoster": ""
+  },
+  "windows-desktop-portfolio": {
+    "gallery": [
+      {
+        "file": "desktop-1.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "mobile.webp",
+        "width": 620,
+        "height": 1342
+      }
+    ],
+    "demo": false,
+    "still": "/src/assets/img/work/windows-desktop-portfolio/desktop-1.webp",
+    "videoPoster": ""
+  },
+  "ubuntu-desktop-portfolio": {
+    "gallery": [
+      {
+        "file": "desktop-1.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "mobile.webp",
+        "width": 620,
+        "height": 1342
+      }
+    ],
+    "demo": false,
+    "still": "/src/assets/img/work/ubuntu-desktop-portfolio/desktop-1.webp",
+    "videoPoster": ""
+  },
+  "deepin-desktop-portfolio": {
+    "gallery": [
+      {
+        "file": "desktop-1.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "mobile.webp",
+        "width": 620,
+        "height": 1342
+      }
+    ],
+    "demo": false,
+    "still": "/src/assets/img/work/deepin-desktop-portfolio/desktop-1.webp",
+    "videoPoster": ""
+  },
+  "macos-desktop-portfolio": {
+    "gallery": [
+      {
+        "file": "desktop-1.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "mobile.webp",
+        "width": 620,
+        "height": 1342
+      }
+    ],
+    "demo": false,
+    "still": "/src/assets/img/work/macos-desktop-portfolio/desktop-1.webp",
+    "videoPoster": ""
+  },
+  "website-templates": {
+    "gallery": [
+      {
+        "file": "desktop-1.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-2.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-3.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "mobile.webp",
+        "width": 620,
+        "height": 1342
+      }
+    ],
+    "demo": true,
+    "still": "/src/assets/img/work/website-templates/poster.webp",
+    "videoPoster": ""
+  },
+  "github-achievements": {
+    "gallery": [
+      {
+        "file": "desktop-1.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-2.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-3.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "mobile.webp",
+        "width": 620,
+        "height": 1342
+      }
+    ],
+    "demo": true,
+    "still": "/src/assets/img/work/github-achievements/poster.webp",
+    "videoPoster": ""
+  },
+  "portfolio": {
+    "gallery": [
+      {
+        "file": "desktop-1.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-2.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-3.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "mobile.webp",
+        "width": 620,
+        "height": 1342
+      }
+    ],
+    "demo": true,
+    "still": "/src/assets/img/work/portfolio/poster.webp",
+    "videoPoster": ""
+  },
+  "wordpress-cinema": {
+    "gallery": [],
+    "demo": false,
+    "still": "",
+    "videoPoster": ""
+  }
+}

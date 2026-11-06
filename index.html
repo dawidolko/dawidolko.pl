@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
 
     <!-- Google Search Console Verification -->
     <meta
@@ -12,7 +14,7 @@
     <!-- SEO Meta Tags -->
     <meta
       name="description"
-      content="Dawid Olko - Fullstack / AI Developer specializing in React, Vue, TypeScript. Explore my portfolio of web development projects including WorkStation, HirudoZdrowie, and more. Available for freelance opportunities." />
+      content="Dawid Olko is a Fullstack / AI Developer specializing in React, Vue and TypeScript. Explore projects including Skribly, WorkStation and HirudoZdrowie." />
     <meta
       name="keywords"
       content="Fullstack / AI Developer, React Developer, Vue Developer, TypeScript, AI Developer, Portfolio, Dawid Olko, dawidolko, JavaScript, HTML, CSS, SASS, Web Design, UI/UX" />
@@ -36,8 +38,8 @@
       content="Fullstack / AI Developer specializing in React, Vue, TypeScript. Explore my portfolio of innovative web development projects." />
     <meta
       property="og:image"
-      content="https://dawidolko.pl/src/assets/img/Home/portrait.webp" />
-    <meta property="og:image:alt" content="Portrait photo of Dawid Olko, Fullstack / AI Developer" />
+      content="https://dawidolko.pl/src/assets/img/og-image.jpg" />
+    <meta property="og:image:alt" content="Greyscale banner image of dawidolko.pl" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="Dawid Olko Portfolio" />
 
@@ -52,8 +54,8 @@
       content="Fullstack / AI Developer specializing in React, Vue, TypeScript. Explore my portfolio of innovative web development projects." />
     <meta
       name="twitter:image"
-      content="https://dawidolko.pl/src/assets/img/Home/portrait.webp" />
-    <meta name="twitter:image:alt" content="Portrait photo of Dawid Olko, Fullstack / AI Developer" />
+      content="https://dawidolko.pl/src/assets/img/og-image.jpg" />
+    <meta name="twitter:image:alt" content="Greyscale banner image of dawidolko.pl" />
 
     <!-- Favicon -->
     <link
@@ -70,6 +72,7 @@
     <link rel="stylesheet" href="src/css/fonts.css?v=8" />
     <link rel="preload" href="src/css/main.css?v=8" as="style" />
     <link rel="stylesheet" href="src/css/main.css?v=8" />
+    <link rel="stylesheet" href="src/css/tip.css?v=1" />
 
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -133,7 +136,7 @@
             <a
               class="nav__link"
               href="https://workstation.dawidolko.pl"
-              target="_blank" rel="noopener"
+              target="_blank" rel="noopener noreferrer"
               >my station</a
             >
           </li>
@@ -141,7 +144,7 @@
               <a
                 class="nav__link"
                 href="https://cv.dawidolko.pl"
-                target="_blank" rel="noopener"
+                target="_blank" rel="noopener noreferrer"
                 >cv</a
               >
             </li>
@@ -234,17 +237,17 @@
                 <div class="about__icons moves">
                   <a
                     href="https://www.instagram.com/dawid_olko/"
-                    target="_blank" rel="noopener" aria-label="Instagram profile"><i aria-hidden="true" class="about__icon fa-brands fa-instagram"></i
+                    target="_blank" rel="noopener noreferrer" aria-label="Instagram profile"><i aria-hidden="true" class="about__icon fa-brands fa-instagram"></i
                   ></a>
-                  <a href="https://github.com/dawidolko" target="_blank" rel="noopener"
+                  <a href="https://github.com/dawidolko" target="_blank" rel="noopener noreferrer"
                      aria-label="GitHub profile"><i aria-hidden="true" class="about__icon fa-brands fa-github"></i
                   ></a>
-                  <a href="https://www.facebook.com/olkodawid/" target="_blank" rel="noopener"
+                  <a href="https://www.facebook.com/olkodawid/" target="_blank" rel="noopener noreferrer"
                      aria-label="Facebook profile"><i aria-hidden="true" class="about__icon fa-brands fa-square-facebook"></i
                   ></a>
                   <a
                     href="https://www.linkedin.com/in/dawidolko/"
-                    target="_blank" rel="noopener"
+                    target="_blank" rel="noopener noreferrer"
                      aria-label="LinkedIn profile"><i aria-hidden="true" class="about__icon fa-brands fa-linkedin"></i
                   ></a>
                 </div>
@@ -260,23 +263,33 @@
           <div class="line__green"><span class="line__black"></span></div>
         </div>
         <div class="portfolio__body container">
-          <div class="portfolio__box move">
-          <div class="portfolio__shadow">
-          <p class="portfolio__shadow-title">SmartRecommender</p>
-          <div class="portfolio__icons">
-          <a
-          class="portfolio__link"
-          href="https://github.com/dawidolko/SmartRecommender-Projekt-Django-React"
-          target="_blank" rel="noopener"
-          aria-label="GitHub profile"><i aria-hidden="true" class="fa-brands fa-github"></i
-          ></a>
-          <a
-          class="portfolio__link"
-          href="https://project.dawidolko.pl"
-          target="_blank" rel="noopener" aria-label="Open project.dawidolko.pl in a new tab"><i aria-hidden="true"
-          class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
+          <div class="portfolio__box move" data-project="skribly">
+            <button class="tip-btn" type="button" aria-label="About Skribly" aria-describedby="tip-skribly"><span aria-hidden="true">i</span></button>
+            <div class="tip" id="tip-skribly" role="tooltip" hidden><p class="tip__title">Skribly</p><p class="tip__date">Oct 2026 – present</p><p class="tip__kind">Developer tools for AI coding agents</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>Task tracking people and agents can share</li><li>Agents you can watch while they work</li><li>One library of rules for every agent</li></ul></div>
+            <div class="portfolio__shadow">
+              <p class="portfolio__shadow-title">Skribly</p>
+              <div class="portfolio__icons">
+                <a class="portfolio__link" href="https://skribly.pl" target="_blank" rel="noopener noreferrer" aria-label="Skribly live site (opens in a new tab)"><i aria-hidden="true" class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a class="project-show" href="/projects/skribly/">Show<span class="visually-hidden"> Skribly</span></a>
+              </div>
+            </div>
+            <img class="portfolio__img" src="src/assets/img/Home/logo_project/skribly.svg" alt="Skribly logo" width="64" height="64" loading="lazy" decoding="async" />
+            <div class="portfolio__stock">
+              <i class="fa-brands fa-laravel portfolio__title-icon"></i>
+              <i class="fa-brands fa-node-js portfolio__title-icon"></i>
+              <i class="fa-brands fa-square-js portfolio__title-icon"></i>
+            </div>
           </div>
+          <div class="portfolio__box move" data-project="smartrecommender">
+          <button class="tip-btn" type="button" aria-label="About SmartRecommender" aria-describedby="tip-smartrecommender"><span aria-hidden="true">i</span></button>
+          <div class="tip" id="tip-smartrecommender" role="tooltip" hidden><p class="tip__title">SmartRecommender</p><p class="tip__date">Dec 2024 – Feb 2026</p><p class="tip__kind">Full-stack e-commerce recommendation platform</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>Collaborative Filtering</li><li>Content-Based Filtering</li><li>Association Rules</li></ul></div>
+          <div class="portfolio__shadow">
+            <p class="portfolio__shadow-title">SmartRecommender</p>
+            <div class="portfolio__icons">
+              <a class="portfolio__link" href="https://github.com/dawidolko/SmartRecommender-Project-Django-React" target="_blank" rel="noopener noreferrer" aria-label="SmartRecommender source code on GitHub (opens in a new tab)"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
+              <a class="portfolio__link" href="https://project.dawidolko.pl" target="_blank" rel="noopener noreferrer" aria-label="SmartRecommender live site (opens in a new tab)"><i aria-hidden="true" class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a class="project-show" href="/projects/smartrecommender/">Show<span class="visually-hidden"> SmartRecommender</span></a>
+            </div>
           </div>
           <img class="portfolio__img" src="src/assets/img/Home/logo_project/logo3.svg" alt="SmartRecommender logo" width="50" height="50" loading="lazy" decoding="async" />
           <div class="portfolio__stock">
@@ -286,17 +299,15 @@
           <i class="fa-brands fa-sass portfolio__title-icon"></i>
           </div>
           </div>
-          <div class="portfolio__box moves">
+          <div class="portfolio__box moves" data-project="mp-industries">
+          <button class="tip-btn" type="button" aria-label="About MP Industries" aria-describedby="tip-mp-industries"><span aria-hidden="true">i</span></button>
+          <div class="tip" id="tip-mp-industries" role="tooltip" hidden><p class="tip__title">MP Industries</p><p class="tip__date">Jun 2025 – present</p><p class="tip__kind">Laravel company website</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>A real model per branch</li><li>Everything editable in Filament</li><li>Page content is data</li></ul></div>
           <div class="portfolio__shadow">
-          <p class="portfolio__shadow-title">MP Industries</p>
-          <div class="portfolio__icons">
-          <a
-          class="portfolio__link"
-          href="https://mp-industries.pl/"
-          target="_blank" rel="noopener" aria-label="Open mp-industries.pl in a new tab"><i aria-hidden="true"
-          class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
-          </div>
+            <p class="portfolio__shadow-title">MP Industries</p>
+            <div class="portfolio__icons">
+              <a class="portfolio__link" href="https://mp-industries.pl" target="_blank" rel="noopener noreferrer" aria-label="MP Industries live site (opens in a new tab)"><i aria-hidden="true" class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a class="project-show" href="/projects/mp-industries/">Show<span class="visually-hidden"> MP Industries</span></a>
+            </div>
           </div>
           <img class="portfolio__img" src="src/assets/img/Home/logo_project/logo30.svg" alt="MP Industries logo" width="120" height="120" loading="lazy" decoding="async" />
           <div class="portfolio__stock">
@@ -305,23 +316,16 @@
           <i class="fa-brands fa-css3-alt portfolio__title-icon"></i>
           </div>
           </div>
-          <div class="portfolio__box move">
+          <div class="portfolio__box move" data-project="techbyte">
+          <button class="tip-btn" type="button" aria-label="About TechByte" aria-describedby="tip-techbyte"><span aria-hidden="true">i</span></button>
+          <div class="tip" id="tip-techbyte" role="tooltip" hidden><p class="tip__title">TechByte</p><p class="tip__date">Mar 2024 – May 2024</p><p class="tip__kind">Laravel computer store on Oracle</p><p class="tip__label">Demonstrates</p><ul class="tip__list"><li>Oracle as the primary database</li><li>Logic in PL/SQL where it belongs</li><li>Two guards, two areas</li></ul></div>
           <div class="portfolio__shadow">
-          <p class="portfolio__shadow-title">TechByte</p>
-          <div class="portfolio__icons">
-          <a
-          class="portfolio__link"
-          href="https://github.com/dawidolko/Database-Project-ComputerStore"
-          target="_blank" rel="noopener"
-          aria-label="GitHub profile"><i aria-hidden="true" class="fa-brands fa-github"></i
-          ></a>
-          <a
-          class="portfolio__link"
-          href="https://piotrsmola.dawidolko.pl/"
-          target="_blank" rel="noopener" aria-label="Open piotrsmola.dawidolko.pl in a new tab"><i aria-hidden="true"
-          class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
-          </div>
+            <p class="portfolio__shadow-title">TechByte</p>
+            <div class="portfolio__icons">
+              <a class="portfolio__link" href="https://github.com/dawidolko/TechByte-Project-Laravel" target="_blank" rel="noopener noreferrer" aria-label="TechByte source code on GitHub (opens in a new tab)"><i aria-hidden="true" class="fa-brands fa-github"></i></a>
+              <a class="portfolio__link" href="https://techbyte.dawidolko.pl" target="_blank" rel="noopener noreferrer" aria-label="TechByte live site (opens in a new tab)"><i aria-hidden="true" class="portfolio__icon fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a class="project-show" href="/projects/techbyte/">Show<span class="visually-hidden"> TechByte</span></a>
+            </div>
           </div>
           <img class="portfolio__img" src="src/assets/img/Home/logo_project/logo10.svg" alt="TechByte logo" width="50" height="50" loading="lazy" decoding="async" />
           <div class="portfolio__stock">
@@ -383,7 +387,7 @@
           <div style="text-align: center" class="info move">
             <h3 class="info__heading">Contact Info</h3>
             <p class="info__text">
-              Always available for freelance work. Feel free to contact me!
+              Feel free to contact me!
             </p>
             <div class="info__content">
               <div class="info__icons">
@@ -425,22 +429,22 @@
           Rights Reserved
         </p>
         <div class="footer__icons">
-          <a href="https://www.instagram.com/dawid_olko/" target="_blank" rel="noopener"
+          <a href="https://www.instagram.com/dawid_olko/" target="_blank" rel="noopener noreferrer"
              aria-label="Instagram profile"><i aria-hidden="true" class="footer__icon fa-brands fa-instagram"></i
           ></a>
-          <a href="https://github.com/dawidolko" target="_blank" rel="noopener"
+          <a href="https://github.com/dawidolko" target="_blank" rel="noopener noreferrer"
              aria-label="GitHub profile"><i aria-hidden="true" class="footer__icon fa-brands fa-github"></i
           ></a>
-          <a href="https://www.facebook.com/olkodawid/" target="_blank" rel="noopener"
+          <a href="https://www.facebook.com/olkodawid/" target="_blank" rel="noopener noreferrer"
              aria-label="Facebook profile"><i aria-hidden="true" class="footer__icon fa-brands fa-square-facebook"></i
           ></a>
-          <a href="https://www.linkedin.com/in/dawidolko/" target="_blank" rel="noopener"
+          <a href="https://www.linkedin.com/in/dawidolko/" target="_blank" rel="noopener noreferrer"
              aria-label="LinkedIn profile"><i aria-hidden="true" class="footer__icon fa-brands fa-linkedin"></i
           ></a>
-          <a href="https://www.youtube.com/@dawid_olko" target="_blank" rel="noopener"
+          <a href="https://www.youtube.com/@dawid_olko" target="_blank" rel="noopener noreferrer"
              aria-label="YouTube profile"><i aria-hidden="true" class="footer__icon fa-brands fa-youtube"></i
           ></a>
-          <a href="https://www.tiktok.com/@dawid_olko" target="_blank" rel="noopener"
+          <a href="https://www.tiktok.com/@dawid_olko" target="_blank" rel="noopener noreferrer"
              aria-label="TikTok profile"><i aria-hidden="true" class="footer__icon fa-brands fa-tiktok"></i
           ></a>
         </div>
@@ -451,5 +455,6 @@
       defer></script>
     <script src="src/js/content.js" defer></script>
     <script src="src/js/index.js" defer></script>
+    <script src="src/js/tip.js" defer></script>
   </body>
 </html>
