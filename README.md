@@ -1,3 +1,7 @@
+<p align="center">
+  <a href="https://dawidolko.pl/"><img src="docs/readme/banner.webp" alt="dawidolko.pl — Personal Website: personal site. Multi-page personal website built from scratch" width="100%"></a>
+</p>
+
 # dawidolko.pl — Personal Website
 
 > 🚀 **Multi-page personal website built from scratch** — projects, studies, blog, gallery and contact, hand-built with semantic HTML, SASS and vanilla JavaScript.
@@ -16,6 +20,8 @@ converts source photos to responsive WebP.
 ![webpack](https://img.shields.io/badge/webpack-8DD6F9?logo=webpack&logoColor=black)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![License](https://img.shields.io/badge/License-MIT-green)
+
+**[Live site](https://dawidolko.pl/)** · [Screenshots](#️-screenshots) · [Getting started](#-getting-started)
 
 ---
 
@@ -162,11 +168,7 @@ dawidolko.pl/
 - Google Search Console verification file included
 - Responsive WebP images with explicit dimensions to avoid layout shift
 
----
-
-## 🌍 Live Demo
-
-The site is deployed and available at: **[https://dawidolko.pl](https://dawidolko.pl)**
+An accessibility panel in the corner of every page changes text size, contrast, font and motion, and remembers the choice on the device. It sits on top of the markup and does not replace accessible markup.
 
 ---
 
@@ -188,7 +190,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 👨‍💻 Author
 
-Created by **[Dawid Olko](https://github.com/dawidolko)**
+**Dawid Olko** · Fullstack / AI Developer
 
-- **Website** — [dawidolko.pl](https://dawidolko.pl/)
-- **LinkedIn** — [@dawidolko](https://www.linkedin.com/in/dawidolko/)
+[Portfolio](https://olkodawid.dawidolko.pl) · [CV](https://cv.dawidolko.pl) · [LinkedIn](https://www.linkedin.com/in/dawidolko/) · [GitHub](https://github.com/dawidolko)
