@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     }
 
-    $recipient = "poczta@dawidolko.pl";
+    $recipient = "contact@dawidolko.pl";
     
     $email_content = "Name: $name\n";
     $email_content .= "Email: $email\n\n";
