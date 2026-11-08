@@ -227,7 +227,10 @@ function renderPage(p, index, shell, media, posters, ogImage) {
    * who worked on it, so it must not reach the structured data as a contributor.
    */
   if (p.creditUrl) work.isBasedOn = p.creditUrl;
-  else if (p.credit) work.contributor = { "@type": "Person", name: p.credit };
+  else if (p.credit) {
+    const people = p.credit.split(", ").map((name) => ({ "@type": "Person", name }));
+    work.contributor = people.length === 1 ? people[0] : people;
+  }
   const sameAs = [p.live, p.repo && !p.private ? `https://github.com/dawidolko/${p.repo}` : ""].filter(Boolean);
   if (sameAs.length) work.sameAs = sameAs;
   const breadcrumbs = {
