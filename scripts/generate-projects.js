@@ -206,6 +206,7 @@ function renderPage(p, index, shell, media, posters, ogImage) {
   const links = [
     p.live && externalLink(p.live, "project__button", "Live site"),
     p.repo && !p.private && externalLink(`https://github.com/dawidolko/${p.repo}`, "project__button project__button--ghost", "Source code"),
+    ...(p.links || []).map((link) => externalLink(link.url, "project__button project__button--ghost", esc(link.label))),
   ].filter(Boolean);
   const person = { "@type": "Person", name: "Dawid Olko", url: `${SITE}/` };
   const work = {
