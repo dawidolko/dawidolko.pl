@@ -8,20 +8,23 @@
     "dateSource": "user",
     "kind": "Developer tools for AI coding agents",
     "tagline": "From a task to an approved commit",
-    "summary": "Skribly is an ecosystem of tools for people who build software with AI coding agents. Skribly Tracker holds the tasks and serves them through a REST API, Skribly Agent is a desktop app that starts AI coding agents on those tasks and shows what each one is doing, and agent-skills gives every agent 29 portable skills for testing, reviewing and committing that adapt to each project through a project profile and confirmed lessons. Underneath, Skribly Core holds the shared contracts for identity, CloudEvents events, the app registry and webhooks, and Skribly UI is the design system on React Aria with tokens and plain CSS, published at ui.skribly.pl. Everything is documented at docs.skribly.pl. Co-created with Piotr Smoła, Michał Pilecki, Konrad Pluta and Mateusz Olko as a non-commercial project.",
+    "summary": "Skribly is a private project I build with four friends, independent of my employment. It is a family of developer tools for people who write software with AI coding agents, and it is non-commercial: nothing is sold, it has no clients and offers no services. Skribly Agent is a desktop app for macOS, Windows and Linux that runs AI coding agents side by side and shows which one is working, which waits for a decision and which has finished; it is in development and its installers are not public yet. agent-skills gives seven coding agents 36 portable skills for tests, reviews, audits and clean commits that adapt to each project through a project profile. Skribly Tracker is the issue tracker of the family, with Kanban boards and a REST API described in OpenAPI. Skribly Core holds the shared contracts in TypeScript, Skribly UI is the design system, built to WCAG 2.2 AA as a target and shown at ui.skribly.pl, and Skribly Docs explains all of it at docs.skribly.pl in English and Polish. Co-created with Piotr Smoła, Michał Pilecki, Konrad Pluta and Mateusz Olko; the repositories stay private while we build.",
+    "metaDescription": "Skribly is a private, non-commercial project of five developers: developer tools for planning work and building software with AI coding agents.",
     "shows": [
       "Task tracking people and agents can share",
       "Agents you can watch while they work",
       "Skills that adapt to each project",
       "Shared contracts and one design system",
-      "You read every change before it goes in",
-      "Work stays on your own computer and server"
+      "Risky steps wait for your OK",
+      "Built to WCAG 2.2 AA as a target"
     ],
     "stack": [
       "Electron",
       "Laravel",
+      "Node.js",
       "TypeScript",
-      "React Aria"
+      "React Aria",
+      "Astro"
     ],
     "live": "https://skribly.pl",
     "links": [
