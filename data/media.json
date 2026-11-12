@@ -1,4 +1,26 @@
 {
+  "frontend-skills": {
+    "gallery": [
+      {
+        "file": "desktop-1.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "desktop-2.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "mobile.webp",
+        "width": 620,
+        "height": 1342
+      }
+    ],
+    "demo": false,
+    "still": "/src/assets/img/work/frontend-skills/poster.webp",
+    "videoPoster": ""
+  },
   "skribly": {
     "gallery": [
       {

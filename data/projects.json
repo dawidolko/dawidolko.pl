@@ -1,5 +1,39 @@
 [
   {
+    "repo": "frontend-skills",
+    "slug": "frontend-skills",
+    "title": "Frontend Skills",
+    "start": "Nov 2026",
+    "end": "present",
+    "dateSource": "user",
+    "kind": "Open-source skills for AI coding agents",
+    "tagline": "Front-end skills for every AI coding agent",
+    "summary": "Frontend Skills is a free, open-source set of skills for AI coding agents that write front-end code. One command, npx github:dawidolko/frontend-skills init, learns the project's stack and its own conventions, then installs only the skills that fit, in the format each agent reads: 17 agents are supported, among them Claude Code, Codex, Cursor, Copilot and Gemini CLI. The audit command checks HTML, CSS, JavaScript and framework templates against 275 rules, each with a stable id, a severity and a public source such as WCAG, MDN or web.dev, and reports the file, the line, why it matters and the fix, with an exit code for CI. explain shows one rule in full. The command is a Node.js CLI with no runtime dependencies, the dictionary holds 50 skills, and 1087 tests check it. The site at skills.dawidolko.pl is in English and Polish.",
+    "metaDescription": "Frontend Skills: free, open-source front-end skills for 17 AI coding agents, fitted to your stack, with an audit of 275 sourced rules.",
+    "shows": [
+      "One command for every agent",
+      "275 sourced rules with fixes",
+      "Learns your project's conventions",
+      "An audit with an exit code for CI",
+      "No runtime dependencies"
+    ],
+    "stack": [
+      "Node.js",
+      "JavaScript",
+      "Markdown",
+      "Biome"
+    ],
+    "live": "https://skills.dawidolko.pl",
+    "links": [
+      {
+        "label": "Rule dictionary",
+        "url": "https://skills.dawidolko.pl/rules/"
+      }
+    ],
+    "video": "",
+    "private": false
+  },
+  {
     "repo": "",
     "slug": "skribly",
     "title": "Skribly",

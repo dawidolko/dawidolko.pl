@@ -15,6 +15,7 @@
 
 ## Projects
 
+- [Frontend Skills](https://dawidolko.pl/projects/frontend-skills/): Open-source skills for AI coding agents, Nov 2026 – present. Front-end skills for every AI coding agent.
 - [Skribly](https://dawidolko.pl/projects/skribly/): Developer tools for AI coding agents, Oct 2026 – present. From a task to an approved commit.
 - [CV](https://dawidolko.pl/projects/cv/): Static résumé website, Sep 2026 – present. The page is the source, the PDF is the export.
 - [ZbudujKompa](https://dawidolko.pl/projects/zbudujkompa/): Bilingual reference website for PC builders, Jul 2026 – present. Build your PC without guessing.
