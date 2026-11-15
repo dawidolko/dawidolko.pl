@@ -42,7 +42,7 @@
     "dateSource": "user",
     "kind": "Developer tools for AI coding agents",
     "tagline": "From a task to an approved commit",
-    "summary": "Skribly is a private project I build with four friends. It is a family of developer tools for people who write software with AI coding agents, and it is non-commercial: nothing is sold, it has no clients and offers no services. Skribly Agent is a desktop app for macOS, Windows and Linux that runs AI coding agents side by side and shows which one is working, which waits for a decision and which has finished; it is in development and its installers are not public yet. agent-skills gives seven coding agents 38 portable skills for tests, reviews, audits and clean commits that adapt to each project through a project profile. Skribly Tracker is the issue tracker of the family, built on Node.js, TypeScript and PostgreSQL, with Kanban boards and a REST API of 53 operations checked by contract tests; it is in development and not deployed. Skribly Core holds the shared contracts and the server kit the apps are built on, Skribly UI is the design system, built to WCAG 2.2 AA as a target and shown at ui.skribly.pl, and Skribly Docs explains all of it at docs.skribly.pl in English and Polish. Being added, and not public yet: one sign-in for the apps (Skribly ID), one address for their APIs (Skribly API), a local console of the repositories (Skribly Hub), a few small sites and the templates new apps and sites start from. Co-created with Piotr Smoła, Michał Pilecki, Konrad Pluta and Mateusz Olko; the repositories stay private while we build.",
+    "summary": "Skribly is a private project I build with four friends. It is a family of developer tools for people who write software with AI coding agents, and it is non-commercial: nothing is sold, it has no clients and offers no services. Skribly Agent is a desktop IDE for macOS, Windows and Linux that runs AI coding agents side by side and shows which one is working, which waits for a decision and which has finished; it has its own site at agent.skribly.pl, and its downloads are in progress. agent-skills gives seven coding agents 38 portable skills for tests, reviews, audits and clean commits that adapt to each project through a project profile; it is at version 0.3.0. Skribly Tracker is the issue tracker of the family, built on Node.js, TypeScript and PostgreSQL, with Kanban boards and a REST API of 53 operations checked by contract tests; it is in development and not deployed. Skribly Core (version 0.3.0) holds the shared contracts and the server kit the apps are built on, Skribly UI is the design system, built to WCAG 2.2 AA as a target and shown at ui.skribly.pl, and Skribly Docs explains all of it at docs.skribly.pl in English and Polish. Skribly Newsletter is a daily AI digest for developers, in Polish or English, at newsletter.skribly.pl. The team's projects are listed at projects.skribly.pl, the state of the public sites at status.skribly.pl, security, privacy and accessibility notes at trust.skribly.pl and the live tools at tools.skribly.pl; the Discord server is at dc.skribly.pl. Being added, and showing a placeholder page for now: one sign-in for the apps (Skribly ID), one address for their APIs (Skribly API), a local console of the repositories (Skribly Hub), Skribly Time, Skribly Feedback and the templates new apps and sites start from. Co-created with Piotr Smoła, Michał Pilecki, Konrad Pluta and Mateusz Olko; the repositories stay private while we build.",
     "metaDescription": "Skribly is a private, non-commercial project of five developers: developer tools for planning work and building software with AI coding agents.",
     "shows": [
       "Task tracking people and agents can share",
@@ -63,12 +63,40 @@
     "live": "https://skribly.pl",
     "links": [
       {
+        "label": "Skribly Agent",
+        "url": "https://agent.skribly.pl"
+      },
+      {
         "label": "Documentation",
         "url": "https://docs.skribly.pl"
       },
       {
         "label": "Design system",
         "url": "https://ui.skribly.pl"
+      },
+      {
+        "label": "Newsletter",
+        "url": "https://newsletter.skribly.pl"
+      },
+      {
+        "label": "Projects",
+        "url": "https://projects.skribly.pl"
+      },
+      {
+        "label": "Status",
+        "url": "https://status.skribly.pl"
+      },
+      {
+        "label": "Trust",
+        "url": "https://trust.skribly.pl"
+      },
+      {
+        "label": "Tools",
+        "url": "https://tools.skribly.pl"
+      },
+      {
+        "label": "Discord",
+        "url": "https://dc.skribly.pl"
       }
     ],
     "video": "",
