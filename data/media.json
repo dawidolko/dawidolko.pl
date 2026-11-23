@@ -21,6 +21,43 @@
     "still": "/src/assets/img/work/frontend-skills/poster.webp",
     "videoPoster": ""
   },
+  "comment-moderator-llm": {
+    "gallery": [
+      {
+        "file": "shot-1.webp",
+        "width": 1280,
+        "height": 800
+      },
+      {
+        "file": "shot-2.webp",
+        "width": 1280,
+        "height": 800
+      },
+      {
+        "file": "shot-3.webp",
+        "width": 1280,
+        "height": 1230
+      },
+      {
+        "file": "shot-4.webp",
+        "width": 1280,
+        "height": 836
+      },
+      {
+        "file": "shot-5.webp",
+        "width": 1280,
+        "height": 1594
+      },
+      {
+        "file": "shot-6.webp",
+        "width": 1280,
+        "height": 1546
+      }
+    ],
+    "demo": false,
+    "still": "/src/assets/img/work/comment-moderator-llm/shot-1.webp",
+    "videoPoster": ""
+  },
   "skribly": {
     "gallery": [
       {

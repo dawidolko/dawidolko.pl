@@ -34,6 +34,34 @@
     "private": false
   },
   {
+    "repo": "CommentModerator-LLM-Python",
+    "slug": "comment-moderator-llm",
+    "title": "Comment Moderator LLM",
+    "start": "Nov 2026",
+    "end": "Nov 2026",
+    "dateSource": "github",
+    "kind": "LLM application",
+    "tagline": "Forum comment moderation with a local LLM and RAG over the forum rules",
+    "summary": "A Python application that moderates forum comments with a local LLM served by Ollama. Every comment gets categories, a severity, a decision and a one-sentence reason; memes and screenshots are read by a vision model first, whole files are moderated in one run with a text report and an SVG chart, a chat answers questions about a file, and the RAG mode cites the paragraph of the forum rules the decision rests on. A Gradio web app and a Typer CLI share one core, and Docker Compose starts Ollama, the models and the app.",
+    "shows": [
+      "Verdicts constrained by a JSON schema",
+      "Memes read by a vision model",
+      "Batch moderation with TXT and SVG reports",
+      "Chat about a file",
+      "RAG that cites the forum rules"
+    ],
+    "stack": [
+      "Python",
+      "Ollama",
+      "Gradio",
+      "Docker",
+      "RAG"
+    ],
+    "live": "",
+    "video": "",
+    "private": false
+  },
+  {
     "repo": "",
     "slug": "skribly",
     "title": "Skribly",
