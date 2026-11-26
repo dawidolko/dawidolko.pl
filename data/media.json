@@ -63,7 +63,7 @@
       {
         "file": "shot-1.webp",
         "width": 1280,
-        "height": 800
+        "height": 1051
       },
       {
         "file": "shot-2.webp",
@@ -73,12 +73,12 @@
       {
         "file": "shot-3.webp",
         "width": 1280,
-        "height": 1233
+        "height": 1168
       },
       {
         "file": "shot-4.webp",
         "width": 1280,
-        "height": 932
+        "height": 889
       },
       {
         "file": "shot-5.webp",
@@ -88,7 +88,12 @@
       {
         "file": "shot-6.webp",
         "width": 1280,
-        "height": 1028
+        "height": 979
+      },
+      {
+        "file": "shot-7.webp",
+        "width": 1280,
+        "height": 1051
       }
     ],
     "demo": false,
@@ -100,32 +105,32 @@
       {
         "file": "shot-1.webp",
         "width": 1280,
-        "height": 997
+        "height": 1202
       },
       {
         "file": "shot-2.webp",
         "width": 1280,
-        "height": 955
+        "height": 1132
       },
       {
         "file": "shot-3.webp",
         "width": 1280,
-        "height": 1516
+        "height": 1578
       },
       {
         "file": "shot-4.webp",
         "width": 1280,
-        "height": 1021
+        "height": 1028
       },
       {
         "file": "shot-5.webp",
         "width": 1280,
-        "height": 1276
+        "height": 1351
       },
       {
         "file": "shot-6.webp",
         "width": 1280,
-        "height": 800
+        "height": 1202
       }
     ],
     "demo": false,
