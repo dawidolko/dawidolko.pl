@@ -58,6 +58,80 @@
     "still": "/src/assets/img/work/comment-moderator-llm/shot-1.webp",
     "videoPoster": ""
   },
+  "student-assistant-llm": {
+    "gallery": [
+      {
+        "file": "shot-1.webp",
+        "width": 1280,
+        "height": 800
+      },
+      {
+        "file": "shot-2.webp",
+        "width": 1280,
+        "height": 800
+      },
+      {
+        "file": "shot-3.webp",
+        "width": 1280,
+        "height": 1233
+      },
+      {
+        "file": "shot-4.webp",
+        "width": 1280,
+        "height": 932
+      },
+      {
+        "file": "shot-5.webp",
+        "width": 1280,
+        "height": 1600
+      },
+      {
+        "file": "shot-6.webp",
+        "width": 1280,
+        "height": 1028
+      }
+    ],
+    "demo": false,
+    "still": "/src/assets/img/work/student-assistant-llm/shot-1.webp",
+    "videoPoster": ""
+  },
+  "marketing-creator-llm": {
+    "gallery": [
+      {
+        "file": "shot-1.webp",
+        "width": 1280,
+        "height": 997
+      },
+      {
+        "file": "shot-2.webp",
+        "width": 1280,
+        "height": 955
+      },
+      {
+        "file": "shot-3.webp",
+        "width": 1280,
+        "height": 1516
+      },
+      {
+        "file": "shot-4.webp",
+        "width": 1280,
+        "height": 1021
+      },
+      {
+        "file": "shot-5.webp",
+        "width": 1280,
+        "height": 1276
+      },
+      {
+        "file": "shot-6.webp",
+        "width": 1280,
+        "height": 800
+      }
+    ],
+    "demo": false,
+    "still": "/src/assets/img/work/marketing-creator-llm/shot-1.webp",
+    "videoPoster": ""
+  },
   "skribly": {
     "gallery": [
       {

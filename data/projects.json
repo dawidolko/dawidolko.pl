@@ -62,6 +62,62 @@
     "private": false
   },
   {
+    "repo": "StudentAssistant-LLM-Python",
+    "slug": "student-assistant-llm",
+    "title": "Student Assistant LLM",
+    "start": "Nov 2026",
+    "end": "Nov 2026",
+    "dateSource": "github",
+    "kind": "LLM application",
+    "tagline": "Polish student assistant on Bielik with RAG over university documents",
+    "summary": "A team project with Piotr Rojek: a Polish student assistant for a fictional university, running on a local LLM (Bielik 11B) through Ollama. Answers are grounded in the university's documents and cite the paragraph they rest on (RAG with BM25 and bge-m3 embeddings), and the assistant declines when no document supports an answer. It also reads photos of notices and timetables, summarises and translates whole folders, and chats about uploaded files with TXT and SVG reports. A Gradio web app and a Typer CLI share one core, and Docker Compose starts everything.",
+    "shows": [
+      "Answers that cite the paragraph",
+      "Hybrid search with bge-m3",
+      "Questions about photos",
+      "Batch summaries and translations",
+      "Evaluation with and without RAG"
+    ],
+    "stack": [
+      "Python",
+      "Ollama",
+      "Bielik",
+      "RAG",
+      "Docker"
+    ],
+    "live": "",
+    "video": "",
+    "private": false
+  },
+  {
+    "repo": "MarketingCreator-LLM-Python",
+    "slug": "marketing-creator-llm",
+    "title": "Marketing Creator LLM",
+    "start": "Nov 2026",
+    "end": "Nov 2026",
+    "dateSource": "github",
+    "kind": "LLM application",
+    "tagline": "Marketing copy from a local LLM, from typed facts or a product photo",
+    "summary": "A team project with Maksymilian Przypek: ad headlines, slogans, product descriptions and social posts in Polish and English, written by a local LLM (Qwen 2.5 7B) through Ollama in three brand voices, with structured output checked against a JSON schema. A vision model describes a product photo for the copy, whole catalogues and campaigns are generated from a CSV, and every piece passes automatic checks for length, keyword, forbidden phrases, language and hashtags. A Gradio web app and a Typer CLI share one core, and Docker Compose starts everything.",
+    "shows": [
+      "Three brand voices in two languages",
+      "Copy from a product photo",
+      "Batch catalogue from a CSV",
+      "Automatic quality checks",
+      "Parameter experiment"
+    ],
+    "stack": [
+      "Python",
+      "Ollama",
+      "Gradio",
+      "Docker",
+      "LLM"
+    ],
+    "live": "",
+    "video": "",
+    "private": false
+  },
+  {
     "repo": "",
     "slug": "skribly",
     "title": "Skribly",
