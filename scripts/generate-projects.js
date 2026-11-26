@@ -243,7 +243,7 @@ function renderPage(p, index, shell, media, posters, ogImage) {
       { "@type": "ListItem", position: 3, name: p.title, item: url },
     ],
   };
-  const scripts = [media.gallery.length || media.demo ? `<script src="/src/js/project.js" defer></script>` : "", video ? `<script src="/src/js/videoFacade.js" defer></script>` : ""]
+  const scripts = [media.gallery.length || media.demo ? `<script src="/src/js/project.js?v=3" defer></script>` : "", video ? `<script src="/src/js/videoFacade.js" defer></script>` : ""]
     .filter(Boolean)
     .join("\n    ");
   return `<!doctype html>
@@ -276,7 +276,7 @@ function renderPage(p, index, shell, media, posters, ogImage) {
     <link rel="preload" as="font" type="font/woff2" href="/src/assets/fonts/web/opensans-latin.woff2" crossorigin />
     <link rel="stylesheet" href="/src/css/fonts.css?v=8" />
     <link rel="stylesheet" href="/src/css/projects.css?v=8" />
-    <link rel="stylesheet" href="/src/css/project.css?v=2" />
+    <link rel="stylesheet" href="/src/css/project.css?v=3" />
     <script type="application/ld+json">${JSON.stringify(work)}</script>
     <script type="application/ld+json">${JSON.stringify(breadcrumbs)}</script>
     <script src="/a11y/a11y-panel.js" data-accent="#9b00c2" defer></script>

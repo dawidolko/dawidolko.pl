@@ -319,9 +319,13 @@
   border-radius: 50%;
   background: rgba(26, 26, 26, 0.9);
   color: #f0f0f0;
-  font-size: 2.6rem;
-  line-height: 1;
+  padding: 0;
+  line-height: 0;
   cursor: pointer;
+}
+.lightbox__control span,
+.lightbox__control svg {
+  display: block;
 }
 .lightbox__control:hover {
   background: #8b00b3;

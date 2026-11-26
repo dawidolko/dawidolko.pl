@@ -39,18 +39,18 @@
     caption = document.createElement("p");
     caption.className = "lightbox__caption";
     caption.setAttribute("aria-live", "polite");
-    var close = control("lightbox__close", "Close viewer", "&times;", function () {
+    var close = control("lightbox__close", "Close viewer", '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></svg>', function () {
       dialog.close();
     });
     dialog.appendChild(close);
     if (links.length > 1) {
       dialog.appendChild(
-        control("lightbox__prev", "Previous screenshot", "&lsaquo;", function () {
+        control("lightbox__prev", "Previous screenshot", '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>', function () {
           show(current - 1);
         }),
       );
       dialog.appendChild(
-        control("lightbox__next", "Next screenshot", "&rsaquo;", function () {
+        control("lightbox__next", "Next screenshot", '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>', function () {
           show(current + 1);
         }),
       );
